@@ -20,10 +20,13 @@ references/           base reference images of Draconia
   draconia-uniform.webp   robed school uniform (neutral pose)
   draconia-gown.webp      green-and-silver Yule Ball gown (neutral pose)
   draconia-vest.webp      uniform without the robe: shirt, tie, vest, skirt (neutral pose)
+  draconia-uniform-fullbody.jpg  robed uniform, head to toe, black knee socks and loafers (Grok post a22d4f44, base for new uniform images)
+  draconia-vest-fullbody.jpg     vest uniform, head to toe, black knee socks and loafers (Grok post 918f66cf, base for new vest images)
   poses/                  mannequin pose references from Shisei (CC0), shisei-<P###|U###>-<view>.webp,
                           900x1200; LICENSE-images and NOTICE from Shisei alongside
 images/               generated images, the original Grok Imagine JPGs, unchanged
 input/                one YAML file per image, same base name as the image
+rejected/             replaced images and their input files (same layout, `rejected:` says why; not posted)
 ideas/                idea lists for the generator: outfits, settings, poses, emotions, skin (coverage)
 ideas/archive/        the old pose list (paraphrased ai-pose-gallery names); kept so older entries stay traceable
 scripts/add_entry.py  helper that adds a new entry (image + input file + index line)

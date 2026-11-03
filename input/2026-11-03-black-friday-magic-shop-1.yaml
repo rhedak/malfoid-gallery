@@ -4,14 +4,14 @@ theme: "black-friday"
 tags: ["black-friday", "winter", "castle", "uniform", "tsundere"]
 created: 2026-11-03
 tool: "Grok Imagine (character + pose reference)"
-base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
-reference: "references/draconia-uniform.webp"
+base_post: "https://grok.com/imagine/post/a22d4f44-ee90-468f-be10-7f3f6094b544"
+reference: "references/draconia-uniform-fullbody.jpg"
 pose_ref: "references/poses/shisei-P024-diag.webp"
-prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing balanced on one leg, the other leg lifted behind her with the knee bent and foot up. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a crooked old magic shop crammed with wands, potion bottles and broomsticks, a hand-painted BLACK FRIDAY discount sign in the window, snow falling softly outside the windows. Expression: arms crossed, turning her face away with a pouty blush. Anime illustration, full scene background, full body in frame, hands fully in frame."
-result_post: "https://grok.com/imagine/post/db461bb1-ab30-4536-b1e2-7a64fe8c76ab"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, black knee-high socks and polished black loafers. Don't redesign the uniform, and keep her socks and shoes on. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing balanced on one leg, the other leg lifted behind her with the knee bent and foot up. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a crooked old magic shop crammed with wands, potion bottles and broomsticks, a hand-painted BLACK FRIDAY discount sign in the window, snow falling softly outside the windows. Expression: arms crossed, turning her face away with a pouty blush. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/ce4be4f5-bd7a-406f-8728-b7c838c35b3d"
 image: "images/2026-11-03-black-friday-magic-shop-1.jpg"
-size: "1152x1728"
-notes: "Close pose match; arms crossed; socks without shoes."
+size: "1008x1792"
+notes: "Redo from the full-body robed uniform base. Footwear fixed: black knee-high socks and loafers. Pose good: one leg raised behind, arms crossed, blush, three-quarter view."
 idea:
   seed: 1548
   outfit: "uniform-robe"
@@ -24,3 +24,5 @@ idea:
   coverage: "modest"
   season: "winter"
   theme: "black-friday"
+  prompt_edited: true
+  idea_prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing balanced on one leg, the other leg lifted behind her with the knee bent and foot up. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a crooked old magic shop crammed with wands, potion bottles and broomsticks, a hand-painted BLACK FRIDAY discount sign in the window, snow falling softly outside the windows. Expression: arms crossed, turning her face away with a pouty blush. Anime illustration, full scene background, full body in frame, hands fully in frame."

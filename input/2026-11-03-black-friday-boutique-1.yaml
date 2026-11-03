@@ -4,14 +4,14 @@ theme: "black-friday"
 tags: ["black-friday", "autumn", "uniform"]
 created: 2026-11-03
 tool: "Grok Imagine (character + pose reference)"
-base_post: "https://grok.com/imagine/post/3da5bf18-ec9c-45c0-96b8-0248f86eedca"
-reference: "references/draconia-vest.webp"
+base_post: "https://grok.com/imagine/post/918f66cf-6f2d-422f-bcdd-0eac54f9752d"
+reference: "references/draconia-vest-fullbody.jpg"
 pose_ref: "references/poses/shisei-P030-diag.webp"
-prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same white long-sleeved shirt, green and silver striped tie, grey vest and grey pleated skirt, with no robe. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing on tiptoe with both arms raised diagonally upward in a V shape, legs straight. Copy only the pose and the camera angle from the mannequin, not its look. Setting: an elegant clothing boutique with racks of coats and dresses, mirrors, BLACK FRIDAY discount tags and shopping bags on a velvet bench, golden and red autumn leaves drifting down outside the windows. Expression: a small proud smile. Anime illustration, full scene background, full body in frame, hands fully in frame."
-result_post: "https://grok.com/imagine/post/6378268e-2fdb-4e2e-9c46-dd69c111d12b"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same white long-sleeved shirt, green and silver striped tie, grey vest and grey pleated skirt, black knee-high socks and polished black loafers, with no robe. Don't redesign the uniform, and keep her socks and shoes on. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing on tiptoe with both arms raised diagonally upward in a V shape, legs straight. Copy only the pose and the camera angle from the mannequin, not its look. Setting: an elegant clothing boutique with racks of coats and dresses, mirrors, BLACK FRIDAY discount tags and shopping bags on a velvet bench, golden and red autumn leaves drifting down outside the windows. Expression: a small proud smile. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/3f14b9ec-050a-461d-9dd3-3a24b6a9f6d4"
 image: "images/2026-11-03-black-friday-boutique-1.jpg"
-size: "1152x1728"
-notes: "V arms match but flat-footed, not tiptoe; she came out barefoot."
+size: "1008x1792"
+notes: "Redo from the full-body vest base. Footwear fixed: black knee-high socks and loafers. Pose partial: arms V-raised, but the view is near front-on and she is not clearly on tiptoe."
 idea:
   seed: 1305
   outfit: "uniform-vest"
@@ -24,3 +24,5 @@ idea:
   coverage: "modest"
   season: "autumn"
   theme: "black-friday"
+  prompt_edited: true
+  idea_prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same white long-sleeved shirt, green and silver striped tie, grey vest and grey pleated skirt, with no robe. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing on tiptoe with both arms raised diagonally upward in a V shape, legs straight. Copy only the pose and the camera angle from the mannequin, not its look. Setting: an elegant clothing boutique with racks of coats and dresses, mirrors, BLACK FRIDAY discount tags and shopping bags on a velvet bench, golden and red autumn leaves drifting down outside the windows. Expression: a small proud smile. Anime illustration, full scene background, full body in frame, hands fully in frame."

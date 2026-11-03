@@ -6,18 +6,20 @@
 # requires_setting_tags: the setting must carry at least one of these tags.
 bases:
   uniform:
-    post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
-    reference: "references/draconia-uniform.webp"
+    post: "https://grok.com/imagine/post/a22d4f44-ee90-468f-be10-7f3f6094b544"
+    reference: "references/draconia-uniform-fullbody.jpg"
+    # full-body edit (2026-11-03) of the thigh-cropped post b719bfd8 (references/draconia-uniform.webp)
   vest:
-    post: "https://grok.com/imagine/post/3da5bf18-ec9c-45c0-96b8-0248f86eedca"
-    reference: "references/draconia-vest.webp"
+    post: "https://grok.com/imagine/post/918f66cf-6f2d-422f-bcdd-0eac54f9752d"
+    reference: "references/draconia-vest-fullbody.jpg"
+    # full-body edit (2026-11-03) of the thigh-cropped post 3da5bf18 (references/draconia-vest.webp)
   gown:
     post: "https://grok.com/imagine/post/d9b008f8-7f62-4cd4-80d7-ac9ebc7ef733"
     reference: "references/draconia-gown.webp"
 outfits:
   - id: "uniform-robe"
     name: "school uniform with robe"
-    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt"
+    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest, grey pleated skirt, black knee-high socks and polished black loafers"
     keep: "uniform"
     base: "uniform"
     canonical: true
@@ -26,7 +28,7 @@ outfits:
     themes: []
   - id: "uniform-robe-scarf"
     name: "school uniform with robe and scarf"
-    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf"
+    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest, grey pleated skirt, black knee-high socks and polished black loafers, plus a green and silver striped knit scarf"
     keep: "uniform"
     base: "uniform"
     canonical: true
@@ -35,7 +37,7 @@ outfits:
     themes: []
   - id: "uniform-vest"
     name: "school uniform without robe"
-    text: "the same white long-sleeved shirt, green and silver striped tie, grey vest and grey pleated skirt, with no robe"
+    text: "the same white long-sleeved shirt, green and silver striped tie, grey vest, grey pleated skirt, black knee-high socks and polished black loafers, with no robe"
     keep: "uniform"
     base: "vest"
     canonical: true
