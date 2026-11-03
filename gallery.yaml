@@ -26,3 +26,33 @@ entries:
     input: "input/2026-11-03-christmas-2.yaml"
     image: "images/2026-11-03-christmas-2.jpg"
     posted:
+  - id: "2026-11-03-castle-tsundere-1"
+    title: "Autumn feast in the great hall"
+    created: 2026-11-03
+    input: "input/2026-11-03-castle-tsundere-1.yaml"
+    image: "images/2026-11-03-castle-tsundere-1.jpg"
+    posted:
+  - id: "2026-11-03-castle-tsundere-2"
+    title: "A scarf, not that she cares"
+    created: 2026-11-03
+    input: "input/2026-11-03-castle-tsundere-2.yaml"
+    image: "images/2026-11-03-castle-tsundere-2.jpg"
+    posted:
+  - id: "2026-11-03-castle-tsundere-3"
+    title: "Caught in the library"
+    created: 2026-11-03
+    input: "input/2026-11-03-castle-tsundere-3.yaml"
+    image: "images/2026-11-03-castle-tsundere-3.jpg"
+    posted:
+  - id: "2026-11-03-castle-tsundere-4"
+    title: "Mistletoe"
+    created: 2026-11-03
+    input: "input/2026-11-03-castle-tsundere-4.yaml"
+    image: "images/2026-11-03-castle-tsundere-4.jpg"
+    posted:
+  - id: "2026-11-03-castle-tsundere-5"
+    title: "Torch-lit staircase"
+    created: 2026-11-03
+    input: "input/2026-11-03-castle-tsundere-5.yaml"
+    image: "images/2026-11-03-castle-tsundere-5.jpg"
+    posted:
