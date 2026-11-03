@@ -1,0 +1,441 @@
+# Pose phrases for scripts/ideas.py.
+# source: most entries paraphrase pose NAMES (short factual descriptions) from
+#   https://github.com/anhao/ai-pose-gallery-zh (data/pose-zh.json; Chinese translation by Anhao of
+#   the pose gallery by ギア @giaaibusi, https://ai-pose-gallery.pages.dev/).
+#   That repo's MIT licence covers only its code; its images and data (pose.json) belong to the
+#   original author and are non-commercial. We copy no images and no data file: only our own English
+#   paraphrase of a pose name, with the original id and Chinese name kept for traceability.
+#   Only the "全身单人・标准系" (full body, standard) and "上半身单人・可爱系" (upper body, cute) lines were used;
+#   the sexy/explicit lines and categories, lying-down, arched-back and chest-emphasis poses were skipped.
+#   Entries with src_id null are our own.
+# fields: text = verb phrase after "She ...", framing = full|upper, posture,
+#   hands_busy = the pose occupies her hands, sets_gaze = the pose fixes where she looks, swim_ok = allowed with swimwear.
+source:
+  repo: "https://github.com/anhao/ai-pose-gallery-zh"
+  file: "data/pose-zh.json"
+  original: "https://ai-pose-gallery.pages.dev/ (ギア @giaaibusi)"
+  license: "MIT for code only; pose data and images are the original author's, non-commercial. Names paraphrased, nothing vendored."
+poses:
+  - id: "hug-knees"
+    text: "sits hugging her knees, knees tilted to one side"
+    framing: full
+    posture: sit
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "full_single_P004"
+    src_zh: "三角坐・双膝左倾"
+  - id: "sit-knee-up-hair"
+    text: "sits with one knee raised, one hand touching her hair"
+    framing: full
+    posture: sit
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P005"
+    src_zh: "单膝立起・手抚发"
+  - id: "sit-knee-up-chin"
+    text: "sits with one knee raised, chin resting on one hand"
+    framing: full
+    posture: sit
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P012"
+    src_zh: "单膝立起・托腮"
+  - id: "stand-contrapposto-hip"
+    text: "stands in a relaxed contrapposto with one hand on her hip"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P015"
+    src_zh: "站立・对立式平衡・手扶腰"
+  - id: "stand-look-back"
+    text: "stands looking back over her shoulder"
+    framing: full
+    posture: stand
+    hands_busy: false
+    sets_gaze: true
+    swim_ok: false
+    src_id: "full_single_P017"
+    src_zh: "站立・回眸顾盼"
+  - id: "stand-hands-hips"
+    text: "stands with both hands on her hips"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P018"
+    src_zh: "站立・双手扶腰"
+  - id: "stand-stretch-up"
+    text: "stands stretching both arms above her head"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P019"
+    src_zh: "站立・双臂上举伸展"
+  - id: "stand-hand-back-head"
+    text: "stands with one hand rubbing the back of her head"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "full_single_P020"
+    src_zh: "站立・单手抚后脑"
+  - id: "stand-hair-wind"
+    text: "stands with her hair blowing in the wind"
+    framing: full
+    posture: stand
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: true
+    src_id: "full_single_P029"
+    src_zh: "站立・发丝飘扬"
+  - id: "tiptoe-arms-v"
+    text: "stands on tiptoes with both arms raised in a cheerful V"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "full_single_P030"
+    src_zh: "站立・踮脚双臂V字"
+  - id: "kneel-one-knee"
+    text: "kneels on one knee with a hand resting on her knee"
+    framing: full
+    posture: kneel
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P033"
+    src_zh: "单膝跪・手扶膝"
+  - id: "side-sit-legs-folded"
+    text: "sits sideways with her legs folded to one side"
+    framing: full
+    posture: sit
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P045"
+    src_zh: "侧坐・双腿斜向右侧"
+  - id: "side-sit-hand-cheek"
+    text: "sits sideways with one hand against her cheek"
+    framing: full
+    posture: sit
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P046"
+    src_zh: "侧坐・手扶脸颊"
+  - id: "crouch-hands-knees"
+    text: "crouches with her hands on her knees"
+    framing: full
+    posture: crouch
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P061"
+    src_zh: "蹲姿・手扶膝"
+  - id: "crouch-chin-hand"
+    text: "crouches with her chin propped on one hand"
+    framing: full
+    posture: crouch
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P063"
+    src_zh: "蹲姿・托腮"
+  - id: "crouch-look-back"
+    text: "crouches and looks back over her shoulder"
+    framing: full
+    posture: crouch
+    hands_busy: false
+    sets_gaze: true
+    swim_ok: false
+    src_id: "full_single_P066"
+    src_zh: "蹲姿・回头"
+  - id: "twist-arms-open"
+    text: "stands with a slight twist of the body, arms spread open"
+    framing: full
+    posture: stand
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "full_single_P077"
+    src_zh: "扭身・站姿展臂"
+  - id: "sit-twist-look-back"
+    text: "sits with her upper body turned to look behind her"
+    framing: full
+    posture: sit
+    hands_busy: false
+    sets_gaze: true
+    swim_ok: false
+    src_id: "full_single_P079"
+    src_zh: "扭身・坐姿上体扭转"
+  - id: "hand-heart-chest"
+    text: "makes a heart shape with both hands in front of her"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P001"
+    src_zh: "胸前双手比心"
+  - id: "finger-heart-cheek"
+    text: "makes a small finger heart beside her cheek"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P003"
+    src_zh: "脸侧手指比心"
+  - id: "double-peace-chin"
+    text: "holds a double peace sign under her chin"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P004"
+    src_zh: "下巴下比双V"
+  - id: "fists-cheeks"
+    text: "presses both fists against her cheeks"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P006"
+    src_zh: "握拳贴脸（撒娇）"
+  - id: "bunny-ears"
+    text: "holds two fingers up like bunny ears beside her head"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P007"
+    src_zh: "兔耳手势"
+  - id: "cat-paw"
+    text: "makes a beckoning cat-paw gesture with one hand"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P008"
+    src_zh: "招财猫猫爪手势"
+  - id: "rawr-claws"
+    text: "makes a playful 'rawr' claw gesture with both hands"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P009"
+    src_zh: "咆哮手势（嗷呜）"
+  - id: "shush"
+    text: "holds a finger to her lips in a shushing gesture"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P010"
+    src_zh: "嘘——（食指抵唇）"
+  - id: "tilt-cover-eye"
+    text: "tilts her head and covers one eye with her hand"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P011"
+    src_zh: "歪头＋手遮单眼（眨眼风）"
+  - id: "chin-on-palms"
+    text: "rests her chin on both palms"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P013"
+    src_zh: "双掌托腮（花苞手势）"
+  - id: "poke-cheek"
+    text: "pokes her own cheek with one finger"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P014"
+    src_zh: "食指戳脸"
+  - id: "sleeves-cover-mouth"
+    text: "covers her mouth with both hands, sleeves over her fingers"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P015"
+    src_zh: "萌袖风・双手掩口"
+  - id: "palms-together-please"
+    text: "presses her palms together as if asking a favour"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P016"
+    src_zh: "拜托手势（双手合十）"
+  - id: "hug-self-shy"
+    text: "hugs herself shyly"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P017"
+    src_zh: "抱紧自己・害羞姿势"
+  - id: "finger-frame"
+    text: "frames the viewer with her fingers like a camera"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: true
+    swim_ok: true
+    src_id: "upper80v2_P018"
+    src_zh: "手指取景框"
+  - id: "tuck-hair-ear"
+    text: "tucks a strand of hair behind her ear"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P019"
+    src_zh: "将发丝挽至耳后"
+  - id: "cup-cheeks"
+    text: "cups her cheeks with both hands"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P020"
+    src_zh: "双手捧脸"
+  - id: "salute"
+    text: "gives a crisp little salute"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: true
+    src_id: "upper80v2_P021"
+    src_zh: "敬礼姿势"
+  - id: "point-viewer"
+    text: "points straight at the viewer"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: true
+    swim_ok: true
+    src_id: "upper80v2_P022"
+    src_zh: "手指镜头"
+  - id: "yawn-stretch"
+    text: "yawns and stretches, one hand over her mouth"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: "upper80v2_P023"
+    src_zh: "打哈欠伸懒腰（单手掩口）"
+  - id: "peek-fingers"
+    text: "peeks at the viewer through her fingers"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: true
+    swim_ok: true
+    src_id: "upper80v2_P025"
+    src_zh: "从双手指缝间窥视"
+  - id: "stand-facing"
+    text: "stands facing the viewer"
+    framing: full
+    posture: stand
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: true
+    src_id: null
+    src_zh: null
+  - id: "walk-toward"
+    text: "walks toward the viewer"
+    framing: full
+    posture: stand
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "lean-wall"
+    text: "leans back against a wall or railing"
+    framing: full
+    posture: stand
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "sit-table"
+    text: "sits at a table"
+    framing: upper
+    posture: sit
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "sit-bench"
+    text: "sits on a bench, half turned toward the viewer"
+    framing: full
+    posture: sit
+    hands_busy: false
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "hold-book"
+    text: "holds an open book against her chest"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "hold-wand"
+    text: "holds a wand casually in one hand"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null
+  - id: "hold-cup"
+    text: "holds a warm drink in both hands"
+    framing: upper
+    posture: any
+    hands_busy: true
+    sets_gaze: false
+    swim_ok: false
+    src_id: null
+    src_zh: null

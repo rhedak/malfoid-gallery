@@ -1,0 +1,23 @@
+# Coverage levels (how much skin shows). SFW only; there is no level beyond `swimwear`.
+# Hard rules (also enforced in scripts/ideas.py): she is an adult, 21 years old; no nudity, no lingerie or
+# underwear, no suggestive poses or expressions; swimwear only at beach/pool settings and only with
+# swim_ok poses and emotions.
+# weight: relative chance when --coverage is not given.
+levels:
+  - id: "modest"
+    name: "modest"
+    text: "fully covered: long sleeves or coat, long or knee-length skirt with tights"
+    weight: 6
+  - id: "casual"
+    name: "casual"
+    text: "bare arms or shoulders allowed, knee-length skirt or dress"
+    weight: 3
+  - id: "summer"
+    name: "summer"
+    text: "summer clothes: shorts, sundress or off-shoulder top; summer only"
+    weight: 2
+  - id: "swimwear"
+    name: "tasteful swimwear"
+    text: "one-piece swimsuit or modest bikini with a cover-up, at a beach or pool only, relaxed non-sexual pose"
+    weight: 1
+    requires_setting_tags: [beach, pool]

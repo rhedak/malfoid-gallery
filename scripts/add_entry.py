@@ -14,6 +14,14 @@ Example:
     --result-post https://grok.com/imagine/post/... \
     --created 2026-11-03
 
+From the idea generator:
+  python3 scripts/ideas.py --seed 42 --yaml > /tmp/idea.yaml
+  python3 scripts/add_entry.py --idea /tmp/idea.yaml --image result.jpg \
+    --result-post https://grok.com/imagine/post/... [--title ...] [--prompt "edited prompt"]
+  base post, reference, prompt, title and tags then come from the idea file (flags override),
+  and the idea block (outfit/setting/pose/emotion/coverage ids, seed ...) is stored in the
+  input file. If --prompt differs from the idea's prompt, idea.prompt_edited is set to true.
+
 No third-party dependencies (YAML is written with JSON-style quoted strings,
 which are valid YAML).
 """
@@ -24,6 +32,9 @@ import os
 import shutil
 import struct
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import miniyaml  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, "gallery.yaml")
@@ -67,17 +78,34 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--image", required=True, help="source image file (original Grok JPG)")
     p.add_argument("--id", help="entry id / base name; default <created>-<image basename>")
-    p.add_argument("--title", required=True)
-    p.add_argument("--tags", required=True, help="comma-separated; the first tag is the theme")
-    p.add_argument("--base-post", required=True, help="Grok Imagine post that was edited")
-    p.add_argument("--reference", required=True, help="path under references/")
-    p.add_argument("--prompt", required=True, help="exact full prompt text")
+    p.add_argument("--title")
+    p.add_argument("--tags", help="comma-separated; the first tag is the theme")
+    p.add_argument("--base-post", help="Grok Imagine post that was edited")
+    p.add_argument("--reference", help="path under references/")
+    p.add_argument("--prompt", help="exact full prompt text")
     p.add_argument("--result-post", required=True, help="Grok Imagine post of the result")
     p.add_argument("--created", default=datetime.date.today().isoformat())
     p.add_argument("--tool", default="Grok Imagine (edit)")
     p.add_argument("--notes", default="")
+    p.add_argument("--idea", help="YAML file from scripts/ideas.py --yaml (one idea)")
     p.add_argument("--force", action="store_true", help="overwrite an existing entry's files (index not duplicated)")
     a = p.parse_args()
+
+    idea = None
+    if a.idea:
+        doc = miniyaml.load(a.idea)
+        idea = dict(doc.get("idea") or {})
+        a.title = a.title or doc.get("title")
+        a.tags = a.tags or ",".join(doc.get("tags") or [])
+        a.base_post = a.base_post or doc.get("base_post")
+        a.reference = a.reference or doc.get("reference")
+        if a.prompt and a.prompt != doc.get("prompt"):
+            idea["prompt_edited"] = True
+            idea["idea_prompt"] = doc.get("prompt")
+        a.prompt = a.prompt or doc.get("prompt")
+    missing = [n for n in ("title", "tags", "base_post", "reference", "prompt") if not getattr(a, n)]
+    if missing:
+        p.error("missing (give the flag or --idea): " + ", ".join("--" + m.replace("_", "-") for m in missing))
 
     if not os.path.isfile(os.path.join(ROOT, a.reference)):
         sys.exit("reference not found: " + a.reference)
@@ -112,6 +140,9 @@ def main():
         f"size: \"{w}x{h}\"\n"
         f"notes: {q(a.notes)}\n"
     )
+    if idea:
+        yaml += "idea:\n" + "".join(
+            f"  {k}: {miniyaml.q(v) if v is not None else 'null'}\n" for k, v in idea.items())
     with open(inp_abs, "w", encoding="utf-8") as f:
         f.write(yaml)
 

@@ -1,0 +1,231 @@
+# Settings for scripts/ideas.py. No franchise names: say "castle magic school", not brand names.
+# seasons: spring|summer|autumn|winter|any.  themes: empty = everyday, else only for those themes.
+# tags: castle, indoor, outdoor, formal, beach, pool, city ...
+# coverage: optional list of coverage levels allowed here.  ambience: false = no season phrase.
+season_ambience:
+  spring: "cherry blossoms and fresh green leaves"
+  summer: "bright summer sunshine"
+  autumn: "golden and red autumn leaves drifting down"
+  winter: "snow falling softly"
+theme_decor:
+  christmas: "decorated for Christmas with garlands, ornaments and warm fairy lights"
+  halloween: "decorated for Halloween with carved jack-o'-lanterns and candles"
+  thanksgiving: "decorated for an autumn harvest with pumpkins and corn sheaves"
+  new-year: "decorated for New Year with paper lanterns and gold streamers"
+  valentines: "decorated for Valentine's Day with red roses and small heart garlands"
+  summer-festival: "strung with paper lanterns for a summer festival"
+settings:
+  - id: "great-hall"
+    name: "great hall"
+    text: "the great hall of an old stone castle magic school, long wooden tables and floating candles under an enchanted starry ceiling"
+    seasons: [any]
+    tags: [castle, indoor, formal]
+    themes: []
+  - id: "winter-ball"
+    name: "winter ball"
+    text: "the great hall of a castle magic school transformed for a winter ball, ice sculptures, silver garlands, a polished dance floor and a small orchestra"
+    seasons: [winter]
+    tags: [castle, indoor, formal]
+    themes: [christmas]
+    ambience: false
+  - id: "library"
+    name: "castle library"
+    text: "a candlelit castle library with tall shelves of old spellbooks and a rolling ladder"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+  - id: "courtyard"
+    name: "castle courtyard"
+    text: "a castle courtyard with gothic arches, a stone fountain and lanterns"
+    seasons: [any]
+    tags: [castle, outdoor]
+    themes: []
+  - id: "common-room"
+    name: "common room"
+    text: "the common room of a castle dormitory in green and silver, leather armchairs, green lamps and a crackling fireplace"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+  - id: "staircase"
+    name: "torch-lit staircase"
+    text: "a stone castle staircase lit by torches, moving portraits in gilded frames on the walls"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+    ambience: false
+  - id: "greenhouse"
+    name: "greenhouse"
+    text: "a glass castle greenhouse full of strange magical plants, hanging vines and clay pots"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+  - id: "owl-tower"
+    name: "owl tower"
+    text: "a round stone tower room with owls perched on wooden beams and tall open arched windows"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+  - id: "potions-classroom"
+    name: "potions classroom"
+    text: "a dungeon potions classroom with bubbling cauldrons, glass jars and green light"
+    seasons: [any]
+    tags: [castle, indoor]
+    themes: []
+    ambience: false
+  - id: "astronomy-tower"
+    name: "astronomy tower"
+    text: "the top of a tall castle tower at night, brass telescopes and a sky full of stars"
+    seasons: [spring, summer, autumn]
+    tags: [castle, outdoor]
+    themes: []
+    ambience: false
+  - id: "lakeside"
+    name: "lakeside"
+    text: "the rocky shore of a misty lake below a castle magic school, the castle towers in the distance"
+    seasons: [any]
+    tags: [castle, outdoor]
+    themes: []
+  - id: "pitch-stands"
+    name: "pitch stands"
+    text: "the wooden stands of a broom-sport pitch with tall golden goal hoops and green and silver banners"
+    seasons: [spring, autumn, winter]
+    tags: [castle, outdoor]
+    themes: []
+  - id: "magic-village"
+    name: "magic village"
+    text: "the high street of a small magical village with crooked old shops, a sweet shop window and smoking chimneys"
+    seasons: [autumn, winter]
+    tags: [castle, outdoor]
+    themes: []
+  - id: "village-inn"
+    name: "village inn"
+    text: "a cozy old village inn with low wooden beams, a fireplace and frothy warm mugs on the tables"
+    seasons: [autumn, winter]
+    tags: [castle, indoor]
+    themes: []
+  - id: "halloween-hall"
+    name: "Halloween feast"
+    text: "a castle hall at a Halloween feast, giant carved pumpkins, floating candles and paper bats"
+    seasons: [autumn]
+    tags: [castle, indoor, formal]
+    themes: [halloween]
+    ambience: false
+  - id: "thanksgiving-table"
+    name: "harvest dinner"
+    text: "a rustic wooden table set for a Thanksgiving dinner with a roast turkey, pumpkin pie and candles, warm golden light"
+    seasons: [autumn]
+    tags: [indoor]
+    themes: [thanksgiving]
+  - id: "pumpkin-patch"
+    name: "pumpkin patch"
+    text: "a pumpkin patch at a country farm with hay bales and a wooden fence"
+    seasons: [autumn]
+    tags: [outdoor]
+    themes: [halloween, thanksgiving]
+  - id: "christmas-living-room"
+    name: "Christmas fireside"
+    text: "a cozy living room with a fireplace hung with stockings and a decorated Christmas tree"
+    seasons: [winter]
+    tags: [indoor]
+    themes: [christmas]
+  - id: "christmas-market"
+    name: "Christmas market"
+    text: "a Christmas market at dusk with wooden stalls, string lights and a big decorated tree"
+    seasons: [winter]
+    tags: [outdoor, city]
+    themes: [christmas]
+  - id: "new-year-shrine"
+    name: "New Year shrine"
+    text: "a shrine on New Year's Day with a red torii gate, paper charms and stone lanterns"
+    seasons: [winter]
+    tags: [outdoor]
+    themes: [new-year]
+  - id: "new-year-rooftop"
+    name: "New Year fireworks"
+    text: "a city rooftop terrace at midnight with New Year fireworks bursting over the skyline"
+    seasons: [winter]
+    tags: [outdoor, city, formal]
+    themes: [new-year]
+    ambience: false
+  - id: "valentine-cafe"
+    name: "Valentine cafe"
+    text: "a small cafe table by the window with chocolates and a single red rose"
+    seasons: [winter]
+    tags: [indoor, city]
+    themes: [valentines]
+  - id: "summer-festival"
+    name: "summer festival"
+    text: "a summer night festival with food stalls, paper lanterns and fireworks over the trees"
+    seasons: [summer]
+    tags: [outdoor]
+    themes: [summer-festival]
+    ambience: false
+  - id: "cherry-blossom-park"
+    name: "cherry blossom park"
+    text: "a park path lined with blooming cherry trees, petals drifting in the air"
+    seasons: [spring]
+    tags: [outdoor]
+    themes: []
+    ambience: false
+  - id: "autumn-park"
+    name: "autumn park"
+    text: "a park path covered in fallen leaves with wooden benches and old lamp posts"
+    seasons: [autumn]
+    tags: [outdoor]
+    themes: []
+  - id: "cafe"
+    name: "cafe"
+    text: "a cozy cafe with a window seat, warm lamps, pastries in a glass case and a latte on the table"
+    seasons: [any]
+    tags: [indoor, city]
+    themes: []
+  - id: "bookshop"
+    name: "bookshop"
+    text: "a narrow old bookshop with towering shelves and a cat sleeping on a stack of books"
+    seasons: [any]
+    tags: [indoor, city]
+    themes: []
+  - id: "rainy-street"
+    name: "rainy city street"
+    text: "a city street at dusk just after rain, shop lights reflecting on the wet pavement"
+    seasons: [spring, autumn]
+    tags: [outdoor, city]
+    themes: []
+    ambience: false
+  - id: "ice-rink"
+    name: "ice rink"
+    text: "an outdoor ice rink in a city square with string lights and skaters in the background"
+    seasons: [winter]
+    tags: [outdoor, city]
+    themes: []
+  - id: "ballroom"
+    name: "ballroom"
+    text: "an elegant ballroom with crystal chandeliers, tall mirrors and a marble floor"
+    seasons: [any]
+    tags: [indoor, formal]
+    themes: []
+    ambience: false
+  - id: "boardwalk"
+    name: "seaside boardwalk"
+    text: "a seaside boardwalk with an ice cream stand, seagulls and a blue sea"
+    seasons: [summer]
+    tags: [outdoor]
+    themes: []
+    ambience: false
+    coverage: [modest, casual, summer]
+  - id: "beach"
+    name: "beach"
+    text: "a sunny sandy beach with turquoise water, a striped parasol and seashells"
+    seasons: [summer]
+    tags: [outdoor, beach]
+    themes: []
+    ambience: false
+    coverage: [casual, summer, swimwear]
+  - id: "pool"
+    name: "pool"
+    text: "a hotel rooftop pool at sunset with lounge chairs and palm trees"
+    seasons: [summer]
+    tags: [outdoor, pool]
+    themes: []
+    ambience: false
+    coverage: [casual, summer, swimwear]

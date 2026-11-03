@@ -1,0 +1,201 @@
+# Outfits for scripts/ideas.py.
+# base: which base post + reference to edit from (see `bases`).
+# canonical: true = one of her own outfits; the prompt says "wearing the same ..." and "Don't redesign the <keep>."
+# coverage: a level from ideas/skin.yaml.  seasons: spring|summer|autumn|winter|any.
+# themes: empty = everyday; otherwise only used with those themes.
+# requires_setting_tags: the setting must carry at least one of these tags.
+bases:
+  uniform:
+    post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+    reference: "references/draconia-uniform.webp"
+  vest:
+    post: "https://grok.com/imagine/post/3da5bf18-ec9c-45c0-96b8-0248f86eedca"
+    reference: "references/draconia-vest.webp"
+  gown:
+    post: "https://grok.com/imagine/post/d9b008f8-7f62-4cd4-80d7-ac9ebc7ef733"
+    reference: "references/draconia-gown.webp"
+outfits:
+  - id: "uniform-robe"
+    name: "school uniform with robe"
+    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt"
+    keep: "uniform"
+    base: "uniform"
+    canonical: true
+    coverage: "modest"
+    seasons: [any]
+    themes: []
+  - id: "uniform-robe-scarf"
+    name: "school uniform with robe and scarf"
+    text: "the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf"
+    keep: "uniform"
+    base: "uniform"
+    canonical: true
+    coverage: "modest"
+    seasons: [autumn, winter]
+    themes: []
+  - id: "uniform-vest"
+    name: "school uniform without robe"
+    text: "the same white long-sleeved shirt, green and silver striped tie, grey vest and grey pleated skirt, with no robe"
+    keep: "uniform"
+    base: "vest"
+    canonical: true
+    coverage: "modest"
+    seasons: [spring, summer, autumn]
+    themes: []
+  - id: "gown"
+    name: "green and silver ball gown"
+    text: "the same emerald-green off-the-shoulder ball gown with silver embroidery and the same silver necklace and jewellery"
+    keep: "gown"
+    base: "gown"
+    canonical: true
+    coverage: "casual"
+    seasons: [any]
+    themes: []
+    requires_setting_tags: [formal]
+  - id: "cream-sweater-plaid"
+    name: "cream sweater and plaid skirt"
+    text: "a cozy cream knit sweater with a green scarf and a dark plaid skirt with black tights"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [autumn, winter]
+    themes: []
+  - id: "camel-coat"
+    name: "camel coat and boots"
+    text: "a long camel coat, a green scarf, a dark skirt and brown boots"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [autumn, winter]
+    themes: []
+  - id: "winter-coat"
+    name: "green winter coat"
+    text: "a dark green wool winter coat with white faux-fur trim, white earmuffs, knit mittens and boots"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [winter]
+    themes: []
+  - id: "christmas-sweater"
+    name: "Christmas sweater and Santa hat"
+    text: "a cozy red and green Christmas sweater with a snowflake pattern, a dark skirt and a Santa hat"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [winter]
+    themes: [christmas]
+  - id: "witch-costume"
+    name: "witch costume"
+    text: "a black and green witch costume with a tall pointed hat, a long dress and a short cape"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [autumn]
+    themes: [halloween]
+  - id: "furisode"
+    name: "New Year kimono"
+    text: "an elegant dark green furisode kimono with a silver floral pattern and a silver obi, a hair ornament in her braid"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [winter]
+    themes: [new-year]
+  - id: "yukata"
+    name: "summer yukata"
+    text: "a dark green yukata with a silver wave pattern and a light obi"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [summer]
+    themes: [summer-festival]
+  - id: "cardigan-long-skirt"
+    name: "cardigan and long skirt"
+    text: "a white blouse, a soft green cardigan and a long grey skirt"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [spring, autumn]
+    themes: []
+  - id: "denim-jacket"
+    name: "denim jacket and jeans"
+    text: "a white t-shirt, a light denim jacket, dark jeans and white sneakers"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [spring, autumn]
+    themes: []
+  - id: "team-sweater"
+    name: "green and silver team sweater"
+    text: "a green and silver team sweater, a striped scarf, a dark skirt with tights and fingerless gloves"
+    base: "uniform"
+    canonical: false
+    coverage: "modest"
+    seasons: [spring, autumn, winter]
+    themes: []
+  - id: "velvet-evening-dress"
+    name: "black velvet evening dress"
+    text: "a long-sleeved black velvet evening dress with a silver serpent-shaped brooch"
+    base: "gown"
+    canonical: false
+    coverage: "modest"
+    seasons: [autumn, winter]
+    themes: []
+    requires_setting_tags: [formal]
+  - id: "silver-new-year-dress"
+    name: "silver party dress"
+    text: "a long-sleeved silver sequined party dress, knee-length, with a green ribbon in her hair"
+    base: "gown"
+    canonical: false
+    coverage: "modest"
+    seasons: [winter]
+    themes: [new-year]
+  - id: "valentine-dress"
+    name: "dark green date dress"
+    text: "a knee-length dark green dress with sheer long sleeves and a small silver heart necklace"
+    base: "uniform"
+    canonical: false
+    coverage: "casual"
+    seasons: [winter, spring]
+    themes: [valentines]
+  - id: "sleeveless-blouse"
+    name: "sleeveless blouse and skirt"
+    text: "a sleeveless white blouse with a green ribbon tie and a knee-length grey skirt"
+    base: "uniform"
+    canonical: false
+    coverage: "casual"
+    seasons: [spring, summer]
+    themes: []
+  - id: "sundress"
+    name: "white sundress and straw hat"
+    text: "a white sundress with a green ribbon belt, a wide straw hat and sandals"
+    base: "uniform"
+    canonical: false
+    coverage: "summer"
+    seasons: [summer]
+    themes: []
+  - id: "shorts-offshoulder"
+    name: "shorts and off-shoulder top"
+    text: "denim shorts, a loose white off-shoulder top and sandals"
+    base: "uniform"
+    canonical: false
+    coverage: "summer"
+    seasons: [summer]
+    themes: []
+  - id: "swim-onepiece"
+    name: "one-piece swimsuit and sarong"
+    text: "a dark green one-piece swimsuit with silver trim and a white sarong wrapped at the waist"
+    base: "uniform"
+    canonical: false
+    coverage: "swimwear"
+    seasons: [summer]
+    themes: []
+    requires_setting_tags: [beach, pool]
+  - id: "swim-modest-bikini"
+    name: "modest bikini with beach shirt"
+    text: "a modest high-waisted dark green bikini with an open light white beach shirt over it"
+    base: "uniform"
+    canonical: false
+    coverage: "swimwear"
+    seasons: [summer]
+    themes: []
+    requires_setting_tags: [beach, pool]

@@ -1,0 +1,146 @@
+# Expressions for scripts/ideas.py; she is a tsundere, so most lean that way.
+# text follows the pose after a comma: "She <pose>, <emotion>".
+# uses_hands: true = the expression includes a gesture, so it is paired only with poses whose hands are free.
+# sets_gaze: true = says where she looks, so never paired with a pose that also does.
+# swim_ok: allowed with swimwear (none of these are suggestive; flirty/seductive expressions are not allowed at all).
+emotions:
+  - id: "pouty-blush-away"
+    name: "pouty blush"
+    text: "looking away with a pouty blush"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: true
+    swim_ok: true
+  - id: "arms-crossed-away"
+    name: "arms crossed"
+    text: "arms crossed, turning her face away with a pouty blush"
+    tsundere: true
+    uses_hands: true
+    sets_gaze: true
+    swim_ok: true
+  - id: "flustered-glare"
+    name: "flustered glare"
+    text: "glaring at the viewer with a flustered blush"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: true
+    swim_ok: true
+  - id: "smug-pink"
+    name: "smug smirk"
+    text: "smirking smugly with one eyebrow raised, but her cheeks are faintly pink"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: false
+  - id: "reluctant-gift"
+    name: "reluctant gift"
+    text: "reluctantly holding out a small wrapped gift toward the viewer while turning her face away, cheeks red"
+    tsundere: true
+    uses_hands: true
+    sets_gaze: true
+    swim_ok: true
+  - id: "not-for-you-treat"
+    name: "not for you"
+    text: "pushing a small treat toward the viewer with one hand while looking away, as if insisting she didn't save it for them"
+    tsundere: true
+    uses_hands: true
+    sets_gaze: true
+    swim_ok: true
+  - id: "rare-soft-smile"
+    name: "rare soft smile"
+    text: "with a rare soft, genuine smile and faintly pink cheeks"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "proud-huff"
+    name: "proud huff"
+    text: "chin raised with a proud huff, eyes half closed, a faint blush"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "caught-off-guard"
+    name: "caught off guard"
+    text: "wide-eyed and red-faced as if caught off guard"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "sulky-pout"
+    name: "sulky pout"
+    text: "puffing out her cheeks in a sulky pout"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "annoyed-red-ears"
+    name: "annoyed but blushing"
+    text: "frowning in annoyance while her ears turn red"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "side-glance"
+    name: "side glance"
+    text: "stealing a glance at the viewer from the corner of her eye, blushing"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: true
+    swim_ok: false
+  - id: "stern-failing"
+    name: "failing to look stern"
+    text: "trying to look stern, but a small smile keeps breaking through"
+    tsundere: true
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "small-proud-smile"
+    name: "small proud smile"
+    text: "with a small proud smile"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "laughing"
+    name: "laughing"
+    text: "laughing freely with her eyes closed"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "surprised"
+    name: "surprised"
+    text: "with a surprised look, eyebrows raised"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "sleepy-grumpy"
+    name: "sleepy and grumpy"
+    text: "looking sleepy and a little grumpy"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "determined"
+    name: "determined"
+    text: "with a determined, confident look"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: false
+    swim_ok: true
+  - id: "thoughtful"
+    name: "thoughtful"
+    text: "looking thoughtful, her gaze drifting to the side"
+    tsundere: false
+    uses_hands: false
+    sets_gaze: true
+    swim_ok: true
+  - id: "bright-wave"
+    name: "bright wave"
+    text: "waving at the viewer with a bright smile"
+    tsundere: false
+    uses_hands: true
+    sets_gaze: true
+    swim_ok: true
