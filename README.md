@@ -16,7 +16,8 @@ exact prompt, and the Grok Imagine post of the result.
 ## Layout
 
 ```
-gallery.yaml          index of all entries, oldest first, with `planned:` (post date) and `posted:` fields
+gallery.yaml          index of all entries, oldest first, with `planned:` (post date) and `posted:` fields;
+                      `gallery_only: true` marks images kept in the gallery that are never posted
 plan/                 monthly "Daily Malfoid" posting plans: date, item, image or video, captions and hashtags per platform
 references/           base reference images of Draconia
   draconia-uniform.webp   robed school uniform (neutral pose)
@@ -70,6 +71,11 @@ then fills in `posted:`, for example:
     posted: {date: 2026-11-04, x: "https://x.com/...", instagram: "https://www.instagram.com/p/..."}
 ```
 
+Gallery-only images: an entry with `gallery_only: true` (and the tag `gallery-only`) is kept in the gallery as an
+image only. It has no `planned:` date, is not in any `plan/` file, and the routine never posts it, not even
+as a fallback when nothing is planned. Add such an entry with `add_entry.py --gallery-only`. Example: the
+first rough-doodle style test, `2026-11-04-doodle-1` to `-4`.
+
 Rednote (Xiaohongshu, 小红书): each plan day has a `rednote` block with a Simplified Chinese `title`
 (about 20 characters max), a short casual `body` (Chinese lines plus one English line, numbered
 "Daily Malfoid #N" like the other platforms) and Xiaohongshu-style `tags` (#AI绘画 / #AI视频, #二次元,
@@ -92,6 +98,7 @@ python3 scripts/add_entry.py \
 
 The script copies the image byte-for-byte into `images/`, reads its size, writes `input/<id>.yaml` and
 appends the entry (with an empty `posted:`) to `gallery.yaml`. It needs only the Python standard library.
+`--gallery-only` adds the `gallery-only` tag and `gallery_only: true` for an image that should never be posted.
 
 ## Idea generator
 

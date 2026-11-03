@@ -4,6 +4,8 @@
 # It posts the `media` of that date's plan day: the image, or on video days (type: video in the plan)
 # the video made from it (videos/videos.yaml), with that day's per-platform captions and hashtags.
 # Then it fills `posted:` with the date and post URLs. If no entry is planned for today, post nothing.
+# `gallery_only: true` (tag gallery-only): a gallery image only, never posted; it has no `planned:` date,
+# is not in any plan/ file and must not be picked as a post, even as a fallback.
 entries:
   - id: "2026-11-03-thanksgiving-1"
     title: "Thanksgiving dinner"
@@ -200,4 +202,32 @@ entries:
     input: "input/2026-11-03-courtyard-1.yaml"
     image: "images/2026-11-03-courtyard-1.jpg"
     planned: 2026-11-04
+    posted:
+  - id: "2026-11-04-doodle-1"
+    title: "Doodle: robe uniform, arms crossed"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-1.yaml"
+    image: "images/2026-11-04-doodle-1.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-2"
+    title: "Doodle: vest uniform with books"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-2.yaml"
+    image: "images/2026-11-04-doodle-2.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-3"
+    title: "Doodle: cozy sweater and cocoa"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-3.yaml"
+    image: "images/2026-11-04-doodle-3.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-4"
+    title: "Doodle: winter ball gown"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-4.yaml"
+    image: "images/2026-11-04-doodle-4.jpg"
+    gallery_only: true
     posted:

@@ -18,6 +18,7 @@ From the idea generator:
   python3 scripts/ideas.py --seed 42 --yaml > /tmp/idea.yaml
   python3 scripts/add_entry.py --idea /tmp/idea.yaml --image result.jpg \
     --result-post https://grok.com/imagine/post/... [--title ...] [--prompt "edited prompt"]
+  Add --gallery-only for an image that is kept in the gallery but never posted.
   base post, reference, pose_ref, prompt, title and tags then come from the idea file (flags override),
   and the idea block (outfit/setting/pose/emotion/coverage ids, seed ...) is stored in the
   input file. If --prompt differs from the idea's prompt, idea.prompt_edited is set to true.
@@ -40,8 +41,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX = os.path.join(ROOT, "gallery.yaml")
 INDEX_HEADER = (
     "# Gallery index: one item per image, oldest first.\n"
-    "# A posting routine picks the first entry whose `posted:` is empty,\n"
+    "# A posting routine picks the entry whose `planned:` date is today and whose `posted:` is empty,\n"
     "# posts it, then fills `posted:` with the date and post URLs.\n"
+    "# Entries with `gallery_only: true` are never posted.\n"
     "entries:\n"
 )
 
@@ -90,6 +92,9 @@ def main():
                    "else 'Grok Imagine (edit)'")
     p.add_argument("--notes", default="")
     p.add_argument("--idea", help="YAML file from scripts/ideas.py --yaml (one idea)")
+    p.add_argument("--gallery-only", action="store_true",
+                   help="gallery image only, never posted: adds the gallery-only tag and gallery_only: true "
+                   "(index and input file), no planned date")
     p.add_argument("--force", action="store_true", help="overwrite an existing entry's files (index not duplicated)")
     a = p.parse_args()
 
@@ -130,6 +135,8 @@ def main():
     shutil.copyfile(a.image, img_abs)
     w, h = image_size(img_abs)
     tags = [t.strip() for t in a.tags.split(",") if t.strip()]
+    if a.gallery_only and "gallery-only" not in tags:
+        tags.append("gallery-only")
 
     yaml = (
         f"id: {q(entry_id)}\n"
@@ -146,6 +153,7 @@ def main():
         f"image: {q(img_rel)}\n"
         f"size: \"{w}x{h}\"\n"
         f"notes: {q(a.notes)}\n"
+        + ("gallery_only: true\n" if a.gallery_only else "")
     )
     if idea:
         yaml += "idea:\n" + "".join(
@@ -160,6 +168,7 @@ def main():
             f"    created: {a.created}\n"
             f"    input: {q(inp_rel)}\n"
             f"    image: {q(img_rel)}\n"
+            + ("    gallery_only: true\n" if a.gallery_only else "") +
             f"    posted:\n"
         )
         with open(INDEX, "w", encoding="utf-8") as f:
