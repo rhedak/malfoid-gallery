@@ -29,7 +29,7 @@ from miniyaml import q  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IDEAS = os.path.join(ROOT, "ideas")
 SEASONS = ["spring", "summer", "autumn", "winter"]
-THEMES = ["everyday", "christmas", "halloween", "thanksgiving", "new-year", "valentines", "summer-festival"]
+THEMES = ["everyday", "christmas", "halloween", "thanksgiving", "new-year", "valentines", "summer-festival", "black-friday"]
 REFS = ("Two reference images: the first image shows the character, the second image is a faceless "
         "{kind} used only as a pose reference. ")
 PREFIX = "Draw the same woman as in the first image, same face, hair, braid and art style, "

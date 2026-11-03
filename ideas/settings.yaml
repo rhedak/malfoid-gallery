@@ -16,6 +16,7 @@ theme_decor:
   new-year: "decorated for New Year with paper lanterns and gold streamers"
   valentines: "decorated for Valentine's Day with red roses and small heart garlands"
   summer-festival: "strung with paper lanterns for a summer festival"
+  black-friday: "with big red BLACK FRIDAY SALE banners and discount signs everywhere"
 settings:
   - id: "great-hall"
     name: "great hall"
@@ -189,6 +190,36 @@ settings:
     tags: [outdoor]
     themes: []
     ground: "a carpet of fallen leaves on the grass"
+  - id: "shopping-mall"
+    name: "shopping mall"
+    text: "a busy multi-level shopping mall atrium with glass railings, escalators, bright shop windows and big red BLACK FRIDAY SALE banners, shopping bags piled at her feet"
+    seasons: [autumn, winter]
+    tags: [indoor, city]
+    themes: [black-friday]
+  - id: "boutique-sale"
+    name: "boutique on sale"
+    text: "an elegant clothing boutique with racks of coats and dresses, mirrors, BLACK FRIDAY discount tags and shopping bags on a velvet bench"
+    seasons: [autumn, winter]
+    tags: [indoor, city]
+    themes: [black-friday]
+  - id: "shop-checkout"
+    name: "checkout line"
+    text: "the checkout counter of a crowded department store on Black Friday with a long queue, sale signs, a pile of boxes and shopping bags on the counter"
+    seasons: [autumn, winter]
+    tags: [indoor, city]
+    themes: [black-friday]
+  - id: "magic-shop-sale"
+    name: "magic shop sale"
+    text: "a crooked old magic shop crammed with wands, potion bottles and broomsticks, a hand-painted BLACK FRIDAY discount sign in the window"
+    seasons: [autumn, winter]
+    tags: [indoor, castle]
+    themes: [black-friday]
+  - id: "shopping-street-night"
+    name: "shopping street at night"
+    text: "a city shopping street at night with glowing shop windows, BLACK FRIDAY SALE signs and crowds of shoppers carrying bags"
+    seasons: [autumn, winter]
+    tags: [outdoor, city]
+    themes: [black-friday]
   - id: "cafe"
     name: "cafe"
     text: "a cozy cafe with a window seat, warm lamps, pastries in a glass case and a latte on the table"
