@@ -1,0 +1,26 @@
+id: "2026-11-03-autumn-2"
+title: "Framing the autumn park"
+theme: "autumn"
+tags: ["autumn", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U018-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless line-art mannequin drawing used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, now wearing a long camel coat, a green scarf, a dark skirt and brown boots. Use the pose of the mannequin in the second image, seen from a three-quarter angle: both hands raised in front of her face forming a rectangular frame with her fingers. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a park path covered in fallen leaves with wooden benches and old lamp posts, golden and red autumn leaves drifting down. Expression: smirking smugly with one eyebrow raised, but her cheeks are faintly pink. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/ebd50385-14ce-4d1e-baef-1dfb48bc9d29"
+image: "images/2026-11-03-autumn-2.jpg"
+size: "1264x1568"
+notes: "Close pose match."
+idea:
+  seed: 131
+  outfit: "camel-coat"
+  setting: "autumn-park"
+  pose: "shisei-U018"
+  pose_name: "Finger frame"
+  pose_view: "diag"
+  pose_src: "shisei:U018"
+  emotion: "smug-pink"
+  coverage: "modest"
+  season: "autumn"
+  theme: "everyday"

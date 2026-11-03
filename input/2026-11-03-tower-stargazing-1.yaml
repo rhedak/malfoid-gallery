@@ -1,0 +1,26 @@
+id: "2026-11-03-tower-stargazing-1"
+title: "Caught stargazing on the tower"
+theme: "autumn"
+tags: ["autumn", "castle", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-P015-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing in a relaxed contrapposto pose with her weight on one leg, one hand resting on her hip, the other arm hanging relaxed. Copy only the pose and the camera angle from the mannequin, not its look. Setting: the top of a tall castle tower at night, brass telescopes and a sky full of stars. Expression: wide-eyed and red-faced as if caught off guard. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/39facdf1-4f4a-44dd-8ceb-f86b9ba4df57"
+image: "images/2026-11-03-tower-stargazing-1.jpg"
+size: "1152x1728"
+notes: "Pose match moderate: reads as mid-stride rather than relaxed contrapposto."
+idea:
+  seed: 129
+  outfit: "uniform-robe-scarf"
+  setting: "astronomy-tower"
+  pose: "shisei-P015"
+  pose_name: "Standing contrapposto, hand on hip"
+  pose_view: "diag"
+  pose_src: "shisei:P015"
+  emotion: "caught-off-guard"
+  coverage: "modest"
+  season: "autumn"
+  theme: "everyday"

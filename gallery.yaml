@@ -56,3 +56,21 @@ entries:
     input: "input/2026-11-03-castle-tsundere-5.yaml"
     image: "images/2026-11-03-castle-tsundere-5.jpg"
     posted:
+  - id: "2026-11-03-tower-stargazing-1"
+    title: "Caught stargazing on the tower"
+    created: 2026-11-03
+    input: "input/2026-11-03-tower-stargazing-1.yaml"
+    image: "images/2026-11-03-tower-stargazing-1.jpg"
+    posted:
+  - id: "2026-11-03-christmas-3"
+    title: "Surprised by the Christmas tree"
+    created: 2026-11-03
+    input: "input/2026-11-03-christmas-3.yaml"
+    image: "images/2026-11-03-christmas-3.jpg"
+    posted:
+  - id: "2026-11-03-autumn-2"
+    title: "Framing the autumn park"
+    created: 2026-11-03
+    input: "input/2026-11-03-autumn-2.yaml"
+    image: "images/2026-11-03-autumn-2.jpg"
+    posted:
