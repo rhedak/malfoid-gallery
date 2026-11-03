@@ -176,3 +176,5 @@ Earlier entries used `ideas/archive/poses-ai-pose-gallery-zh.yaml`: our own shor
 names from [anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) (Anhao's Chinese
 translation of the same ai-pose-gallery by ギア), with original ids kept for traceability. No images or data
 files were copied from that repo. The generator no longer uses that list.
+
+- `videos/`: short Grok Imagine clips of the favourite images, listed with prompts in `videos/videos.yaml`.
