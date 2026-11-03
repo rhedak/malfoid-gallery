@@ -20,11 +20,15 @@ references/           base reference images of Draconia
   draconia-uniform.webp   robed school uniform (neutral pose)
   draconia-gown.webp      green-and-silver Yule Ball gown (neutral pose)
   draconia-vest.webp      uniform without the robe: shirt, tie, vest, skirt (neutral pose)
+  poses/                  mannequin pose references from Shisei (CC0), shisei-<P###|U###>-<view>.webp,
+                          900x1200; LICENSE-images and NOTICE from Shisei alongside
 images/               generated images, the original Grok Imagine JPGs, unchanged
 input/                one YAML file per image, same base name as the image
 ideas/                idea lists for the generator: outfits, settings, poses, emotions, skin (coverage)
+ideas/archive/        the old pose list (paraphrased ai-pose-gallery names); kept so older entries stay traceable
 scripts/add_entry.py  helper that adds a new entry (image + input file + index line)
-scripts/ideas.py      random idea generator: outfit + setting + pose + emotion + coverage -> edit prompt
+scripts/ideas.py      random idea generator: outfit + setting + pose/view + emotion + coverage -> prompt
+scripts/import_shisei.py  rebuilds ideas/poses.yaml and references/poses/ from a Shisei checkout
 scripts/miniyaml.py   tiny YAML loader (uses PyYAML if installed), so the scripts need only Python 3
 ```
 
@@ -35,15 +39,16 @@ Entry ids are `<created date>-<theme>-<n>`, e.g. `2026-11-03-thanksgiving-1`, gi
 
 ```
 input/<id>.yaml
-  -> base_post   (Grok Imagine post that was edited)
+  -> base_post   (Grok Imagine post that was edited / used as the character image)
    + reference   (the matching file in references/)
+   + pose_ref    (newer entries: the mannequin pose image in references/poses/, second reference)
    + prompt      (exact full edit prompt)
   -> result_post (Grok Imagine post of the result)
   -> image       (images/<id>.jpg, downloaded unchanged)
 ```
 
 Fields of an input file: `id`, `title`, `theme`, `tags`, `created`, `tool`, `base_post`, `reference`,
-`prompt`, `result_post`, `image`, `size`, `notes`.
+`pose_ref` (when a pose reference was used), `prompt`, `result_post`, `image`, `size`, `notes`.
 
 ## Posting
 
@@ -72,43 +77,55 @@ appends the entry (with an empty `posted:`) to `gallery.yaml`. It needs only the
 
 ## Idea generator
 
-`scripts/ideas.py` picks a random outfit, setting, pose, emotion and coverage level from `ideas/*.yaml`,
-checks that they fit together, and prints the combination with a ready Grok Imagine edit prompt and the base
-post and reference to edit from.
+`scripts/ideas.py` picks a random outfit, setting, pose (with a camera view), emotion and coverage level
+from `ideas/*.yaml`, checks that they fit together, and prints the combination with a ready Grok Imagine
+prompt, the base post / character reference (image 1) and `pose_ref`, the mannequin pose image (image 2).
+In Grok Imagine, give it both images in that order and the prompt; the prompt says to take the pose and
+camera angle from the mannequin in the second image (and nothing else from it), and also spells the pose
+out in words (Shisei's English description).
 
 ```sh
 python3 scripts/ideas.py                         # one random idea (a random seed is chosen and printed)
 python3 scripts/ideas.py --seed 7 --count 3      # seeds 7, 8, 9; any idea can be re-made from its seed
 python3 scripts/ideas.py --season winter --theme christmas --tsundere
 python3 scripts/ideas.py --outfit gown           # or --setting library, --coverage summer
+python3 scripts/ideas.py --pose shisei-P012 --view diag   # a given pose / view (front, diag, side)
 python3 scripts/ideas.py --seed 7 --yaml > /tmp/idea.yaml
-# make the image in Grok Imagine from the printed base post + prompt, download it, then:
+# make the image in Grok Imagine from the base post (image 1) + pose_ref (image 2) + prompt, download it, then:
 python3 scripts/add_entry.py --idea /tmp/idea.yaml --image ~/Downloads/result.jpg \
   --result-post https://grok.com/imagine/post/<result-id>
 ```
 
-With `--idea`, add_entry.py takes the base post, reference, prompt, title and tags from the idea (flags
-override them) and stores an `idea:` block (seed, outfit, setting, pose, pose source id, emotion, coverage,
-season, theme) in the input file. If you pass a changed `--prompt`, the entry records
+With `--idea`, add_entry.py takes the base post, reference, pose_ref, prompt, title and tags from the idea
+(flags override them) and stores an `idea:` block (seed, outfit, setting, pose, pose name, view, Shisei id,
+emotion, coverage, season, theme) in the input file. If you pass a changed `--prompt`, the entry records
 `prompt_edited: true` and keeps the generated prompt as `idea_prompt`.
 
-Prompts follow the style of the existing entries: they start with "Same woman, same face, hair, braid and
-art style, ...". For her own outfits (robed uniform, uniform without robe, gown) the prompt says "wearing the
-same ..." and "Don't redesign the uniform/gown." Every prompt ends with ", anime illustration, full scene
-background, portrait framing, hands fully in frame." Uniform outfits edit from the uniform base post, the
+Prompts start by naming the two references ("the first image shows the character, the second image is a
+faceless grey mannequin used only as a pose reference"), then "Draw the same woman as in the first image,
+same face, hair, braid and art style, ...". For her own outfits (robed uniform, uniform without robe, gown)
+the prompt says "wearing the same ..." and "Don't redesign the uniform/gown." Then "Use the pose of the
+mannequin in the second image, seen from the front / a three-quarter angle / the side: <description>. Copy
+only the pose and the camera angle from the mannequin, not its look.", the setting and the expression. Every
+prompt ends with "Anime illustration, full scene background, full body in frame (or waist-up portrait framing
+for upper-body poses), hands fully in frame." Views are picked front 4 : three-quarter 4 : side 1; the above
+and below views are vendored but not used. Older entries (before the Shisei switch) were single-image edits
+with prompts starting "Same woman, ...". Uniform outfits edit from the uniform base post, the
 robe-less uniform edits from the vest base post, and the gown and formal dresses edit from the gown post.
 
 | list | contents |
 |---|---|
 | `ideas/outfits.yaml` | outfits with base post + reference, coverage level, seasons, themes and required setting tags |
 | `ideas/settings.yaml` | castle magic school places, holiday, cafe/city and beach/pool settings, with seasons, tags and themes |
-| `ideas/poses.yaml` | pose phrases (see the source credit below) |
+| `ideas/poses.yaml` | Shisei poses (generated by `scripts/import_shisei.py`; see the credits below) |
 | `ideas/emotions.yaml` | expressions, most of them tsundere |
 | `ideas/skin.yaml` | coverage levels: modest, casual, summer, swimwear |
 
 Compatibility checks: seasons must match; themed outfits and settings (Christmas, Halloween, ...) are used
 only for that theme; the gown and evening dresses need a formal setting; swimwear needs a beach or pool
-setting; an expression with a gesture (arms crossed, holding out a gift) goes only with a pose whose hands
+setting; floor poses (sitting, kneeling, squatting) need a setting with a `ground` phrase (which replaces
+"the floor" in the description), so ballrooms, feasts and streets get only standing and upper-body poses; the
+gown and formal settings use only poses marked `formal_ok`; an expression with a gesture (arms crossed, holding out a gift) goes only with a pose whose hands
 are free; a pose and an expression can't both set her gaze.
 
 ## SFW rules (hard, enforced in scripts/ideas.py)
@@ -122,13 +139,33 @@ are free; a pose and an expression can't both set her gaze.
 - The generator refuses to load data or print a prompt that contains a banned term (see `BANNED` in
   `scripts/ideas.py`).
 
-## Pose source
+## Pose references and credits
 
-Most of the pose phrases in `ideas/poses.yaml` are our own short English paraphrases of pose **names** from
-[anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) (`data/pose-zh.json`, Anhao's Chinese
-translation of the pose gallery by ギア [@giaaibusi](https://x.com/giaaibusi),
-<https://ai-pose-gallery.pages.dev/>). Each entry keeps the original id and Chinese name (`src_id`,
-`src_zh`) for traceability. That repo's MIT licence covers only its code; its images and pose data belong to
-the original author and may not be used commercially. So this repo copies **no images and no data file**,
-only paraphrased pose names, and only from the standard full-body and cute upper-body lines (all sexy,
-explicit, lying-down and chest-emphasis poses were skipped). Entries with `src_id: null` are our own.
+Poses come from **[Shisei 姿勢](https://github.com/wquguru/shisei)** by The Shisei Authors, a free mannequin
+pose reference library (<https://shisei.indaloop.app/>). Thank you!
+
+- **Images and data: CC0 1.0.** Shisei's images and its own data (`data/catalog.json`, including the English
+  pose descriptions used in our prompts) are dedicated to the public domain under CC0 1.0 Universal. No
+  attribution is required; we credit it anyway. Shisei's code is Apache-2.0 (we use none of it).
+  `references/poses/LICENSE-images` and `references/poses/NOTICE` are Shisei's own files, copied unchanged.
+- **Pose list: credited to ギア ([@giaaibusi](https://x.com/giaaibusi)) / ai-pose-gallery.** The selection,
+  numbering, names and categories of Shisei's poses follow the public pose catalog of
+  [ai-pose-gallery](https://ai-pose-gallery.pages.dev/) by ギア. Per Shisei's NOTICE that part is credited,
+  not licensed (neither CC0 nor Apache-2.0 covers it). Neither Shisei nor this gallery is affiliated with
+  or endorsed by its author.
+- **What we use:** only the full-body standard (`std`, P###) and upper-body (`upper`, U###) series. The sexy
+  and duo series are not used at all, and from std/upper we also skip every pose Shisei rates suggestive and
+  those we judged unsuitable for SFW posts (chest-out, arched-back, hip-sway, hands-behind-head pin-up,
+  lying-down, bent-forward and wide-knee squat poses; the whole Chest emphasis and Sexy categories, and U024).
+  The kept list is the `KEEP` table in `scripts/import_shisei.py`: 32 std + 24 upper poses.
+- **Images:** `references/poses/shisei-<id>-<view>.webp` are Shisei's 900x1200 (`w900`) files for each kept
+  pose and each view that passed Shisei's QC (front, diag = three-quarter, side, above, below): the grey clay
+  mannequin where Shisei has a clay map for that view, otherwise the line-art mannequin
+  (`line_views` in `ideas/poses.yaml`). About 3.2 MB in total.
+- To refresh: `git clone --depth 1 --filter=blob:none --no-checkout https://github.com/wquguru/shisei.git
+  /workspace/shisei && python3 scripts/import_shisei.py --shisei /workspace/shisei`.
+
+Earlier entries used `ideas/archive/poses-ai-pose-gallery-zh.yaml`: our own short English paraphrases of pose
+names from [anhao/ai-pose-gallery-zh](https://github.com/anhao/ai-pose-gallery-zh) (Anhao's Chinese
+translation of the same ai-pose-gallery by ギア), with original ids kept for traceability. No images or data
+files were copied from that repo. The generator no longer uses that list.

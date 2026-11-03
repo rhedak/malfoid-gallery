@@ -18,7 +18,7 @@ From the idea generator:
   python3 scripts/ideas.py --seed 42 --yaml > /tmp/idea.yaml
   python3 scripts/add_entry.py --idea /tmp/idea.yaml --image result.jpg \
     --result-post https://grok.com/imagine/post/... [--title ...] [--prompt "edited prompt"]
-  base post, reference, prompt, title and tags then come from the idea file (flags override),
+  base post, reference, pose_ref, prompt, title and tags then come from the idea file (flags override),
   and the idea block (outfit/setting/pose/emotion/coverage ids, seed ...) is stored in the
   input file. If --prompt differs from the idea's prompt, idea.prompt_edited is set to true.
 
@@ -85,7 +85,9 @@ def main():
     p.add_argument("--prompt", help="exact full prompt text")
     p.add_argument("--result-post", required=True, help="Grok Imagine post of the result")
     p.add_argument("--created", default=datetime.date.today().isoformat())
-    p.add_argument("--tool", default="Grok Imagine (edit)")
+    p.add_argument("--pose-ref", help="pose reference image (references/poses/...), the second Grok Imagine image")
+    p.add_argument("--tool", help="default: 'Grok Imagine (character + pose reference)' with a pose ref, "
+                   "else 'Grok Imagine (edit)'")
     p.add_argument("--notes", default="")
     p.add_argument("--idea", help="YAML file from scripts/ideas.py --yaml (one idea)")
     p.add_argument("--force", action="store_true", help="overwrite an existing entry's files (index not duplicated)")
@@ -99,6 +101,7 @@ def main():
         a.tags = a.tags or ",".join(doc.get("tags") or [])
         a.base_post = a.base_post or doc.get("base_post")
         a.reference = a.reference or doc.get("reference")
+        a.pose_ref = a.pose_ref or doc.get("pose_ref")
         if a.prompt and a.prompt != doc.get("prompt"):
             idea["prompt_edited"] = True
             idea["idea_prompt"] = doc.get("prompt")
@@ -109,6 +112,9 @@ def main():
 
     if not os.path.isfile(os.path.join(ROOT, a.reference)):
         sys.exit("reference not found: " + a.reference)
+    if a.pose_ref and not os.path.isfile(os.path.join(ROOT, a.pose_ref)):
+        sys.exit("pose reference not found: " + a.pose_ref)
+    a.tool = a.tool or ("Grok Imagine (character + pose reference)" if a.pose_ref else "Grok Imagine (edit)")
     ext = os.path.splitext(a.image)[1].lower() or ".jpg"
     entry_id = a.id or f"{a.created}-{os.path.splitext(os.path.basename(a.image))[0]}"
     img_rel = f"images/{entry_id}{ext}"
@@ -134,6 +140,7 @@ def main():
         f"tool: {q(a.tool)}\n"
         f"base_post: {q(a.base_post)}\n"
         f"reference: {q(a.reference)}\n"
+        + (f"pose_ref: {q(a.pose_ref)}\n" if a.pose_ref else "") +
         f"prompt: {q(a.prompt)}\n"
         f"result_post: {q(a.result_post)}\n"
         f"image: {q(img_rel)}\n"

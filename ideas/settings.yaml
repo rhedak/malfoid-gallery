@@ -2,6 +2,8 @@
 # seasons: spring|summer|autumn|winter|any.  themes: empty = everyday, else only for those themes.
 # tags: castle, indoor, outdoor, formal, beach, pool, city ...
 # coverage: optional list of coverage levels allowed here.  ambience: false = no season phrase.
+# ground: where she sits/kneels in floor poses (replaces "the floor" in the pose description);
+#   settings without `ground` only get standing and upper-body poses.
 season_ambience:
   spring: "cherry blossoms and fresh green leaves"
   summer: "bright summer sunshine"
@@ -34,24 +36,28 @@ settings:
     seasons: [any]
     tags: [castle, indoor]
     themes: []
+    ground: "a worn rug between the tall shelves"
   - id: "courtyard"
     name: "castle courtyard"
     text: "a castle courtyard with gothic arches, a stone fountain and lanterns"
     seasons: [any]
     tags: [castle, outdoor]
     themes: []
+    ground: "the worn flagstones by the fountain"
   - id: "common-room"
     name: "common room"
     text: "the common room of a castle dormitory in green and silver, leather armchairs, green lamps and a crackling fireplace"
     seasons: [any]
     tags: [castle, indoor]
     themes: []
+    ground: "the green rug in front of the fireplace"
   - id: "staircase"
     name: "torch-lit staircase"
     text: "a stone castle staircase lit by torches, moving portraits in gilded frames on the walls"
     seasons: [any]
     tags: [castle, indoor]
     themes: []
+    ground: "the wide stone steps"
     ambience: false
   - id: "greenhouse"
     name: "greenhouse"
@@ -59,12 +65,14 @@ settings:
     seasons: [any]
     tags: [castle, indoor]
     themes: []
+    ground: "the greenhouse floor among the clay pots"
   - id: "owl-tower"
     name: "owl tower"
     text: "a round stone tower room with owls perched on wooden beams and tall open arched windows"
     seasons: [any]
     tags: [castle, indoor]
     themes: []
+    ground: "the straw-strewn stone floor"
   - id: "potions-classroom"
     name: "potions classroom"
     text: "a dungeon potions classroom with bubbling cauldrons, glass jars and green light"
@@ -78,6 +86,7 @@ settings:
     seasons: [spring, summer, autumn]
     tags: [castle, outdoor]
     themes: []
+    ground: "the tower's stone floor"
     ambience: false
   - id: "lakeside"
     name: "lakeside"
@@ -85,12 +94,14 @@ settings:
     seasons: [any]
     tags: [castle, outdoor]
     themes: []
+    ground: "the grassy lake shore"
   - id: "pitch-stands"
     name: "pitch stands"
     text: "the wooden stands of a broom-sport pitch with tall golden goal hoops and green and silver banners"
     seasons: [spring, autumn, winter]
     tags: [castle, outdoor]
     themes: []
+    ground: "the wooden boards of the stands"
   - id: "magic-village"
     name: "magic village"
     text: "the high street of a small magical village with crooked old shops, a sweet shop window and smoking chimneys"
@@ -103,6 +114,7 @@ settings:
     seasons: [autumn, winter]
     tags: [castle, indoor]
     themes: []
+    ground: "a rag rug by the fireplace"
   - id: "halloween-hall"
     name: "Halloween feast"
     text: "a castle hall at a Halloween feast, giant carved pumpkins, floating candles and paper bats"
@@ -122,12 +134,14 @@ settings:
     seasons: [autumn]
     tags: [outdoor]
     themes: [halloween, thanksgiving]
+    ground: "a bed of straw among the pumpkins"
   - id: "christmas-living-room"
     name: "Christmas fireside"
     text: "a cozy living room with a fireplace hung with stockings and a decorated Christmas tree"
     seasons: [winter]
     tags: [indoor]
     themes: [christmas]
+    ground: "the rug by the Christmas tree"
   - id: "christmas-market"
     name: "Christmas market"
     text: "a Christmas market at dusk with wooden stalls, string lights and a big decorated tree"
@@ -166,6 +180,7 @@ settings:
     seasons: [spring]
     tags: [outdoor]
     themes: []
+    ground: "a picnic blanket on the grass under the cherry trees"
     ambience: false
   - id: "autumn-park"
     name: "autumn park"
@@ -173,6 +188,7 @@ settings:
     seasons: [autumn]
     tags: [outdoor]
     themes: []
+    ground: "a carpet of fallen leaves on the grass"
   - id: "cafe"
     name: "cafe"
     text: "a cozy cafe with a window seat, warm lamps, pastries in a glass case and a latte on the table"
@@ -185,6 +201,7 @@ settings:
     seasons: [any]
     tags: [indoor, city]
     themes: []
+    ground: "the bookshop floor between the shelves"
   - id: "rainy-street"
     name: "rainy city street"
     text: "a city street at dusk just after rain, shop lights reflecting on the wet pavement"
@@ -211,6 +228,7 @@ settings:
     seasons: [summer]
     tags: [outdoor]
     themes: []
+    ground: "the boardwalk planks"
     ambience: false
     coverage: [modest, casual, summer]
   - id: "beach"
@@ -219,6 +237,7 @@ settings:
     seasons: [summer]
     tags: [outdoor, beach]
     themes: []
+    ground: "the warm sand"
     ambience: false
     coverage: [casual, summer, swimwear]
   - id: "pool"
@@ -227,5 +246,6 @@ settings:
     seasons: [summer]
     tags: [outdoor, pool]
     themes: []
+    ground: "the pool deck"
     ambience: false
     coverage: [casual, summer, swimwear]
