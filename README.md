@@ -169,7 +169,10 @@ ideas for the daily series, pass `--style anime` (or re-roll ideas whose style i
 `rough-doodle` (日系粗糙数字涂鸦) is adapted from a style prompt by @798145343h on X
 (https://x.com/798145343h/status/2117499225206317377): thick uneven black crayon outlines, flat opaque colour
 that spills over the lines, white paper gaps, scribbled white highlights, simplified face and hair blocks, plain
-white background. Its text keeps her identity and outfit from the reference image.
+white background. Its text keeps her identity and outfit from the reference image. Since 2026-11-04 the text
+pushes harder on roughness (thick chunky crayon brush with a mouse in MS Paint, lines that wobble and break, colour
+fill that misses and overshoots the lines, scribbled hatching, scratchy white highlights), because the first test
+sketches (`2026-11-04-doodle-1`..`-4`) came out too neat; it still keeps adult proportions.
 
 Compatibility checks: seasons must match; themed outfits and settings (Christmas, Halloween, ...) are used
 only for that theme; the gown and evening dresses need a formal setting; swimwear needs a beach or pool
