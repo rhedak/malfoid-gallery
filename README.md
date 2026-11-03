@@ -15,7 +15,8 @@ exact prompt, and the Grok Imagine post of the result.
 ## Layout
 
 ```
-gallery.yaml          index of all entries, oldest first, with a `posted:` field per entry
+gallery.yaml          index of all entries, oldest first, with `planned:` (post date) and `posted:` fields
+plan/                 monthly "Daily Malfoid" posting plans: date, item, image or video, captions and hashtags per platform
 references/           base reference images of Draconia
   draconia-uniform.webp   robed school uniform (neutral pose)
   draconia-gown.webp      green-and-silver Yule Ball gown (neutral pose)
@@ -59,8 +60,10 @@ Fields of an input file: `id`, `title`, `theme`, `tags`, `created`, `tool`, `bas
 
 ## Posting
 
-A daily routine takes the first entry in `gallery.yaml` whose `posted:` is empty, posts the image on X and
-Instagram, then fills in `posted:`, for example:
+A daily routine (series **Daily Malfoid**) takes the entry in `gallery.yaml` whose `planned:` date is today,
+looks that date up in `plan/daily-malfoid-2026-11.yaml` and posts its `media` (the image, or on video days the
+clip from `videos/`) with that day's X / Instagram / TikTok captions and hashtags (AI labels on where offered),
+then fills in `posted:`, for example:
 
 ```yaml
     posted: {date: 2026-11-04, x: "https://x.com/...", instagram: "https://www.instagram.com/p/..."}

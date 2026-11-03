@@ -1,166 +1,196 @@
 # Gallery index: one item per image, oldest first.
-# A posting routine picks the first entry whose `posted:` is empty,
-# posts it, then fills `posted:` with the date and post URLs.
+# `planned:` is the date (JST) the entry is scheduled to post, from plan/daily-malfoid-2026-11.yaml.
+# A posting routine picks the entry whose `planned:` date is today and whose `posted:` is empty.
+# It posts the `media` of that date's plan day: the image, or on video days (type: video in the plan)
+# the video made from it (videos/videos.yaml), with that day's per-platform captions and hashtags.
+# Then it fills `posted:` with the date and post URLs. If no entry is planned for today, post nothing.
 entries:
   - id: "2026-11-03-thanksgiving-1"
     title: "Thanksgiving dinner"
     created: 2026-11-03
     input: "input/2026-11-03-thanksgiving-1.yaml"
     image: "images/2026-11-03-thanksgiving-1.jpg"
+    planned: 2026-11-26
     posted:
   - id: "2026-11-03-autumn-1"
     title: "Autumn walk in the park"
     created: 2026-11-03
     input: "input/2026-11-03-autumn-1.yaml"
     image: "images/2026-11-03-autumn-1.jpg"
+    planned: 2026-11-04
     posted:
   - id: "2026-11-03-christmas-1"
     title: "Christmas gift by the tree"
     created: 2026-11-03
     input: "input/2026-11-03-christmas-1.yaml"
     image: "images/2026-11-03-christmas-1.jpg"
+    planned: 2026-11-30
     posted:
   - id: "2026-11-03-christmas-2"
     title: "Hot cocoa by the fireplace"
     created: 2026-11-03
     input: "input/2026-11-03-christmas-2.yaml"
     image: "images/2026-11-03-christmas-2.jpg"
+    planned: 2026-11-22
     posted:
   - id: "2026-11-03-castle-tsundere-1"
     title: "Autumn feast in the great hall"
     created: 2026-11-03
     input: "input/2026-11-03-castle-tsundere-1.yaml"
     image: "images/2026-11-03-castle-tsundere-1.jpg"
+    planned: 2026-11-10
     posted:
   - id: "2026-11-03-castle-tsundere-2"
     title: "A scarf, not that she cares"
     created: 2026-11-03
     input: "input/2026-11-03-castle-tsundere-2.yaml"
     image: "images/2026-11-03-castle-tsundere-2.jpg"
+    planned: 2026-11-09
     posted:
   - id: "2026-11-03-castle-tsundere-3"
     title: "Caught in the library"
     created: 2026-11-03
     input: "input/2026-11-03-castle-tsundere-3.yaml"
     image: "images/2026-11-03-castle-tsundere-3.jpg"
+    planned: 2026-11-05
     posted:
   - id: "2026-11-03-castle-tsundere-4"
     title: "Mistletoe"
     created: 2026-11-03
     input: "input/2026-11-03-castle-tsundere-4.yaml"
     image: "images/2026-11-03-castle-tsundere-4.jpg"
+    planned: 2026-11-24
     posted:
   - id: "2026-11-03-castle-tsundere-5"
     title: "Torch-lit staircase"
     created: 2026-11-03
     input: "input/2026-11-03-castle-tsundere-5.yaml"
     image: "images/2026-11-03-castle-tsundere-5.jpg"
+    planned: 2026-11-13
     posted:
   - id: "2026-11-03-tower-stargazing-1"
     title: "Caught stargazing on the tower"
     created: 2026-11-03
     input: "input/2026-11-03-tower-stargazing-1.yaml"
     image: "images/2026-11-03-tower-stargazing-1.jpg"
+    planned: 2026-11-14
     posted:
   - id: "2026-11-03-christmas-3"
     title: "Surprised by the Christmas tree"
     created: 2026-11-03
     input: "input/2026-11-03-christmas-3.yaml"
     image: "images/2026-11-03-christmas-3.jpg"
+    planned: 2026-11-29
     posted:
   - id: "2026-11-03-autumn-2"
     title: "Framing the autumn park"
     created: 2026-11-03
     input: "input/2026-11-03-autumn-2.yaml"
     image: "images/2026-11-03-autumn-2.jpg"
+    planned: 2026-11-07
     posted:
   - id: "2026-11-03-thanksgiving-2"
     title: "Harvest dinner, failing to look stern"
     created: 2026-11-03
     input: "input/2026-11-03-thanksgiving-2.yaml"
     image: "images/2026-11-03-thanksgiving-2.jpg"
+    planned: 2026-11-25
     posted:
   - id: "2026-11-03-pumpkin-patch-1"
     title: "Pumpkin patch, proud huff"
     created: 2026-11-03
     input: "input/2026-11-03-pumpkin-patch-1.yaml"
     image: "images/2026-11-03-pumpkin-patch-1.jpg"
+    planned: 2026-11-06
     posted:
   - id: "2026-11-03-christmas-owl-tower-1"
     title: "Owl tower, sulky pout"
     created: 2026-11-03
     input: "input/2026-11-03-christmas-owl-tower-1.yaml"
     image: "images/2026-11-03-christmas-owl-tower-1.jpg"
+    planned: 2026-11-28
     posted:
   - id: "2026-11-03-potions-classroom-1"
     title: "Potions classroom, pouty blush"
     created: 2026-11-03
     input: "input/2026-11-03-potions-classroom-1.yaml"
     image: "images/2026-11-03-potions-classroom-1.jpg"
+    planned: 2026-11-11
     posted:
   - id: "2026-11-03-snowy-village-1"
     title: "Magic village, thoughtful"
     created: 2026-11-03
     input: "input/2026-11-03-snowy-village-1.yaml"
     image: "images/2026-11-03-snowy-village-1.jpg"
+    planned: 2026-11-15
     posted:
   - id: "2026-11-03-great-hall-1"
     title: "Great hall, annoyed but blushing"
     created: 2026-11-03
     input: "input/2026-11-03-great-hall-1.yaml"
     image: "images/2026-11-03-great-hall-1.jpg"
+    planned: 2026-11-12
     posted:
   - id: "2026-11-03-christmas-market-1"
     title: "Christmas market, sleepy and grumpy"
     created: 2026-11-03
     input: "input/2026-11-03-christmas-market-1.yaml"
     image: "images/2026-11-03-christmas-market-1.jpg"
+    planned: 2026-11-20
     posted:
   - id: "2026-11-03-ice-rink-1"
     title: "Ice rink, determined"
     created: 2026-11-03
     input: "input/2026-11-03-ice-rink-1.yaml"
     image: "images/2026-11-03-ice-rink-1.jpg"
+    planned: 2026-11-16
     posted:
   - id: "2026-11-03-winter-ball-1"
     title: "Winter ball, rare soft smile"
     created: 2026-11-03
     input: "input/2026-11-03-winter-ball-1.yaml"
     image: "images/2026-11-03-winter-ball-1.jpg"
+    planned: 2026-11-17
     posted:
   - id: "2026-11-03-library-2"
     title: "Castle library, side glance"
     created: 2026-11-03
     input: "input/2026-11-03-library-2.yaml"
     image: "images/2026-11-03-library-2.jpg"
+    planned: 2026-11-08
     posted:
   - id: "2026-11-03-black-friday-mall-1"
     title: "Shopping mall, flustered glare"
     created: 2026-11-03
     input: "input/2026-11-03-black-friday-mall-1.yaml"
     image: "images/2026-11-03-black-friday-mall-1.jpg"
+    planned: 2026-11-18
     posted:
   - id: "2026-11-03-black-friday-boutique-1"
     title: "Boutique on sale, small proud smile"
     created: 2026-11-03
     input: "input/2026-11-03-black-friday-boutique-1.yaml"
     image: "images/2026-11-03-black-friday-boutique-1.jpg"
+    planned: 2026-11-19
     posted:
   - id: "2026-11-03-black-friday-checkout-1"
     title: "Checkout line, rare soft smile"
     created: 2026-11-03
     input: "input/2026-11-03-black-friday-checkout-1.yaml"
     image: "images/2026-11-03-black-friday-checkout-1.jpg"
+    planned: 2026-11-27
     posted:
   - id: "2026-11-03-black-friday-magic-shop-1"
     title: "Magic shop sale, arms crossed"
     created: 2026-11-03
     input: "input/2026-11-03-black-friday-magic-shop-1.yaml"
     image: "images/2026-11-03-black-friday-magic-shop-1.jpg"
+    planned: 2026-11-23
     posted:
   - id: "2026-11-03-black-friday-street-1"
     title: "Shopping street at night, laughing"
     created: 2026-11-03
     input: "input/2026-11-03-black-friday-street-1.yaml"
     image: "images/2026-11-03-black-friday-street-1.jpg"
+    planned: 2026-11-21
     posted:

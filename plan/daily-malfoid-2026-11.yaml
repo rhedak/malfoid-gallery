@@ -1,0 +1,528 @@
+# Daily Malfoid: November 2026 posting plan (one post a day, 27 posts, Nov 4-30).
+# Each day posts `media`: the image, or on video days (type: video) the clip made from that image.
+# A posting routine picks the day whose `date` is today (JST), posts `media` with the captions below,
+# then fills `posted:` on the matching entry in gallery.yaml (same `id`).
+# AI disclosure: every caption set carries #AIart / #AIgenerated / #AIanimation; also turn on
+# Instagram's AI info label and TikTok's AI-generated content label where the app offers them.
+# No official franchise tags (no #HarryPotter / #Hogwarts). Suggested slot is only a suggestion.
+series: "Daily Malfoid"
+month: "2026-11"
+suggested_slot: "20:00 JST (a suggestion; adjust freely)"
+ai_disclosure:
+  x: "#AIart in the hashtags; use any AI/content label X offers when posting"
+  instagram: "#AIart #AIgenerated in the hashtags; turn on the AI info label where offered"
+  tiktok: "#AIart / #AIanimation in the hashtags; turn on the AI-generated content label where offered"
+days:
+  - date: 2026-11-04
+    n: 1
+    label: "Daily Malfoid #1"
+    id: "2026-11-03-autumn-1"
+    type: image
+    media: "images/2026-11-03-autumn-1.jpg"
+    image: "images/2026-11-03-autumn-1.jpg"
+    theme: "Autumn park walk with coffee"
+    x:
+      caption: "Daily Malfoid #1 🍂 Just a walk with my coffee. It's not like I wanted you to see me in my favourite coat or anything..."
+      hashtags: "#DailyMalfoid #AIart #autumnvibes"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #1 🍂 A quiet autumn walk, coffee in hand. Don't read into the scarf colour, it's just... the warmest one I own."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #autumnaesthetic #fallleaves #cozyautumn #animeautumn"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "POV: you caught a tsundere on her autumn coffee walk 🍂"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #autumnvibes"
+  - date: 2026-11-05
+    n: 2
+    label: "Daily Malfoid #2"
+    id: "2026-11-03-castle-tsundere-3"
+    type: image
+    media: "images/2026-11-03-castle-tsundere-3.jpg"
+    image: "images/2026-11-03-castle-tsundere-3.jpg"
+    theme: "Caught reading in the castle library"
+    x:
+      caption: "Daily Malfoid #2 📖 W-what are you looking at? This book is for research. Purely academic. Stop reading the title!"
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #2 📖 You weren't supposed to find me here. The book is for research, obviously, and the title means nothing."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #darkacademia #libraryaesthetic #bookworm #candlelight"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "She got caught with THAT book 📖😳"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+  - date: 2026-11-06
+    n: 3
+    label: "Daily Malfoid #3"
+    id: "2026-11-03-pumpkin-patch-1"
+    type: image
+    media: "images/2026-11-03-pumpkin-patch-1.jpg"
+    image: "images/2026-11-03-pumpkin-patch-1.jpg"
+    theme: "Pumpkin patch, proud huff"
+    x:
+      caption: "Daily Malfoid #3 🎃 I picked the biggest pumpkin in the whole patch. You may applaud. Quietly."
+      hashtags: "#DailyMalfoid #AIart #pumpkinpatch"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #3 🎃 Hay in my hair, leaves everywhere, and the best pumpkin in the patch. I'm not excited, I'm just... stretching."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #pumpkinpatch #autumnaesthetic #fallvibes #harvestseason"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere at the pumpkin patch: \"I'm NOT excited\" 🎃"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #pumpkinpatch"
+  - date: 2026-11-07
+    n: 4
+    label: "Daily Malfoid #4"
+    id: "2026-11-03-autumn-2"
+    type: video
+    media: "videos/autumn-2.mp4"
+    image: "images/2026-11-03-autumn-2.jpg"
+    theme: "Autumn park, framing the view (video)"
+    x:
+      caption: "Daily Malfoid #4 🍁 Hold still, I'm framing the view. The leaves, obviously. Not you. Why would it be you?!"
+      hashtags: "#DailyMalfoid #AIart #autumnvibes"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #4 🍁 I was framing the autumn park, that's all. If you happened to be in the shot, that's your problem."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #autumnaesthetic #fallleaves #animeedit #animereels"
+    tiktok:
+      post: "video"
+      caption: "She said she was framing the leaves... watch her face 🍁"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #autumnvibes"
+  - date: 2026-11-08
+    n: 5
+    label: "Daily Malfoid #5"
+    id: "2026-11-03-library-2"
+    type: image
+    media: "images/2026-11-03-library-2.jpg"
+    image: "images/2026-11-03-library-2.jpg"
+    theme: "Snowy castle library, shh"
+    x:
+      caption: "Daily Malfoid #5 🤫 Shh. This is a library. And no, I wasn't waiting for you by the window."
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #5 🤫 Snow outside, candles inside, and silence, please. I only glanced over because you were being loud."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #darkacademia #libraryaesthetic #snowyday #candlelight"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Library rules, tsundere edition 🤫📚"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+  - date: 2026-11-09
+    n: 6
+    label: "Daily Malfoid #6"
+    id: "2026-11-03-castle-tsundere-2"
+    type: image
+    media: "images/2026-11-03-castle-tsundere-2.jpg"
+    image: "images/2026-11-03-castle-tsundere-2.jpg"
+    theme: "Offering a scarf in the snow"
+    x:
+      caption: "Daily Malfoid #6 🧣 Take the scarf. I had a spare, that's all. It's not like I knitted it for you. Hmph."
+      hashtags: "#DailyMalfoid #AIart #winteraesthetic"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #6 🧣 It's cold and you forgot your scarf again. Just take it before I change my mind."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #winteraesthetic #firstsnow #slytherinaesthetic #gothiccastle"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "When the tsundere hands you HER scarf 🧣😳"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winteraesthetic"
+  - date: 2026-11-10
+    n: 7
+    label: "Daily Malfoid #7"
+    id: "2026-11-03-castle-tsundere-1"
+    type: image
+    media: "images/2026-11-03-castle-tsundere-1.jpg"
+    image: "images/2026-11-03-castle-tsundere-1.jpg"
+    theme: "Autumn feast, guarding the pie"
+    x:
+      caption: "Daily Malfoid #7 🥧 I'm not saving you a slice of pie. It just happens to be on my side of the table."
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #7 🥧 Autumn feast under a sky full of candles. Arms crossed, pie guarded, and no, I'm not blushing."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #autumnfeast #darkacademia #candlelight #castleaesthetic"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "She's guarding the pie. For you. Don't tell her you know 🥧"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #autumnfeast"
+  - date: 2026-11-11
+    n: 8
+    label: "Daily Malfoid #8"
+    id: "2026-11-03-potions-classroom-1"
+    type: video
+    media: "videos/potions-classroom-1.mp4"
+    image: "images/2026-11-03-potions-classroom-1.jpg"
+    theme: "Potions classroom bunny ears (video)"
+    x:
+      caption: "Daily Malfoid #8 🧪 Bunny ears in potions class? I was told to have fun today. This is me having fun. Happy now?"
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #8 🧪 Green cauldrons bubbling, bunny ears up, pout fully on. I did it once. Don't ask again."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #potionsclass #darkacademia #witchyaesthetic #animereels"
+    tiktok:
+      post: "video"
+      caption: "Making the tsundere do bunny ears in potions class 🐰🧪"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #darkacademia #witchyvibes"
+  - date: 2026-11-12
+    n: 9
+    label: "Daily Malfoid #9"
+    id: "2026-11-03-great-hall-1"
+    type: image
+    media: "images/2026-11-03-great-hall-1.jpg"
+    image: "images/2026-11-03-great-hall-1.jpg"
+    theme: "Candlelit hall, over-the-shoulder blush"
+    x:
+      caption: "Daily Malfoid #9 🕯️ Were you staring at me across the hall? ...I wasn't looking back. I was checking the time."
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #9 🕯️ Long tables, a hundred candles, and someone staring at me from across the hall. Annoying. Very annoying."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #darkacademia #castleaesthetic #candlelight #gothicaesthetic"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "That over-the-shoulder look 👀🕯️"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+  - date: 2026-11-13
+    n: 10
+    label: "Daily Malfoid #10"
+    id: "2026-11-03-castle-tsundere-5"
+    type: image
+    media: "images/2026-11-03-castle-tsundere-5.jpg"
+    image: "images/2026-11-03-castle-tsundere-5.jpg"
+    theme: "Torch-lit staircase with wand"
+    x:
+      caption: "Daily Malfoid #10 🪄 The staircase is dark, so I'll walk you up. Only because you'd get lost. Obviously."
+      hashtags: "#DailyMalfoid #AIart #darkacademia"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #10 🪄 Torch-lit stairs, old portraits, wand at the ready. I'm smiling because the stairs behaved today, not because of you."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #darkacademia #witchyaesthetic #castleaesthetic #magicschool"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere escort up the torch-lit staircase 🪄"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+  - date: 2026-11-14
+    n: 11
+    label: "Daily Malfoid #11"
+    id: "2026-11-03-tower-stargazing-1"
+    type: video
+    media: "videos/tower-stargazing-1.mp4"
+    image: "images/2026-11-03-tower-stargazing-1.jpg"
+    theme: "Caught stargazing on the tower (video)"
+    x:
+      caption: "Daily Malfoid #11 ✨ I come up the tower to watch the stars in peace, and YOU show up. Don't look at me like that!"
+      hashtags: "#DailyMalfoid #AIart #stargazing"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #11 ✨ Telescopes, a sky full of stars, and someone who was not invited. Now my face is warm and it's your fault."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #stargazing #nightsky #darkacademia #animereels"
+    tiktok:
+      post: "video"
+      caption: "Caught her stargazing alone ✨ watch till the scarf"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #stargazing"
+  - date: 2026-11-15
+    n: 12
+    label: "Daily Malfoid #12"
+    id: "2026-11-03-snowy-village-1"
+    type: image
+    media: "images/2026-11-03-snowy-village-1.jpg"
+    image: "images/2026-11-03-snowy-village-1.jpg"
+    theme: "First snow in the magic village"
+    x:
+      caption: "Daily Malfoid #12 ❄️ First snow in the village. I'm deciding which shop to visit. You can tag along, if you're quiet."
+      hashtags: "#DailyMalfoid #AIart #firstsnow"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #12 ❄️ Earmuffs on, mittens on, deep in thought. I'm choosing a sweet shop, not thinking about anyone."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #snowyvillage #winteraesthetic #firstsnow #cozywinter"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Winter village date? She'd never call it that ❄️"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winteraesthetic"
+  - date: 2026-11-16
+    n: 13
+    label: "Daily Malfoid #13"
+    id: "2026-11-03-ice-rink-1"
+    type: image
+    media: "images/2026-11-03-ice-rink-1.jpg"
+    image: "images/2026-11-03-ice-rink-1.jpg"
+    theme: "Ice rink, determined pose"
+    x:
+      caption: "Daily Malfoid #13 ⛸️ I don't need help skating. I'm just standing here... strategically. Don't you dare laugh."
+      hashtags: "#DailyMalfoid #AIart #iceskating"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #13 ⛸️ Fairy lights, fresh ice, and a very confident pose. I definitely know how to skate. Definitely."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #iceskating #winteraesthetic #fairylights #winternights"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere at the ice rink: \"I don't need help\" ⛸️"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #iceskating"
+  - date: 2026-11-17
+    n: 14
+    label: "Daily Malfoid #14"
+    id: "2026-11-03-winter-ball-1"
+    type: image
+    media: "images/2026-11-03-winter-ball-1.jpg"
+    image: "images/2026-11-03-winter-ball-1.jpg"
+    theme: "Winter ball in the green gown"
+    x:
+      caption: "Daily Malfoid #14 💚 The winter ball. This dress isn't for anyone in particular. ...Do you like it? Forget I asked."
+      hashtags: "#DailyMalfoid #AIart #winterball"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #14 💚 Ice sculptures, an orchestra, and a gown in my favourite green. I'm smiling because the music is nice. That's all."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #winterball #ballgown #winteraesthetic #elegantstyle"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Her rare soft smile at the winter ball 💚"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winterball"
+  - date: 2026-11-18
+    n: 15
+    label: "Daily Malfoid #15"
+    id: "2026-11-03-black-friday-mall-1"
+    type: image
+    media: "images/2026-11-03-black-friday-mall-1.jpg"
+    image: "images/2026-11-03-black-friday-mall-1.jpg"
+    theme: "Early Black Friday deals at the mall"
+    x:
+      caption: "Daily Malfoid #15 🛍️ Early Black Friday deals already?! I'm only here to look. These bags aren't mine. ...Fine, some are."
+      hashtags: "#DailyMalfoid #AIart #BlackFriday"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #15 🛍️ Early Black Friday deals have started, and I am absolutely not excited about it. I'm just... browsing. Aggressively."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #BlackFriday #shoppingday #mallaesthetic #autumnstyle"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "When the early Black Friday deals drop 🛍️😤"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+  - date: 2026-11-19
+    n: 16
+    label: "Daily Malfoid #16"
+    id: "2026-11-03-black-friday-boutique-1"
+    type: image
+    media: "images/2026-11-03-black-friday-boutique-1.jpg"
+    image: "images/2026-11-03-black-friday-boutique-1.jpg"
+    theme: "Boutique sale victory pose"
+    x:
+      caption: "Daily Malfoid #16 🛍️ Found the perfect coat on sale. I'm not celebrating, my arms just went up by themselves."
+      hashtags: "#DailyMalfoid #AIart #BlackFriday"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #16 🛍️ A little boutique, a big Black Friday sale, and the coat I've wanted all season. Victory pose? What victory pose?"
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #BlackFriday #boutiqueshopping #autumnfashion #shoppingday"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere finds her coat on sale 🙌"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+  - date: 2026-11-20
+    n: 17
+    label: "Daily Malfoid #17"
+    id: "2026-11-03-christmas-market-1"
+    type: image
+    media: "images/2026-11-03-christmas-market-1.jpg"
+    image: "images/2026-11-03-christmas-market-1.jpg"
+    theme: "Sleepy at the Christmas market"
+    x:
+      caption: "Daily Malfoid #17 🎄 You dragged me to the Christmas market this early? I'm not sleepy. I'm just... resting my face."
+      hashtags: "#DailyMalfoid #AIart #christmasmarket"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #17 🎄 Market lights, warm cider in the air, and me, very much awake. Mostly. Buy me something warm and I might smile."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #christmasmarket #winteraesthetic #festiveseason #christmasvibes"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Sleepy tsundere at the Christmas market 🎄😴"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmasmarket"
+  - date: 2026-11-21
+    n: 18
+    label: "Daily Malfoid #18"
+    id: "2026-11-03-black-friday-street-1"
+    type: video
+    media: "videos/black-friday-street-1.mp4"
+    image: "images/2026-11-03-black-friday-street-1.jpg"
+    theme: "Black Friday street at night, laughing (video)"
+    x:
+      caption: "Daily Malfoid #18 💚 Okay, the city lights got to me. That's the only reason I'm laughing. The heart is for the sale. Not you."
+      hashtags: "#DailyMalfoid #AIart #BlackFriday"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #18 💚 Snow, glowing shop windows and Black Friday lights. I laughed, I made a heart. Delete this from your memory."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #BlackFriday #citynights #winteraesthetic #animereels"
+    tiktok:
+      post: "video"
+      caption: "The tsundere finally laughed 💚 (Black Friday did it)"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #BlackFriday #citynights"
+  - date: 2026-11-22
+    n: 19
+    label: "Daily Malfoid #19"
+    id: "2026-11-03-christmas-2"
+    type: image
+    media: "images/2026-11-03-christmas-2.jpg"
+    image: "images/2026-11-03-christmas-2.jpg"
+    theme: "Hot cocoa by the fireplace"
+    x:
+      caption: "Daily Malfoid #19 ☕ Hot cocoa by the fire. Yes, the hat is festive. No, I'm not in the Christmas spirit yet. ...Maybe a little."
+      hashtags: "#DailyMalfoid #AIart #cozyseason"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #19 ☕ Fireplace crackling, cocoa with marshmallows, Santa hat on. It's too early for Christmas, and I don't care."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #hotcocoa #cozyseason #christmasvibes #fireplace"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Cozy tsundere season has started ☕🎅"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #cozyseason"
+  - date: 2026-11-23
+    n: 20
+    label: "Daily Malfoid #20"
+    id: "2026-11-03-black-friday-magic-shop-1"
+    type: image
+    media: "images/2026-11-03-black-friday-magic-shop-1.jpg"
+    image: "images/2026-11-03-black-friday-magic-shop-1.jpg"
+    theme: "Magic shop Black Friday sale"
+    x:
+      caption: "Daily Malfoid #20 🧹 A Black Friday sale on brooms? I wasn't waiting outside since dawn. I just happened to be here."
+      hashtags: "#DailyMalfoid #AIart #witchyaesthetic"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #20 🧹 Brooms, potion bottles and a Black Friday sign in the window. I'm not impressed by discounts, only by quality. (Both, actually.)"
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #BlackFriday #witchyaesthetic #magicshop #darkacademia"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere at the magic shop Black Friday sale 🧹"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+  - date: 2026-11-24
+    n: 21
+    label: "Daily Malfoid #21"
+    id: "2026-11-03-castle-tsundere-4"
+    type: image
+    media: "images/2026-11-03-castle-tsundere-4.jpg"
+    image: "images/2026-11-03-castle-tsundere-4.jpg"
+    theme: "Under the mistletoe"
+    x:
+      caption: "Daily Malfoid #21 🌿 Don't look up. There's nothing up there. I'm standing here by pure coincidence!"
+      hashtags: "#DailyMalfoid #AIart #mistletoe"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #21 🌿 The fire is lit, the stockings are up, and someone hung mistletoe right where I was standing. Coincidence. Pure coincidence."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #mistletoe #christmasvibes #slytherinaesthetic #castleaesthetic"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "She definitely didn't stand under the mistletoe on purpose 🌿"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #mistletoe"
+  - date: 2026-11-25
+    n: 22
+    label: "Daily Malfoid #22"
+    id: "2026-11-03-thanksgiving-2"
+    type: image
+    media: "images/2026-11-03-thanksgiving-2.jpg"
+    image: "images/2026-11-03-thanksgiving-2.jpg"
+    theme: "Harvest dinner, failing to look stern"
+    x:
+      caption: "Daily Malfoid #22 🦃 I was going to look stern for the harvest dinner, but it smells too good. Don't tell anyone I smiled."
+      hashtags: "#DailyMalfoid #AIart #Thanksgiving"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #22 🦃 The night before Thanksgiving: candles lit, turkey golden, pie waiting. I tried to look serious. I failed."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #Thanksgiving #harvestdinner #autumnaesthetic #thankful"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere failing to look stern at harvest dinner 🦃"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #Thanksgiving"
+  - date: 2026-11-26
+    n: 23
+    label: "Daily Malfoid #23"
+    id: "2026-11-03-thanksgiving-1"
+    type: image
+    media: "images/2026-11-03-thanksgiving-1.jpg"
+    image: "images/2026-11-03-thanksgiving-1.jpg"
+    theme: "Thanksgiving Day dinner"
+    x:
+      caption: "Daily Malfoid #23 🦃 Happy Thanksgiving. I'm... grateful for you. There, I said it. Now let me eat my pie in peace."
+      hashtags: "#DailyMalfoid #AIart #HappyThanksgiving"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #23 🦃 Happy Thanksgiving! Turkey, pumpkin pie and a cosy sweater. If you must know, I'm thankful you're here. Don't make it weird."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #HappyThanksgiving #Thanksgiving #thankful #pumpkinpie"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "A tsundere says thank you on Thanksgiving 🦃💚"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #Thanksgiving"
+  - date: 2026-11-27
+    n: 24
+    label: "Daily Malfoid #24"
+    id: "2026-11-03-black-friday-checkout-1"
+    type: video
+    media: "videos/black-friday-checkout-1.mp4"
+    image: "images/2026-11-03-black-friday-checkout-1.jpg"
+    theme: "Black Friday checkout line (video)"
+    x:
+      caption: "Daily Malfoid #24 🛒 It's Black Friday and I survived the checkout line. Rawr. ...That was a victory noise. Don't laugh."
+      hashtags: "#DailyMalfoid #AIart #BlackFriday"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #24 🛒 Black Friday, the longest queue of the year, and somehow I'm smiling. Claws out for the last deals. Rawr."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #BlackFriday #BlackFridayDeals #shoppingday #animereels"
+    tiktok:
+      post: "video"
+      caption: "Black Friday checkout line, tsundere edition 🛒 rawr"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #BlackFriday"
+  - date: 2026-11-28
+    n: 25
+    label: "Daily Malfoid #25"
+    id: "2026-11-03-christmas-owl-tower-1"
+    type: image
+    media: "images/2026-11-03-christmas-owl-tower-1.jpg"
+    image: "images/2026-11-03-christmas-owl-tower-1.jpg"
+    theme: "Christmas duty at the owl tower"
+    x:
+      caption: "Daily Malfoid #25 🦉 Reporting for Christmas duty at the owl tower. The owls made me wear the hat. Not funny."
+      hashtags: "#DailyMalfoid #AIart #christmasvibes"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #25 🦉 Fairy lights, snowy windows and a tower full of owls. Salute accepted. Hat complaints ignored."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #christmasvibes #christmassweater #owls #winteraesthetic"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "Tsundere reporting for Christmas duty 🦉🎅"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmasvibes"
+  - date: 2026-11-29
+    n: 26
+    label: "Daily Malfoid #26"
+    id: "2026-11-03-christmas-3"
+    type: image
+    media: "images/2026-11-03-christmas-3.jpg"
+    image: "images/2026-11-03-christmas-3.jpg"
+    theme: "Surprised by the Christmas tree"
+    x:
+      caption: "Daily Malfoid #26 🎄 You put up the tree without me?! I'm not upset. I'm just... surprised. It's lovely. Hmph."
+      hashtags: "#DailyMalfoid #AIart #christmastree"
+    instagram:
+      format: "feed post"
+      caption: "Daily Malfoid #26 🎄 Stockings hung, fire lit, presents under the tree, and nobody told me. I'm not pouting. My face just does this."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIillustration #christmastree #christmasvibes #cozyseason #fireplace"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "When you surprise the tsundere with the tree 🎄😳"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmastree"
+  - date: 2026-11-30
+    n: 27
+    label: "Daily Malfoid #27"
+    id: "2026-11-03-christmas-1"
+    type: video
+    media: "videos/christmas-1.mp4"
+    image: "images/2026-11-03-christmas-1.jpg"
+    theme: "Christmas countdown kickoff, a gift (video)"
+    x:
+      caption: "Daily Malfoid #27 🎁 The Christmas countdown starts now. This gift is just... extra. Take it before I change my mind!"
+      hashtags: "#DailyMalfoid #AIart #christmascountdown"
+    instagram:
+      format: "Reel"
+      caption: "Daily Malfoid #27 🎁 Kicking off the Christmas countdown with a gift that was absolutely not picked out with you in mind. Just open it."
+      hashtags: "#DailyMalfoid #DraconiaMalfoid #animeOC #originalcharacter #animegirl #animeart #tsundere #AIart #AIgenerated #AIanimation #christmascountdown #christmasvibes #ballgown #animereels"
+    tiktok:
+      post: "video"
+      caption: "The tsundere got you a gift 🎁 watch her look away"
+      hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #christmascountdown"
