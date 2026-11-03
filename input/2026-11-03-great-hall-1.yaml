@@ -1,0 +1,26 @@
+id: "2026-11-03-great-hall-1"
+title: "Great hall, annoyed but blushing"
+theme: "winter"
+tags: ["winter", "castle", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-P017-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: standing with her body turned mostly away from the camera, looking back over her shoulder toward the camera. Copy only the pose and the camera angle from the mannequin, not its look. Setting: the great hall of an old stone castle magic school, long wooden tables and floating candles under an enchanted starry ceiling, snow falling softly outside the windows. Expression: frowning in annoyance while her ears turn red. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/583ba29b-e291-41e8-9b04-90892287bb37"
+image: "images/2026-11-03-great-hall-1.jpg"
+size: "1152x1728"
+notes: "Over-the-shoulder look is more side-on than asked; very strong blush; only one hand visible."
+idea:
+  seed: 703
+  outfit: "uniform-robe"
+  setting: "great-hall"
+  pose: "shisei-P017"
+  pose_name: "Standing, looking back over shoulder"
+  pose_view: "diag"
+  pose_src: "shisei:P017"
+  emotion: "annoyed-red-ears"
+  coverage: "modest"
+  season: "winter"
+  theme: "everyday"

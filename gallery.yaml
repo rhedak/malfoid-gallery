@@ -104,3 +104,33 @@ entries:
     input: "input/2026-11-03-snowy-village-1.yaml"
     image: "images/2026-11-03-snowy-village-1.jpg"
     posted:
+  - id: "2026-11-03-great-hall-1"
+    title: "Great hall, annoyed but blushing"
+    created: 2026-11-03
+    input: "input/2026-11-03-great-hall-1.yaml"
+    image: "images/2026-11-03-great-hall-1.jpg"
+    posted:
+  - id: "2026-11-03-christmas-market-1"
+    title: "Christmas market, sleepy and grumpy"
+    created: 2026-11-03
+    input: "input/2026-11-03-christmas-market-1.yaml"
+    image: "images/2026-11-03-christmas-market-1.jpg"
+    posted:
+  - id: "2026-11-03-ice-rink-1"
+    title: "Ice rink, determined"
+    created: 2026-11-03
+    input: "input/2026-11-03-ice-rink-1.yaml"
+    image: "images/2026-11-03-ice-rink-1.jpg"
+    posted:
+  - id: "2026-11-03-winter-ball-1"
+    title: "Winter ball, rare soft smile"
+    created: 2026-11-03
+    input: "input/2026-11-03-winter-ball-1.yaml"
+    image: "images/2026-11-03-winter-ball-1.jpg"
+    posted:
+  - id: "2026-11-03-library-2"
+    title: "Castle library, side glance"
+    created: 2026-11-03
+    input: "input/2026-11-03-library-2.yaml"
+    image: "images/2026-11-03-library-2.jpg"
+    posted:
