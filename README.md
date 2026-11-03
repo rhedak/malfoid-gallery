@@ -155,6 +155,10 @@ non-default styles add a `style-<id>` tag. The style is drawn from its own rando
 before the lever existed, and anime-style ideas give the exact same prompt. Entries made before the lever have
 no `style:` field; read that as `anime`.
 
+Daily Malfoid (`plan/daily-malfoid-*.yaml`) stays in the default `anime` style. Alternate styles are for
+extra, unscheduled posts; such an image is added to the plan only if it turns out well. When generating
+ideas for the daily series, pass `--style anime` (or re-roll ideas whose style is not `anime`).
+
 `rough-doodle` (日系粗糙数字涂鸦) is adapted from a style prompt by @798145343h on X
 (https://x.com/798145343h/status/2117499225206317377): thick uneven black crayon outlines, flat opaque colour
 that spills over the lines, white paper gaps, scribbled white highlights, simplified face and hair blocks, plain
