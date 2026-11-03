@@ -9,10 +9,14 @@ bases:
     post: "https://grok.com/imagine/post/a22d4f44-ee90-468f-be10-7f3f6094b544"
     reference: "references/draconia-uniform-fullbody.jpg"
     # full-body edit (2026-11-03) of the thigh-cropped post b719bfd8 (references/draconia-uniform.webp)
+    # transparent version: references/draconia-uniform-fullbody-transparent.png, Grok Imagine Remove Background
+    # of a22d4f44 -> https://grok.com/imagine/post/f0a396f0-93a5-4d73-a4ee-8112f5ea7fad (faint pink fringe at robe hem and loafer soles)
   vest:
     post: "https://grok.com/imagine/post/918f66cf-6f2d-422f-bcdd-0eac54f9752d"
     reference: "references/draconia-vest-fullbody.jpg"
     # full-body edit (2026-11-03) of the thigh-cropped post 3da5bf18 (references/draconia-vest.webp)
+    # transparent version: references/draconia-vest-fullbody-transparent.png, Grok Imagine Remove Background
+    # of 918f66cf -> https://grok.com/imagine/post/23617d71-a87f-410a-b5f5-cb40c4d5f34f (faint pink fringe at loafer soles)
   gown:
     post: "https://grok.com/imagine/post/d9b008f8-7f62-4cd4-80d7-ac9ebc7ef733"
     reference: "references/draconia-gown.webp"

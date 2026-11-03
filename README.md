@@ -22,6 +22,10 @@ references/           base reference images of Draconia
   draconia-vest.webp      uniform without the robe: shirt, tie, vest, skirt (neutral pose)
   draconia-uniform-fullbody.jpg  robed uniform, head to toe, black knee socks and loafers (Grok post a22d4f44, base for new uniform images)
   draconia-vest-fullbody.jpg     vest uniform, head to toe, black knee socks and loafers (Grok post 918f66cf, base for new vest images)
+  draconia-uniform-fullbody-transparent.png  RGBA, transparent version of draconia-uniform-fullbody.jpg (Grok Imagine Remove Background
+                          on post a22d4f44 -> post f0a396f0); faint pink fringe at the robe hem and loafer soles
+  draconia-vest-fullbody-transparent.png     RGBA, transparent version of draconia-vest-fullbody.jpg (Grok Imagine Remove Background
+                          on post 918f66cf -> post 23617d71); faint pink fringe at the loafer soles
   poses/                  mannequin pose references from Shisei (CC0), shisei-<P###|U###>-<view>.webp,
                           900x1200; LICENSE-images and NOTICE from Shisei alongside
 images/               generated images, the original Grok Imagine JPGs, unchanged
