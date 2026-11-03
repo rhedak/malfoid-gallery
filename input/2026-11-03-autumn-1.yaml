@@ -1,0 +1,13 @@
+id: "2026-11-03-autumn-1"
+title: "Autumn walk in the park"
+theme: "autumn"
+tags: ["autumn", "park", "leaves"]
+created: 2026-11-03
+tool: "Grok Imagine (edit)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+prompt: "Same woman, same face, hair and art style, wearing a long camel coat, green scarf and boots. She walks through a park with golden and red autumn leaves falling, holding a warm drink cup, looking over her shoulder with a small proud smile. Soft afternoon light. Anime illustration, portrait framing., full scene background, hands fully in frame"
+result_post: "https://grok.com/imagine/post/ffea4a6a-6ca9-4d49-98cd-8ecf04d4c2ac"
+image: "images/2026-11-03-autumn-1.jpg"
+size: "1152x1728"
+notes: "Operator appended ', full scene background, hands fully in frame' to the base prompt."

@@ -1,0 +1,28 @@
+# Gallery index: one item per image, oldest first.
+# A posting routine picks the first entry whose `posted:` is empty,
+# posts it, then fills `posted:` with the date and post URLs.
+entries:
+  - id: "2026-11-03-thanksgiving-1"
+    title: "Thanksgiving dinner"
+    created: 2026-11-03
+    input: "input/2026-11-03-thanksgiving-1.yaml"
+    image: "images/2026-11-03-thanksgiving-1.jpg"
+    posted:
+  - id: "2026-11-03-autumn-1"
+    title: "Autumn walk in the park"
+    created: 2026-11-03
+    input: "input/2026-11-03-autumn-1.yaml"
+    image: "images/2026-11-03-autumn-1.jpg"
+    posted:
+  - id: "2026-11-03-christmas-1"
+    title: "Christmas gift by the tree"
+    created: 2026-11-03
+    input: "input/2026-11-03-christmas-1.yaml"
+    image: "images/2026-11-03-christmas-1.jpg"
+    posted:
+  - id: "2026-11-03-christmas-2"
+    title: "Hot cocoa by the fireplace"
+    created: 2026-11-03
+    input: "input/2026-11-03-christmas-2.yaml"
+    image: "images/2026-11-03-christmas-2.jpg"
+    posted:

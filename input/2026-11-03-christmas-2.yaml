@@ -1,0 +1,13 @@
+id: "2026-11-03-christmas-2"
+title: "Hot cocoa by the fireplace"
+theme: "christmas"
+tags: ["christmas", "winter", "cozy"]
+created: 2026-11-03
+tool: "Grok Imagine (edit)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+prompt: "Same woman, same face, hair and art style, wearing a cozy red and green Christmas sweater with a snowflake pattern and a Santa hat. She sits by a fireplace with stockings, holding a mug of hot cocoa with marshmallows, smiling softly. Anime illustration, portrait framing., full scene background, hands fully in frame"
+result_post: "https://grok.com/imagine/post/2f5e0c9c-68ea-4a3b-8db3-12386d909911"
+image: "images/2026-11-03-christmas-2.jpg"
+size: "1152x1728"
+notes: "Operator appended ', full scene background, hands fully in frame' to the base prompt."

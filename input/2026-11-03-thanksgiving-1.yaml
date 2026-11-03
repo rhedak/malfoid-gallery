@@ -1,0 +1,13 @@
+id: "2026-11-03-thanksgiving-1"
+title: "Thanksgiving dinner"
+theme: "thanksgiving"
+tags: ["thanksgiving", "autumn", "food", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (edit)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+prompt: "Same woman, same face, hair and art style, now wearing a cozy cream knit sweater with a green scarf and a dark plaid skirt. Autumn scene: she sits at a rustic wooden table set for Thanksgiving with a roast turkey, pumpkin pie and candles, warm golden light, orange and red leaves outside the window. She holds a slice of pie on a fork with a slightly embarrassed tsundere expression, cheeks faintly pink. Anime illustration, portrait framing., full scene background, hands fully in frame"
+result_post: "https://grok.com/imagine/post/7de3284a-06b7-40ce-8ae9-b242d904eb0c"
+image: "images/2026-11-03-thanksgiving-1.jpg"
+size: "1264x1568"
+notes: "Operator appended ', full scene background, hands fully in frame' to the base prompt."

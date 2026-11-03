@@ -1,0 +1,13 @@
+id: "2026-11-03-christmas-1"
+title: "Christmas gift by the tree"
+theme: "christmas"
+tags: ["christmas", "winter", "gown", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (edit)"
+base_post: "https://grok.com/imagine/post/d9b008f8-7f62-4cd4-80d7-ac9ebc7ef733"
+reference: "references/draconia-gown.webp"
+prompt: "Same woman, same face, hair, braid, jewellery and green and silver gown, same art style. Christmas scene: she stands next to a tall decorated Christmas tree with silver and green ornaments in an elegant hall with snow visible through tall windows, holding a wrapped gift with a ribbon, looking away with a shy tsundere blush as if offering it reluctantly. Warm fairy lights. Anime illustration, portrait framing., full scene background, hands fully in frame"
+result_post: "https://grok.com/imagine/post/4d890f6e-d764-4c38-8a70-a60f15f34002"
+image: "images/2026-11-03-christmas-1.jpg"
+size: "1152x1728"
+notes: "Operator appended ', full scene background, hands fully in frame' to the base prompt."
