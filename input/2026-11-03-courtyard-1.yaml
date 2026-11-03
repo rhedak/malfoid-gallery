@@ -1,0 +1,28 @@
+id: "2026-11-03-courtyard-1"
+title: "Autumn courtyard, failing to look stern"
+theme: "autumn"
+tags: ["autumn", "castle", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/a22d4f44-ee90-468f-be10-7f3f6094b544"
+reference: "references/draconia-uniform-fullbody.jpg"
+pose_ref: "references/poses/shisei-P047-front.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest, grey pleated skirt, black knee-high socks and polished black loafers. Don't redesign the uniform, and keep her socks and shoes on. Use the pose of the mannequin in the second image, seen from the front: sitting on the worn flagstones by the fountain with both legs swept together to one side, one arm stretched straight upward. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a castle courtyard with gothic arches, a stone fountain and lanterns, golden and red autumn leaves drifting down. Expression: trying to look stern, but a small smile keeps breaking through. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/abb3e038-335c-448b-8a06-92700eb0d627"
+image: "images/2026-11-03-courtyard-1.jpg"
+size: "1008x1792"
+notes: "Good likeness; black knee-high socks and loafers on. Pose matches (side sit, one arm stretched up), legs more open than a tight sweep; user approved keeping it. Grin wider than the asked 'small smile'."
+idea:
+  seed: 2105
+  outfit: "uniform-robe"
+  setting: "courtyard"
+  pose: "shisei-P047"
+  pose_name: "Side sit, one arm stretched up"
+  pose_view: "front"
+  pose_src: "shisei:P047"
+  emotion: "stern-failing"
+  coverage: "modest"
+  season: "autumn"
+  theme: "everyday"
+  prompt_edited: true
+  idea_prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest, grey pleated skirt, black knee-high socks and polished black loafers. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from the front: sitting on the worn flagstones by the fountain with both legs swept together to one side, one arm stretched straight upward. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a castle courtyard with gothic arches, a stone fountain and lanterns, golden and red autumn leaves drifting down. Expression: trying to look stern, but a small smile keeps breaking through. Anime illustration, full scene background, full body in frame, hands fully in frame."

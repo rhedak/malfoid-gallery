@@ -17,7 +17,7 @@ entries:
     created: 2026-11-03
     input: "input/2026-11-03-autumn-1.yaml"
     image: "images/2026-11-03-autumn-1.jpg"
-    planned: 2026-11-04
+    planned: 2026-11-03
     posted:
   - id: "2026-11-03-christmas-1"
     title: "Christmas gift by the tree"
@@ -193,4 +193,11 @@ entries:
     input: "input/2026-11-03-black-friday-street-1.yaml"
     image: "images/2026-11-03-black-friday-street-1.jpg"
     planned: 2026-11-21
+    posted:
+  - id: "2026-11-03-courtyard-1"
+    title: "Autumn courtyard, failing to look stern"
+    created: 2026-11-03
+    input: "input/2026-11-03-courtyard-1.yaml"
+    image: "images/2026-11-03-courtyard-1.jpg"
+    planned: 2026-11-04
     posted:
