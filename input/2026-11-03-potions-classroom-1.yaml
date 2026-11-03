@@ -1,0 +1,26 @@
+id: "2026-11-03-potions-classroom-1"
+title: "Potions classroom, pouty blush"
+theme: "winter"
+tags: ["winter", "castle", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U007-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless line-art mannequin drawing used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: both hands raised beside her head with two fingers extended up like rabbit ears. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a dungeon potions classroom with bubbling cauldrons, glass jars and green light. Expression: looking away with a pouty blush. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/2cbf0566-5ca8-4ef3-b6ff-c7272989bf25"
+image: "images/2026-11-03-potions-classroom-1.jpg"
+size: "1264x1568"
+notes: "Close pose match."
+idea:
+  seed: 519
+  outfit: "uniform-robe"
+  setting: "potions-classroom"
+  pose: "shisei-U007"
+  pose_name: "Rabbit ears pose"
+  pose_view: "diag"
+  pose_src: "shisei:U007"
+  emotion: "pouty-blush-away"
+  coverage: "modest"
+  season: "winter"
+  theme: "everyday"

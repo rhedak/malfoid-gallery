@@ -1,0 +1,26 @@
+id: "2026-11-03-pumpkin-patch-1"
+title: "Pumpkin patch, proud huff"
+theme: "thanksgiving"
+tags: ["thanksgiving", "autumn", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-P035-front.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from the front: kneeling on both knees with both arms stretched straight upward toward the ceiling, on a bed of straw among the pumpkins. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a pumpkin patch at a country farm with hay bales and a wooden fence, golden and red autumn leaves drifting down. Expression: chin raised with a proud huff, eyes half closed, a faint blush. Anime illustration, full scene background, full body in frame, hands fully in frame."
+result_post: "https://grok.com/imagine/post/fe110381-2bc0-4e33-af06-88cba238c9c2"
+image: "images/2026-11-03-pumpkin-patch-1.jpg"
+size: "1152x1728"
+notes: "Close pose match; hands near top edge."
+idea:
+  seed: 305
+  outfit: "uniform-robe-scarf"
+  setting: "pumpkin-patch"
+  pose: "shisei-P035"
+  pose_name: "Kneeling, arms stretched up"
+  pose_view: "front"
+  pose_src: "shisei:P035"
+  emotion: "proud-huff"
+  coverage: "modest"
+  season: "autumn"
+  theme: "thanksgiving"

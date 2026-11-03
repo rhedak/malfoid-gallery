@@ -74,3 +74,33 @@ entries:
     input: "input/2026-11-03-autumn-2.yaml"
     image: "images/2026-11-03-autumn-2.jpg"
     posted:
+  - id: "2026-11-03-thanksgiving-2"
+    title: "Harvest dinner, failing to look stern"
+    created: 2026-11-03
+    input: "input/2026-11-03-thanksgiving-2.yaml"
+    image: "images/2026-11-03-thanksgiving-2.jpg"
+    posted:
+  - id: "2026-11-03-pumpkin-patch-1"
+    title: "Pumpkin patch, proud huff"
+    created: 2026-11-03
+    input: "input/2026-11-03-pumpkin-patch-1.yaml"
+    image: "images/2026-11-03-pumpkin-patch-1.jpg"
+    posted:
+  - id: "2026-11-03-christmas-owl-tower-1"
+    title: "Owl tower, sulky pout"
+    created: 2026-11-03
+    input: "input/2026-11-03-christmas-owl-tower-1.yaml"
+    image: "images/2026-11-03-christmas-owl-tower-1.jpg"
+    posted:
+  - id: "2026-11-03-potions-classroom-1"
+    title: "Potions classroom, pouty blush"
+    created: 2026-11-03
+    input: "input/2026-11-03-potions-classroom-1.yaml"
+    image: "images/2026-11-03-potions-classroom-1.jpg"
+    posted:
+  - id: "2026-11-03-snowy-village-1"
+    title: "Magic village, thoughtful"
+    created: 2026-11-03
+    input: "input/2026-11-03-snowy-village-1.yaml"
+    image: "images/2026-11-03-snowy-village-1.jpg"
+    posted:

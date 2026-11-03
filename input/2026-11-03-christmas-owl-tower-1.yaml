@@ -1,0 +1,26 @@
+id: "2026-11-03-christmas-owl-tower-1"
+title: "Owl tower, sulky pout"
+theme: "christmas"
+tags: ["christmas", "winter", "castle", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U021-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless line-art mannequin drawing used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, now wearing a cozy red and green Christmas sweater with a snowflake pattern, a dark skirt and a Santa hat. Use the pose of the mannequin in the second image, seen from a three-quarter angle: one hand raised flat to her forehead in a salute, the other arm at her side. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a round stone tower room with owls perched on wooden beams and tall open arched windows, decorated for Christmas with garlands, ornaments and warm fairy lights, snow falling softly outside the windows. Expression: puffing out her cheeks in a sulky pout. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/ca9eae19-6b84-4ab0-9efd-1d7c9e2e614a"
+image: "images/2026-11-03-christmas-owl-tower-1.jpg"
+size: "1264x1568"
+notes: "Pose matches; lower hand cropped at bottom edge."
+idea:
+  seed: 414
+  outfit: "christmas-sweater"
+  setting: "owl-tower"
+  pose: "shisei-U021"
+  pose_name: "Salute"
+  pose_view: "diag"
+  pose_src: "shisei:U021"
+  emotion: "sulky-pout"
+  coverage: "modest"
+  season: "winter"
+  theme: "christmas"
