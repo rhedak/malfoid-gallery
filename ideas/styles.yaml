@@ -1,0 +1,37 @@
+# Art styles for scripts/ideas.py (the "style" lever).
+# weight: relative chance when --style is not given (anime 80 : alternates 20 in total).
+# anime is the house style: the prompt stays exactly as before (same art style as the base post).
+# For the other styles the prompt keeps her identity and outfit from image 1 but redraws her in `text`;
+# `background` replaces "full scene background" in the closing line.
+# The style is drawn from its own RNG stream (seeded "style-<seed>"), so the other fields of a seed don't change.
+styles:
+  - id: "anime"
+    name: "house anime style"
+    weight: 80
+    default: true
+  - id: "rough-doodle"
+    name: "rough Japanese digital doodle (粗糙数字涂鸦)"
+    weight: 5
+    source: "https://x.com/798145343h/status/2117499225206317377"
+    background: "plain white paper background with natural white space and only a few loose doodled hints of the setting, no text, no frame"
+    text: "Art style: an extremely casual, rough, clumsy Japanese cute anime digital doodle (日系粗糙数字涂鸦), as if quickly drawn with a rough crayon and marker brush in a basic paint app. Thick black crayon outlines with very uneven line weight, some lines suddenly thicker, some broken, loose and slightly crooked, overlapping and incomplete, visible grainy smudged texture; no clean or smooth vector lineart. Colouring: big opaque flat colour fills that spill a little past the lines, with gaps of white paper left unpainted; a few rough strokes of grey or darker same-colour for shadows; quick white scribble strokes for highlights; mixed crayon, pastel and marker grain; no gradients, no detailed lighting, no rich colour layering. Face simplified: eyes in thick black lines and simple colour blocks keeping her eye colour and expression, a tiny simple mouth, nose can be left out, a few casual pink blush strokes. Hair drawn as a few large colour blocks without fine strands, but keeping her exact hairstyle, braid and hair colour. Outfit keeps its colours, silhouette and signature accessories, with folds and details heavily simplified; don't change or add clothes or accessories. Slightly larger head. It must look truly rough, scribbly and simple, like a cute anime doodle drawn on a whim, not a polished illustration imitating a sketch: no refinement, no fine lineart, no complex hair, no smooth gradients, no 3D look, no heavy lighting."
+  - id: "watercolor"
+    name: "soft watercolor"
+    weight: 5
+    background: "soft watercolor wash background of the setting, loose and lightly detailed, with some white paper showing at the edges"
+    text: "Art style: a hand-painted anime watercolor illustration on textured cold-press paper, delicate pencil underdrawing still visible, soft transparent washes with blooms and gentle colour bleeds, light and airy palette, keeping her face, hairstyle, braid, hair and eye colour and her outfit's colours and details exactly."
+  - id: "cel-90s"
+    name: "90s cel-shaded anime"
+    weight: 4
+    background: "painted 90s anime background art of the setting"
+    text: "Art style: a 1990s TV anime cel, hard-edged two-tone cel shading, clean ink outlines, slightly muted retro colours, subtle film grain and a soft analog glow, 4:3 retro anime look, keeping her face, hairstyle, braid, hair and eye colour and her outfit's colours and details."
+  - id: "picture-book"
+    name: "pastel picture book"
+    weight: 3
+    background: "simple storybook background of the setting in soft pastel shapes"
+    text: "Art style: a gentle pastel picture-book illustration, soft coloured-pencil and gouache texture, rounded simplified shapes, warm muted pastel palette, cozy storybook mood, keeping her face, hairstyle, braid, hair and eye colour and her outfit's colours and details."
+  - id: "pencil-sketch"
+    name: "sketchbook pencil"
+    weight: 3
+    background: "lightly sketched setting fading out into blank sketchbook paper"
+    text: "Art style: an anime sketchbook page in graphite pencil with light colour accents only on her hair, eyes and outfit trim, confident construction lines, soft hatching for shadows, visible paper texture, keeping her face, hairstyle, braid, eye colour and her outfit's shapes and details."

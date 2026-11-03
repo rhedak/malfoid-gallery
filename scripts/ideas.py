@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Random idea generator for Draconia images (Grok Imagine, character + pose reference).
 
-Picks an outfit, setting, pose (+ camera view), emotion and coverage level from ideas/*.yaml,
+Picks an outfit, setting, pose (+ camera view), emotion, coverage level and art style from ideas/*.yaml,
 checks that they fit together, and prints the combo plus a ready Grok Imagine prompt that uses
 two reference images: (1) Draconia's base post / character reference, (2) a mannequin pose
 image from Shisei (references/poses/, CC0) whose path is printed as pose_ref.
@@ -11,6 +11,7 @@ image from Shisei (references/poses/, CC0) whose path is printed as pose_ref.
   python3 scripts/ideas.py --season winter --theme christmas
   python3 scripts/ideas.py --outfit gown --coverage casual
   python3 scripts/ideas.py --pose shisei-P012 --view diag
+  python3 scripts/ideas.py --style rough-doodle      # force an art style (default: anime ~80%)
   python3 scripts/ideas.py --seed 7 --yaml > /tmp/idea.yaml
   python3 scripts/add_entry.py --idea /tmp/idea.yaml --image result.jpg --result-post URL
 
@@ -33,6 +34,9 @@ THEMES = ["everyday", "christmas", "halloween", "thanksgiving", "new-year", "val
 REFS = ("Two reference images: the first image shows the character, the second image is a faceless "
         "{kind} used only as a pose reference. ")
 PREFIX = "Draw the same woman as in the first image, same face, hair, braid and art style, "
+# Used instead of PREFIX for a non-default art style (ideas/styles.yaml): keep identity, change the look.
+PREFIX_RESTYLE = ("Draw the same woman as in the first image, same face, hairstyle, braid, hair colour and eye colour, "
+                  "but redrawn in the art style described at the end, ")
 POSE = ("Use the pose of the mannequin in the second image, {view_text}: {pose}. "
         "Copy only the pose and the camera angle from the mannequin, not its look. ")
 SUFFIX = {
@@ -42,6 +46,7 @@ SUFFIX = {
 # Camera views used for prompts (Shisei also has above/below; those are vendored but not picked).
 VIEW_WEIGHTS = {"front": 4, "diag": 4, "side": 1}
 VIEW_TEXT = {"front": "seen from the front", "diag": "seen from a three-quarter angle", "side": "seen from the side"}
+DEFAULT_STYLE = "anime"
 VIEW_NAME = {"front": "front", "diag": "three-quarter", "side": "side"}
 
 # Hard SFW / trademark rules. Any of these in a data entry or a final prompt is an error.
@@ -69,7 +74,13 @@ def load():
         "poses": miniyaml.load(os.path.join(IDEAS, "poses.yaml")),
         "emotions": miniyaml.load(os.path.join(IDEAS, "emotions.yaml")),
         "skin": miniyaml.load(os.path.join(IDEAS, "skin.yaml")),
+        "styles": miniyaml.load(os.path.join(IDEAS, "styles.yaml")),
     }
+    for st in d["styles"]["styles"]:
+        check_sfw(" ".join(str(st.get(k, "")) for k in ("id", "name", "text", "background")),
+                  f"ideas/styles.yaml:{st['id']}")
+    if [st["id"] for st in d["styles"]["styles"] if st.get("default")] != [DEFAULT_STYLE]:
+        raise SystemExit("ideas/styles.yaml: exactly one default style, " + DEFAULT_STYLE)
     for key, lst in (("outfits", d["outfits"]["outfits"]), ("settings", d["settings"]["settings"]),
                      ("poses", d["poses"]["poses"]), ("emotions", d["emotions"]["emotions"])):
         for e in lst:
@@ -147,12 +158,14 @@ def pose_text(p, s):
     return t
 
 
-def build_prompt(d, o, s, p, view, e, season, theme):
+def build_prompt(d, o, s, p, view, e, season, theme, style=None):
+    restyle = style is not None and not style.get("default")
+    prefix = PREFIX_RESTYLE if restyle else PREFIX
     kind = "line-art mannequin drawing" if view in (p.get("line_views") or []) else "grey mannequin"
     if o.get("canonical"):
-        head = f"{PREFIX}wearing {o['text']}. Don't redesign the {o.get('keep', 'outfit')}. "
+        head = f"{prefix}wearing {o['text']}. Don't redesign the {o.get('keep', 'outfit')}. "
     else:
-        head = f"{PREFIX}now wearing {o['text']}. "
+        head = f"{prefix}now wearing {o['text']}. "
     head = REFS.format(kind=kind) + head + POSE.format(view_text=VIEW_TEXT[view], pose=pose_text(p, s))
     place = s["text"]
     if theme not in (None, "everyday") and theme not in (s.get("themes") or []):
@@ -162,7 +175,11 @@ def build_prompt(d, o, s, p, view, e, season, theme):
         place += (", " + amb) if "outdoor" in (s.get("tags") or []) else (", " + amb + " outside the windows")
     expr = e["text"][5:] if e["text"].startswith("with ") else e["text"]
     scene = "Setting: " + place + f". Expression: {expr}."
-    prompt = head + scene + SUFFIX[p.get("framing", "full")]
+    suffix = SUFFIX[p.get("framing", "full")]
+    if restyle:
+        suffix = " " + style["text"] + suffix.replace(" Anime illustration, full scene background",
+                                                     " " + style["background"][0].upper() + style["background"][1:], 1)
+    prompt = head + scene + suffix
     check_sfw(prompt, "generated prompt")
     return prompt
 
@@ -198,10 +215,20 @@ def pick(d, seed, a):
     raise SystemExit("no compatible combination found for these filters")
 
 
+def pick_style(d, seed, a):
+    """Art style from its own RNG stream, so a seed's other picks are the same as before styles existed."""
+    styles = d["styles"]["styles"]
+    if a.style:
+        return next(st for st in styles if st["id"] == a.style)
+    rng = random.Random(f"style-{seed}")
+    return rng.choices(styles, [st.get("weight", 1) for st in styles])[0]
+
+
 def make_idea(d, seed, a):
     o, s, p, view, e, season, theme = pick(d, seed, a)
+    style = pick_style(d, seed, a)
     base = d["outfits"]["bases"][o["base"]]
-    prompt = build_prompt(d, o, s, p, view, e, season, theme)
+    prompt = build_prompt(d, o, s, p, view, e, season, theme, style)
     pose_ref = p["image"].format(view=view)
     tags = [theme if theme != "everyday" else season, season]
     if "castle" in (s.get("tags") or []):
@@ -214,15 +241,18 @@ def make_idea(d, seed, a):
         tags.append(o["coverage"])
     if e.get("tsundere"):
         tags.append("tsundere")
+    if not style.get("default"):
+        tags.append("style-" + style["id"])
     tags = list(dict.fromkeys(tags))
     title = f"{s['name'][0].upper() + s['name'][1:]}, {e['name']}"
     return {
         "idea": {"seed": seed, "outfit": o["id"], "setting": s["id"], "pose": p["id"],
                  "pose_name": p["name"], "pose_view": view, "pose_src": "shisei:" + p["shisei_id"],
-                 "emotion": e["id"], "coverage": o["coverage"], "season": season, "theme": theme},
+                 "emotion": e["id"], "coverage": o["coverage"], "season": season, "theme": theme,
+                 "style": style["id"]},
         "title": title, "tags": tags, "base_post": base["post"], "reference": base["reference"],
         "pose_ref": pose_ref, "prompt": prompt,
-        "_names": (o["name"], s["name"], p["name"], e["name"]),
+        "_names": (o["name"], s["name"], p["name"], e["name"], style["name"]),
     }
 
 
@@ -243,6 +273,7 @@ def as_text(x):
             f"  setting:  {i['setting']} ({n[1]}), season {i['season']}, theme {i['theme']}\n"
             f"  pose:     {i['pose']} ({n[2]}), view {VIEW_NAME[i['pose_view']]}\n"
             f"  emotion:  {i['emotion']} ({n[3]})\n"
+            f"  style:    {i['style']} ({n[4]})\n"
             f"  tags:     {', '.join(x['tags'])}\n"
             f"  base:     {x['base_post']}\n"
             f"  ref:      {x['reference']}  (image 1)\n"
@@ -259,6 +290,7 @@ def main():
     ap.add_argument("--coverage", choices=["modest", "casual", "summer", "swimwear"])
     ap.add_argument("--pose", help="pose id from ideas/poses.yaml, e.g. shisei-P012 (or P012)")
     ap.add_argument("--view", choices=list(VIEW_WEIGHTS), help="mannequin view (diag = three-quarter)")
+    ap.add_argument("--style", help="art style id from ideas/styles.yaml (default: weighted, ~80%% anime)")
     ap.add_argument("--tsundere", action="store_true", help="only tsundere expressions")
     ap.add_argument("--seed", type=int, help="seed of the first idea; idea k uses seed+k")
     ap.add_argument("--count", type=int, default=1)
@@ -269,6 +301,9 @@ def main():
         ap.error("unknown outfit " + a.outfit)
     if a.setting and a.setting not in {s["id"] for s in d["settings"]["settings"]}:
         ap.error("unknown setting " + a.setting)
+    if a.style and a.style not in {st["id"] for st in d["styles"]["styles"]}:
+        ap.error("unknown style " + a.style + " (choose from: "
+                 + ", ".join(st["id"] for st in d["styles"]["styles"]) + ")")
     start = a.seed if a.seed is not None else random.SystemRandom().randrange(1, 10**6)
     out = []
     for k in range(a.count):
