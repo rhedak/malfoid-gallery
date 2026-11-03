@@ -1,0 +1,26 @@
+id: "2026-11-03-black-friday-checkout-1"
+title: "Checkout line, rare soft smile"
+theme: "black-friday"
+tags: ["black-friday", "autumn", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U009-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless grey mannequin used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: both hands raised beside her head with fingers spread wide like claws. Copy only the pose and the camera angle from the mannequin, not its look. Setting: the checkout counter of a crowded department store on Black Friday with a long queue, sale signs, a pile of boxes and shopping bags on the counter, golden and red autumn leaves drifting down outside the windows. Expression: a rare soft, genuine smile and faintly pink cheeks. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/1bc41fed-a3e1-4e91-8535-2c1036754b3b"
+image: "images/2026-11-03-black-friday-checkout-1.jpg"
+size: "1264x1568"
+notes: "Close pose match."
+idea:
+  seed: 1403
+  outfit: "uniform-robe-scarf"
+  setting: "shop-checkout"
+  pose: "shisei-U009"
+  pose_name: "Claw hands pose"
+  pose_view: "diag"
+  pose_src: "shisei:U009"
+  emotion: "rare-soft-smile"
+  coverage: "modest"
+  season: "autumn"
+  theme: "black-friday"

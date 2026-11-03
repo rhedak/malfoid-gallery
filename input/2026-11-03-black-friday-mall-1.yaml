@@ -1,0 +1,26 @@
+id: "2026-11-03-black-friday-mall-1"
+title: "Shopping mall, flustered glare"
+theme: "black-friday"
+tags: ["black-friday", "autumn", "uniform", "tsundere"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U011-diag.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless line-art mannequin drawing used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, wearing the same black robe with green lining, white shirt, green and silver striped tie, grey vest and grey pleated skirt, plus a green and silver striped knit scarf. Don't redesign the uniform. Use the pose of the mannequin in the second image, seen from a three-quarter angle: head tilted to one side, one hand touching the side of her head. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a busy multi-level shopping mall atrium with glass railings, escalators, bright shop windows and big red BLACK FRIDAY SALE banners, shopping bags piled at her feet, golden and red autumn leaves drifting down outside the windows. Expression: glaring at the viewer with a flustered blush. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/6fa2a56f-f6f7-4b9b-a709-0e056035e901"
+image: "images/2026-11-03-black-friday-mall-1.jpg"
+size: "1264x1568"
+notes: "Close pose match; only one hand visible."
+idea:
+  seed: 1234
+  outfit: "uniform-robe-scarf"
+  setting: "shopping-mall"
+  pose: "shisei-U011"
+  pose_name: "Head tilt, hand at head"
+  pose_view: "diag"
+  pose_src: "shisei:U011"
+  emotion: "flustered-glare"
+  coverage: "modest"
+  season: "autumn"
+  theme: "black-friday"

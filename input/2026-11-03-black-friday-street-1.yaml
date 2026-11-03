@@ -1,0 +1,26 @@
+id: "2026-11-03-black-friday-street-1"
+title: "Shopping street at night, laughing"
+theme: "black-friday"
+tags: ["black-friday", "winter"]
+created: 2026-11-03
+tool: "Grok Imagine (character + pose reference)"
+base_post: "https://grok.com/imagine/post/b719bfd8-ac59-4368-81b1-c71c765a9e4a"
+reference: "references/draconia-uniform.webp"
+pose_ref: "references/poses/shisei-U001-front.webp"
+prompt: "Two reference images: the first image shows the character, the second image is a faceless line-art mannequin drawing used only as a pose reference. Draw the same woman as in the first image, same face, hair, braid and art style, now wearing a dark green wool winter coat with white faux-fur trim, white earmuffs, knit mittens and boots. Use the pose of the mannequin in the second image, seen from the front: both hands forming a heart shape in front of her chest. Copy only the pose and the camera angle from the mannequin, not its look. Setting: a city shopping street at night with glowing shop windows, BLACK FRIDAY SALE signs and crowds of shoppers carrying bags, snow falling softly. Expression: laughing freely with her eyes closed. Anime illustration, full scene background, waist-up portrait framing, hands fully in frame."
+result_post: "https://grok.com/imagine/post/93cd3195-fede-4ab8-a554-1d01ce9ac1a3"
+image: "images/2026-11-03-black-friday-street-1.jpg"
+size: "1264x1568"
+notes: "Close pose match."
+idea:
+  seed: 1633
+  outfit: "winter-coat"
+  setting: "shopping-street-night"
+  pose: "shisei-U001"
+  pose_name: "Both hands heart at chest"
+  pose_view: "front"
+  pose_src: "shisei:U001"
+  emotion: "laughing"
+  coverage: "modest"
+  season: "winter"
+  theme: "black-friday"

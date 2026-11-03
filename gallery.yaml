@@ -134,3 +134,33 @@ entries:
     input: "input/2026-11-03-library-2.yaml"
     image: "images/2026-11-03-library-2.jpg"
     posted:
+  - id: "2026-11-03-black-friday-mall-1"
+    title: "Shopping mall, flustered glare"
+    created: 2026-11-03
+    input: "input/2026-11-03-black-friday-mall-1.yaml"
+    image: "images/2026-11-03-black-friday-mall-1.jpg"
+    posted:
+  - id: "2026-11-03-black-friday-boutique-1"
+    title: "Boutique on sale, small proud smile"
+    created: 2026-11-03
+    input: "input/2026-11-03-black-friday-boutique-1.yaml"
+    image: "images/2026-11-03-black-friday-boutique-1.jpg"
+    posted:
+  - id: "2026-11-03-black-friday-checkout-1"
+    title: "Checkout line, rare soft smile"
+    created: 2026-11-03
+    input: "input/2026-11-03-black-friday-checkout-1.yaml"
+    image: "images/2026-11-03-black-friday-checkout-1.jpg"
+    posted:
+  - id: "2026-11-03-black-friday-magic-shop-1"
+    title: "Magic shop sale, arms crossed"
+    created: 2026-11-03
+    input: "input/2026-11-03-black-friday-magic-shop-1.yaml"
+    image: "images/2026-11-03-black-friday-magic-shop-1.jpg"
+    posted:
+  - id: "2026-11-03-black-friday-street-1"
+    title: "Shopping street at night, laughing"
+    created: 2026-11-03
+    input: "input/2026-11-03-black-friday-street-1.yaml"
+    image: "images/2026-11-03-black-friday-street-1.jpg"
+    posted:
