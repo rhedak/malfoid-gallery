@@ -4,7 +4,10 @@
 # then fills `posted:` on the matching entry in gallery.yaml (same `id`).
 # AI disclosure: every caption set carries #AIart / #AIgenerated / #AIanimation; also turn on
 # Instagram's AI info label and TikTok's AI-generated content label where the app offers them.
-# No official franchise tags (no #HarryPotter / #Hogwarts). Suggested slot is only a suggestion.
+# Rednote (Xiaohongshu, 小红书): every day has a `rednote` block (Chinese title max ~20 chars, body, tags).
+# Rednote takes both image notes (图文笔记) and video notes (视频笔记), so image and video days can all be posted.
+# When posting on Rednote, tick the AI-generated content declaration (声明: 内容由AI生成 / 含AI合成内容).
+# No official franchise tags (no #HarryPotter / #Hogwarts, no #哈利波特 / #霍格沃茨). Suggested slot is only a suggestion.
 series: "Daily Malfoid"
 month: "2026-11"
 suggested_slot: "20:00 JST (a suggestion; adjust freely)"
@@ -12,6 +15,7 @@ ai_disclosure:
   x: "#AIart in the hashtags; use any AI/content label X offers when posting"
   instagram: "#AIart #AIgenerated in the hashtags; turn on the AI info label where offered"
   tiktok: "#AIart / #AIanimation in the hashtags; turn on the AI-generated content label where offered"
+  rednote: "#AI绘画 / #AI视频 in the tags; tick the AI-generated content declaration (内容由AI生成) when posting; image notes and video notes both supported, so every day (image or video) can be posted"
 days:
   - date: 2026-11-03
     n: 1
@@ -32,6 +36,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "POV: you caught a tsundere on her autumn coffee walk 🍂"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #autumnvibes"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "傲娇魔女的秋日散步🍂"
+      body: "Daily Malfoid #1 🍂\n捧着咖啡在公园散步，落叶沙沙响～\n才、才不是特意穿最喜欢的大衣给你看的！\n围巾颜色？只是因为它最暖和而已啦\nJust a walk with my coffee. Don't read into the scarf."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #秋天 #秋日氛围感 #DailyMalfoid"
   - date: 2026-11-04
     n: 2
     label: "Daily Malfoid #2"
@@ -51,6 +60,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "She tried to look stern for ONE photo 🍂"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #autumnvibes"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "想装高冷却笑出来了🍂"
+      body: "Daily Malfoid #2 🍂\n秋天的庭院，落叶纷飞，喷泉哗啦啦～\n本来说好要拍一张很严肃的照片……\n我才没有跟你挥手，只是在伸懒腰！\nI'm not waving at you. I'm stretching. ...Fine, hi."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #秋天 #学院风 #DailyMalfoid"
   - date: 2026-11-05
     n: 3
     label: "Daily Malfoid #3"
@@ -70,6 +84,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "She got caught with THAT book 📖😳"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "图书馆偷看书被抓包📖"
+      body: "Daily Malfoid #3 📖\n躲在城堡图书馆角落看书，结果被你发现了\n这本书是做研究用的！纯学术！\n不许看书名！！\nW-what are you looking at? It's for research!"
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #暗黑学院风 #图书馆 #DailyMalfoid"
   - date: 2026-11-06
     n: 4
     label: "Daily Malfoid #4"
@@ -89,6 +108,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere at the pumpkin patch: \"I'm NOT excited\" 🎃"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #pumpkinpatch"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "南瓜田最大的南瓜归我🎃"
+      body: "Daily Malfoid #4 🎃\n头发上沾着干草，满地落叶\n挑到了整片南瓜田里最大的一个！\n可以鼓掌，但要小声一点，哼\nThe biggest pumpkin in the patch. You may applaud. Quietly."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #秋天 #南瓜 #DailyMalfoid"
   - date: 2026-11-07
     n: 5
     label: "Daily Malfoid #5"
@@ -108,6 +132,11 @@ days:
       post: "video"
       caption: "She said she was framing the leaves... watch her face 🍁"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #autumnvibes"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "我拍的是落叶不是你🍁"
+      body: "Daily Malfoid #5 🍁\n秋日公园，用手指比个取景框～\n拍的是枫叶！当然是枫叶！\n你入镜了？那是你自己的问题\nFraming the leaves. Not you. Why would it be you?!"
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #秋天 #枫叶 #DailyMalfoid"
   - date: 2026-11-08
     n: 6
     label: "Daily Malfoid #6"
@@ -127,6 +156,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Library rules, tsundere edition 🤫📚"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "嘘…图书馆要安静🤫"
+      body: "Daily Malfoid #6 🤫\n窗外下着雪，屋里点着蜡烛\n我才没有在窗边等你呢\n看你一眼只是因为你太吵了！\nShh. This is a library. I wasn't waiting for you."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #雪景 #图书馆 #DailyMalfoid"
   - date: 2026-11-09
     n: 7
     label: "Daily Malfoid #7"
@@ -146,6 +180,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "When the tsundere hands you HER scarf 🧣😳"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winteraesthetic"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "围巾借你…才不是织给你的🧣"
+      body: "Daily Malfoid #7 🧣\n下雪天又忘记戴围巾了吧？\n拿去，我刚好多一条而已\n才不是特意给你织的！哼\nTake the scarf before I change my mind. Hmph."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #冬天 #雪景 #DailyMalfoid"
   - date: 2026-11-10
     n: 8
     label: "Daily Malfoid #8"
@@ -165,6 +204,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "She's guarding the pie. For you. Don't tell her you know 🥧"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #autumnfeast"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "这块派才不是给你留的🥧"
+      body: "Daily Malfoid #8 🥧\n满天烛光下的秋日晚宴，双手抱胸守着派\n才不是给你留的，它只是刚好在我这边！\n脸红？没有！\nI'm not saving you a slice. It's just on my side of the table."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #秋天 #美食 #DailyMalfoid"
   - date: 2026-11-11
     n: 9
     label: "Daily Malfoid #9"
@@ -184,6 +228,11 @@ days:
       post: "video"
       caption: "Making the tsundere do bunny ears in potions class 🐰🧪"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #darkacademia #witchyvibes"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "魔药课戴兔耳朵🧪"
+      body: "Daily Malfoid #9 🧪\n绿色坩埚咕嘟咕嘟冒泡，兔耳朵竖起来\n是你说今天要开心一点的！\n就这一次，别再让我做了\nBunny ears in potions class. Happy now?"
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #兔耳 #魔女 #DailyMalfoid"
   - date: 2026-11-12
     n: 10
     label: "Daily Malfoid #10"
@@ -203,6 +252,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "That over-the-shoulder look 👀🕯️"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "回眸一瞬的脸红🕯️"
+      body: "Daily Malfoid #10 🕯️\n长长的餐桌，上百支蜡烛\n有人从大厅另一边一直盯着我看\n我才没有回头看你，我在看时间！\nI wasn't looking back. I was checking the time."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #回眸 #烛光 #DailyMalfoid"
   - date: 2026-11-13
     n: 11
     label: "Daily Malfoid #11"
@@ -222,6 +276,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere escort up the torch-lit staircase 🪄"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #darkacademia"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "楼梯太黑我送你上去🪄"
+      body: "Daily Malfoid #11 🪄\n火把照亮的楼梯，墙上挂着古老画像\n魔杖准备好了，我送你上楼\n只是怕你迷路而已，很明显吧！\nI'll walk you up. Only because you'd get lost."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #魔女 #城堡 #DailyMalfoid"
   - date: 2026-11-14
     n: 12
     label: "Daily Malfoid #12"
@@ -241,6 +300,11 @@ days:
       post: "video"
       caption: "Caught her stargazing alone ✨ watch till the scarf"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #stargazing"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "塔顶看星星被打扰了✨"
+      body: "Daily Malfoid #12 ✨\n一个人爬上塔顶想安静看星星\n结果你又出现了！\n不许那样看我！脸好烫，都怪你\nDon't look at me like that! My face is warm and it's your fault."
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #星空 #魔女 #DailyMalfoid"
   - date: 2026-11-15
     n: 13
     label: "Daily Malfoid #13"
@@ -260,6 +324,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Winter village date? She'd never call it that ❄️"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winteraesthetic"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "魔法小镇的初雪❄️"
+      body: "Daily Malfoid #13 ❄️\n戴上耳罩和手套，小镇下初雪啦\n正在认真思考去哪家甜品店，才没有在想谁呢！\n安静的话，可以跟着我\nFirst snow. You can tag along, if you're quiet."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #初雪 #冬天 #DailyMalfoid"
   - date: 2026-11-16
     n: 14
     label: "Daily Malfoid #14"
@@ -279,6 +348,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere at the ice rink: \"I don't need help\" ⛸️"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #iceskating"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "我才不需要人教滑冰⛸️"
+      body: "Daily Malfoid #14 ⛸️\n彩灯、新冰面，还有一个超自信的姿势\n我当然会滑冰！当然！\n只是在这里……战略性站立。不许笑！\nI don't need help skating. Don't you dare laugh."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #滑冰 #冬天 #DailyMalfoid"
   - date: 2026-11-17
     n: 15
     label: "Daily Malfoid #15"
@@ -298,6 +372,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Her rare soft smile at the winter ball 💚"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #winterball"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "冬日舞会的绿色礼服💚"
+      body: "Daily Malfoid #15 💚\n冰雕、管弦乐队，还有我最爱的绿色礼服\n这条裙子不是为谁穿的\n……你觉得好看吗？算了，当我没问\nThis dress isn't for anyone. ...Do you like it? Forget I asked."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #礼服 #舞会 #DailyMalfoid"
   - date: 2026-11-18
     n: 16
     label: "Daily Malfoid #16"
@@ -317,6 +396,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "When the early Black Friday deals drop 🛍️😤"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "黑五还没到就开抢了🛍️"
+      body: "Daily Malfoid #16 🛍️\n黑色星期五的提前优惠已经开始了？！\n我只是来看看的，这些袋子都不是我的\n……好吧，有几个是\nI'm only here to look. ...Fine, some bags are mine."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #黑色星期五 #购物 #DailyMalfoid"
   - date: 2026-11-19
     n: 17
     label: "Daily Malfoid #17"
@@ -336,6 +420,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere finds her coat on sale 🙌"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "买到心仪大衣的胜利姿势🛍️"
+      body: "Daily Malfoid #17 🛍️\n小精品店的黑五大促\n终于买到这一季最想要的大衣！\n我没有在庆祝，是手自己举起来的\nI'm not celebrating, my arms just went up by themselves."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #黑色星期五 #穿搭 #DailyMalfoid"
   - date: 2026-11-20
     n: 18
     label: "Daily Malfoid #18"
@@ -355,6 +444,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Sleepy tsundere at the Christmas market 🎄😴"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmasmarket"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣诞市集上我才不困🎄"
+      body: "Daily Malfoid #18 🎄\n一大早就被拉来圣诞市集\n我才不困，只是让脸休息一下\n给我买杯热饮的话，也许会笑一下\nI'm not sleepy. Buy me something warm and I might smile."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #圣诞 #圣诞市集 #DailyMalfoid"
   - date: 2026-11-21
     n: 19
     label: "Daily Malfoid #19"
@@ -374,6 +468,11 @@ days:
       post: "video"
       caption: "The tsundere finally laughed 💚 (Black Friday did it)"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #BlackFriday #citynights"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "这个比心是给打折的💚"
+      body: "Daily Malfoid #19 💚\n雪夜街头，橱窗闪闪发光\n被城市灯光感染了才笑的而已\n比心是给黑五打折的，不是给你！\nThe heart is for the sale. Not you. Delete this from your memory."
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #黑色星期五 #夜景 #DailyMalfoid"
   - date: 2026-11-22
     n: 20
     label: "Daily Malfoid #20"
@@ -393,6 +492,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Cozy tsundere season has started ☕🎅"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #cozyseason"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "壁炉边的热可可☕"
+      body: "Daily Malfoid #20 ☕\n壁炉噼啪作响，热可可里放满棉花糖\n圣诞帽是戴了，但我还没进入圣诞状态\n……好吧，也许有一点点\nHot cocoa by the fire. Not in the Christmas spirit yet. ...Maybe a little."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #圣诞 #冬日氛围感 #DailyMalfoid"
   - date: 2026-11-23
     n: 21
     label: "Daily Malfoid #21"
@@ -412,6 +516,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere at the magic shop Black Friday sale 🧹"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #BlackFriday"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "魔法商店扫帚打折了🧹"
+      body: "Daily Malfoid #21 🧹\n扫帚、魔药瓶，橱窗上挂着黑五招牌\n我才没有天没亮就在门口排队\n只是刚好路过而已！\nI wasn't waiting outside since dawn. I just happened to be here."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #黑色星期五 #魔女 #DailyMalfoid"
   - date: 2026-11-24
     n: 22
     label: "Daily Malfoid #22"
@@ -431,6 +540,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "She definitely didn't stand under the mistletoe on purpose 🌿"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #mistletoe"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "别抬头！上面什么都没有🌿"
+      body: "Daily Malfoid #22 🌿\n壁炉生着火，袜子挂好了\n有人刚好在我站的地方挂了槲寄生\n纯属巧合！我只是碰巧站在这里！\nDon't look up. There's nothing up there!"
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #圣诞 #槲寄生 #DailyMalfoid"
   - date: 2026-11-25
     n: 23
     label: "Daily Malfoid #23"
@@ -450,6 +564,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere failing to look stern at harvest dinner 🦃"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #Thanksgiving"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "本想严肃结果太香了🦃"
+      body: "Daily Malfoid #23 🦃\n感恩节前夜，蜡烛点亮，火鸡烤得金黄\n本来想板着脸的，可是太香了\n我笑了这件事，不许告诉别人\nI tried to look stern. It smells too good. Don't tell anyone I smiled."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #感恩节 #秋天 #DailyMalfoid"
   - date: 2026-11-26
     n: 24
     label: "Daily Malfoid #24"
@@ -469,6 +588,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "A tsundere says thank you on Thanksgiving 🦃💚"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #Thanksgiving"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "感恩节快乐…感谢有你🦃"
+      body: "Daily Malfoid #24 🦃\n火鸡、南瓜派，还有暖暖的毛衣\n如果你非要知道的话……我很感谢你在这里\n好了说完了，让我安静吃派！\nHappy Thanksgiving. I'm... grateful for you. Don't make it weird."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #感恩节 #美食 #DailyMalfoid"
   - date: 2026-11-27
     n: 25
     label: "Daily Malfoid #25"
@@ -488,6 +612,11 @@ days:
       post: "video"
       caption: "Black Friday checkout line, tsundere edition 🛒 rawr"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #BlackFriday"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "黑五排队我活下来了🛒"
+      body: "Daily Malfoid #25 🛒\n黑色星期五，一年里最长的结账队伍\n居然还笑得出来，嗷呜～\n那是胜利的叫声，不许笑！\nI survived the checkout line. Rawr. That was a victory noise."
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #黑色星期五 #购物 #DailyMalfoid"
   - date: 2026-11-28
     n: 26
     label: "Daily Malfoid #26"
@@ -507,6 +636,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "Tsundere reporting for Christmas duty 🦉🎅"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmasvibes"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "猫头鹰塔圣诞值班🦉"
+      body: "Daily Malfoid #26 🦉\n彩灯、雪窗，还有一整塔的猫头鹰\n圣诞值班报到！敬礼～\n帽子是猫头鹰逼我戴的，一点都不好笑\nReporting for Christmas duty. The owls made me wear the hat."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #圣诞 #猫头鹰 #DailyMalfoid"
   - date: 2026-11-29
     n: 27
     label: "Daily Malfoid #27"
@@ -526,6 +660,11 @@ days:
       post: "photo post (optional, skip if busy)"
       caption: "When you surprise the tsundere with the tree 🎄😳"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIart #christmastree"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣诞树居然不等我🎄"
+      body: "Daily Malfoid #27 🎄\n袜子挂好了，炉火点上了，礼物堆在树下，居然没人告诉我！\n我没有生气……只是有点惊讶\n很好看啦，哼\nYou put up the tree without me?! It's lovely. Hmph."
+      tags: "#AI绘画 #AI插画 #二次元 #原创角色 #傲娇 #圣诞 #圣诞树 #DailyMalfoid"
   - date: 2026-11-30
     n: 28
     label: "Daily Malfoid #28"
@@ -545,3 +684,8 @@ days:
       post: "video"
       caption: "The tsundere got you a gift 🎁 watch her look away"
       hashtags: "#DailyMalfoid #animeOC #tsundere #AIanimation #christmascountdown"
+    rednote:
+      post: "video note (视频笔记)"
+      title: "圣诞倒计时，礼物给你🎁"
+      body: "Daily Malfoid #28 🎁\n圣诞倒计时正式开始！\n这份礼物只是多出来的……\n趁我还没改变主意，快拿着！\nTake it before I change my mind!"
+      tags: "#AI视频 #AI动画 #二次元 #原创角色 #傲娇 #圣诞 #圣诞倒计时 #DailyMalfoid"

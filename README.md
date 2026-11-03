@@ -1,7 +1,8 @@
 # Malfoid Gallery
 
 Seasonal and social-media images of **Draconia Malfoid**, made in **Grok Imagine** (xAI) by editing her
-base posts. One image from this gallery is shared per day on **X** and **Instagram**.
+base posts. One image (or a short clip of it) from this gallery is shared per day on **X**, **Instagram**,
+**TikTok** and **Rednote** (Xiaohongshu, 小红书).
 
 Every image is traceable: for each one you can see which base post and reference it was made from, the
 exact prompt, and the Grok Imagine post of the result.
@@ -62,12 +63,19 @@ Fields of an input file: `id`, `title`, `theme`, `tags`, `created`, `tool`, `bas
 
 A daily routine (series **Daily Malfoid**) takes the entry in `gallery.yaml` whose `planned:` date is today,
 looks that date up in `plan/daily-malfoid-2026-11.yaml` and posts its `media` (the image, or on video days the
-clip from `videos/`) with that day's X / Instagram / TikTok captions and hashtags (AI labels on where offered),
+clip from `videos/`) with that day's X / Instagram / TikTok / Rednote captions and hashtags (AI labels on where offered),
 then fills in `posted:`, for example:
 
 ```yaml
     posted: {date: 2026-11-04, x: "https://x.com/...", instagram: "https://www.instagram.com/p/..."}
 ```
+
+Rednote (Xiaohongshu, 小红书): each plan day has a `rednote` block with a Simplified Chinese `title`
+(about 20 characters max), a short casual `body` (Chinese lines plus one English line, numbered
+"Daily Malfoid #N" like the other platforms) and Xiaohongshu-style `tags` (#AI绘画 / #AI视频, #二次元,
+#原创角色, #傲娇, seasonal tags, #DailyMalfoid; no franchise tags). Rednote takes image notes (图文笔记) and
+video notes (视频笔记), so every day, image or video, can be posted there. Tick Rednote's AI-generated content
+declaration (内容由AI生成) on every post. Posting is done by hand.
 
 ## Adding a batch
 
