@@ -231,3 +231,31 @@ entries:
     image: "images/2026-11-04-doodle-4.jpg"
     gallery_only: true
     posted:
+  - id: "2026-11-04-doodle-chibi-1"
+    title: "Doodle v2: robe uniform, arms crossed"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-chibi-1.yaml"
+    image: "images/2026-11-04-doodle-chibi-1.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-chibi-2"
+    title: "Doodle v2: vest uniform with books"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-chibi-2.yaml"
+    image: "images/2026-11-04-doodle-chibi-2.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-chibi-3"
+    title: "Doodle v2: cozy sweater and cocoa"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-chibi-3.yaml"
+    image: "images/2026-11-04-doodle-chibi-3.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-chibi-4"
+    title: "Doodle v2: winter ball gown"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-chibi-4.yaml"
+    image: "images/2026-11-04-doodle-chibi-4.jpg"
+    gallery_only: true
+    posted:
