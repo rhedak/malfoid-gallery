@@ -287,3 +287,31 @@ entries:
     image: "images/2026-11-04-doodle-upper-4.jpg"
     gallery_only: true
     posted:
+  - id: "2026-11-04-doodle-rough-upper-1"
+    title: "Doodle v4 (rough, upper body): robe uniform, arms crossed"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-rough-upper-1.yaml"
+    image: "images/2026-11-04-doodle-rough-upper-1.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-rough-upper-2"
+    title: "Doodle v4 (rough, upper body): vest uniform with books"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-rough-upper-2.yaml"
+    image: "images/2026-11-04-doodle-rough-upper-2.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-rough-upper-3"
+    title: "Doodle v4 (rough, upper body): cozy sweater and cocoa"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-rough-upper-3.yaml"
+    image: "images/2026-11-04-doodle-rough-upper-3.jpg"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-doodle-rough-upper-4"
+    title: "Doodle v4 (rough, upper body): winter ball gown"
+    created: 2026-11-04
+    input: "input/2026-11-04-doodle-rough-upper-4.yaml"
+    image: "images/2026-11-04-doodle-rough-upper-4.jpg"
+    gallery_only: true
+    posted:
