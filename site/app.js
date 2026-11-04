@@ -1,5 +1,6 @@
 /* Malfoid Gallery front end: plain JS, no build step. Data comes from index.json (scripts/build_site.py). */
 (function () {
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   "use strict";
 
   var CHIP_FACETS = ["theme", "style", "status", "media"];
@@ -373,6 +374,8 @@
   /* ---------- collapsible sticky panel ---------- */
   var collapsed = false, manualOpen = false, manualY = 0, ticking = false;
   var RECOLLAPSE = 200; // px of further scrolling before a manually opened panel collapses again
+  var mobileMq = window.matchMedia("(max-width: 640px)");
+  function isMobile() { return mobileMq.matches; }
   function threshold() { return $(".hero").offsetHeight + 10; }
   function setAria() {
     [$("#mini"), $("#toggle-filters")].forEach(function (el) { el.setAttribute("aria-expanded", String(!collapsed)); });
@@ -394,9 +397,12 @@
     ex.style.maxHeight = "0px";
     ex.setAttribute("aria-hidden", "true");
     ex.inert = true;
-    // keep the grid where it is: the spacer takes over the height the panel gives up
+    // keep the grid where it is: the spacer takes over the height the panel gives up, but only while the panel is
+    // stuck (scrolled past the header). Collapsing it near the top (tap, Esc, mobile default) must let the grid move
+    // up, otherwise the spacer leaves an empty gap of the panel's height where the cards should be.
     var after = controls.offsetHeight - ex.offsetHeight;
-    $("#controls-spacer").style.height = Math.max(0, before - after) + "px";
+    var stuck = window.scrollY >= threshold();
+    $("#controls-spacer").style.height = stuck ? Math.max(0, before - after) + "px" : "0px";
     setAria();
   }
   function expandPanel(manual) {
@@ -417,7 +423,12 @@
     requestAnimationFrame(function () {
       ticking = false;
       var y = window.scrollY;
-      if (y < threshold()) { if (collapsed) expandPanel(false); manualOpen = false; return; }
+      if (y < threshold()) {
+        // desktop: open again at the top; mobile: stay collapsed (only a tap opens it) and drop the spacer
+        if (collapsed && !isMobile()) expandPanel(false);
+        else if (collapsed) $("#controls-spacer").style.height = "0px";
+        manualOpen = false; return;
+      }
       if (collapsed) return;
       if (!manualOpen) { collapsePanel(); return; }
       if (y < manualY) manualY = y; // scrolling up keeps it open and resets the distance
@@ -477,6 +488,8 @@
       else if (!collapsed && ev.key === "Escape" && ev.target !== $("#q")) { ev.preventDefault(); collapsePanel(); $("#toggle-filters").focus(); }
     });
     window.addEventListener("scroll", onScroll, { passive: true });
+    // mobile: start collapsed so the first cards are on the first screen; tapping the row opens the filters
+    if (isMobile()) collapsePanel();
     window.addEventListener("resize", function () { if (!collapsed) syncExpandHeight(); });
     $(".selects").addEventListener("change", function (ev) {
       var f = ev.target.dataset.facet; if (!f) return; state[f] = ev.target.value; update();
@@ -556,9 +569,14 @@
     bind();
     render();
     setAria();
-    syncExpandHeight();
+    if (!collapsed) syncExpandHeight();
     onScroll();
     route();
+    // reload mid-page: the browser restores the scroll position before index.json has filled the grid, so the
+    // page is still short and the position gets clipped; restore it ourselves once the cards are there
+    var savedY = +sessionStorage.getItem("malfoid-scroll") || 0;
+    if (savedY && !location.hash) window.scrollTo(0, savedY);
+    window.addEventListener("pagehide", function () { sessionStorage.setItem("malfoid-scroll", String(window.scrollY)); });
   }
 
   fetch("index.json", { cache: "no-cache" })
