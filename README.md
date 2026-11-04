@@ -215,6 +215,9 @@ are free; a pose and an expression can't both set her gaze.
   (X / Instagram / TikTok / Rednote tabs, with copy buttons) and the character and pose references.
   Keys: ← → browse, Esc closes, `/` focuses the search; swipe left / right on mobile.
 - QA `notes`, seeds, idea prompts and other internals are left out of the site on purpose.
+- **Link preview**: sharing the URL on X and elsewhere shows `site/og-banner.jpg` (1200×630, Open Graph and
+  `summary_large_image` Twitter card tags in `site/index.html`): the six images with clips, cropped around the face.
+  Regenerate it with `python3 scripts/make_og_banner.py` (`--debug` draws the face boxes; positions are in `PANELS`).
 
 How it is built: `scripts/build_site.py` merges `gallery.yaml`, `input/*.yaml`, `plan/daily-malfoid-*.yaml`,
 `videos/videos.yaml` and the names from `ideas/*.yaml` into `_site/index.json`, copies `site/` and the linked
