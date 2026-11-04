@@ -312,3 +312,5 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
   .controls.collapsed .mini-empty { display: none; }
   .card h3 { font-size: 15px; }
 }
+
+.links .src-note { color: var(--silver-2); font-size: 12px; align-self: center; }

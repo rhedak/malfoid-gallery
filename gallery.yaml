@@ -315,3 +315,143 @@ entries:
     image: "images/2026-11-04-doodle-rough-upper-4.jpg"
     gallery_only: true
     posted:
+  - id: "2026-11-04-pack-uniform-neutral"
+    title: "Companion key frame: neutral (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-neutral.yaml"
+    image: "images/2026-11-04-pack-uniform-neutral.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-happy"
+    title: "Companion key frame: happy (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-happy.yaml"
+    image: "images/2026-11-04-pack-uniform-happy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-angry"
+    title: "Companion key frame: angry (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-angry.yaml"
+    image: "images/2026-11-04-pack-uniform-angry.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-shy"
+    title: "Companion key frame: shy (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-shy.yaml"
+    image: "images/2026-11-04-pack-uniform-shy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-thinking"
+    title: "Companion key frame: thinking (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-thinking.yaml"
+    image: "images/2026-11-04-pack-uniform-thinking.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-happy"
+    title: "Companion key frame: happy (winter ball gown)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-happy.yaml"
+    image: "images/2026-11-04-pack-gown-happy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-surprised"
+    title: "Companion key frame: surprised (winter ball gown)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-surprised.yaml"
+    image: "images/2026-11-04-pack-gown-surprised.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-sad"
+    title: "Companion key frame: sad (winter ball gown)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-sad.yaml"
+    image: "images/2026-11-04-pack-gown-sad.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-shy"
+    title: "Companion key frame: shy (winter ball gown)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-shy.yaml"
+    image: "images/2026-11-04-pack-gown-shy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-neutral"
+    title: "Companion key frame: neutral (vest uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-neutral.yaml"
+    image: "images/2026-11-04-pack-vest-neutral.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-angry"
+    title: "Companion key frame: angry (vest uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-angry.yaml"
+    image: "images/2026-11-04-pack-vest-angry.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-thinking"
+    title: "Companion key frame: thinking (vest uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-thinking.yaml"
+    image: "images/2026-11-04-pack-vest-thinking.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-surprised"
+    title: "Companion key frame: surprised (vest uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-surprised.yaml"
+    image: "images/2026-11-04-pack-vest-surprised.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-dancing"
+    title: "Companion activity: dancing in the winter ball gown"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-dancing.yaml"
+    image: "images/2026-11-04-pack-gown-dancing.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-cooking"
+    title: "Companion activity: cooking in the vest uniform"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-cooking.yaml"
+    image: "images/2026-11-04-pack-vest-cooking.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-wave"
+    title: "Companion activity: waving in the robe uniform"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-wave.yaml"
+    image: "images/2026-11-04-pack-uniform-wave.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-vest-wave"
+    title: "Companion activity: waving in the vest uniform"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-vest-wave.yaml"
+    image: "images/2026-11-04-pack-vest-wave.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-cheer"
+    title: "Companion activity: cheering in the winter ball gown"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-cheer.yaml"
+    image: "images/2026-11-04-pack-gown-cheer.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-uniform-talk-happy"
+    title: "Companion activity: happy talking and blinking (robe uniform)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-uniform-talk-happy.yaml"
+    image: "images/2026-11-04-pack-uniform-talk-happy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-gown-talk-shy"
+    title: "Companion activity: shy talking and blinking (winter ball gown)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-gown-talk-shy.yaml"
+    image: "images/2026-11-04-pack-gown-talk-shy.webp"
+    gallery_only: true
+    posted:

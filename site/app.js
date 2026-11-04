@@ -6,7 +6,7 @@
   var CHIP_FACETS = ["theme", "style", "status", "media"];
   var SELECT_FACETS = ["outfit", "emotion", "loc"];
   var FIELD = { theme: "theme", style: "style", status: "status", media: "media", outfit: "outfit", emotion: "emotion", loc: "location" };
-  var MEDIA_NAMES = { image: "Image", video: "Video clip" };
+  var MEDIA_NAMES = { image: "Image", video: "Video clip", animation: "Animation" };
   var PLATFORMS = [["x", "X"], ["instagram", "Instagram"], ["tiktok", "TikTok"], ["rednote", "Rednote 小红书"]];
 
   var data, entries = [], byId = {}, mini = null, labels = {};
@@ -204,12 +204,18 @@
       var b = [];
       if (e.daily) b.push('<span class="badge num">#' + e.daily.n + "</span>");
       if (e.media === "video") b.push('<span class="badge video">▶ Clip</span>');
+      if (e.media === "animation") { b.push('<span class="badge video">▶ Anim</span>'); node.dataset.anim = e.image; }
       if (e.status === "posted") b.push('<span class="badge posted">Posted</span>');
       if (e.style !== "anime") b.push('<span class="badge style">' + esc(e.styleName) + "</span>");
       $(".card-badges", node).innerHTML = b.join("");
       frag.appendChild(node);
     });
     grid.replaceChildren(frag);
+    $$(".card[data-anim]", grid).forEach(function (c) {
+      var img = $("img", c), still = img.src;
+      c.addEventListener("mouseenter", function () { img.src = c.dataset.anim; });
+      c.addEventListener("mouseleave", function () { img.src = still; });
+    });
     wheelSet(visible);
     $("#empty").hidden = visible.length > 0;
     var total = entries.length;
@@ -274,6 +280,7 @@
     if (e.daily) kick.push('<span class="badge num">' + esc(e.daily.label) + "</span>");
     kick.push('<span class="badge ' + e.status + '">' + esc(label("status", e.status)) + "</span>");
     if (e.media === "video") kick.push('<span class="badge video">▶ Clip</span>');
+    if (e.media === "animation") kick.push('<span class="badge video">▶ Animation</span>');
     if (e.style !== "anime") kick.push('<span class="badge">' + esc(e.styleName) + "</span>");
     h.push('<div class="d-kicker">' + kick.join("") + "</div>");
     h.push('<h2 id="d-title">' + esc(e.title) + "</h2>");
@@ -302,10 +309,15 @@
     }
 
     var preview = e.prompt.slice(0, 90);
-    h.push('<div class="d-section"><h4>Prompt</h4><details class="prompt"' + (state.q ? " open" : "") + '><summary><span>Full prompt</span><span class="preview">' + esc(preview) +
+    if (e.prompt) h.push('<div class="d-section"><h4>Prompt</h4><details class="prompt"' + (state.q ? " open" : "") + '><summary><span>Full prompt</span><span class="preview">' + esc(preview) +
       '…</span><button class="copy" data-copy="prompt">Copy</button></summary><p class="prompt-text">' + highlight(e.prompt) + "</p></details></div>");
 
     var links = [link(e.basePost, "Base post"), link(e.resultPost, "Grok result")];
+    if (e.source) {
+      var srcUrl = e.source.split(" ")[0], srcNote = e.source.slice(srcUrl.length).trim();
+      links.push(link(srcUrl, "Companion pack source"));
+      if (srcNote) links.push('<span class="src-note">' + esc(srcNote.replace(/^\(|\)$/g, "")) + "</span>");
+    }
     if (e.video) links.push(link(e.video.post, "Grok clip"));
     if (e.posted && e.posted.links) Object.keys(e.posted.links).forEach(function (k) {
       links.push(link(e.posted.links[k], "Post on " + (PLATFORMS.find(function (p) { return p[0] === k; }) || [k, cap(k)])[1]));

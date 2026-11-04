@@ -34,7 +34,7 @@ THEME_NAMES = {
     "autumn": "Autumn", "winter": "Winter", "christmas": "Christmas", "thanksgiving": "Thanksgiving",
     "black-friday": "Black Friday", "everyday": "Everyday", "doodle": "Doodle tests",
     "halloween": "Halloween", "new-year": "New Year", "valentines": "Valentine's", "spring": "Spring",
-    "summer": "Summer",
+    "summer": "Summer", "pack-keyframes": "Companion pack: key frames", "pack-activities": "Companion pack: activities",
 }
 LOCATION_NAMES = {
     "castle": "Castle school", "town": "Town & shops", "home": "Home & cozy", "outdoors": "Outdoors",
@@ -62,6 +62,18 @@ def by_id(items):
     return {x["id"]: x for x in items or []}
 
 
+def is_animated(rel):
+    """True for an animated WebP/GIF (companion pack activities); needs Pillow, else False."""
+    if not rel.lower().endswith((".webp", ".gif")):
+        return False
+    try:
+        from PIL import Image
+        with Image.open(os.path.join(ROOT, rel)) as im:
+            return getattr(im, "n_frames", 1) > 1
+    except Exception:
+        return False
+
+
 def location_group(setting, tags, style):
     stags = set((setting or {}).get("tags") or [])
     if setting:
@@ -75,6 +87,8 @@ def location_group(setting, tags, style):
     if style and style != "anime":
         return "plain"
     tags = set(tags)
+    if "companion-pack" in tags:
+        return "plain"
     if "castle" in tags:
         return "castle"
     if tags & {"park", "leaves"}:
@@ -183,7 +197,8 @@ def build_index():
             "settingName": (setting or {}).get("name"),
             "location": location_group(setting, tags, style),
             "season": idea.get("season"),
-            "media": "video" if video else "image",
+            "media": "video" if video else ("animation" if is_animated(g["image"]) else "image"),
+            "source": inp.get("source"),
         }
         rec["locationName"] = LOCATION_NAMES[rec["location"]]
         if day:
@@ -224,6 +239,11 @@ def make_thumb(src, dst):
         return False
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     with Image.open(src) as im:
+        if im.mode in ("RGBA", "LA", "P"):  # pack frames are transparent: put them on the site's dark panel colour
+            im = im.convert("RGBA")
+            bg = Image.new("RGBA", im.size, (16, 26, 22, 255))
+            bg.alpha_composite(im)
+            im = bg
         im = im.convert("RGB")
         if im.width > THUMB_WIDTH:
             im = im.resize((THUMB_WIDTH, round(im.height * THUMB_WIDTH / im.width)), Image.LANCZOS)
