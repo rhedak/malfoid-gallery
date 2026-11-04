@@ -297,7 +297,6 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
   .wheel-item { border-radius: 11px; }
 }
 
-@media (max-width: 1400px) { .lede .lede-more { display: none; } }
 @media (max-width: 860px) { .hero-text { flex-direction: column; align-items: flex-start; gap: 2px; } }
 
 /* Compact mobile layout: header on a few lines, panel collapsed by default, first cards on the first screen */
@@ -308,7 +307,6 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
   .hero-inner::after, .cta-note, .hero .eyebrow { display: none; }
   .hero h1 { font-size: 34px !important; line-height: 1.1; margin: 0 0 4px !important; white-space: nowrap; }
   .hero .lede { font-size: 13px; margin: 0 auto !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
-  .hero .lede .lede-more { display: none; }
   .hero .cta { margin-top: 10px; padding: 7px 15px; font-size: 13.5px; box-shadow: 0 0 0 3px var(--emerald-glow); }
   .controls { margin-bottom: 8px; }
   .controls.collapsed .search { flex: 1 1 auto; }
