@@ -133,5 +133,31 @@
 
 <script src="vendor/minisearch.js" defer></script>
 <script src="app.js" defer></script>
+<script>
+(function () {
+  // GoatCounter: count the base page and each image detail route (#/<id>) as its own path.
+  var last = null;
+  function gcPath() {
+    var base = location.pathname.replace(/\/(index\.html)?$/, "");
+    var m = location.hash.match(/^#\/([^?&#]+)/);
+    return m ? base + "/" + decodeURIComponent(m[1]) : (base || "/") + (base ? "/" : "");
+  }
+  function gcCount() {
+    try {
+      var gc = window.goatcounter;
+      if (!gc || typeof gc.count !== "function") return;
+      var path = gcPath();
+      if (path === last) return;
+      last = path;
+      gc.count({ path: path });
+    } catch (e) {}
+  }
+  window.addEventListener("hashchange", gcCount);
+  window.gcCountOnLoad = gcCount;
+})();
+</script>
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        data-goatcounter-settings='{"no_onload": true}'
+        async src="https://gc.zgo.at/count.js" onload="window.gcCountOnLoad && window.gcCountOnLoad()"></script>
 </body>
 </html>
