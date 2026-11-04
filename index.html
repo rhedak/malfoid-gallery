@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Malfoid Gallery · Draconia Malfoid</title>
+<meta name="description" content="Searchable gallery of Draconia Malfoid images and clips made in Grok Imagine, with prompts, tags and the Daily Malfoid posting plan.">
+<meta name="theme-color" content="#0a0f0d">
+<meta property="og:title" content="Malfoid Gallery">
+<meta property="og:description" content="Searchable gallery of Draconia Malfoid images and clips made with Grok Imagine, with every prompt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-gallery/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-gallery/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Six Draconia Malfoid images side by side above the Malfoid Gallery title">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Malfoid Gallery">
+<meta name="twitter:description" content="Searchable gallery of Draconia Malfoid images and clips made with Grok Imagine, with every prompt.">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-gallery/og-banner.jpg">
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#grid">Skip to gallery</a>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Malfoid <span>Gallery</span></h1>
+      <p class="lede">Seasonal and social-media images of <strong>Draconia Malfoid</strong>.</p>
+    </div>
+    <a class="cta" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener" title="Free web demo of the anime AI companion with the Draconia uniform pack; runs entirely in your browser."><span aria-hidden="true">💬</span> Chat with her in your browser<span class="cta-arrow" aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Search and filters">
+    <div class="searchbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search prompts, titles, tags…" autocomplete="off" spellcheck="false" aria-label="Search">
+        <kbd>/</kbd>
+      </label>
+      <label class="sort">
+        <span>Sort</span>
+        <select id="sort" aria-label="Sort">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="plan">Plan order</option>
+        </select>
+      </label>
+      <div id="mini" class="mini" role="button" tabindex="0" aria-expanded="true" aria-controls="expand" aria-label="Show all filters">
+        <div id="mini-pills" class="mini-pills"></div>
+        <span id="mini-count" class="mini-count"></span>
+      </div>
+      <a class="mini-cta" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener" title="Chat with her in your browser" aria-label="Chat with her in your browser"><span aria-hidden="true">💬</span><span class="mini-cta-label">Chat</span></a>
+      <button id="toggle-filters" class="btn toggle" aria-expanded="true" aria-controls="expand">
+        <span class="toggle-label">Collapse</span><span id="filter-count" class="count-badge" hidden></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+      </button>
+    </div>
+    <div id="expand" class="expand">
+    <div id="filters" class="filters">
+      <div class="chip-row" data-facet="theme"><span class="row-label">Theme</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="style"><span class="row-label">Style</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="status"><span class="row-label">Status</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="media"><span class="row-label">Media</span><div class="chips"></div></div>
+      <div class="selects">
+        <label><span>Outfit</span><select data-facet="outfit"></select></label>
+        <label><span>Emotion</span><select data-facet="emotion"></select></label>
+        <label><span>Location</span><select data-facet="loc"></select></label>
+      </div>
+    </div>
+    <div class="status-line">
+      <p id="result-count" aria-live="polite"></p>
+      <div id="active" class="active-filters"></div>
+    </div>
+    </div>
+  </section>
+
+  <section id="wheel" class="wheel" aria-label="Featured images, in random order">
+    <div class="wheel-head">
+      <span class="wheel-title"><span aria-hidden="true">✦</span> Featured <span class="wheel-sub">random order</span></span>
+      <button id="wheel-toggle" class="wheel-toggle" type="button" aria-expanded="true" aria-controls="wheel-body">
+        <span class="wheel-toggle-label">Hide</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+      </button>
+    </div>
+    <div id="wheel-body" class="wheel-body">
+      <div id="wheel-viewport" class="wheel-viewport"><div id="wheel-track" class="wheel-track"></div></div>
+    </div>
+  </section>
+
+  <section id="grid" class="grid" aria-label="Gallery"></section>
+  <p id="empty" class="empty" hidden>Nothing matches. <button class="linkish" data-action="clear">Clear search and filters</button></p>
+</main>
+
+<div id="detail" class="detail" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden>
+  <div class="detail-backdrop" data-action="close"></div>
+  <article class="detail-panel">
+    <div class="detail-media">
+      <div class="media-toggle" id="media-toggle" hidden>
+        <button data-mode="image" class="on">Image</button><button data-mode="video">▶ Clip</button>
+      </div>
+      <div class="media-frame" id="media-frame"></div>
+      <button class="nav prev" data-action="prev" aria-label="Previous (←)">‹</button>
+      <button class="nav next" data-action="next" aria-label="Next (→)">›</button>
+    </div>
+    <div class="detail-info" id="detail-info"></div>
+    <button class="close" data-action="close" aria-label="Close (Esc)">×</button>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-cta"><a class="cta cta-sm" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener"><span aria-hidden="true">💬</span> Chat with her in your browser<span class="cta-arrow" aria-hidden="true">↗</span></a></p>
+    <p><strong>Draconia Malfoid</strong> is an unofficial, non-commercial original fan character, a <strong>21-year-old adult woman</strong>, loosely inspired by Draco Malfoy from the <em>Harry Potter</em> series. <em>Harry Potter</em> and related names are trademarks of Warner Bros. Entertainment Inc. / Wizarding World. This gallery is <strong>not affiliated with, endorsed or sponsored by</strong> Warner Bros., Wizarding World Digital or J.K. Rowling. Images will be taken down on request by any rights holder (contact: <a href="mailto:rhedak00@yahoo.de">rhedak00@yahoo.de</a>).</p>
+    <p>Images and clips made with Grok Imagine (xAI); AI-generated. Pose references: <a href="https://github.com/wquguru/shisei">Shisei 姿勢</a> (CC0), pose list credited to ギア / <a href="https://ai-pose-gallery.pages.dev/">ai-pose-gallery</a>. Search by <a href="vendor/minisearch-LICENSE.txt">MiniSearch</a> (MIT).</p>
+    <p class="meta"><a href="https://github.com/rhedak/malfoid-gallery">Source on GitHub</a> · <span id="generated"></span></p>
+  </div>
+</footer>
+
+<template id="card-tpl">
+  <a class="card" href="#">
+    <div class="thumb"><img alt="" loading="lazy" decoding="async"></div>
+    <div class="card-badges"></div>
+    <div class="card-body"><h3></h3><p class="card-meta"></p></div>
+  </a>
+</template>
+
+<script src="vendor/minisearch.js" defer></script>
+<script src="app.js" defer></script>
+<script>
+(function () {
+  // GoatCounter: count the base page and each image detail route (#/<id>) as its own path.
+  var last = null;
+  function gcPath() {
+    var base = location.pathname.replace(/\/(index\.html)?$/, "");
+    var m = location.hash.match(/^#\/([^?&#]+)/);
+    return m ? base + "/" + decodeURIComponent(m[1]) : (base || "/") + (base ? "/" : "");
+  }
+  function gcCount() {
+    try {
+      var gc = window.goatcounter;
+      if (!gc || typeof gc.count !== "function") return;
+      var path = gcPath();
+      if (path === last) return;
+      last = path;
+      gc.count({ path: path });
+    } catch (e) {}
+  }
+  window.addEventListener("hashchange", gcCount);
+  window.gcCountOnLoad = gcCount;
+})();
+</script>
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        data-goatcounter-settings='{"no_onload": true}'
+        async src="https://gc.zgo.at/count.js" onload="window.gcCountOnLoad && window.gcCountOnLoad()"></script>
+</body>
+</html>
