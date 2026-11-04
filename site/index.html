@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Malfoid Gallery · Draconia Malfoid</title>
+<meta name="description" content="Searchable gallery of Draconia Malfoid images and clips made in Grok Imagine, with prompts, tags and the Daily Malfoid posting plan.">
+<meta name="theme-color" content="#0a0f0d">
+<meta property="og:title" content="Malfoid Gallery">
+<meta property="og:description" content="Draconia Malfoid: seasonal images and clips, every prompt traceable.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4l7 18h19l-15 11 6 19-17-12-17 12 6-19L6 22h19z' fill='%2334d399'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#grid">Skip to gallery</a>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grok Imagine · Daily Malfoid</p>
+    <h1>Malfoid <span>Gallery</span></h1>
+    <p class="lede">Seasonal and social-media images of <strong>Draconia Malfoid</strong>. Every image comes with its exact prompt, base post and Grok Imagine result.</p>
+  </div>
+</header>
+
+<main>
+  <section class="controls" aria-label="Search and filters">
+    <div class="searchbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search prompts, titles, tags…" autocomplete="off" spellcheck="false" aria-label="Search">
+        <kbd>/</kbd>
+      </label>
+      <label class="sort">
+        <span>Sort</span>
+        <select id="sort" aria-label="Sort">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="plan">Plan order</option>
+        </select>
+      </label>
+      <button id="toggle-filters" class="btn ghost filters-toggle" aria-expanded="false" aria-controls="filters">Filters<span id="filter-count" class="count-badge" hidden></span></button>
+    </div>
+    <div id="filters" class="filters">
+      <div class="chip-row" data-facet="theme"><span class="row-label">Theme</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="style"><span class="row-label">Style</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="status"><span class="row-label">Status</span><div class="chips"></div></div>
+      <div class="chip-row" data-facet="media"><span class="row-label">Media</span><div class="chips"></div></div>
+      <div class="selects">
+        <label><span>Outfit</span><select data-facet="outfit"></select></label>
+        <label><span>Emotion</span><select data-facet="emotion"></select></label>
+        <label><span>Location</span><select data-facet="loc"></select></label>
+      </div>
+    </div>
+    <div class="status-line">
+      <p id="result-count" aria-live="polite"></p>
+      <div id="active" class="active-filters"></div>
+    </div>
+  </section>
+
+  <section id="grid" class="grid" aria-label="Gallery"></section>
+  <p id="empty" class="empty" hidden>Nothing matches. <button class="linkish" data-action="clear">Clear search and filters</button></p>
+</main>
+
+<div id="detail" class="detail" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden>
+  <div class="detail-backdrop" data-action="close"></div>
+  <article class="detail-panel">
+    <div class="detail-media">
+      <div class="media-toggle" id="media-toggle" hidden>
+        <button data-mode="image" class="on">Image</button><button data-mode="video">▶ Clip</button>
+      </div>
+      <div class="media-frame" id="media-frame"></div>
+      <button class="nav prev" data-action="prev" aria-label="Previous (←)">‹</button>
+      <button class="nav next" data-action="next" aria-label="Next (→)">›</button>
+    </div>
+    <div class="detail-info" id="detail-info"></div>
+    <button class="close" data-action="close" aria-label="Close (Esc)">×</button>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Draconia Malfoid</strong> is an unofficial, non-commercial original fan character, a <strong>21-year-old adult woman</strong>, loosely inspired by Draco Malfoy from the <em>Harry Potter</em> series. <em>Harry Potter</em> and related names are trademarks of Warner Bros. Entertainment Inc. / Wizarding World. This gallery is <strong>not affiliated with, endorsed or sponsored by</strong> Warner Bros., Wizarding World Digital or J.K. Rowling. Images will be taken down on request by any rights holder (contact: <a href="mailto:rhedak00@yahoo.de">rhedak00@yahoo.de</a>).</p>
+    <p>Images and clips made with Grok Imagine (xAI); AI-generated. Pose references: <a href="https://github.com/wquguru/shisei">Shisei 姿勢</a> (CC0), pose list credited to ギア / <a href="https://ai-pose-gallery.pages.dev/">ai-pose-gallery</a>. Search by <a href="vendor/minisearch-LICENSE.txt">MiniSearch</a> (MIT).</p>
+    <p class="meta"><a href="https://github.com/rhedak/malfoid-gallery">Source on GitHub</a> · <span id="generated"></span></p>
+  </div>
+</footer>
+
+<template id="card-tpl">
+  <a class="card" href="#">
+    <div class="thumb"><img alt="" loading="lazy" decoding="async"></div>
+    <div class="card-badges"></div>
+    <div class="card-body"><h3></h3><p class="card-meta"></p></div>
+  </a>
+</template>
+
+<script src="vendor/minisearch.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>

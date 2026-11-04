@@ -39,6 +39,8 @@ ideas/archive/        the old pose list (paraphrased ai-pose-gallery names); kep
 scripts/add_entry.py  helper that adds a new entry (image + input file + index line)
 scripts/ideas.py      random idea generator: outfit + setting + pose/view + emotion + coverage + art style -> prompt
 scripts/import_shisei.py  rebuilds ideas/poses.yaml and references/poses/ from a Shisei checkout
+scripts/build_site.py builds the gallery website (_site/, not committed) from the YAML: index.json + WebP thumbnails
+site/                 static source of the website: index.html, style.css, app.js, vendor/ (MiniSearch, MIT)
 scripts/miniyaml.py   tiny YAML loader (uses PyYAML if installed), so the scripts need only Python 3
 ```
 
@@ -191,6 +193,52 @@ are free; a pose and an expression can't both set her gaze.
 - No franchise trademarks in prompts: say "castle magic school", "broom-sport pitch", "magical village".
 - The generator refuses to load data or print a prompt that contains a banned term (see `BANNED` in
   `scripts/ideas.py`).
+
+## Gallery website
+
+**<https://rhedak.github.io/malfoid-gallery/>**: a browsable, searchable gallery of every entry in `gallery.yaml`
+(rejected images are not included).
+
+- **Grid** of thumbnails with Daily Malfoid number, clip and style badges; sort by newest, oldest or plan order.
+- **Search** (client-side, [MiniSearch](https://github.com/lucaong/minisearch), MIT, vendored in `site/vendor/`)
+  over title, full prompt, tags, theme, outfit, emotion and setting names; prefix and light fuzzy matching.
+- **Filters**: chips for theme, art style, status (posted / upcoming / gallery only) and media (image / video clip),
+  dropdowns for outfit, emotion and location group (castle school, town & shops, home & cozy, outdoors, plain
+  background). Tags in the detail view are clickable filters too. The search, filters and sort live in the URL
+  query (`?q=library&theme=christmas&style=anime&media=video&sort=plan`), so a filtered view can be shared; the
+  open entry is in the hash (`#/2026-11-03-christmas-1`).
+- **Detail view**: full image (or the clip, with the image as poster), Daily Malfoid number and planned / posted
+  date, theme, style, outfit, emotion, location, pose, tags, the full prompt (collapsible, with a copy button), base
+  post, Grok result and clip links, posted links once `posted:` has them, the per-platform captions from the plan
+  (X / Instagram / TikTok / Rednote tabs, with copy buttons) and the character and pose references.
+  Keys: ← → browse, Esc closes, `/` focuses the search; swipe left / right on mobile.
+- QA `notes`, seeds, idea prompts and other internals are left out of the site on purpose.
+
+How it is built: `scripts/build_site.py` merges `gallery.yaml`, `input/*.yaml`, `plan/daily-malfoid-*.yaml`,
+`videos/videos.yaml` and the names from `ideas/*.yaml` into `_site/index.json`, copies `site/` and the linked
+images, clips and references, and makes ~480 px WebP thumbnails (`_site/thumbs/`, needs Pillow). Older entries
+without an `idea:` block get their outfit from their prompt and their location group from their tags. Nothing
+generated is committed to `main`.
+
+Publishing: Pages serves the `gh-pages` branch, which holds only the built `_site/`. After changing the YAML,
+rebuild and push it again (the index does not update by itself):
+
+```sh
+python3 scripts/build_site.py --out /tmp/malfoid-site
+cd /tmp/malfoid-site && git init -q -b gh-pages && git add -A \
+  && git commit -qm "Build site" && git push -f https://github.com/rhedak/malfoid-gallery.git gh-pages
+```
+
+(A GitHub Actions workflow that builds and deploys on every push to `main` can replace this step; adding it needs
+a token with the `workflow` scope or a commit made in the GitHub web UI.)
+
+Preview locally:
+
+```sh
+python3 -m venv /tmp/venv && /tmp/venv/bin/pip install pillow   # or any Python with Pillow
+/tmp/venv/bin/python scripts/build_site.py                      # -> _site/  (--no-thumbs works without Pillow)
+cd _site && python3 -m http.server 8000                         # http://localhost:8000/
+```
 
 ## Pose references and credits
 
