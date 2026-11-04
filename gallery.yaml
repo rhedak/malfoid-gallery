@@ -455,3 +455,38 @@ entries:
     image: "images/2026-11-04-pack-gown-talk-shy.webp"
     gallery_only: true
     posted:
+  - id: "2026-11-04-pack-swimsuit-happy"
+    title: "Companion key frame: happy (swimsuit)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-swimsuit-happy.yaml"
+    image: "images/2026-11-04-pack-swimsuit-happy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-swimsuit-shy"
+    title: "Companion key frame: shy (swimsuit)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-swimsuit-shy.yaml"
+    image: "images/2026-11-04-pack-swimsuit-shy.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-swimsuit-thinking"
+    title: "Companion key frame: thinking (swimsuit)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-swimsuit-thinking.yaml"
+    image: "images/2026-11-04-pack-swimsuit-thinking.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-swimsuit-surprised"
+    title: "Companion key frame: surprised (swimsuit)"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-swimsuit-surprised.yaml"
+    image: "images/2026-11-04-pack-swimsuit-surprised.webp"
+    gallery_only: true
+    posted:
+  - id: "2026-11-04-pack-swimsuit-swimming"
+    title: "Companion activity: swimming (water magic) in the swimsuit"
+    created: 2026-11-04
+    input: "input/2026-11-04-pack-swimsuit-swimming.yaml"
+    image: "images/2026-11-04-pack-swimsuit-swimming.webp"
+    gallery_only: true
+    posted:

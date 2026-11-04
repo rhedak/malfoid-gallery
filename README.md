@@ -215,7 +215,7 @@ are free; a pose and an expression can't both set her gaze.
   (X / Instagram / TikTok / Rednote tabs, with copy buttons) and the character and pose references.
   Keys: ← → browse, Esc closes, `/` focuses the search; swipe left / right on mobile.
 - QA `notes`, seeds, idea prompts and other internals are left out of the site on purpose.
-- **Companion pack entries**: 13 key frames and 7 activity animations from the Draconia picture packs of the
+- **Companion pack entries**: 17 key frames and 8 activity animations from the Draconia picture packs of the
   anime AI companion ([anime_ai_companion-packs](https://github.com/rhedak/anime_ai_companion-packs)), as gallery-only
   entries under the themes *Companion pack: key frames* / *Companion pack: activities* (media *Animation* for the
   animated WebPs, assembled from the pack frames). They carry a `source:` link to the packs repo instead of Grok posts;
