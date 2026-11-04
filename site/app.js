@@ -210,6 +210,7 @@
       frag.appendChild(node);
     });
     grid.replaceChildren(frag);
+    wheelSet(visible);
     $("#empty").hidden = visible.length > 0;
     var total = entries.length;
     $("#result-count").innerHTML = visible.length === total
@@ -371,6 +372,133 @@
     else closeDetail(true);
   }
 
+
+  /* ---------- featured wheel ---------- */
+  // Shuffled once per load (a random rank per entry), then follows the active search and filters. Animated with
+  // requestAnimationFrame: the item list is doubled so the strip loops seamlessly; the item nearest the centre is
+  // drawn a little larger and brighter. Pauses on hover, touch, drag, a hidden tab or when collapsed.
+  var wheel = { rank: {}, items: [], offset: 0, half: 0, paused: 0, hover: false, touchUntil: 0, dragging: false,
+    justDragged: false, last: 0, raf: 0, speed: 38, key: "" };
+  var reducedMq = window.matchMedia("(prefers-reduced-motion: reduce)");
+  function wheelOn() { return !$("#wheel").classList.contains("off"); }
+  function wheelSet(list) {
+    if (!$("#wheel")) return;
+    var key = list.map(function (e) { return e.id; }).join(",");
+    if (key === wheel.key) return;
+    wheel.key = key;
+    var pics = list.filter(function (e) { return e.thumb || e.image; }).slice().sort(function (a, b) {
+      return wheel.rank[a.id] - wheel.rank[b.id];
+    });
+    $("#wheel").hidden = pics.length < 3;
+    var reduced = reducedMq.matches;
+    var seq = reduced ? pics : pics.concat(pics);
+    var frag = document.createDocumentFragment();
+    seq.forEach(function (e, i) {
+      var a = document.createElement("a");
+      a.className = "wheel-item";
+      a.href = "#/" + encodeURIComponent(e.id);
+      a.dataset.id = e.id;
+      a.title = e.title;
+      a.draggable = false;
+      if (i >= pics.length) { a.tabIndex = -1; a.setAttribute("aria-hidden", "true"); }
+      var img = document.createElement("img");
+      img.alt = i >= pics.length ? "" : e.title;
+      img.loading = i < 8 ? "eager" : "lazy";
+      img.decoding = "async";
+      img.draggable = false;
+      img.src = e.thumb || e.image;
+      img.addEventListener("error", function () { if (img.src.indexOf(e.image) < 0) img.src = e.image; });
+      a.appendChild(img);
+      frag.appendChild(a);
+    });
+    $("#wheel-track").replaceChildren(frag);
+    wheel.items = Array.prototype.slice.call($("#wheel-track").children);
+    $("#wheel").classList.toggle("reduced", reduced);
+    wheel.offset = 0;
+    wheelMeasure();
+    wheelPaint();
+  }
+  function wheelMeasure() {
+    var n = wheel.items.length / 2;
+    wheel.half = n && wheel.items[n] ? wheel.items[n].offsetLeft - wheel.items[0].offsetLeft : 0;
+  }
+  function wheelPaint() {
+    if (reducedMq.matches || !wheel.items.length) return;
+    if (!wheel.half) wheelMeasure();
+    if (wheel.half) wheel.offset = ((wheel.offset % wheel.half) + wheel.half) % wheel.half;
+    $("#wheel-track").style.transform = "translate3d(" + (-wheel.offset).toFixed(1) + "px,0,0)";
+    var vp = $("#wheel-viewport"), mid = vp.clientWidth / 2, span = Math.max(240, vp.clientWidth * 0.55), best = null, bestD = 1e9;
+    wheel.items.forEach(function (it) {
+      var c = it.offsetLeft + it.offsetWidth / 2 - wheel.offset, d = Math.abs(c - mid);
+      if (c < -400 || c > vp.clientWidth + 400) return;
+      var k = Math.max(0, 1 - d / span); // 1 at the centre, 0 towards the edges
+      it.style.setProperty("--s", (0.84 + 0.18 * k * k).toFixed(3));
+      it.style.setProperty("--b", (0.62 + 0.42 * k).toFixed(3));
+      if (d < bestD) { bestD = d; best = it; }
+    });
+    wheel.items.forEach(function (it) { it.classList.toggle("center", it === best); });
+  }
+  function wheelPausedNow() {
+    return wheel.hover || wheel.dragging || Date.now() < wheel.touchUntil || document.hidden || !wheelOn() ||
+      !$("#detail").hidden || reducedMq.matches;
+  }
+  function wheelLoop(t) {
+    wheel.raf = requestAnimationFrame(wheelLoop);
+    var dt = wheel.last ? Math.min(0.05, (t - wheel.last) / 1000) : 0;
+    wheel.last = t;
+    if (wheelPausedNow()) return;
+    var r = $("#wheel").getBoundingClientRect();
+    if (r.bottom < 0 || r.top > window.innerHeight) return; // off screen: no work
+    wheel.offset += wheel.speed * dt;
+    wheelPaint();
+  }
+  function wheelSetOpen(open, save) {
+    $("#wheel").classList.toggle("off", !open);
+    $("#wheel-toggle").setAttribute("aria-expanded", String(open));
+    $(".wheel-toggle-label", $("#wheel-toggle")).textContent = open ? "Hide" : "Show";
+    $("#wheel-body").inert = !open;
+    if (save) try { localStorage.setItem("malfoid-wheel", open ? "1" : "0"); } catch (err) { /* private mode */ }
+    if (open) requestAnimationFrame(function () { wheelMeasure(); wheelPaint(); });
+  }
+  function wheelInit() {
+    if (!$("#wheel")) return;
+    entries.forEach(function (e) { wheel.rank[e.id] = Math.random(); });
+    var saved = null;
+    try { saved = localStorage.getItem("malfoid-wheel"); } catch (err) { /* ignore */ }
+    wheelSetOpen(saved !== "0", false);
+    $("#wheel-toggle").addEventListener("click", function () { wheelSetOpen(!wheelOn(), true); });
+    var vp = $("#wheel-viewport"), startX = 0, startOff = 0, down = false, pid = null;
+    vp.addEventListener("mouseenter", function () { wheel.hover = true; });
+    vp.addEventListener("mouseleave", function () { wheel.hover = false; });
+    vp.addEventListener("pointerdown", function (ev) {
+      if (reducedMq.matches || (ev.pointerType === "mouse" && ev.button !== 0)) return;
+      down = true; pid = ev.pointerId; startX = ev.clientX; startOff = wheel.offset; wheel.justDragged = false;
+      wheel.touchUntil = Date.now() + 1e9;
+    });
+    vp.addEventListener("pointermove", function (ev) {
+      if (!down || ev.pointerId !== pid) return;
+      var dx = ev.clientX - startX;
+      if (!wheel.dragging && Math.abs(dx) > 6) {
+        wheel.dragging = true; vp.classList.add("dragging");
+        try { vp.setPointerCapture(pid); } catch (err) { /* ignore */ }
+      }
+      if (wheel.dragging) { wheel.offset = startOff - dx; wheelPaint(); }
+    });
+    function end(ev) {
+      if (!down || (ev && ev.pointerId !== pid)) return;
+      down = false;
+      if (wheel.dragging) { wheel.justDragged = true; setTimeout(function () { wheel.justDragged = false; }, 60); }
+      wheel.dragging = false; vp.classList.remove("dragging");
+      wheel.touchUntil = Date.now() + (ev && ev.pointerType === "mouse" ? 0 : 2500); // touch: resume after a moment
+    }
+    vp.addEventListener("pointerup", end);
+    vp.addEventListener("pointercancel", end);
+    window.addEventListener("resize", function () { wheelMeasure(); wheelPaint(); });
+    reducedMq.addEventListener && reducedMq.addEventListener("change", function () { wheel.key = ""; wheelSet(visible); });
+    document.addEventListener("visibilitychange", function () { wheel.last = 0; });
+    wheel.raf = requestAnimationFrame(wheelLoop);
+  }
+
   /* ---------- collapsible sticky panel ---------- */
   var collapsed = false, manualOpen = false, manualY = 0, ticking = false;
   var RECOLLAPSE = 200; // px of further scrolling before a manually opened panel collapses again
@@ -497,7 +625,8 @@
     document.addEventListener("click", function (ev) {
       var clear = ev.target.closest('[data-action="clear"]');
       if (clear) { var s = state.sort; state = emptyState(); state.sort = s; $("#q").value = ""; update(); return; }
-      var card = ev.target.closest(".card");
+      var card = ev.target.closest(".card, .wheel-item");
+      if (card && card.classList.contains("wheel-item") && wheel.justDragged) { ev.preventDefault(); return; }
       if (card && !ev.metaKey && !ev.ctrlKey && !ev.shiftKey && ev.button === 0) {
         ev.preventDefault();
         history.pushState({ fromGrid: true }, "", location.pathname + location.search + "#/" + encodeURIComponent(card.dataset.id));
@@ -567,6 +696,7 @@
     buildSearch();
     readUrl();
     bind();
+    wheelInit();
     render();
     setAria();
     if (!collapsed) syncExpandHeight();

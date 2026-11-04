@@ -215,6 +215,10 @@ are free; a pose and an expression can't both set her gaze.
   (X / Instagram / TikTok / Rednote tabs, with copy buttons) and the character and pose references.
   Keys: ← → browse, Esc closes, `/` focuses the search; swipe left / right on mobile.
 - QA `notes`, seeds, idea prompts and other internals are left out of the site on purpose.
+- **Featured wheel** above the grid: the images (thumbnails) in a fresh random order on every load, scrolling
+  sideways in a loop with the centre one a little larger and brighter. It follows the search and filters, pauses on
+  hover, touch, drag or a hidden tab, can be dragged, and is a static, manually scrollable strip with reduced motion.
+  *Hide* / *Show* collapses it (remembered in localStorage).
 - **Chat call-to-action**: an emerald "💬 Chat with her in your browser" button in the header and footer (and a
   small *Chat* button, icon only on mobile, in the collapsed sticky row) opens the anime AI companion web demo with
   the Draconia uniform pack: <https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform>.

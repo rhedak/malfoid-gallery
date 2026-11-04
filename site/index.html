@@ -79,6 +79,19 @@
   </section>
   <div id="controls-spacer" class="controls-spacer" aria-hidden="true"></div>
 
+  <section id="wheel" class="wheel" aria-label="Featured images, in random order">
+    <div class="wheel-head">
+      <span class="wheel-title"><span aria-hidden="true">✦</span> Featured <span class="wheel-sub">random order</span></span>
+      <button id="wheel-toggle" class="wheel-toggle" type="button" aria-expanded="true" aria-controls="wheel-body">
+        <span class="wheel-toggle-label">Hide</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+      </button>
+    </div>
+    <div id="wheel-body" class="wheel-body">
+      <div id="wheel-viewport" class="wheel-viewport"><div id="wheel-track" class="wheel-track"></div></div>
+    </div>
+  </section>
+
   <section id="grid" class="grid" aria-label="Gallery"></section>
   <p id="empty" class="empty" hidden>Nothing matches. <button class="linkish" data-action="clear">Clear search and filters</button></p>
 </main>
