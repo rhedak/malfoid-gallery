@@ -470,7 +470,7 @@
         update(); return;
       }
       // collapsed row: a click anywhere except the search box expands the panel
-      if (collapsed && !ev.target.closest(".search")) expandPanel(true);
+      if (collapsed && !ev.target.closest(".search, .mini-cta")) expandPanel(true);
     });
     $(".controls").addEventListener("keydown", function (ev) {
       if (collapsed && ev.target === $("#mini") && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); expandPanel(true); }

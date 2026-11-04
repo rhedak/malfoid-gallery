@@ -215,6 +215,9 @@ are free; a pose and an expression can't both set her gaze.
   (X / Instagram / TikTok / Rednote tabs, with copy buttons) and the character and pose references.
   Keys: ← → browse, Esc closes, `/` focuses the search; swipe left / right on mobile.
 - QA `notes`, seeds, idea prompts and other internals are left out of the site on purpose.
+- **Chat call-to-action**: an emerald "💬 Chat with her in your browser" button in the header and footer (and a
+  small *Chat* button, icon only on mobile, in the collapsed sticky row) opens the anime AI companion web demo with
+  the Draconia uniform pack: <https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform>.
 - **Link preview**: sharing the URL on X and elsewhere shows `site/og-banner.jpg` (1200×630, Open Graph and
   `summary_large_image` Twitter card tags in `site/index.html`): the six images with clips, cropped around the face.
   Regenerate it with `python3 scripts/make_og_banner.py` (`--debug` draws the face boxes; positions are in `PANELS`).
