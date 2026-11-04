@@ -512,11 +512,7 @@
   }
 
   /* ---------- collapsible sticky panel ---------- */
-  var collapsed = false, manualOpen = false, manualY = 0, ticking = false;
-  var RECOLLAPSE = 200; // px of further scrolling before a manually opened panel collapses again
-  var mobileMq = window.matchMedia("(max-width: 640px)");
-  function isMobile() { return mobileMq.matches; }
-  function threshold() { return $(".hero").offsetHeight + 10; }
+  var collapsed = false;
   function setAria() {
     [$("#mini"), $("#toggle-filters")].forEach(function (el) { el.setAttribute("aria-expanded", String(!collapsed)); });
     $("#toggle-filters").setAttribute("aria-label", collapsed ? "Show filters" : "Collapse filters");
@@ -526,55 +522,20 @@
     var ex = $("#expand");
     ex.style.maxHeight = ex.scrollHeight + "px";
   }
-  function collapsePanel() {
-    if (collapsed) return;
+  // The panel opens and closes only on the user's click / tap (collapsed by default on every screen size) and stays
+  // as it is while scrolling. No spacer: when toggled while stuck, the browser's scroll anchoring keeps the cards in place.
+  function setPanel(open) {
+    if (open === !collapsed) return;
     var ex = $("#expand"), controls = $(".controls");
-    var before = controls.offsetHeight;
-    ex.style.maxHeight = ex.scrollHeight + "px";
-    void ex.offsetHeight; // reflow so the transition starts from the full height
-    collapsed = true; manualOpen = false;
-    controls.classList.add("collapsed");
-    ex.style.maxHeight = "0px";
-    ex.setAttribute("aria-hidden", "true");
-    ex.inert = true;
-    // keep the grid where it is: the spacer takes over the height the panel gives up, but only while the panel is
-    // stuck (scrolled past the header). Collapsing it near the top (tap, Esc, mobile default) must let the grid move
-    // up, otherwise the spacer leaves an empty gap of the panel's height where the cards should be.
-    var after = controls.offsetHeight - ex.offsetHeight;
-    var stuck = window.scrollY >= threshold();
-    $("#controls-spacer").style.height = stuck ? Math.max(0, before - after) + "px" : "0px";
+    if (!open) { ex.style.maxHeight = ex.scrollHeight + "px"; void ex.offsetHeight; }
+    collapsed = !open;
+    controls.classList.toggle("collapsed", collapsed);
+    if (open) { ex.removeAttribute("aria-hidden"); ex.inert = false; syncExpandHeight(); }
+    else { ex.style.maxHeight = "0px"; ex.setAttribute("aria-hidden", "true"); ex.inert = true; }
     setAria();
   }
-  function expandPanel(manual) {
-    if (!collapsed) return;
-    var ex = $("#expand");
-    collapsed = false;
-    $(".controls").classList.remove("collapsed");
-    ex.removeAttribute("aria-hidden");
-    ex.inert = false;
-    syncExpandHeight();
-    $("#controls-spacer").style.height = "0px";
-    manualOpen = !!manual; manualY = window.scrollY;
-    setAria();
-  }
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      ticking = false;
-      var y = window.scrollY;
-      if (y < threshold()) {
-        // desktop: open again at the top; mobile: stay collapsed (only a tap opens it) and drop the spacer
-        if (collapsed && !isMobile()) expandPanel(false);
-        else if (collapsed) $("#controls-spacer").style.height = "0px";
-        manualOpen = false; return;
-      }
-      if (collapsed) return;
-      if (!manualOpen) { collapsePanel(); return; }
-      if (y < manualY) manualY = y; // scrolling up keeps it open and resets the distance
-      else if (y - manualY > RECOLLAPSE) collapsePanel();
-    });
-  }
+  function collapsePanel() { setPanel(false); }
+  function expandPanel() { setPanel(true); }
 
   /* ---------- events ---------- */
   function setFacet(facet, value, toggle) {
@@ -627,9 +588,8 @@
       if (collapsed && ev.target === $("#mini") && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); expandPanel(true); }
       else if (!collapsed && ev.key === "Escape" && ev.target !== $("#q")) { ev.preventDefault(); collapsePanel(); $("#toggle-filters").focus(); }
     });
-    window.addEventListener("scroll", onScroll, { passive: true });
-    // mobile: start collapsed so the first cards are on the first screen; tapping the row opens the filters
-    if (isMobile()) collapsePanel();
+    // start collapsed on every screen size so the first images are on the first screen
+    collapsePanel();
     window.addEventListener("resize", function () { if (!collapsed) syncExpandHeight(); });
     $(".selects").addEventListener("change", function (ev) {
       var f = ev.target.dataset.facet; if (!f) return; state[f] = ev.target.value; update();
@@ -712,7 +672,6 @@
     render();
     setAria();
     if (!collapsed) syncExpandHeight();
-    onScroll();
     route();
     // reload mid-page: the browser restores the scroll position before index.json has filled the grid, so the
     // page is still short and the position gets clipped; restore it ourselves once the cards are there
