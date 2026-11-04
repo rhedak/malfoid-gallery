@@ -38,8 +38,16 @@
           <option value="plan">Plan order</option>
         </select>
       </label>
-      <button id="toggle-filters" class="btn ghost filters-toggle" aria-expanded="false" aria-controls="filters">Filters<span id="filter-count" class="count-badge" hidden></span></button>
+      <div id="mini" class="mini" role="button" tabindex="0" aria-expanded="true" aria-controls="expand" aria-label="Show all filters">
+        <div id="mini-pills" class="mini-pills"></div>
+        <span id="mini-count" class="mini-count"></span>
+      </div>
+      <button id="toggle-filters" class="btn toggle" aria-expanded="true" aria-controls="expand">
+        <span class="toggle-label">Collapse</span><span id="filter-count" class="count-badge" hidden></span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+      </button>
     </div>
+    <div id="expand" class="expand">
     <div id="filters" class="filters">
       <div class="chip-row" data-facet="theme"><span class="row-label">Theme</span><div class="chips"></div></div>
       <div class="chip-row" data-facet="style"><span class="row-label">Style</span><div class="chips"></div></div>
@@ -55,7 +63,9 @@
       <p id="result-count" aria-live="polite"></p>
       <div id="active" class="active-filters"></div>
     </div>
+    </div>
   </section>
+  <div id="controls-spacer" class="controls-spacer" aria-hidden="true"></div>
 
   <section id="grid" class="grid" aria-label="Gallery"></section>
   <p id="empty" class="empty" hidden>Nothing matches. <button class="linkish" data-action="clear">Clear search and filters</button></p>

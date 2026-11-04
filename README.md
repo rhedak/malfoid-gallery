@@ -200,6 +200,8 @@ are free; a pose and an expression can't both set her gaze.
 (rejected images are not included).
 
 - **Grid** of thumbnails with Daily Malfoid number, clip and style badges; sort by newest, oldest or plan order.
+- The sticky search and filter panel collapses to one compact row (search, active-filter chips, count) once you
+  scroll past the header; click the row or *Filters* to open it again, *Collapse* (or Esc) to close it.
 - **Search** (client-side, [MiniSearch](https://github.com/lucaong/minisearch), MIT, vendored in `site/vendor/`)
   over title, full prompt, tags, theme, outfit, emotion and setting names; prefix and light fuzzy matching.
 - **Filters**: chips for theme, art style, status (posted / upcoming / gallery only) and media (image / video clip),

@@ -162,8 +162,15 @@
     active.innerHTML = pills.map(function (p) {
       return '<button class="pill" data-remove="' + p[0] + '" data-value="' + esc(p[1]) + '" title="Remove filter">' + esc(label(p[0], p[1])) + "<i>×</i></button>";
     }).join("") + (pills.length || state.q ? '<button class="linkish" data-action="clear">Clear all</button>' : "");
-    var nf = pills.length, badge = $("#filter-count");
+    var miniPills = pills.slice();
+    if (state.sort !== "newest") miniPills.push(["sort", state.sort]);
+    $("#mini-pills").innerHTML = miniPills.length ? miniPills.map(function (p) {
+      var text = p[0] === "sort" ? "Sort: " + $('#sort option[value="' + p[1] + '"]').textContent : label(p[0], p[1]);
+      return '<button class="pill" data-remove="' + p[0] + '" data-value="' + esc(p[1]) + '" title="Remove" aria-label="Remove ' + esc(text) + '">' + esc(text) + "<i>×</i></button>";
+    }).join("") : '<span class="mini-empty">No filters</span>';
+    var nf = miniPills.length, badge = $("#filter-count");
     badge.hidden = !nf; badge.textContent = nf;
+    if (!collapsed) syncExpandHeight();
   }
   function count(f, v, hits) {
     var field = FIELD[f], n = 0;
@@ -207,6 +214,7 @@
     $("#result-count").innerHTML = visible.length === total
       ? "<b>" + total + "</b> entries"
       : "<b>" + visible.length + "</b> of " + total + " entries";
+    $("#mini-count").innerHTML = "<b>" + visible.length + "</b>" + (visible.length === total ? '<span class="tot"> entries</span>' : '<span class="tot"> / ' + total + "</span>");
   }
 
   /* ---------- detail view ---------- */
@@ -362,6 +370,61 @@
     else closeDetail(true);
   }
 
+  /* ---------- collapsible sticky panel ---------- */
+  var collapsed = false, manualOpen = false, manualY = 0, ticking = false;
+  var RECOLLAPSE = 200; // px of further scrolling before a manually opened panel collapses again
+  function threshold() { return $(".hero").offsetHeight + 10; }
+  function setAria() {
+    [$("#mini"), $("#toggle-filters")].forEach(function (el) { el.setAttribute("aria-expanded", String(!collapsed)); });
+    $("#toggle-filters").setAttribute("aria-label", collapsed ? "Show filters" : "Collapse filters");
+    $("#mini").tabIndex = collapsed ? 0 : -1;
+  }
+  function syncExpandHeight() {
+    var ex = $("#expand");
+    ex.style.maxHeight = ex.scrollHeight + "px";
+  }
+  function collapsePanel() {
+    if (collapsed) return;
+    var ex = $("#expand"), controls = $(".controls");
+    var before = controls.offsetHeight;
+    ex.style.maxHeight = ex.scrollHeight + "px";
+    void ex.offsetHeight; // reflow so the transition starts from the full height
+    collapsed = true; manualOpen = false;
+    controls.classList.add("collapsed");
+    ex.style.maxHeight = "0px";
+    ex.setAttribute("aria-hidden", "true");
+    ex.inert = true;
+    // keep the grid where it is: the spacer takes over the height the panel gives up
+    var after = controls.offsetHeight - ex.offsetHeight;
+    $("#controls-spacer").style.height = Math.max(0, before - after) + "px";
+    setAria();
+  }
+  function expandPanel(manual) {
+    if (!collapsed) return;
+    var ex = $("#expand");
+    collapsed = false;
+    $(".controls").classList.remove("collapsed");
+    ex.removeAttribute("aria-hidden");
+    ex.inert = false;
+    syncExpandHeight();
+    $("#controls-spacer").style.height = "0px";
+    manualOpen = !!manual; manualY = window.scrollY;
+    setAria();
+  }
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      ticking = false;
+      var y = window.scrollY;
+      if (y < threshold()) { if (collapsed) expandPanel(false); manualOpen = false; return; }
+      if (collapsed) return;
+      if (!manualOpen) { collapsePanel(); return; }
+      if (y < manualY) manualY = y; // scrolling up keeps it open and resets the distance
+      else if (y - manualY > RECOLLAPSE) collapsePanel();
+    });
+  }
+
   /* ---------- events ---------- */
   function setFacet(facet, value, toggle) {
     if (CHIP_FACETS.indexOf(facet) >= 0) {
@@ -394,16 +457,27 @@
       qTimer = setTimeout(function () { state.q = ev.target.value; update(); }, 120);
     });
     $("#sort").addEventListener("change", function (ev) { state.sort = ev.target.value; update(); });
-    $("#toggle-filters").addEventListener("click", function () {
-      var open = $("#filters").classList.toggle("open");
-      this.setAttribute("aria-expanded", open);
+    $("#toggle-filters").addEventListener("click", function (ev) {
+      ev.stopPropagation();
+      if (collapsed) expandPanel(true); else collapsePanel();
     });
     $(".controls").addEventListener("click", function (ev) {
       var chip = ev.target.closest(".chip");
       if (chip) { setFacet(chip.dataset.facet, chip.dataset.value, true); update(); return; }
       var pill = ev.target.closest(".pill");
-      if (pill) { setFacet(pill.dataset.remove, pill.dataset.value, true); update(); return; }
+      if (pill) {
+        if (pill.dataset.remove === "sort") state.sort = "newest"; else setFacet(pill.dataset.remove, pill.dataset.value, true);
+        update(); return;
+      }
+      // collapsed row: a click anywhere except the search box expands the panel
+      if (collapsed && !ev.target.closest(".search")) expandPanel(true);
     });
+    $(".controls").addEventListener("keydown", function (ev) {
+      if (collapsed && ev.target === $("#mini") && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); expandPanel(true); }
+      else if (!collapsed && ev.key === "Escape" && ev.target !== $("#q")) { ev.preventDefault(); collapsePanel(); $("#toggle-filters").focus(); }
+    });
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", function () { if (!collapsed) syncExpandHeight(); });
     $(".selects").addEventListener("change", function (ev) {
       var f = ev.target.dataset.facet; if (!f) return; state[f] = ev.target.value; update();
     });
@@ -481,6 +555,9 @@
     readUrl();
     bind();
     render();
+    setAria();
+    syncExpandHeight();
+    onScroll();
     route();
   }
 
