@@ -1,4 +1,4 @@
-# Short Grok Imagine videos (480p, 6 s, 496x608) made 2026-11-03 from gallery images.
+# Short Grok Imagine videos (480p, ~6 s) made from gallery images (batch 2026-11-03 and 2026-11-05).
 - id: 2026-11-03-autumn-2
   video: videos/autumn-2.mp4
   source_post: https://grok.com/imagine/post/ebd50385-14ce-4d1e-baef-1dfb48bc9d29
@@ -29,3 +29,23 @@
   source_post: https://grok.com/imagine/post/39facdf1-4f4a-44dd-8ceb-f86b9ba4df57
   video_post: https://grok.com/imagine/post/5b663885-5042-4bac-a61a-e968acb73e93
   motion: "She startles wide-eyed, her face going red, then flusters and tugs her scarf up. Stars twinkle overhead and the night wind stirs her robe and hair."
+- id: 2026-11-03-castle-tsundere-2
+  video: videos/castle-tsundere-2.mp4
+  source_post: https://grok.com/imagine/post/2250a832-4b8c-4ac3-aff5-fa62f3c7af08
+  video_post: https://grok.com/imagine/post/d935c0e6-198f-4541-af71-daabb8a08527
+  motion: "She thrusts the scarf a little closer, then looks aside harder with a deeper blush. Snow drifts through the lantern light across the courtyard."
+- id: 2026-11-03-ice-rink-1
+  video: videos/ice-rink-1.mp4
+  source_post: https://grok.com/imagine/post/8f5268ee-e068-4e57-85c5-428a60c836f7
+  video_post: https://grok.com/imagine/post/541905c2-52d8-4eb1-b06c-bef62a37a6ea
+  motion: "She steadies her stance on the ice with hands on hips, then smirks more confidently. Snow falls past fairy lights as skaters glide behind her."
+- id: 2026-11-03-christmas-market-1
+  video: videos/christmas-market-1.mp4
+  source_post: https://grok.com/imagine/post/cb8709b8-2473-4157-a6f8-ac8192932a35
+  video_post: https://grok.com/imagine/post/f029ce43-4522-4976-aa11-23313b251eed
+  motion: "She dozes with her cheek on her fist, then peeks open with a grumpy blush. Market lights twinkle and snow drifts past the Christmas tree."
+- id: 2026-11-03-castle-tsundere-4
+  video: videos/castle-tsundere-4.mp4
+  source_post: https://grok.com/imagine/post/cb80873e-ce9e-49d5-a0a6-4da6c2e703d0
+  video_post: https://grok.com/imagine/post/8eb50c05-c58e-4c7f-a331-4d9ec4325f8d
+  motion: "She glances up at the mistletoe, then snaps her eyes back with a deeper pout and blush. Firelight flickers and the tree lights twinkle."

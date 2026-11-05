@@ -166,26 +166,26 @@ days:
     n: 7
     label: "Daily Malfoid 7"
     id: "2026-11-03-castle-tsundere-2"
-    type: image
-    media: "images/2026-11-03-castle-tsundere-2.jpg"
+    type: video
+    media: "videos/castle-tsundere-2.mp4"
     image: "images/2026-11-03-castle-tsundere-2.jpg"
-    theme: "Offering a scarf in the snow"
+    theme: "Offering a scarf in the snow (video)"
     x:
       caption: "Daily Malfoid 7 🧣 Take the scarf. I had a spare, that's all. It's not like I knitted it for you. Hmph."
       hashtags: "#DailyMalfoid #malfoid #AIart #winteraesthetic"
     instagram:
-      format: "feed post"
+      format: "Reel"
       caption: "Daily Malfoid 7 🧣 It's cold and you forgot your scarf again. Just take it before I change my mind."
       hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #winteraesthetic"
     tiktok:
-      post: "photo post (optional, skip if busy)"
+      post: "video"
       caption: "When the tsundere hands you HER scarf 🧣😳"
-      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #winteraesthetic"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIanimation #winteraesthetic"
     rednote:
-      post: "image note (图文笔记)"
+      post: "video note (视频笔记)"
       title: "围巾借你…才不是织给你的🧣"
       body: "Daily Malfoid 7 🧣\n下雪天又忘记戴围巾了吧？\n拿去，我刚好多一条而已\n才不是特意给你织的！哼\nTake the scarf before I change my mind. Hmph."
-      tags: "#AI绘画 #二次元 #傲娇 #冬天 #DailyMalfoid"
+      tags: "#AI视频 #二次元 #傲娇 #冬天 #DailyMalfoid"
   - date: 2026-11-10
     n: 8
     label: "Daily Malfoid 8"
@@ -334,26 +334,26 @@ days:
     n: 14
     label: "Daily Malfoid 14"
     id: "2026-11-03-ice-rink-1"
-    type: image
-    media: "images/2026-11-03-ice-rink-1.jpg"
+    type: video
+    media: "videos/ice-rink-1.mp4"
     image: "images/2026-11-03-ice-rink-1.jpg"
-    theme: "Ice rink, determined pose"
+    theme: "Ice rink, determined pose (video)"
     x:
       caption: "Daily Malfoid 14 ⛸️ I don't need help skating. I'm just standing here... strategically. Don't you dare laugh."
       hashtags: "#DailyMalfoid #malfoid #AIart #iceskating"
     instagram:
-      format: "feed post"
+      format: "Reel"
       caption: "Daily Malfoid 14 ⛸️ Fairy lights, fresh ice, and a very confident pose. I definitely know how to skate. Definitely."
       hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #iceskating"
     tiktok:
-      post: "photo post (optional, skip if busy)"
+      post: "video"
       caption: "Tsundere at the ice rink: \"I don't need help\" ⛸️"
-      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #iceskating"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIanimation #iceskating"
     rednote:
-      post: "image note (图文笔记)"
+      post: "video note (视频笔记)"
       title: "我才不需要人教滑冰⛸️"
       body: "Daily Malfoid 14 ⛸️\n彩灯、新冰面，还有一个超自信的姿势\n我当然会滑冰！当然！\n只是在这里……战略性站立。不许笑！\nI don't need help skating. Don't you dare laugh."
-      tags: "#AI绘画 #二次元 #傲娇 #滑冰 #DailyMalfoid"
+      tags: "#AI视频 #二次元 #傲娇 #滑冰 #DailyMalfoid"
   - date: 2026-11-17
     n: 15
     label: "Daily Malfoid 15"
@@ -430,26 +430,26 @@ days:
     n: 18
     label: "Daily Malfoid 18"
     id: "2026-11-03-christmas-market-1"
-    type: image
-    media: "images/2026-11-03-christmas-market-1.jpg"
+    type: video
+    media: "videos/christmas-market-1.mp4"
     image: "images/2026-11-03-christmas-market-1.jpg"
-    theme: "Sleepy at the Christmas market"
+    theme: "Sleepy at the Christmas market (video)"
     x:
       caption: "Daily Malfoid 18 🎄 You dragged me to the Christmas market this early? I'm not sleepy. I'm just... resting my face."
       hashtags: "#DailyMalfoid #malfoid #AIart #christmasmarket"
     instagram:
-      format: "feed post"
+      format: "Reel"
       caption: "Daily Malfoid 18 🎄 Market lights, warm cider in the air, and me, very much awake. Mostly. Buy me something warm and I might smile."
       hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmasmarket"
     tiktok:
-      post: "photo post (optional, skip if busy)"
+      post: "video"
       caption: "Sleepy tsundere at the Christmas market 🎄😴"
-      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmasmarket"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIanimation #christmasmarket"
     rednote:
-      post: "image note (图文笔记)"
+      post: "video note (视频笔记)"
       title: "圣诞市集上我才不困🎄"
       body: "Daily Malfoid 18 🎄\n一大早就被拉来圣诞市集\n我才不困，只是让脸休息一下\n给我买杯热饮的话，也许会笑一下\nI'm not sleepy. Buy me something warm and I might smile."
-      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+      tags: "#AI视频 #二次元 #傲娇 #圣诞 #DailyMalfoid"
   - date: 2026-11-21
     n: 19
     label: "Daily Malfoid 19"
@@ -526,26 +526,26 @@ days:
     n: 22
     label: "Daily Malfoid 22"
     id: "2026-11-03-castle-tsundere-4"
-    type: image
-    media: "images/2026-11-03-castle-tsundere-4.jpg"
+    type: video
+    media: "videos/castle-tsundere-4.mp4"
     image: "images/2026-11-03-castle-tsundere-4.jpg"
-    theme: "Under the mistletoe"
+    theme: "Under the mistletoe (video)"
     x:
       caption: "Daily Malfoid 22 🌿 Don't look up. There's nothing up there. I'm standing here by pure coincidence!"
       hashtags: "#DailyMalfoid #malfoid #AIart #mistletoe"
     instagram:
-      format: "feed post"
+      format: "Reel"
       caption: "Daily Malfoid 22 🌿 The fire is lit, the stockings are up, and someone hung mistletoe right where I was standing. Coincidence. Pure coincidence."
       hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #mistletoe"
     tiktok:
-      post: "photo post (optional, skip if busy)"
+      post: "video"
       caption: "She definitely didn't stand under the mistletoe on purpose 🌿"
-      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #mistletoe"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIanimation #mistletoe"
     rednote:
-      post: "image note (图文笔记)"
+      post: "video note (视频笔记)"
       title: "别抬头！上面什么都没有🌿"
       body: "Daily Malfoid 22 🌿\n壁炉生着火，袜子挂好了\n有人刚好在我站的地方挂了槲寄生\n纯属巧合！我只是碰巧站在这里！\nDon't look up. There's nothing up there!"
-      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+      tags: "#AI视频 #二次元 #傲娇 #圣诞 #DailyMalfoid"
   - date: 2026-11-25
     n: 23
     label: "Daily Malfoid 23"
