@@ -55,7 +55,7 @@ entries:
     input: "input/2026-11-03-castle-tsundere-3.yaml"
     image: "images/2026-11-03-castle-tsundere-3.jpg"
     planned: 2026-11-05
-    posted:
+    posted: {date: 2026-11-05, x: "https://x.com/rhedak1/status/2118162069740814661"}
   - id: "2026-11-03-castle-tsundere-4"
     title: "Mistletoe"
     created: 2026-11-03
@@ -202,7 +202,7 @@ entries:
     input: "input/2026-11-03-courtyard-1.yaml"
     image: "images/2026-11-03-courtyard-1.jpg"
     planned: 2026-11-04
-    posted:
+    posted: {date: 2026-11-04, x: "https://x.com/rhedak1/status/2117808574210687049"}
   - id: "2026-11-04-doodle-1"
     title: "Doodle: robe uniform, arms crossed"
     created: 2026-11-04
