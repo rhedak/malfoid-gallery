@@ -80,7 +80,7 @@ first rough-doodle style test, `2026-11-04-doodle-1` to `-4`.
 
 Rednote (Xiaohongshu, 小红书): each plan day has a `rednote` block with a Simplified Chinese `title`
 (about 20 characters max), a short casual `body` (Chinese lines plus one English line, numbered
-"Daily Malfoid #N" like the other platforms) and Xiaohongshu-style `tags` (max 5: #AI绘画 / #AI视频, #二次元,
+"Daily Malfoid N" like the other platforms) and Xiaohongshu-style `tags` (max 5: #AI绘画 / #AI视频, #二次元,
 #傲娇, one theme tag, #DailyMalfoid; no franchise tags). Every platform keeps at most 5 hashtags, and X / Instagram /
 TikTok use #malfoid (not #animeOC). Rednote takes image notes (图文笔记) and
 video notes (视频笔记), so every day, image or video, can be posted there. Tick Rednote's AI-generated content
