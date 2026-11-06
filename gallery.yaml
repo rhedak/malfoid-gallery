@@ -104,7 +104,7 @@ entries:
     input: "input/2026-11-03-pumpkin-patch-1.yaml"
     image: "images/2026-11-03-pumpkin-patch-1.jpg"
     planned: 2026-11-06
-    posted:
+    posted: {date: 2026-11-06, x: "https://x.com/rhedak1/status/2118520639665684519"}
   - id: "2026-11-03-christmas-owl-tower-1"
     title: "Owl tower, sulky pout"
     created: 2026-11-03
