@@ -1,0 +1,594 @@
+# Daily Malfoid: December 2026 posting plan (Advent calendar, 24 posts, Dec 1-24).
+# Each day posts `media`: the advent calendar card (image) for that day, from the advent set.
+# Each card is in gallery.yaml with the same `id`; the routine fills `posted:` there after posting.
+# A posting routine picks the day whose `date` is today (JST), posts `media` with the captions below.
+# Hashtags: max 5 per platform; always #DailyMalfoid, #malfoid (no original-character tags).
+# AI disclosure: every caption set carries an AI tag (#AIart; Rednote #AI绘画); turn on the AI label where offered.
+# Rednote: every day has a `rednote` block (Chinese title max ~20 chars, body, tags); tick the AI-generated
+# content declaration (内容由AI生成) when posting. No official franchise tags.
+# Numbering continues the November series: Daily Malfoid 29 = Advent 1 (Dec 1), 52 = Advent 24 (Dec 24).
+series: "Daily Malfoid"
+month: "2026-12"
+suggested_slot: "20:00 JST (a suggestion; adjust freely)"
+ai_disclosure:
+  x: "#AIart in the hashtags; use any AI/content label X offers when posting"
+  instagram: "#AIart in the hashtags; turn on the AI info label where offered"
+  tiktok: "#AIart / #AIanimation in the hashtags; turn on the AI-generated content label where offered"
+  rednote: "#AI绘画 in the tags; tick the AI-generated content declaration (内容由AI生成) when posting"
+days:
+  - date: 2026-12-01
+    n: 29
+    label: "Daily Malfoid 29"
+    id: "2026-11-06-advent-01"
+    type: image
+    media: "images/2026-11-06-advent-01.jpg"
+    image: "images/2026-11-06-advent-01.jpg"
+    theme: "Advent 1: Opening an Advent gift"
+    x:
+      caption: "Advent 1 🎁 Day one, and she's already opening presents. Don't ask who they're for."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 1 🎁 The calendar starts today. The gift is definitely not for you. Probably."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "day 1 of advent and she's already unwrapping 🎁"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣诞日历第一天🎁"
+      body: "Daily Malfoid 29 🎁\n圣诞日历开启啦！\n礼物当然不是给你的……大概吧\nDay one of advent. Probably not for you."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-02
+    n: 30
+    label: "Daily Malfoid 30"
+    id: "2026-11-06-advent-02"
+    type: image
+    media: "images/2026-11-06-advent-02.jpg"
+    image: "images/2026-11-06-advent-02.jpg"
+    theme: "Advent 2: Snowy lantern walk"
+    x:
+      caption: "Advent 2 🏮 A lantern for the walk home. It's bright, that's all. Don't stare."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 2 🏮 Snowy night, glowing lantern, a scarf she is definitely not sharing. Keep walking."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "she's walking home in the snow and pretending she's fine 🏮"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "雪夜提灯🏮"
+      body: "Daily Malfoid 30 🏮\n雪夜里提着灯笼走路，才、才不是在等你！\n围巾也只是因为天冷而已\nA lantern for the snowy walk home."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-03
+    n: 31
+    label: "Daily Malfoid 31"
+    id: "2026-11-06-advent-03"
+    type: image
+    media: "images/2026-11-06-advent-03.jpg"
+    image: "images/2026-11-06-advent-03.jpg"
+    theme: "Advent 3: Cocoa by the fireplace"
+    x:
+      caption: "Advent 3 ☕ Hot cocoa by the fire. The marshmallows are mine. Hands off."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 3 ☕ Fireplace, cocoa, and one very firm opinion about marshmallows. Hands off."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "cocoa by the fire, marshmallows are NOT for sharing ☕"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "壁炉热可可☕"
+      body: "Daily Malfoid 31 ☕\n壁炉边的热可可，棉花糖是我的，不许抢！\nHot cocoa by the fire. The marshmallows are mine."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-04
+    n: 32
+    label: "Daily Malfoid 32"
+    id: "2026-11-06-advent-04"
+    type: image
+    media: "images/2026-11-06-advent-04.jpg"
+    image: "images/2026-11-06-advent-04.jpg"
+    theme: "Advent 4: Decorating the tree"
+    x:
+      caption: "Advent 4 🎄 Decorating the tree. I'm only doing the top half, the bottom is yours."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 4 🎄 Tree decorating day. She's doing the top, you get the bottom. Fair deal."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "tree decorating with a very strict standard 🎄"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "布置圣诞树🎄"
+      body: "Daily Malfoid 32 🎄\n圣诞树我负责上半部分，下半部分归你！\nI'm doing the top half. Fair deal."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-05
+    n: 33
+    label: "Daily Malfoid 33"
+    id: "2026-11-06-advent-05"
+    type: image
+    media: "images/2026-11-06-advent-05.jpg"
+    image: "images/2026-11-06-advent-05.jpg"
+    theme: "Advent 5: Gingerbread kitchen"
+    x:
+      caption: "Advent 5 🍪 Gingerbread in the kitchen. I didn't burn it. The oven did."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 5 🍪 Flour everywhere, gingerbread in the oven, and a very convincing 'it wasn't me'."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "it was NOT her fault the gingerbread burned 🍪"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "姜饼厨房🍪"
+      body: "Daily Malfoid 33 🍪\n厨房里做姜饼，没有烧焦！是烤箱的错！\nI didn't burn it. The oven did."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-06
+    n: 34
+    label: "Daily Malfoid 34"
+    id: "2026-11-06-advent-06"
+    type: image
+    media: "images/2026-11-06-advent-06.jpg"
+    image: "images/2026-11-06-advent-06.jpg"
+    theme: "Advent 6: St Nicholas stocking"
+    x:
+      caption: "Advent 6 🧦 A stocking, hung up for St Nicholas. Not that I believe in it. Obviously."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 6 🧦 Stocking hung by the fireplace, just in case. Not that she believes in it. Obviously."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "hanging her stocking 'just in case' 🧦"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣尼古拉斯袜子🧦"
+      body: "Daily Malfoid 34 🧦\n挂好袜子，以防万一。才不是相信圣尼古拉斯！\nJust in case. Obviously I don't believe in it."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-07
+    n: 35
+    label: "Daily Malfoid 35"
+    id: "2026-11-06-advent-07"
+    type: image
+    media: "images/2026-11-06-advent-07.jpg"
+    image: "images/2026-11-06-advent-07.jpg"
+    theme: "Advent 7: Snowy castle courtyard"
+    x:
+      caption: "Advent 7 ❄️ Snow in the castle courtyard, scarf on, grumbling about the cold. Keep up."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 7 ❄️ Snowy courtyard, scarf up to her nose, complaining about the cold. Keep up."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "snow day in the castle courtyard ❄️"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "雪中城堡庭院❄️"
+      body: "Daily Malfoid 35 ❄️\n城堡庭院下雪了，好冷好冷……围巾是为了保暖！\nIt's cold. The scarf is for warmth. Obviously."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-08
+    n: 36
+    label: "Daily Malfoid 36"
+    id: "2026-11-06-advent-08"
+    type: image
+    media: "images/2026-11-06-advent-08.jpg"
+    image: "images/2026-11-06-advent-08.jpg"
+    theme: "Advent 8: Candlelit library Christmas book"
+    x:
+      caption: "Advent 8 📖 A Christmas book by candlelight. Don't look over my shoulder. Really."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 8 📖 Candlelit library, a Christmas book, and absolutely no one interrupting her reading."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "reading by candlelight, do NOT interrupt 📖"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "烛光图书馆📖"
+      body: "Daily Malfoid 36 📖\n烛光下读圣诞故事书，别偷看哦！\nNo, don't look over my shoulder."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-09
+    n: 37
+    label: "Daily Malfoid 37"
+    id: "2026-11-06-advent-09"
+    type: image
+    media: "images/2026-11-06-advent-09.jpg"
+    image: "images/2026-11-06-advent-09.jpg"
+    theme: "Advent 9: Christmas market"
+    x:
+      caption: "Advent 9 🌰 The Christmas market, roasted chestnuts and a stall that's far too cute. Hmph."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 9 🌰 Christmas market, string lights, roasted chestnuts. She's pretending she's not having fun."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "christmas market date she's 'just passing through' 🌰"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣诞集市🌰"
+      body: "Daily Malfoid 37 🌰\n圣诞市集的烤栗子好香，摊子也很可爱……哼\nChristmas market, chestnuts, and a cute stall. Hmph."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-10
+    n: 38
+    label: "Daily Malfoid 38"
+    id: "2026-11-06-advent-10"
+    type: image
+    media: "images/2026-11-06-advent-10.jpg"
+    image: "images/2026-11-06-advent-10.jpg"
+    theme: "Advent 10: Ice skating rink"
+    x:
+      caption: "Advent 10 ⛸️ On the ice rink. I'm not wobbling. The ice is wobbling."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 10 ⛸️ Ice rink, pink cheeks, and the strong claim that the ice is the problem."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "ice rink wobbles, she does NOT ⛸️"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "冰场⛸️"
+      body: "Daily Malfoid 38 ⛸️\n溜冰场上我才没有摇晃，是冰面在晃！\nI'm not wobbling. The ice is."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-11
+    n: 39
+    label: "Daily Malfoid 39"
+    id: "2026-11-06-advent-11"
+    type: image
+    media: "images/2026-11-06-advent-11.jpg"
+    image: "images/2026-11-06-advent-11.jpg"
+    theme: "Advent 11: Wrapping gifts"
+    x:
+      caption: "Advent 11 🎀 Wrapping presents. Yes, that one is for you. It's messy. Don't comment."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 11 🎀 Wrapping paper everywhere and one lopsided bow she refuses to fix. Don't comment."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "wrapping gifts, bow was NOT meant to be crooked 🎀"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "包礼物🎀"
+      body: "Daily Malfoid 39 🎀\n包礼物，其中一个是给你的……丑是丑了点，不许吐槽！\nYes, one is for you. It's messy. Don't comment."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-12
+    n: 40
+    label: "Daily Malfoid 40"
+    id: "2026-11-06-advent-12"
+    type: image
+    media: "images/2026-11-06-advent-12.jpg"
+    image: "images/2026-11-06-advent-12.jpg"
+    theme: "Advent 12: Snowy owl tower"
+    x:
+      caption: "Advent 12 🦉 A snowy owl on the tower. It chose me, not the other way around."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 12 🦉 Snowy owl, tower balcony, and a very dignified explanation of why she's up there."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "owl picked her, not the other way around 🦉"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "雪夜猫头鹰塔楼🦉"
+      body: "Daily Malfoid 40 🦉\n塔楼上的雪鸮好像挑中了我……不是我挑它的！\nThe owl chose me, not the other way around."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-13
+    n: 41
+    label: "Daily Malfoid 41"
+    id: "2026-11-06-advent-13"
+    type: image
+    media: "images/2026-11-06-advent-13.jpg"
+    image: "images/2026-11-06-advent-13.jpg"
+    theme: "Advent 13: Carols by the piano"
+    x:
+      caption: "Advent 13 🎹 Playing carols on the piano. Only because the hall is empty. Keep the applause quiet."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 13 🎹 Carols on the piano, hands on the keys. Only because the hall is empty. Quiet applause, please."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "playing carols when she thinks no one is listening 🎹"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "钢琴圣诞颂歌🎹"
+      body: "Daily Malfoid 41 🎹\n大厅没人的时候弹圣诞颂歌，才不是为了你！\nOnly because the hall is empty. Quiet applause, please."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-14
+    n: 42
+    label: "Daily Malfoid 42"
+    id: "2026-11-06-advent-14"
+    type: image
+    media: "images/2026-11-06-advent-14.jpg"
+    image: "images/2026-11-06-advent-14.jpg"
+    theme: "Advent 14: Green gown at the winter ball"
+    x:
+      caption: "Advent 14 💚 Winter ball in the green gown. I'm not dressed up for anyone. Stop looking."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 14 💚 Green-and-silver gown, winter ball, and a face that says she's not dressed up for anyone."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "she's not dressed up for the ball, obviously 💚"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "冬季舞会💚"
+      body: "Daily Malfoid 42 💚\n冬季舞会穿上绿银色礼服，才不是为了谁特意打扮！\nI'm not dressed up for anyone. Stop looking."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-15
+    n: 43
+    label: "Daily Malfoid 43"
+    id: "2026-11-06-advent-15"
+    type: image
+    media: "images/2026-11-06-advent-15.jpg"
+    image: "images/2026-11-06-advent-15.jpg"
+    theme: "Advent 15: Building a snowman"
+    x:
+      caption: "Advent 15 ⛄ Building a snowman. It's not a friend, it's a project. Mittens on."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 15 ⛄ Building a snowman, mittens on, and insisting it's a 'project' and not a friend."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "snowman building, it's a project not a friend ⛄"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "堆雪人⛄"
+      body: "Daily Malfoid 43 ⛄\n堆雪人，它不是朋友，是项目！戴着手套也要堆好\nIt's a project, not a friend."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-16
+    n: 44
+    label: "Daily Malfoid 44"
+    id: "2026-11-06-advent-16"
+    type: image
+    media: "images/2026-11-06-advent-16.jpg"
+    image: "images/2026-11-06-advent-16.jpg"
+    theme: "Advent 16: Festive train platform"
+    x:
+      caption: "Advent 16 🚂 Waiting on the festive train platform. Not waiting for you. The train is late."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 16 🚂 Festive train platform, lights and steam. She's not waiting for anyone. The train is late."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "waiting on the platform, NOT for you 🚂"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "节日火车站台🚂"
+      body: "Daily Malfoid 44 🚂\n在节日列车站台等车，才不是在等你！车晚点而已\nNot waiting for you. The train is late."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-17
+    n: 45
+    label: "Daily Malfoid 45"
+    id: "2026-11-06-advent-17"
+    type: image
+    media: "images/2026-11-06-advent-17.jpg"
+    image: "images/2026-11-06-advent-17.jpg"
+    theme: "Advent 17: Wreath crafting"
+    x:
+      caption: "Advent 17 🌿 Making a wreath. The pinecones are mine, the ribbon is yours. Fair."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 17 🌿 Pinecones, ribbon and a wreath in progress. The pinecones are hers. The ribbon is yours."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "making a wreath, the pinecones are HERS 🌿"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "圣诞花环🌿"
+      body: "Daily Malfoid 45 🌿\n做圣诞花环，松果是我的，丝带给你！\nThe pinecones are mine, the ribbon is yours."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-18
+    n: 46
+    label: "Daily Malfoid 46"
+    id: "2026-11-06-advent-18"
+    type: image
+    media: "images/2026-11-06-advent-18.jpg"
+    image: "images/2026-11-06-advent-18.jpg"
+    theme: "Advent 18: Enchanted snow globe"
+    x:
+      caption: "Advent 18 ❄️ A snow globe that's a little too enchanted. Don't shake it. I mean it."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 18 ❄️ An enchanted snow globe, and the strict instruction not to shake it. She means it."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "do NOT shake the snow globe ❄️"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "魔法雪花球❄️"
+      body: "Daily Malfoid 46 ❄️\n魔法雪花球很好看……不许摇！我是认真的\nDon't shake it. I mean it."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-19
+    n: 47
+    label: "Daily Malfoid 47"
+    id: "2026-11-06-advent-19"
+    type: image
+    media: "images/2026-11-06-advent-19.jpg"
+    image: "images/2026-11-06-advent-19.jpg"
+    theme: "Advent 19: Baking star cookies"
+    x:
+      caption: "Advent 19 ⭐ Baking star cookies. The first batch is not for you. The second batch might be."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 19 ⭐ Star cookies cooling on the counter. First batch: hers. Second batch: maybe yours."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "star cookies, first batch is hers ⭐"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "星星饼干⭐"
+      body: "Daily Malfoid 47 ⭐\n烤星星饼干，第一批不给你，第二批再说……\nFirst batch isn't for you. The second might be."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-20
+    n: 48
+    label: "Daily Malfoid 48"
+    id: "2026-11-06-advent-20"
+    type: image
+    media: "images/2026-11-06-advent-20.jpg"
+    image: "images/2026-11-06-advent-20.jpg"
+    theme: "Advent 20: Mistletoe embarrassment"
+    x:
+      caption: "Advent 20 🌿 Mistletoe. She did NOT stand under it on purpose. It was a coincidence. Look away."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 20 🌿 Caught under the mistletoe and blushing so hard. It was a coincidence. Look away."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "she did NOT stand under the mistletoe on purpose 🌿"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "槲寄生的尴尬🌿"
+      body: "Daily Malfoid 48 🌿\n被发现站在槲寄生下面……才不是故意的！是巧合！\nIt was a coincidence. Look away."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-21
+    n: 49
+    label: "Daily Malfoid 49"
+    id: "2026-11-06-advent-21"
+    type: image
+    media: "images/2026-11-06-advent-21.jpg"
+    image: "images/2026-11-06-advent-21.jpg"
+    theme: "Advent 21: Sleigh in the snowy forest"
+    x:
+      caption: "Advent 21 🛷 A sleigh ride through the snowy forest. I only came for the view. And the cocoa."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 21 🛷 Sleigh ride through the snowy forest. She came for the view. And the cocoa."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "sleigh ride, she came for the view (and the cocoa) 🛷"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "雪林雪橇🛷"
+      body: "Daily Malfoid 49 🛷\n坐雪橇穿过雪林，我只是为了风景和热可可！\nFor the view. And the cocoa."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-22
+    n: 50
+    label: "Daily Malfoid 50"
+    id: "2026-11-06-advent-22"
+    type: image
+    media: "images/2026-11-06-advent-22.jpg"
+    image: "images/2026-11-06-advent-22.jpg"
+    theme: "Advent 22: Hanging stockings"
+    x:
+      caption: "Advent 22 🧦 Hanging the stockings. Yours is the slightly crooked one. Don't argue."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 22 🧦 Stockings hung by the fireplace. Yours is the slightly crooked one. Don't argue."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "hanging stockings, yours is the crooked one 🧦"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "挂袜子🧦"
+      body: "Daily Malfoid 50 🧦\n挂圣诞袜，你的那只歪了一点点，不许吐槽！\nYours is the slightly crooked one."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-23
+    n: 51
+    label: "Daily Malfoid 51"
+    id: "2026-11-06-advent-23"
+    type: image
+    media: "images/2026-11-06-advent-23.jpg"
+    image: "images/2026-11-06-advent-23.jpg"
+    theme: "Advent 23: Placing the star on the tree"
+    x:
+      caption: "Advent 23 ⭐ Putting the star on top of the tree. Only she is allowed to reach it. Obviously."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 23 ⭐ Placing the star on top of the tree on tiptoe. She's the only one tall enough. Obviously."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "placing the star on top, tiptoe and very proud ⭐"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "树顶的星星⭐"
+      body: "Daily Malfoid 51 ⭐\n把星星放在树顶，踮着脚，只有我够得着！\nOnly I can reach it. Obviously."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"
+  - date: 2026-12-24
+    n: 52
+    label: "Daily Malfoid 52"
+    id: "2026-11-06-advent-24"
+    type: image
+    media: "images/2026-11-06-advent-24.jpg"
+    image: "images/2026-11-06-advent-24.jpg"
+    theme: "Advent 24: Christmas Eve gift"
+    x:
+      caption: "Advent 24 🎁 Christmas Eve. The last gift on the calendar. It's for you. Don't make it weird."
+      hashtags: "#DailyMalfoid #malfoid #AIart #advent"
+    instagram:
+      format: "feed post"
+      caption: "Advent 24 🎁 Christmas Eve, the last door on the calendar, and the final gift. It's for you. Don't make it weird."
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #christmas"
+    tiktok:
+      post: "photo post (optional, skip if busy)"
+      caption: "christmas eve, the last gift is for you 🎁 don't make it weird"
+      hashtags: "#DailyMalfoid #malfoid #tsundere #AIart #adventcalendar"
+    rednote:
+      post: "image note (图文笔记)"
+      title: "平安夜的礼物🎁"
+      body: "Daily Malfoid 52 🎁\n平安夜，日历上最后一份礼物，是给你的。不许把它变得奇怪！\nThe last gift is for you. Don't make it weird."
+      tags: "#AI绘画 #二次元 #傲娇 #圣诞 #DailyMalfoid"

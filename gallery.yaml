@@ -490,3 +490,171 @@ entries:
     image: "images/2026-11-04-pack-swimsuit-swimming.webp"
     gallery_only: true
     posted:
+  - id: "2026-11-06-advent-01"
+    title: "Advent day 1: opening Advent gift"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-01.yaml"
+    image: "images/2026-11-06-advent-01.jpg"
+    planned: 2026-12-01
+    posted:
+  - id: "2026-11-06-advent-02"
+    title: "Advent day 2: snowy lantern walk"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-02.yaml"
+    image: "images/2026-11-06-advent-02.jpg"
+    planned: 2026-12-02
+    posted:
+  - id: "2026-11-06-advent-03"
+    title: "Advent day 3: cocoa by fireplace"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-03.yaml"
+    image: "images/2026-11-06-advent-03.jpg"
+    planned: 2026-12-03
+    posted:
+  - id: "2026-11-06-advent-04"
+    title: "Advent day 4: decorating tree"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-04.yaml"
+    image: "images/2026-11-06-advent-04.jpg"
+    planned: 2026-12-04
+    posted:
+  - id: "2026-11-06-advent-05"
+    title: "Advent day 5: gingerbread kitchen"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-05.yaml"
+    image: "images/2026-11-06-advent-05.jpg"
+    planned: 2026-12-05
+    posted:
+  - id: "2026-11-06-advent-06"
+    title: "Advent day 6: St Nicholas stocking"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-06.yaml"
+    image: "images/2026-11-06-advent-06.jpg"
+    planned: 2026-12-06
+    posted:
+  - id: "2026-11-06-advent-07"
+    title: "Advent day 7: snowy castle courtyard scarf"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-07.yaml"
+    image: "images/2026-11-06-advent-07.jpg"
+    planned: 2026-12-07
+    posted:
+  - id: "2026-11-06-advent-08"
+    title: "Advent day 8: candlelit library Christmas book"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-08.yaml"
+    image: "images/2026-11-06-advent-08.jpg"
+    planned: 2026-12-08
+    posted:
+  - id: "2026-11-06-advent-09"
+    title: "Advent day 9: Christmas market"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-09.yaml"
+    image: "images/2026-11-06-advent-09.jpg"
+    planned: 2026-12-09
+    posted:
+  - id: "2026-11-06-advent-10"
+    title: "Advent day 10: ice skating rink"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-10.yaml"
+    image: "images/2026-11-06-advent-10.jpg"
+    planned: 2026-12-10
+    posted:
+  - id: "2026-11-06-advent-11"
+    title: "Advent day 11: wrapping gifts"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-11.yaml"
+    image: "images/2026-11-06-advent-11.jpg"
+    planned: 2026-12-11
+    posted:
+  - id: "2026-11-06-advent-12"
+    title: "Advent day 12: snowy owl tower"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-12.yaml"
+    image: "images/2026-11-06-advent-12.jpg"
+    planned: 2026-12-12
+    posted:
+  - id: "2026-11-06-advent-13"
+    title: "Advent day 13: carol music by piano"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-13.yaml"
+    image: "images/2026-11-06-advent-13.jpg"
+    planned: 2026-12-13
+    posted:
+  - id: "2026-11-06-advent-14"
+    title: "Advent day 14: green gown winter ball"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-14.yaml"
+    image: "images/2026-11-06-advent-14.jpg"
+    planned: 2026-12-14
+    posted:
+  - id: "2026-11-06-advent-15"
+    title: "Advent day 15: building snowman"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-15.yaml"
+    image: "images/2026-11-06-advent-15.jpg"
+    planned: 2026-12-15
+    posted:
+  - id: "2026-11-06-advent-16"
+    title: "Advent day 16: festive train platform"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-16.yaml"
+    image: "images/2026-11-06-advent-16.jpg"
+    planned: 2026-12-16
+    posted:
+  - id: "2026-11-06-advent-17"
+    title: "Advent day 17: wreath crafting"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-17.yaml"
+    image: "images/2026-11-06-advent-17.jpg"
+    planned: 2026-12-17
+    posted:
+  - id: "2026-11-06-advent-18"
+    title: "Advent day 18: enchanted snow globe"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-18.yaml"
+    image: "images/2026-11-06-advent-18.jpg"
+    planned: 2026-12-18
+    posted:
+  - id: "2026-11-06-advent-19"
+    title: "Advent day 19: baking star cookies"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-19.yaml"
+    image: "images/2026-11-06-advent-19.jpg"
+    planned: 2026-12-19
+    posted:
+  - id: "2026-11-06-advent-20"
+    title: "Advent day 20: mistletoe embarrassment"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-20.yaml"
+    image: "images/2026-11-06-advent-20.jpg"
+    planned: 2026-12-20
+    posted:
+  - id: "2026-11-06-advent-21"
+    title: "Advent day 21: sleigh in snowy forest"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-21.yaml"
+    image: "images/2026-11-06-advent-21.jpg"
+    planned: 2026-12-21
+    posted:
+  - id: "2026-11-06-advent-22"
+    title: "Advent day 22: hanging stockings"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-22.yaml"
+    image: "images/2026-11-06-advent-22.jpg"
+    planned: 2026-12-22
+    posted:
+  - id: "2026-11-06-advent-23"
+    title: "Advent day 23: placing star atop tree"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-23.yaml"
+    image: "images/2026-11-06-advent-23.jpg"
+    planned: 2026-12-23
+    posted:
+  - id: "2026-11-06-advent-24"
+    title: "Advent day 24: Christmas Eve gift grand finale"
+    created: 2026-11-06
+    input: "input/2026-11-06-advent-24.yaml"
+    image: "images/2026-11-06-advent-24.jpg"
+    planned: 2026-12-24
+    posted:
