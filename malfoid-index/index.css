@@ -10,6 +10,7 @@
 .index-intro a { color: var(--emerald); }
 .index-how { color: var(--muted) !important; font-size: 14px; }
 .index-submit { margin-top: 6px; }
+.index-rules { margin-top: 12px !important; font-size: 14px; color: #c9f5e2 !important; }
 
 .index-controls { margin-top: 14px; }
 .index-controls .chips { margin-top: 10px; }
@@ -19,7 +20,7 @@
 .index-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); }
 .work { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .work:hover { border-color: rgba(52, 211, 153, .4); }
-.work-thumb { display: block; width: calc(100% + 32px); max-width: none; margin: -14px -16px 6px; height: 170px; object-fit: cover; background: var(--panel-2); border-radius: var(--radius) var(--radius) 0 0; }
+.work-thumb { display: block; width: calc(100% + 32px); max-width: none; margin: -14px -16px 6px; height: 170px; object-fit: cover; object-position: 50% 8%; background: var(--panel-2); border-radius: var(--radius) var(--radius) 0 0; }
 .work-top {display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .kind { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #c9f5e2; border: 1px solid rgba(52, 211, 153, .45); border-radius: 999px; padding: 1px 8px; }
 .work-date { font-size: 12px; color: var(--silver-2); margin-left: auto; }
