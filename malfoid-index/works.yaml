@@ -1200,6 +1200,15 @@ works:
     summary: "Writes Harry and Dracaena family fanfics as X articles and posts AI art of them."
     also: ["https://x.com/BoringBattlecry/articles"]
     tags: [fanfic, ai-art, family, x]
+  - id: "fanfic-draconia-malfoy-boy-who-said-no"
+    title: "Draconia Malfoy and the Boy Who Said No"
+    kind: fanfic
+    creator: "PeterC"
+    url: "https://www.wattpad.com/story/416789252-draconia-malfoy-and-the-boy-who-said-no"
+    language: "English"
+    added: 2026-11-09
+    summary: "Draconia Malfoy has been raised to expect the best of everything, and Harry Potter turns down her offer. A slow-burn enemies-to-lovers story on Wattpad."
+    tags: [enemiestolovers, slowburn, romance, wattpad]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
