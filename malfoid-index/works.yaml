@@ -1278,6 +1278,16 @@ works:
     added: 2026-11-09
     summary: "13 videos of the narrative Malfoid story in recommended viewing order, including the full short films."
     tags: [playlist, series, story]
+  - id: "creator-hiddenarchitecture"
+    title: "HiddenArchitecture"
+    kind: [creator, fanfic]
+    creator: "HiddenArchitecture (@DogHydra25)"
+    url: "https://x.com/DogHydra25"
+    language: "English"
+    added: 2026-11-09
+    summary: "Writes Dancing with Malfoy on Royal Road, a Harry Potter AU romance with a female Draco Malfoy."
+    also: ["https://www.royalroad.com/profile/286353"]
+    tags: [fanfic, royal-road, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
