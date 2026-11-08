@@ -134,11 +134,11 @@
       "Kind (fanfic / fan art / video / music / other):",
       "Your name or handle:",
       "Link to the work (must stay online):",
-      "Language:",
+      "Language (English only):",
       "Short summary (1-2 sentences):",
       "Tags (optional):",
       "",
-      "I made this myself and agree to it being listed in the Malfoid Index.",
+      "I made this myself, it is in English and wholesome (SFW), and I agree to it being listed in the Malfoid Index.",
     ].join("\n");
     var href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     document.getElementById("submit").href = href;
