@@ -316,3 +316,7 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
 }
 
 .links .src-note { color: var(--silver-2); font-size: 12px; align-self: center; }
+
+/* Link from the gallery header to the Malfoid Index sub page */
+.index-link { flex: none; font-size: 13px; color: var(--silver-2); white-space: nowrap; }
+.index-link:hover { color: #8ff0c8; }
