@@ -1269,6 +1269,15 @@ works:
     added: 2026-11-09
     summary: "A 5-video YouTube playlist of Malfoid stories, art and music, including the Malfoid: BOARBUMP series."
     tags: [playlist, series, music]
+  - id: "video-malfoid-main-story-playlist"
+    title: "Malfoid Main Story"
+    kind: video
+    creator: "schmede_AI"
+    url: "https://www.youtube.com/playlist?list=PLH3pYi9dZmQk"
+    language: "English"
+    added: 2026-11-09
+    summary: "13 videos of the narrative Malfoid story in recommended viewing order, including the full short films."
+    tags: [playlist, series, story]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
