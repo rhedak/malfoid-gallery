@@ -1200,6 +1200,8 @@ works:
     summary: "Writes Harry and Dracaena family fanfics as X articles and posts AI art of them."
     also: ["https://x.com/BoringBattlecry/articles"]
     tags: [fanfic, ai-art, family, x]
+    # NOTE (to be clarified): the comic cover credits "ORIGINAL STORY - @nightowl_trades" and "ART - @Crepuscule3307".
+    # The Wattpad author is nomoontwo (shown as PeterC). Not yet known whether nightowl_trades is the original author.
   - id: "fanfic-draconia-malfoy-boy-who-said-no"
     thumb: "https://img.wattpad.com/cover/416789252-256-k768596.jpg"
     title: "Draconia Malfoy and the Boy Who Said No"
