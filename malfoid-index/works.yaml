@@ -36,6 +36,7 @@ works:
     summary: "Searchable gallery of Draconia Malfoid images and clips made with Grok Imagine, with every prompt and the Daily Malfoid posting plan."
     tags: [images, gallery, ai-art]
   - id: "companion-draconia-chat"
+    thumb: "https://rhedak.github.io/malfoid-gallery/thumbs/2026-11-04-pack-uniform-neutral.webp"
     title: "Chat with Draconia (anime AI companion)"
     kind: other
     creator: "rhedak"
