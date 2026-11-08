@@ -1118,6 +1118,15 @@ works:
     added: 2026-11-08
     summary: "The maintainer of this index and the Malfoid gallery. Hobby game dev and author."
     tags: [gallery-maintainer, x]
+  - id: "creator-blazzsatan"
+    title: "Blazz"
+    kind: [creator, art]
+    creator: "@blazzsatan"
+    url: "https://x.com/blazzsatan"
+    language: "English"
+    added: 2026-11-09
+    summary: "AI-made Malfoid and Harry Potter art on X."
+    tags: [fan-art, ai-art, x]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
