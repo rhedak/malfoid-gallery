@@ -97,6 +97,15 @@ works:
     added: 2026-11-08
     summary: "Playlist of 17 Lumos Lumos anime videos on the ADayASMR channel: the opening trailer, seasons 1 to 6, the final season, the epilogue and an OVA, plus songs and karaoke."
     tags: [anime, series, music, playlist]
+  - id: "video-man-in-the-mirror-playlist"
+    thumb: "https://i.ytimg.com/vi/eqXRHxAhrFs/hqdefault.jpg"
+    title: "Harry Potter and the Man in the Mirror"
+    kind: video
+    creator: "The Lore Lounge"
+    url: "https://www.youtube.com/playlist?list=PLaNkCCq_O3Bk"
+    added: 2026-11-08
+    summary: "A rewrite of Harry Potter and the Philosopher's Stone with more depth and fewer plot holes, and Draco Malfoy as a girl. Two chapters so far, as a YouTube playlist."
+    tags: [rewrite, female-draco, playlist]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
