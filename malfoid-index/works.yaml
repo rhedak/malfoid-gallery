@@ -3,7 +3,7 @@
 # Each entry is one work. Fields (all optional except title and kind):
 #   id:        short unique slug, e.g. "2026-12-moonlit-owl"
 #   title:     the work's title
-#   kind:      fanfic | art | video | music | other
+#   kind:      fanfic | art | video | music | other, or a list such as [other, fanfic]
 #   creator:   the author or artist's name or handle
 #   url:       link to the work (http or https)
 #   language:  e.g. "English", "German"
@@ -18,7 +18,7 @@ works:
   - id: "webcomic-malfoid-girl-who-yearned"
     thumb: "https://rhedak.github.io/malfoid-the-girl-who-yearned/cover.jpg"
     title: "Malfoid: The Girl who Yearned"
-    kind: other
+    kind: [other, fanfic]
     creator: "rhedak"
     url: "https://rhedak.github.io/malfoid-the-girl-who-yearned/"
     language: "English"

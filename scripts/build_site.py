@@ -223,6 +223,17 @@ def build_index():
     }
 
 
+def kinds_of(value):
+    """`kind:` is one value or a list (e.g. [other, fanfic]); the first is the primary kind."""
+    items = value if isinstance(value, list) else [value]
+    out = []
+    for k in items:
+        k = "" if k is None else str(k).strip().lower()
+        if k and k not in out:
+            out.append(k)
+    return out or ["other"]
+
+
 def build_works():
     """The Malfoid Index sub page: malfoid-index/works.yaml -> works.json (newest added first)."""
     data = load("malfoid-index/works.yaml")
@@ -238,7 +249,7 @@ def build_works():
         works.append({
             "id": text(w.get("id")),
             "title": text(w.get("title")),
-            "kind": text(w.get("kind")) or "other",
+            "kinds": kinds_of(w.get("kind")),
             "creator": text(w.get("creator")),
             "url": text(w.get("url")),
             "language": text(w.get("language")),

@@ -25,12 +25,13 @@
   }
 
   function haystack(w) {
-    return [w.title, w.creator, w.summary, w.language, (w.tags || []).join(" "), KINDS[w.kind] || w.kind]
+    return [w.title, w.creator, w.summary, w.language, (w.tags || []).join(" "),
+      (w.kinds || []).map(function (k) { return KINDS[k] || k; }).join(" ")]
       .join(" ").toLowerCase();
   }
 
   function matches(w) {
-    if (state.kind !== "all" && w.kind !== state.kind) return false;
+    if (state.kind !== "all" && (w.kinds || []).indexOf(state.kind) === -1) return false;
     if (!state.q) return true;
     return state.q.split(/\s+/).every(function (term) { return haystack(w).indexOf(term) !== -1; });
   }
@@ -42,7 +43,7 @@
     Object.keys(KINDS).forEach(function (k) { kinds.push([k, KINDS[k]]); });
     kinds.forEach(function (pair) {
       var count = pair[0] === "all" ? data.works.length
-        : data.works.filter(function (w) { return w.kind === pair[0]; }).length;
+        : data.works.filter(function (w) { return (w.kinds || []).indexOf(pair[0]) !== -1; }).length;
       if (pair[0] !== "all" && count === 0) return;
       var b = el("button", "chip", pair[1]);
       b.type = "button";
@@ -65,7 +66,9 @@
       article.appendChild(img);
     }
     var top = el("div", "work-top");
-    top.appendChild(el("span", "kind", KINDS[w.kind] || w.kind || "Other"));
+    (w.kinds && w.kinds.length ? w.kinds : ["other"]).forEach(function (k) {
+      top.appendChild(el("span", "kind", KINDS[k] || k));
+    });
     if (w.added) top.appendChild(el("span", "work-date", w.added));
     article.appendChild(top);
 
