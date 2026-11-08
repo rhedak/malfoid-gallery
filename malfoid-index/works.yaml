@@ -1105,8 +1105,10 @@ works:
     kind: creator
     creator: "@MalfoidSoftware"
     url: "https://x.com/MalfoidSoftware"
+    also:
+      - "https://www.youtube.com/@MalfoidSoftware"
     added: 2026-11-08
-    summary: "Malfoid Software on X, with a YouTube channel and a Patreon for support."
+    summary: "Malfoid Software on X and YouTube, with 12 videos on the channel and a Patreon for support."
     tags: [youtube, patreon, x]
   - id: "creator-rhedak"
     title: "rhedak"
