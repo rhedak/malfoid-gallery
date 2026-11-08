@@ -223,6 +223,33 @@ def build_index():
     }
 
 
+def build_works():
+    """The Malfoid Index sub page: malfoid-index/works.yaml -> works.json (newest added first)."""
+    data = load("malfoid-index/works.yaml")
+
+    def text(v):
+        return "" if v is None else str(v).strip()
+
+    works = []
+    for w in data.get("works") or []:
+        if not isinstance(w, dict) or not text(w.get("title")):
+            continue
+        tags = w.get("tags") or []
+        works.append({
+            "id": text(w.get("id")),
+            "title": text(w.get("title")),
+            "kind": text(w.get("kind")) or "other",
+            "creator": text(w.get("creator")),
+            "url": text(w.get("url")),
+            "language": text(w.get("language")),
+            "added": text(w.get("added")),
+            "summary": text(w.get("summary")),
+            "tags": [text(t) for t in (tags if isinstance(tags, list) else [tags]) if text(t)],
+        })
+    works.sort(key=lambda w: w["added"], reverse=True)
+    return {"title": text(data.get("title")) or "Malfoid Index", "contact": text(data.get("contact")), "works": works}
+
+
 def copy(rel, out):
     src, dst = os.path.join(ROOT, rel), os.path.join(out, rel)
     if not os.path.isfile(src):
@@ -278,7 +305,12 @@ def main():
             made += make_thumb(os.path.join(ROOT, e["image"]), os.path.join(out, e["thumb"]))
     with open(os.path.join(out, "index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
-    print("built %s: %d entries, %d new thumbnails" % (os.path.relpath(out, os.getcwd()), len(index["entries"]), made))
+    works = build_works()
+    os.makedirs(os.path.join(out, "malfoid-index"), exist_ok=True)
+    with open(os.path.join(out, "malfoid-index", "works.json"), "w", encoding="utf-8") as f:
+        json.dump(works, f, ensure_ascii=False, separators=(",", ":"))
+    print("built %s: %d entries, %d new thumbnails, %d index works" % (
+        os.path.relpath(out, os.getcwd()), len(index["entries"]), made, len(works["works"])))
 
 
 if __name__ == "__main__":

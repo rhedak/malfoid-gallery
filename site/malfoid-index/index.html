@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Malfoid Index · Draconia Malfoid fan works</title>
+<meta name="description" content="An index of fanfics, fan art, videos and other fan works about Draconia Malfoid, made by other people.">
+<meta name="theme-color" content="#0a0f0d">
+<meta property="og:title" content="Malfoid Index">
+<meta property="og:description" content="Fanfics, fan art and other fan works about Draconia Malfoid.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-gallery/malfoid-index/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-gallery/og-banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body class="index-page">
+<a class="skip" href="#list">Skip to the index</a>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="crumb"><a href="../">← Malfoid Gallery</a></p>
+      <h1>Malfoid <span>Index</span></h1>
+      <p class="lede">Fanfics, fan art and other fan works about <strong>Draconia Malfoid</strong>, made by other people.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="index-intro" aria-label="About the index">
+    <p>Did you write or draw something about Draconia? Send it to
+      <a id="contact" href="mailto:rhedak@proton.me">rhedak@proton.me</a> and it may be added here.</p>
+    <p class="index-how">Include a title, your name or handle, a link to the work, the language, and two or three sentences about it.
+      Only send works you made yourself, and only links that stay online.</p>
+    <a id="submit" class="cta index-submit" href="mailto:rhedak@proton.me?subject=Malfoid%20Index%20submission">
+      <span aria-hidden="true">✉</span> Submit a work by email
+    </a>
+  </section>
+
+  <section class="controls index-controls" aria-label="Search and filter">
+    <div class="searchbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search titles, creators, tags…" autocomplete="off" spellcheck="false" aria-label="Search">
+      </label>
+    </div>
+    <div id="kinds" class="chips" role="group" aria-label="Filter by kind"></div>
+  </section>
+
+  <p id="count" class="index-count" aria-live="polite"></p>
+  <section id="list" class="index-list" aria-live="polite"></section>
+</main>
+
+<footer class="index-footer">
+  <p>Made by fans. Each work belongs to its creator; follow the link to read or view it there.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
