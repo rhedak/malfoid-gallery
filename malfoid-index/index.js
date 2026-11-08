@@ -55,6 +55,15 @@
 
   function card(w) {
     var article = el("article", "work");
+    if (w.thumb) {
+      var img = el("img", "work-thumb");
+      img.src = w.thumb;
+      img.alt = "";
+      img.loading = "lazy";
+      img.referrerPolicy = "no-referrer";
+      img.onerror = function () { img.remove(); };
+      article.appendChild(img);
+    }
     var top = el("div", "work-top");
     top.appendChild(el("span", "kind", KINDS[w.kind] || w.kind || "Other"));
     if (w.added) top.appendChild(el("span", "work-date", w.added));
