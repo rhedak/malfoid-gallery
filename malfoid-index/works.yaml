@@ -115,6 +115,15 @@ works:
     added: 2026-11-08
     summary: "A Harry Potter romantic comedy about Malfoid and Harry, told in short episodes: secret dates, a rival, the Halloween Incident and more. 17 episodes so far, as a YouTube playlist."
     tags: [romcom, series, episodes, playlist]
+  - id: "video-malfoid-wont-admit-it-playlist"
+    thumb: "https://i.ytimg.com/vi/ubWqm1jYTqw/hqdefault.jpg"
+    title: "Malfoid Won't Admit It"
+    kind: video
+    creator: "Falkor"
+    url: "https://www.youtube.com/playlist?list=PLU0WDJSAzP_w"
+    added: 2026-11-08
+    summary: "A Harry Potter story series starting at the Yule Ball, with Malfoid, jealousy, a letter and her father. Seven episodes so far, as a YouTube playlist."
+    tags: [series, episodes, playlist]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
