@@ -1190,6 +1190,16 @@ works:
     added: 2026-11-09
     summary: "Makes Malfoid comics, posted on Patreon and X."
     tags: [comic, patreon, x]
+  - id: "creator-boringbattlecry"
+    title: "Boring Battlecry"
+    kind: [creator, fanfic, art]
+    creator: "@BoringBattlecry"
+    url: "https://x.com/BoringBattlecry"
+    language: "English"
+    added: 2026-11-09
+    summary: "Writes Harry and Dracaena family fanfics as X articles and posts AI art of them."
+    also: ["https://x.com/BoringBattlecry/articles"]
+    tags: [fanfic, ai-art, family, x]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
