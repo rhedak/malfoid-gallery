@@ -245,6 +245,7 @@ def build_works():
             "added": text(w.get("added")),
             "summary": text(w.get("summary")),
             "tags": [text(t) for t in (tags if isinstance(tags, list) else [tags]) if text(t)],
+            "also": [text(u) for u in (w.get("also") or []) if text(u).startswith(("http://", "https://"))],
         })
     works.sort(key=lambda w: w["added"], reverse=True)
     return {"title": text(data.get("title")) or "Malfoid Index", "contact": text(data.get("contact")), "works": works}

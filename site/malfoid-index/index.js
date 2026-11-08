@@ -78,6 +78,20 @@
     if (w.language) meta.push(w.language);
     if (meta.length) article.appendChild(el("p", "work-meta", meta.join(" · ")));
     if (w.summary) article.appendChild(el("p", "work-summary", w.summary));
+    if (w.also && w.also.length) {
+      var also = el("p", "work-also", "Also on: ");
+      w.also.forEach(function (u, i) {
+        var href = safeUrl(u);
+        if (!href) return;
+        if (i) also.appendChild(document.createTextNode(" · "));
+        var a = el("a", null, "copy " + (i + 1));
+        a.href = href;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        also.appendChild(a);
+      });
+      article.appendChild(also);
+    }
     if (w.tags && w.tags.length) {
       var tags = el("div", "work-tags");
       w.tags.forEach(function (t) { tags.appendChild(el("span", null, t)); });

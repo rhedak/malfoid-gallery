@@ -68,15 +68,19 @@ works:
     added: 2026-11-08
     summary: "A Harry Potter AU romance with a female Draco Malfoy, Draya, starting at the Triwizard Tournament. Books one and two are complete, book three is ongoing. Royal Road marks it as containing AI-generated content."
     tags: [romance, female-draco, triwizard, ongoing, ai-generated-warning]
-  - id: "fanfic-guardbro-chapter-13"
-    title: "Chapter 13 update (with 13.5)"
+  - id: "fanfic-sorcerers-tsundere"
+    title: "Harry Potter and the Sorcerer's Tsundere"
     kind: fanfic
     creator: "Guardbro (@GuardTm)"
-    url: "https://x.com/GuardTm/status/2119251000917729313"
+    url: "https://www.wattpad.com/story/418450817-harry-potter-and-the-sorcerer%27s-tsundere"
+    also:
+      - "https://docs.google.com/document/u/0/d/1_e-g8UcZKYt_154cOV6m4KPBSToZPaH0KPVBRh037pc/mobilebasic"
+      - "https://docs.google.com/document/u/0/d/1yNvQVOwORZvNB8gVqcdmusUjk36JkHBgTTB-eX-nluk/mobilebasic"
+      - "https://docs.google.com/document/d/e/2PACX-1vSpRIU7tqFGzFsRhoI4dpyrOCTARma7n4GbvxKAUtx3543oWiPIDv0r1XtOwhiBHIK4HZ4zCejYVBFe/pub"
     language: "English"
     added: 2026-11-08
-    summary: "Chapter 13 of a fic, posted on X with an 8k-word 13.5 extra."
-    tags: [chapter-update]
+    summary: "Harry Potter fic by Guardbro, with chapter updates also posted on X. Hosted on Wattpad and Google Docs."
+    tags: [fanfic, harry-potter, tsundere]
   - id: "video-harry-potter-au-part-1"
     title: "Harry Potter AU Part 1"
     kind: video
