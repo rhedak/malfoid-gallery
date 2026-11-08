@@ -1260,6 +1260,15 @@ works:
     added: 2026-11-09
     summary: "Harry and Draconia survive the post-war Hogwarts, and their relationship grows as a new threat emerges. It starts at the Battle of Hogwarts and departs from canon."
     tags: [enemiestolovers, slowburn, postwar, wattpad]
+  - id: "video-malfoid-boarbump-playlist"
+    title: "MALFOID (BOARBUMP series)"
+    kind: video
+    creator: "Epic Fantasy (R)"
+    url: "https://www.youtube.com/playlist?list=PLaNEGOkZx1Fs"
+    language: "English"
+    added: 2026-11-09
+    summary: "A 5-video YouTube playlist of Malfoid stories, art and music, including the Malfoid: BOARBUMP series."
+    tags: [playlist, series, music]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
