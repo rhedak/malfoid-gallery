@@ -16,6 +16,7 @@ title: "Malfoid Index"
 contact: "rhedak@proton.me"
 works:
   - id: "webcomic-malfoid-girl-who-yearned"
+    thumb: "https://rhedak.github.io/malfoid-the-girl-who-yearned/cover.jpg"
     title: "Malfoid: The Girl who Yearned"
     kind: other
     creator: "rhedak"
@@ -25,6 +26,7 @@ works:
     summary: "A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy. Made with AI image tools, panel by panel."
     tags: [webcomic, comic, split-pov]
   - id: "gallery-malfoid"
+    thumb: "https://rhedak.github.io/malfoid-gallery/og-banner.jpg"
     title: "Malfoid Gallery"
     kind: other
     creator: "rhedak"
@@ -43,6 +45,7 @@ works:
     summary: "Free web demo of the anime AI companion with the Draconia uniform pack. Runs entirely in your browser."
     tags: [chat, companion, interactive]
   - id: "fanfic-heirs-to-the-throne"
+    thumb: "https://img.wattpad.com/cover/417831043-256-k404701.jpg"
     title: "Harry Potter: Heirs to the Throne"
     kind: fanfic
     creator: "KenitohMenara"
@@ -52,6 +55,7 @@ works:
     summary: "Harry Potter's marriage to Dracaena (Draco) Malfoy promoted a seismic shift in the wizarding world. With the Potter Fortune, the Black Family Inheritance and more..."
     tags: [drama, family, femdraco, friendship, legacy, school]
   - id: "anime-galakushi-malfoid-and-harry"
+    thumb: "https://yt3.googleusercontent.com/UGERqDUmSpox3atYXN-PNQzDyrUi70Pw6FUHvDa10IpWs_dcy-3SM52RxjGlbYHsdB0725NvFw=s900-c-k-c0x00ffffff-no-rj"
     title: "Malfoid and Harry (anime series)"
     kind: video
     creator: "Galakushi"
@@ -60,6 +64,7 @@ works:
     summary: "Anime series on the Galakushi YouTube channel: Malfoid and Harry, episodes 1 to 6 (Diagon Alley, the Hogwarts Express, the Sorting Ceremony) plus a Year 1 opening."
     tags: [anime, series, episodes]
   - id: "fanfic-dancing-with-malfoy"
+    thumb: "https://www.royalroadcdn.com/public/covers-large/196770-dancing-with-malfoy.jpg"
     title: "Dancing with Malfoy"
     kind: fanfic
     creator: "HiddenArchitecture"
@@ -69,6 +74,7 @@ works:
     summary: "A Harry Potter AU romance with a female Draco Malfoy, Draya, starting at the Triwizard Tournament. Books one and two are complete, book three is ongoing. Royal Road marks it as containing AI-generated content."
     tags: [romance, female-draco, triwizard, ongoing, ai-generated-warning]
   - id: "fanfic-sorcerers-tsundere"
+    thumb: "https://img.wattpad.com/cover/418450817-256-k536384.jpg"
     title: "Harry Potter and the Sorcerer's Tsundere"
     kind: fanfic
     creator: "Guardbro (@GuardTm)"
@@ -82,6 +88,7 @@ works:
     summary: "Harry Potter fic by Guardbro, with chapter updates also posted on X. Hosted on Wattpad and Google Docs."
     tags: [fanfic, harry-potter, tsundere]
   - id: "video-harry-potter-au-part-1"
+    thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
     kind: video
     creator: "J.A. Vázquez"
@@ -90,6 +97,7 @@ works:
     summary: "Part 1 of a Harry Potter AU on YouTube."
     tags: [harry-potter, au]
   - id: "audiobook-girl-who-chose-book-1"
+    thumb: "https://i.ytimg.com/vi/Bpxxj9Ee1W4/hqdefault.jpg"
     title: "Malfoid: Harry Potter and the Girl Who Chose, Book 1 (audiobook)"
     kind: other
     creator: "MiloTheOrangeKitty"
