@@ -3,7 +3,7 @@
 # Each entry is one work. Fields (all optional except title and kind):
 #   id:        short unique slug, e.g. "2026-12-moonlit-owl"
 #   title:     the work's title
-#   kind:      creator | fanfic | art | video | music | other, or a list such as [creator, art]
+#   kind:      creator | comic | fanfic | art | video | music | other, or a list such as [creator, art]
 #   creator:   the author or artist's name or handle
 #   url:       link to the work (http or https)
 #   language:  e.g. "English", "German"
@@ -18,7 +18,7 @@ works:
   - id: "webcomic-malfoid-girl-who-yearned"
     thumb: "https://rhedak.github.io/malfoid-the-girl-who-yearned/cover.jpg"
     title: "Malfoid: The Girl who Yearned"
-    kind: [other, fanfic]
+    kind: [comic, fanfic]
     creator: "rhedak"
     url: "https://rhedak.github.io/malfoid-the-girl-who-yearned/"
     language: "English"
@@ -1129,7 +1129,7 @@ works:
     tags: [fan-art, ai-art, x]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
-    kind: [art, fanfic]
+    kind: [comic, fanfic]
     creator: "Crepuscule3307 (@wanruochenhun)"
     url: "https://narusaku.github.io/malfoid-reader/"
     language: "English"
@@ -1138,7 +1138,7 @@ works:
     tags: [webcomic, comic-adaptation, english]
   - id: "creator-wanruochenhun"
     title: "Crepuscule3307"
-    kind: [creator, art]
+    kind: [creator, art, comic]
     creator: "@wanruochenhun"
     url: "https://x.com/wanruochenhun"
     language: "English"
