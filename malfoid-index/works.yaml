@@ -1162,6 +1162,15 @@ works:
     summary: "Dracona Malfoy is off to Hogwarts, and so is Harry Potter, who has his own plans for the savior of the wizarding world."
     also: ["https://x.com/Koookiiing"]
     tags: [hogwarts, school, wattpad]
+  - id: "creator-drifler7"
+    title: "Drifblim"
+    kind: [creator, art, comic]
+    creator: "@Drifler7"
+    url: "https://x.com/Drifler7"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes comic-format panels for Malfoid fanfic chapters on X, starting with Chapter 15 of My Father Must NEVER Hear About This!."
+    tags: [fan-comic, x]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
