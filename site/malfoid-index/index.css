@@ -13,8 +13,6 @@
 .index-rules { margin-top: 12px !important; font-size: 14px; color: #c9f5e2 !important; }
 
 .index-controls { margin-top: 14px; }
-.index-search-top { margin-top: 18px; max-width: 760px; }
-.index-search-top + .index-intro { margin-top: 14px; }
 .index-controls .chips { margin-top: 10px; }
 
 .index-count { color: var(--muted); font-size: 13px; margin: 14px 2px 6px; }
