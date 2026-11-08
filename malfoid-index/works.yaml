@@ -1212,6 +1212,26 @@ works:
     added: 2026-11-09
     summary: "Draconia Malfoy has been raised to expect the best of everything, and Harry Potter turns down her offer. A slow-burn enemies-to-lovers story on Wattpad."
     tags: [enemiestolovers, slowburn, romance, wattpad]
+  - id: "fanfic-the-malfoid-saga"
+    title: "The Malfoid Saga"
+    kind: fanfic
+    creator: "NWBroJaneway"
+    url: "https://malfoid.lol/"
+    language: "English"
+    added: 2026-11-09
+    summary: "Three books and 50 chapters of Harry Potter fan fiction, starting with Harry Potter and the Girl Who Noticed Him."
+    also: ["https://www.wattpad.com/user/NWBroJaneway"]
+    tags: [series, hogwarts, reader]
+  - id: "creator-nwbrojaneway"
+    title: "NWBro Janeway"
+    kind: creator
+    creator: "@NWBroJaneway"
+    url: "https://x.com/NWBroJaneway"
+    language: "English"
+    added: 2026-11-09
+    summary: "Writer of The Malfoid Saga, read on malfoid.lol and Wattpad."
+    also: ["https://malfoid.lol/", "https://www.wattpad.com/user/NWBroJaneway"]
+    tags: [fanfic, series, x, wattpad]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
