@@ -1127,6 +1127,24 @@ works:
     added: 2026-11-09
     summary: "AI-made Malfoid and Harry Potter art on X."
     tags: [fan-art, ai-art, x]
+  - id: "webcomic-malfoid-reader"
+    title: "Malfoid Reader (English comic collection)"
+    kind: [art, fanfic]
+    creator: "Crepuscule3307 (@wanruochenhun)"
+    url: "https://narusaku.github.io/malfoid-reader/"
+    language: "English"
+    added: 2026-11-09
+    summary: "English Malfoid comic adaptations by Crepuscule3307, read in order, one chapter at a time. Currently Draconia Malfoy and the Boy Who Said No, and Flirt featuring Lyra Malfoy."
+    tags: [webcomic, comic-adaptation, english]
+  - id: "creator-wanruochenhun"
+    title: "Crepuscule3307"
+    kind: [creator, art]
+    creator: "@wanruochenhun"
+    url: "https://x.com/wanruochenhun"
+    language: "English"
+    added: 2026-11-09
+    summary: "Fan writer and fan artist focusing on Malfoid. Makes the Malfoid Reader comics."
+    tags: [fan-art, comics, x]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
