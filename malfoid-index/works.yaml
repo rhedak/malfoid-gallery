@@ -1288,6 +1288,15 @@ works:
     summary: "Writes Dancing with Malfoy on Royal Road, a Harry Potter AU romance with a female Draco Malfoy."
     also: ["https://www.royalroad.com/profile/286353"]
     tags: [fanfic, royal-road, x]
+  - id: "fanfic-pansy-parkinson-and-dracaena"
+    title: "The Story of Pansy Parkinson and Dracaena Malfoy"
+    kind: fanfic
+    creator: "Nietzchian"
+    url: "https://www.wattpad.com/story/418462425-the-story-of-pansy-parkinson-and-dracaena-malfoy"
+    language: "English"
+    added: 2026-11-09
+    summary: "A slowburn Malfoid story told mostly from the view of Dracaena's best friend Pansy Parkinson."
+    tags: [slowburn, friendship, wattpad]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
