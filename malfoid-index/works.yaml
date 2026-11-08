@@ -1251,6 +1251,15 @@ works:
     added: 2026-11-09
     summary: "Posts The Malfoy Story, an AI-made video series about a Malfoy girl and Harry, on X."
     tags: [video, series, x]
+  - id: "fanfic-the-blood-that-binds-us"
+    title: "The Blood That Binds Us"
+    kind: fanfic
+    creator: "rafchy (Raf33d)"
+    url: "https://www.wattpad.com/story/418391759"
+    language: "English"
+    added: 2026-11-09
+    summary: "Harry and Draconia survive the post-war Hogwarts, and their relationship grows as a new threat emerges. It starts at the Battle of Hogwarts and departs from canon."
+    tags: [enemiestolovers, slowburn, postwar, wattpad]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
