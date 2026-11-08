@@ -1171,6 +1171,25 @@ works:
     added: 2026-11-09
     summary: "Makes comic-format panels for Malfoid fanfic chapters on X, starting with Chapter 15 of My Father Must NEVER Hear About This!."
     tags: [fan-comic, x]
+  - id: "comic-hallowleaf-malfoid-1"
+    title: "Malfoid Comic 1"
+    kind: comic
+    creator: "hallowleaf (@hallow_leaf)"
+    url: "https://www.patreon.com/hallowleaf/posts/malfoid-comic-1-172307447"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Malfoid comic on Patreon by hallowleaf."
+    also: ["https://x.com/hallow_leaf"]
+    tags: [comic, patreon]
+  - id: "creator-hallowleaf"
+    title: "hallowleaf"
+    kind: [creator, art, comic]
+    creator: "@hallow_leaf"
+    url: "https://x.com/hallow_leaf"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid comics, posted on Patreon and X."
+    tags: [comic, patreon, x]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
