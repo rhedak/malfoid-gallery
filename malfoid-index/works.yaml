@@ -88,6 +88,15 @@ works:
     added: 2026-11-08
     summary: "Harry Potter fic by Guardbro, with chapter updates also posted on X. Hosted on Wattpad and Google Docs."
     tags: [fanfic, harry-potter, tsundere]
+  - id: "video-lumos-lumos-playlist"
+    thumb: "https://i.ytimg.com/vi/mZQymbseKGQ/hqdefault.jpg"
+    title: "Lumos Lumos (anime series playlist)"
+    kind: video
+    creator: "ADayASMR"
+    url: "https://www.youtube.com/playlist?list=PLdMUvzNnRUZY"
+    added: 2026-11-08
+    summary: "Playlist of 17 Lumos Lumos anime videos on the ADayASMR channel: the opening trailer, seasons 1 to 6, the final season, the epilogue and an OVA, plus songs and karaoke."
+    tags: [anime, series, music, playlist]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
