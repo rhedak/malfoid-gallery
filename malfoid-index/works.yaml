@@ -3,7 +3,7 @@
 # Each entry is one work. Fields (all optional except title and kind):
 #   id:        short unique slug, e.g. "2026-12-moonlit-owl"
 #   title:     the work's title
-#   kind:      fanfic | art | video | music | other, or a list such as [other, fanfic]
+#   kind:      creator | fanfic | art | video | music | other, or a list such as [creator, art]
 #   creator:   the author or artist's name or handle
 #   url:       link to the work (http or https)
 #   language:  e.g. "English", "German"
@@ -1084,6 +1084,38 @@ works:
     added: 2026-11-08
     summary: "As Voldemort's return plunges the wizarding world into darkness, Harry Potter faces a year of secrets, dangerous discoveries, and impossible choices."
     tags: [potter, romance]
+  - id: "creator-malfoid-dracaena"
+    title: "Dracaena Malfoid"
+    kind: [creator, art]
+    creator: "@Malfoid"
+    url: "https://x.com/Malfoid"
+    added: 2026-11-08
+    summary: "Fan roleplay, memes and AI fan art of Malfoid on X. Unofficial."
+    tags: [fan-art, roleplay, memes, x]
+  - id: "creator-gremlinfoid"
+    title: "gremlinfoid"
+    kind: [creator, art]
+    creator: "@gremlinfoid"
+    url: "https://x.com/gremlinfoid"
+    added: 2026-11-08
+    summary: "Original art and memes, with commissions open. Has a guild on Telegram."
+    tags: [original-art, commissions, memes, x]
+  - id: "creator-malfoid-software"
+    title: "Malfoid Software"
+    kind: creator
+    creator: "@MalfoidSoftware"
+    url: "https://x.com/MalfoidSoftware"
+    added: 2026-11-08
+    summary: "Malfoid Software on X, with a YouTube channel and a Patreon for support."
+    tags: [youtube, patreon, x]
+  - id: "creator-rhedak"
+    title: "rhedak"
+    kind: creator
+    creator: "rhedak"
+    url: "https://x.com/rhedak1"
+    added: 2026-11-08
+    summary: "The maintainer of this index and the Malfoid gallery. Hobby game dev and author."
+    tags: [gallery-maintainer, x]
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
