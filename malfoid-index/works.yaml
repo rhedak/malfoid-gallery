@@ -1142,6 +1142,16 @@ works:
     added: 2026-11-09
     summary: "Freelance artist posting Malfoid and Harry Potter art on X, with open commissions."
     tags: [fan-art, x]
+  - id: "creator-fiction8619"
+    title: "Fiction"
+    kind: [creator, video]
+    creator: "@Fiction8619"
+    url: "https://x.com/Fiction8619"
+    language: "English"
+    added: 2026-11-09
+    summary: "Creator of The Vilaness Malfoy, a video series on YouTube with Draco Malfoy as a girl, and story updates on X."
+    also: ["https://www.youtube.com/@fiction8619"]
+    tags: [creator, female-draco, series, x, youtube]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
