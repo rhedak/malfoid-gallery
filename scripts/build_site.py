@@ -234,8 +234,16 @@ def kinds_of(value):
     return out or ["other"]
 
 
+def order_of(value):
+    """The optional `order` field: a number, or None when the work has none."""
+    try:
+        return int(value) if value is not None and str(value).strip() != "" else None
+    except (TypeError, ValueError):
+        return None
+
+
 def build_works():
-    """The Malfoid Index sub page: malfoid-index/works.yaml -> works.json (newest added first)."""
+    """The Malfoid Index sub page: malfoid-index/works.yaml -> works.json (ordered works first, then A-Z by title)."""
     data = load("malfoid-index/works.yaml")
 
     def text(v):
@@ -258,8 +266,9 @@ def build_works():
             "tags": [text(t) for t in (tags if isinstance(tags, list) else [tags]) if text(t)],
             "thumb": text(w.get("thumb")) if text(w.get("thumb")).startswith("https://") else "",
             "also": [text(u) for u in (w.get("also") or []) if text(u).startswith(("http://", "https://"))],
+            "order": order_of(w.get("order")),
         })
-    works.sort(key=lambda w: w["added"], reverse=True)
+    works.sort(key=lambda w: (w["order"] is None, w["order"] or 0, w["title"].lower()))
     return {"title": text(data.get("title")) or "Malfoid Index", "contact": text(data.get("contact")), "works": works}
 
 

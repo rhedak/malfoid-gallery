@@ -10,12 +10,14 @@
 #   added:     date it was added to the index, YYYY-MM-DD
 #   summary:   one or two sentences about the work
 #   tags:      list of short tags, e.g. [romance, slice-of-life]
+#   order:     optional number; works with an order come first, lowest first. Others sort A-Z by title
 #
 # Submissions arrive by email; add them here and the Pages workflow publishes them.
 title: "Malfoid Index"
 contact: "rhedak@proton.me"
 works:
   - id: "webcomic-malfoid-girl-who-yearned"
+    order: 1
     thumb: "https://rhedak.github.io/malfoid-the-girl-who-yearned/cover.jpg"
     title: "Malfoid: The Girl who Yearned"
     kind: [comic, fanfic]
@@ -26,6 +28,7 @@ works:
     summary: "A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy. Made with AI image tools, panel by panel."
     tags: [webcomic, comic, split-pov]
   - id: "gallery-malfoid"
+    order: 2
     thumb: "https://rhedak.github.io/malfoid-gallery/og-banner.jpg"
     title: "Malfoid Gallery"
     kind: other
@@ -36,6 +39,7 @@ works:
     summary: "Searchable gallery of Draconia Malfoid images and clips made with Grok Imagine, with every prompt and the Daily Malfoid posting plan."
     tags: [images, gallery, ai-art]
   - id: "companion-draconia-chat"
+    order: 3
     thumb: "https://rhedak.github.io/malfoid-gallery/thumbs/2026-11-04-pack-uniform-neutral.webp"
     title: "Chat with Draconia (anime AI companion)"
     kind: other
@@ -1111,6 +1115,7 @@ works:
     summary: "Malfoid Software on X and YouTube, with 12 videos on the channel and a Patreon for support."
     tags: [youtube, patreon, x]
   - id: "creator-rhedak"
+    order: 4
     title: "rhedak"
     kind: creator
     creator: "rhedak"
