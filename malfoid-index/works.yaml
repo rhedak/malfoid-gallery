@@ -1127,6 +1127,15 @@ works:
     added: 2026-11-09
     summary: "AI-made Malfoid and Harry Potter art on X."
     tags: [fan-art, ai-art, x]
+  - id: "creator-kamikazeeai-art"
+    title: "Kamikazee"
+    kind: [creator, art]
+    creator: "@kamikazeeai_art"
+    url: "https://x.com/kamikazeeai_art"
+    language: "English"
+    added: 2026-11-09
+    summary: "Freelance artist posting Malfoid and Harry Potter art on X, with open commissions."
+    tags: [fan-art, x]
   - id: "webcomic-malfoid-reader"
     title: "Malfoid Reader (English comic collection)"
     kind: [comic, fanfic]
