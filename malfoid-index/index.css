@@ -29,8 +29,12 @@
 .work h2 a:hover { color: #8ff0c8; }
 .work-meta { margin: 0; font-size: 13px; color: var(--silver-2); }
 .work-summary { margin: 2px 0 0; color: var(--silver); font-size: 14.5px; }
-.work-also { margin: 0; font-size: 13px; color: var(--silver-2); }
-.work-also a { color: var(--emerald); }
+.work-platforms { margin: 0; font-size: 13px; color: var(--silver-2); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.work-platforms-label { color: var(--silver-2); }
+.platform { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--line); color: var(--silver); }
+.platform:hover { color: #8ff0c8; border-color: rgba(52, 211, 153, .5); }
+.platform svg { display: block; }
+.platform-text { width: auto; padding: 0 8px; font-size: 12px; }
 .work-tags {display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 6px; }
 .work-tags span { font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; }
 
