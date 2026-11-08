@@ -31,6 +31,15 @@
 </header>
 
 <main>
+  <section class="controls index-controls index-search-top" aria-label="Search">
+    <div class="searchbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search titles, creators, tags…" autocomplete="off" spellcheck="false" aria-label="Search">
+      </label>
+    </div>
+  </section>
+
   <section class="index-intro" aria-label="About the index">
     <p>Did you create Malfoid (Draconia Malfoy or how you call her) content? Send it to
       <a id="contact" href="mailto:rhedak@proton.me">rhedak@proton.me</a> and it may be added here.</p>
@@ -42,13 +51,7 @@
     </a>
   </section>
 
-  <section class="controls index-controls" aria-label="Search and filter">
-    <div class="searchbar">
-      <label class="search">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Search titles, creators, tags…" autocomplete="off" spellcheck="false" aria-label="Search">
-      </label>
-    </div>
+  <section class="controls index-controls" aria-label="Filter">
     <div id="kinds" class="chips" role="group" aria-label="Filter by kind"></div>
   </section>
 
