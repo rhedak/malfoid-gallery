@@ -1102,7 +1102,7 @@ works:
     tags: [original-art, commissions, memes, x]
   - id: "creator-malfoid-software"
     title: "Malfoid Software"
-    kind: creator
+    kind: [creator, video]
     creator: "@MalfoidSoftware"
     url: "https://x.com/MalfoidSoftware"
     also:
