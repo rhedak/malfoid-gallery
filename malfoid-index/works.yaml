@@ -1448,6 +1448,25 @@ works:
     added: 2026-11-09
     summary: "Makes Malfoid videos on YouTube, including the Malfoid by Fantasoner playlist."
     tags: [video, playlist, youtube]
+  - id: "video-draconia-malfoid-the-movie-luna-lovelace"
+    thumb: "https://i.ytimg.com/vi/I07eGvBE3oQ/hqdefault.jpg"
+    title: "Draconia Malfoid x Harry Potter | The Movie"
+    kind: video
+    creator: "Luna Lovelace"
+    url: "https://www.youtube.com/watch?v=I07eGvBE3oQ"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Malfoid movie on YouTube by Luna Lovelace with FoYeGe and Papallax, with over 1 million views."
+    tags: [video, movie, collaboration]
+  - id: "creator-lunalovelacetech"
+    title: "Luna Lovelace"
+    kind: [creator, video]
+    creator: "@LunaLovelaceTech"
+    url: "https://www.youtube.com/@LunaLovelaceTech"
+    language: "English"
+    added: 2026-11-09
+    summary: "A tech YouTuber who also makes Malfoid videos, including the Draconia Malfoid x Harry Potter movie."
+    tags: [video, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
