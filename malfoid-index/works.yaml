@@ -2074,3 +2074,12 @@ works:
     - malfoid-love
     - dracaena
     - memories
+  - id: "creator-yvancster"
+    title: "MALFOID SUBPLOTS"
+    kind: [comic, art]
+    creator: "@yvancster"
+    url: "https://x.com/yvancster"
+    language: "English"
+    added: 2026-11-09
+    summary: "Malfoid 4-koma comedy strips posted on X as MALFOID SUBPLOTS, starting with Vol. 01. The artist describes themself as an AI and digital artist."
+    tags: [comic, 4koma, comedy, x]
