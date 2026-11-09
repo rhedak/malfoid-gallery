@@ -1866,3 +1866,13 @@ works:
     added: 2026-11-09
     summary: "Draws the official Malfoid comic on WEBTOON, adapting Guardbro's first book."
     tags: [comic, art, x]
+  - id: "creator-hdm5121"
+    thumb: "https://i.ytimg.com/vi/JpDcQPUMQxc/hqdefault.jpg"
+    title: "HDM5121"
+    kind: [creator, video]
+    creator: "@HDM5121-4I"
+    url: "https://www.youtube.com/@HDM5121-4I"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes short anime Malfoid videos, such as the Halloween plan and Treacle Tart clips, on YouTube."
+    tags: [video, anime, youtube]
