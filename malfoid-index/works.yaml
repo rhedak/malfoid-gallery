@@ -1364,6 +1364,16 @@ works:
     added: 2026-11-09
     summary: "An 8-video playlist of Project Malfoid trailers and scenes in chronological order, from The First Meeting to The Yule Ball Dream."
     tags: [playlist, series, trailer]
+  - id: "creator-projectmalfoid"
+    title: "Project Malfoid"
+    kind: [creator, video]
+    creator: "@projectmalfoid"
+    url: "https://x.com/projectmalfoid"
+    language: "English"
+    added: 2026-11-09
+    summary: "Compiles Malfoid videos into a chronological cut, with the Book 1-7 trailer and the Chronological Order playlist."
+    also: ["https://www.youtube.com/@projectmalfoid"]
+    tags: [video, compilation, x, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
