@@ -1515,16 +1515,16 @@ works:
     added: 2026-11-09
     summary: "Posts Malfoid content on X, with the tag #malfoid."
     tags: [fan-art, x]
-  - id: "video-one-last-goodbye-re-frame"
+  - id: "video-re-frame-anime-mv-playlist"
     thumb: "https://i.ytimg.com/vi/LDtVaXQm9DM/hqdefault.jpg"
-    title: "ONE LAST GOODBYE | Female Draco Malfoy × Harry Potter | Anime MV"
+    title: "Female Draco Malfoy × Harry Potter (Anime MV playlist)"
     kind: video
-    creator: "AI AI STUDIO RE:FRAME"
-    url: "https://www.youtube.com/watch?v=LDtVaXQm9DM"
+    creator: "AI STUDIO RE:FRAME"
+    url: "https://www.youtube.com/playlist?list=PLOtff_v2myaY"
     language: "English"
     added: 2026-11-09
-    summary: "An anime-style music video of Female Draco Malfoy and Harry Potter on YouTube."
-    tags: [music-video, anime, ai-generated]
+    summary: "A 5-video playlist of anime-style music videos of Female Draco Malfoy and Harry Potter, including One Last Goodbye and My Bad Girlfriend."
+    tags: [playlist, music-video, anime, ai-generated]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
