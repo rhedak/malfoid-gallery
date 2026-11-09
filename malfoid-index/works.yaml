@@ -122,7 +122,7 @@ works:
     tags: [romcom, series, episodes, playlist]
   - id: "video-malfoid-wont-admit-it-playlist"
     thumb: "https://i.ytimg.com/vi/ubWqm1jYTqw/hqdefault.jpg"
-    title: "Malfoid Won't Admit It"
+    title: "Malfoid Won't Admit It (Falkor)"
     kind: video
     creator: "Falkor"
     url: "https://www.youtube.com/playlist?list=PLU0WDJSAzP_w"
@@ -1544,6 +1544,25 @@ works:
     summary: "Makes Malfoid comics and occasional art, with a Malfoy comic gallery on DeviantArt. Wholesome, with some drama."
     also: ["https://www.deviantart.com/theexileddraco/gallery/104055535/hp---malfoy", "https://youtube.com/@TheExiledDraco"]
     tags: [comic, art, deviantart, x, youtube]
+  - id: "video-malfoid-wont-admit-it-zey"
+    title: "Malfoid Won't Admit It (Zey)"
+    kind: video
+    creator: "Zey"
+    url: "https://www.youtube.com/@zeyhashimoto/videos"
+    language: "English"
+    added: 2026-11-09
+    summary: "An AI anime series on YouTube, Malfoid Won't Admit It, with Episodes 0 to 4 so far."
+    tags: [series, episodes, ai-generated]
+  - id: "creator-zey"
+    title: "Zey"
+    kind: [creator, video]
+    creator: "@zeyhashimoto"
+    url: "https://www.youtube.com/@zeyhashimoto"
+    language: "English"
+    added: 2026-11-09
+    summary: "An AI anime creator on YouTube, making Malfoid Won't Admit It."
+    also: ["https://x.com/ZeyHashimoto", "https://linktr.ee/zeyhashimoto"]
+    tags: [video, ai-generated, x, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
