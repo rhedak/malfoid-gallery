@@ -1573,6 +1573,26 @@ works:
     added: 2026-11-09
     summary: "Posts Malfoid art on X, such as Malfoid and her polaroids. The bio says the art is AI assisted."
     tags: [fan-art, ai-assisted, x]
+  - id: "site-the-girl-who-loved"
+    title: "The Girl Who Loved"
+    kind: [other, fanfic]
+    creator: "Father Limerence (@fatherlimerence)"
+    url: "https://malfoid.love/"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Malfoid website with a fiction library, fan art, a board game and a world to explore, with new chapters from the Yearners."
+    also: ["https://x.com/fatherlimerence"]
+    tags: [website, game, fiction-library, fan-art]
+  - id: "creator-fatherlimerence"
+    title: "Father Limerence"
+    kind: [creator, other]
+    creator: "@fatherlimerence"
+    url: "https://x.com/fatherlimerence"
+    language: "English"
+    added: 2026-11-09
+    summary: "Archives and curates Malfoid works on The Girl Who Loved, malfoid.love."
+    also: ["https://malfoid.love/", "https://yearningmalfoid.love"]
+    tags: [archive, website, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
