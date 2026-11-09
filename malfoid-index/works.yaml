@@ -1766,3 +1766,22 @@ works:
     added: 2026-11-08
     summary: "Audiobook of Book 1 of Harry Potter and the Girl Who Chose, on YouTube."
     tags: [audiobook, malfoid]
+  - id: "video-space-between-us-part-1"
+    thumb: "https://i.ytimg.com/vi/1Q1WRCkyquQ/hqdefault.jpg"
+    title: "Part 1: Draconia Malfoy X Harry Potter | SPACE BETWEEN US (Malfoid Cinematic Anime)"
+    kind: video
+    creator: "LouieVerse"
+    url: "https://www.youtube.com/watch?v=1Q1WRCkyquQ&list=PLHec0aeyoJa4"
+    language: "English"
+    added: 2026-11-09
+    summary: "Part 1 of SPACE BETWEEN US, a cinematic Malfoid anime series on YouTube. Parts 2 and 3 and an intro are in the same playlist."
+    tags: [anime, cinematic, romance, harry-potter, youtube]
+  - id: "creator-ladywasabee"
+    title: "LadyWasabi // LouieVerse"
+    kind: creator
+    creator: "@LadyWasabee"
+    url: "https://x.com/LadyWasabee"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes the LouieVerse Malfoid videos, including SPACE BETWEEN US, and posts them on X and YouTube."
+    tags: [video, anime, x]
