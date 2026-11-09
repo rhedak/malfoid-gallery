@@ -1612,6 +1612,23 @@ works:
     summary: "Makes Malfoid Dating Sim: Pure Blood & Prejudice, on itch.io."
     also: ["https://ruizukun-dev.itch.io/malfoid-dating-sim"]
     tags: [game, x, itch]
+  - id: "game-the-spelling-of-night"
+    title: "The Spelling of Night"
+    kind: game
+    creator: "Sachi (@Sachi_Hwa)"
+    url: "https://game.sachihwa.com/"
+    added: 2026-11-09
+    summary: "A Malfoid game, labelled SFW by its creator, playable in the browser."
+    tags: [game, sfw, browser]
+  - id: "creator-sachi-hwa"
+    title: "Sachi"
+    kind: [creator, game]
+    creator: "@Sachi_Hwa"
+    url: "https://x.com/Sachi_Hwa"
+    added: 2026-11-09
+    summary: "Makes Malfoid games, such as The Spelling of Night, on game.sachihwa.com."
+    also: ["https://game.sachihwa.com/"]
+    tags: [game, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
