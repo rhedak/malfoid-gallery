@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var KINDS = { creator: "Creator", comic: "Comic", fanfic: "Fanfic", art: "Fan art", video: "Video", music: "Music", other: "Other" };
+  var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", video: "Video", music: "Music", other: "Other" };
   var state = { kind: "all", q: "" };
   var data = { works: [], contact: "" };
 
