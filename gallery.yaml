@@ -48,7 +48,7 @@ entries:
     input: "input/2026-11-03-castle-tsundere-2.yaml"
     image: "images/2026-11-03-castle-tsundere-2.jpg"
     planned: 2026-11-09
-    posted:
+    posted: {date: 2026-11-09, x: "https://x.com/rhedak1/status/2119702346884333684"}
   - id: "2026-11-03-castle-tsundere-3"
     title: "Caught in the library"
     created: 2026-11-03
