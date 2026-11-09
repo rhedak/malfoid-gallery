@@ -1355,6 +1355,15 @@ works:
     added: 2026-11-09
     summary: "A Malfoid fanfic index: Behind The Broken Glass, The Weasley Spellweaver, The Serpent's Leash and A Catch Worth Falling For. Only The Weasley Spellweaver is confirmed SFW so far; the others are not yet confirmed."
     tags: [index, collection, unconfirmed-sfw]
+  - id: "video-project-malfoid-chronological-order"
+    title: "Chronological Order (Project Malfoid)"
+    kind: video
+    creator: "Project Malfoid"
+    url: "https://www.youtube.com/playlist?list=PLJP7r1x2axX0"
+    language: "English"
+    added: 2026-11-09
+    summary: "An 8-video playlist of Project Malfoid trailers and scenes in chronological order, from The First Meeting to The Yule Ball Dream."
+    tags: [playlist, series, trailer]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
