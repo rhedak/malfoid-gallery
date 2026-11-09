@@ -1617,6 +1617,7 @@ works:
     kind: game
     creator: "Sachi (@Sachi_Hwa)"
     url: "https://game.sachihwa.com/"
+    language: "English"
     added: 2026-11-09
     summary: "A Malfoid game, labelled SFW by its creator, playable in the browser."
     tags: [game, sfw, browser]
