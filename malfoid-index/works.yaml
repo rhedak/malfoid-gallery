@@ -1486,6 +1486,16 @@ works:
     added: 2026-11-09
     summary: "Makes Harry Potter AU videos on YouTube, including Part 1, a 1 hour 23 minute movie that retells the battle of Hogwarts."
     tags: [video, au, movie, youtube]
+  - id: "creator-lorelounge"
+    title: "The Lore Lounge"
+    kind: [creator, video, fanfic]
+    creator: "@LoreLoungeUK"
+    url: "https://x.com/LoreLoungeUK"
+    language: "English"
+    added: 2026-11-09
+    summary: "Writes Harry Potter and the Man in the Mirror, a rewrite with Draco Malfoy as a girl, on YouTube."
+    also: ["https://www.youtube.com/thelorelounge"]
+    tags: [video, fanfic, rewrite, x, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
