@@ -1402,6 +1402,52 @@ works:
     added: 2026-11-09
     summary: "Makes the Malfoid Main Story playlist on YouTube. The channel also covers other topics."
     tags: [video, playlist, youtube]
+  - id: "creator-unstablegen"
+    title: "UnstableGen"
+    kind: [creator, video]
+    creator: "@UnstableGen1"
+    url: "https://x.com/UnstableGen1"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes AI Malfoid videos, posted on YouTube."
+    also: ["https://www.youtube.com/@UnstableG3n"]
+    tags: [video, ai-generated, x, youtube]
+  - id: "creator-crimsonaigc"
+    title: "Crimsonaigc"
+    kind: [creator, video]
+    creator: "@Crimsonaigc"
+    url: "https://www.youtube.com/@Crimsonaigc"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes AI-generated Harry and Malfoy videos on YouTube."
+    tags: [video, ai-generated, youtube]
+  - id: "creator-aimalfoyfemale"
+    title: "AI Malfoy Female"
+    kind: [creator, art, video]
+    creator: "@AIMalfoyFemale"
+    url: "https://www.youtube.com/@AIMalfoyFemale"
+    language: "English"
+    added: 2026-11-09
+    summary: "AI Malfoy story fan art and Malfoid videos on YouTube."
+    tags: [fan-art, video, ai-generated, youtube]
+  - id: "creator-mastodonstudios"
+    title: "Mastodon Studios"
+    kind: [creator, video]
+    creator: "@MastodonStudios"
+    url: "https://www.youtube.com/@MastodonStudios"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid videos on YouTube, including the Malfoid Wicked Game series."
+    tags: [video, series, youtube]
+  - id: "creator-fantasoner"
+    title: "Fantasoner"
+    kind: [creator, video]
+    creator: "@Fantasoner"
+    url: "https://www.youtube.com/@Fantasoner"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid videos on YouTube, including the Malfoid by Fantasoner playlist."
+    tags: [video, playlist, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
