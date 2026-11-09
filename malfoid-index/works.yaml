@@ -1477,6 +1477,15 @@ works:
     added: 2026-11-09
     summary: "Makes Draconia Malfoy Harry Potter POV videos on YouTube, such as Winter with Her and Spring with Her."
     tags: [video, music, youtube]
+  - id: "creator-javazquez"
+    title: "J.A. Vázquez"
+    kind: [creator, video, fanfic]
+    creator: "@j.a.vazquez5946"
+    url: "https://www.youtube.com/@j.a.vazquez5946"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Harry Potter AU videos on YouTube, including Part 1, a 1 hour 23 minute movie that retells the battle of Hogwarts."
+    tags: [video, au, movie, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
