@@ -1534,6 +1534,16 @@ works:
     added: 2026-11-09
     summary: "Draconia Malfoy is told to befriend Harry Potter because he'll be useful. A first-year canon-adjacent rewrite with female Draco, a slow burn, and plot holes patched."
     tags: [slowburn, first-year, fix-it, wattpad]
+  - id: "creator-theexileddraco"
+    title: "The Exiled Draco"
+    kind: [creator, comic, art]
+    creator: "@theexileddraco"
+    url: "https://x.com/theexileddraco"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid comics and occasional art, with a Malfoy comic gallery on DeviantArt. Wholesome, with some drama."
+    also: ["https://www.deviantart.com/theexileddraco/gallery/104055535/hp---malfoy", "https://youtube.com/@TheExiledDraco"]
+    tags: [comic, art, deviantart, x, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
