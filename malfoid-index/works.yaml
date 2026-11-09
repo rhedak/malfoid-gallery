@@ -2112,3 +2112,23 @@ works:
     added: 2026-11-10
     summary: "Writes Malfoid fanfiction, posted as a series of X threads. The pinned post lists the whole series sorted by in-universe chronology, from 1st year to after the series, with the Daphne war arc in 6th year."
     tags: [fanfic, x, series, hogwarts]
+  - id: "creator-crow-agito"
+    title: "Agito (Yearning Arc)"
+    kind: [creator, fanfic, art]
+    creator: "@crow_agito"
+    url: "https://x.com/crow_agito"
+    language: "English"
+    added: 2026-11-10
+    summary: "Writes short Malfoid fanfics on X, sometimes with a second-language note, and draws Malfoid art (human figures in color pencil, posted as #MalfoidArt). Fanfics are listed below as items."
+    tags: [fanfic, art, colored-pencil, x]
+    items:
+      - title: "Dracaena Potter and a New Life"
+        url: "https://x.com/crow_agito/status/2112941165490385221"
+      - title: "Dracaena Malfoy and a Last Goodbye"
+        url: "https://x.com/crow_agito/status/2113587832224678186"
+      - title: "Harry Potter and the Girl Who Left"
+        url: "https://x.com/crow_agito/status/2114435833512051034"
+      - title: "Lucius Malfoy and a Father's Duty"
+        url: "https://x.com/crow_agito/status/2115458609844982209"
+      - title: "Harry Potter and a Date in Halloween"
+        url: "https://x.com/crow_agito/status/2115805533638996209"
