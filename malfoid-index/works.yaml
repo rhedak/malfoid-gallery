@@ -1720,6 +1720,15 @@ works:
     added: 2026-11-09
     summary: "Dracaena writes letters to a wishful version of her father, told in parts across an X thread."
     tags: [thread, letters, x]
+  - id: "creator-lezisell"
+    title: "lezisell"
+    kind: [creator, art, comic]
+    creator: "@lezisell"
+    url: "https://x.com/lezisell"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid art and crossover comics, including Slytherin Quidditch, and quotes posts to help them get found."
+    tags: [fan-art, comic, crossover, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
