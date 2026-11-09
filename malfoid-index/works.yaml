@@ -1848,3 +1848,21 @@ works:
       - title: "Fine. I'm the Cat Now."
         url: "https://www.instagram.com/reel/Dfe4fRAhwtY/"
         also: ["https://x.com/TheKinda/status/2119425958801281089", "https://www.youtube.com/watch?v=h4cKoxlDr-8"]
+  - id: "comic-malfoid-a-harry-potter-fanfic"
+    title: "Malfoid: A Harry Potter Fanfic"
+    kind: comic
+    creator: "Guardbro (writer, @GuardTm), Egg Blade (artist, @EggBlade)"
+    url: "https://www.webtoons.com/en/canvas/malfoid-a-harry-potter-fanfic/list?title_no=1183525"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Harry Potter comic on WEBTOON asking what if Draco Malfoy is Draconia Malfoy, adapted from the first book. Updates every Tuesday. Rated Teen (13+)."
+    tags: [comic, webtoon, harry-potter, romance]
+  - id: "creator-eggblade"
+    title: "Egg Blade"
+    kind: [creator, comic, art]
+    creator: "@EggBlade"
+    url: "https://x.com/EggBlade"
+    language: "English"
+    added: 2026-11-09
+    summary: "Draws the official Malfoid comic on WEBTOON, adapting Guardbro's first book."
+    tags: [comic, art, x]
