@@ -1710,6 +1710,16 @@ works:
     summary: "3D and pixel artist. Makes the Malfoid Stardew Valley mod and non-AI Malfoid pixel art."
     also: ["https://www.nexusmods.com/stardewvalley/mods/54240"]
     tags: [pixel-art, mod, x]
+  - id: "fanfic-my-father-will-hear-about-this"
+    title: "My Father Will Hear About This"
+    kind: fanfic
+    length: short
+    creator: "Professor McCoige (@ProfMcCoige)"
+    url: "https://x.com/ProfMcCoige/status/2117398745805729877"
+    language: "English"
+    added: 2026-11-09
+    summary: "Dracaena writes letters to a wishful version of her father, told in parts across an X thread."
+    tags: [thread, letters, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
