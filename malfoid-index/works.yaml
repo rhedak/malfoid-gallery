@@ -1691,6 +1691,25 @@ works:
     added: 2026-11-09
     summary: "Makes AI Draconia Malfoy videos on YouTube, with quotes from the books."
     tags: [video, ai-generated, youtube]
+  - id: "game-malfoid-stardew-mod"
+    title: "Malfoid (Stardew Valley mod)"
+    kind: [game, art]
+    creator: "AurumRunar"
+    url: "https://www.nexusmods.com/stardewvalley/mods/54240"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Stardew Valley mod that adds Malfoid as a character, with anime-style sprites and portraits."
+    tags: [mod, sprites, portraits]
+  - id: "creator-aurumrunar"
+    title: "Aurum Runar"
+    kind: [creator, art, game]
+    creator: "@aurumrunar"
+    url: "https://x.com/aurumrunar"
+    language: "English"
+    added: 2026-11-09
+    summary: "3D and pixel artist. Makes the Malfoid Stardew Valley mod and non-AI Malfoid pixel art."
+    also: ["https://www.nexusmods.com/stardewvalley/mods/54240"]
+    tags: [pixel-art, mod, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
