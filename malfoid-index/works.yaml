@@ -1785,3 +1785,66 @@ works:
     added: 2026-11-09
     summary: "Makes the LouieVerse Malfoid videos, including SPACE BETWEEN US, and posts them on X and YouTube."
     tags: [video, anime, x]
+  - id: "creator-thekinda"
+    thumb: "https://i.ytimg.com/vi/4wEddqHDDs4/hqdefault.jpg"
+    title: "TheKinda"
+    kind: [creator, video]
+    creator: "@TheKinda"
+    url: "https://x.com/TheKinda"
+    language: "Japanese audio, English subtitles"
+    added: 2026-11-09
+    summary: "Makes Malfoid, a playful anime romcom series of shorts in a Harry Potter AU where Voldemort never existed. Harry and a female Draco Malfoy fall for each other through magical mishaps and small acts of affection."
+    tags: [anime, romcom, shorts, series]
+    items:
+      - title: "Corridor"
+        url: "https://www.instagram.com/reel/Deb5RiDSEsZ/"
+        also: ["https://x.com/TheKinda/status/2110356101090726145", "https://www.youtube.com/watch?v=4wEddqHDDs4"]
+      - title: "Feather"
+        url: "https://www.instagram.com/reel/DedWbKcSkd-/"
+        also: ["https://x.com/TheKinda/status/2111048144523755821", "https://www.youtube.com/watch?v=DlnYwPst8tU"]
+      - title: "Café"
+        url: "https://www.instagram.com/reel/Ded90WoS0HB/"
+        also: ["https://x.com/TheKinda/status/2110565209027006695", "https://www.youtube.com/watch?v=3Jd6R9MDBSI"]
+      - title: "Library"
+        url: "https://www.instagram.com/reel/Deex5JVywq6/"
+        also: ["https://x.com/TheKinda/status/2110715213066502544", "https://www.youtube.com/watch?v=6ptAGDyoCXE"]
+      - title: "It's Not Like I Liked It!"
+        url: "https://www.instagram.com/reel/DegRRdSyTEX/"
+        also: ["https://x.com/TheKinda/status/2114711146707992739", "https://www.youtube.com/watch?v=IdHhkKy_B-g"]
+      - title: "She Fell for Him"
+        url: "https://www.instagram.com/reel/DehxOf9yuI-/"
+        also: ["https://x.com/TheKinda/status/2113995610072187159", "https://www.youtube.com/watch?v=27Akgv7zt6Y"]
+      - title: "A Little Push Toward Love"
+        url: "https://www.instagram.com/reel/Dej0vl2yt9g/"
+        also: ["https://x.com/TheKinda/status/2111411913238216958", "https://www.youtube.com/watch?v=hWmq1jPBko0"]
+      - title: "Don't Get Carried Away!"
+        url: "https://www.instagram.com/reel/DemLPBbygNZ/"
+        also: ["https://x.com/TheKinda/status/2111789402200408094", "https://www.youtube.com/watch?v=Nk6uhH1frlQ"]
+      - title: "There's No Antidote for a Gryffindor"
+        url: "https://www.instagram.com/reel/DeozdVTSit1/"
+        also: ["https://x.com/TheKinda/status/2112151777814642691", "https://www.youtube.com/watch?v=Tnsrk7xzOIM"]
+      - title: "A Riddle for Two"
+        url: "https://www.instagram.com/reel/DewsulNSvXg/"
+        also: ["https://x.com/TheKinda/status/2112928713864040923", "https://www.youtube.com/watch?v=lV19ITguYTw"]
+      - title: "Quite a Quiet Surprise"
+        url: "https://www.instagram.com/reel/De1m8WuyyxF/"
+        also: ["https://x.com/TheKinda/status/2113618368225787939", "https://www.youtube.com/watch?v=zne04bT3Ud8"]
+      - title: "Quite a Quiet Surprise — Part 2"
+        url: "https://www.instagram.com/reel/De6netzyt1V/"
+        also: ["https://x.com/TheKinda/status/2114348755247927414", "https://www.youtube.com/watch?v=lazSMYKlePI"]
+      - title: "You Can (Not) Restyle"
+        url: "https://www.instagram.com/reel/DfD4n2LBPlA/"
+        also: ["https://x.com/TheKinda/status/2115798309629534252", "https://www.youtube.com/watch?v=Geck4ycc5GU"]
+      - title: "Two Umbrellas — Opening"
+        url: "https://www.instagram.com/reel/DfHvxuZBMiA/"
+        also: ["https://x.com/TheKinda/status/2116160697591816665", "https://www.youtube.com/watch?v=C_zvZpdCWUc"]
+      - title: "Trick or treat!"
+        url: "https://www.instagram.com/reel/DfM2TfuyihP/"
+      - title: "Next Anime? Still Malfoid."
+        url: "https://www.instagram.com/reel/DfR8HC9hJ0q/"
+      - title: "A Purrfect Cure"
+        url: "https://www.instagram.com/reel/DfZt9ZPhG-C/"
+        also: ["https://x.com/TheKinda/status/2118701183544025104", "https://www.youtube.com/watch?v=sf0Zps0pa-M"]
+      - title: "Fine. I'm the Cat Now."
+        url: "https://www.instagram.com/reel/Dfe4fRAhwtY/"
+        also: ["https://x.com/TheKinda/status/2119425958801281089", "https://www.youtube.com/watch?v=h4cKoxlDr-8"]

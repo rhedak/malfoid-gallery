@@ -263,7 +263,19 @@ def build_works():
         if not isinstance(w, dict) or not text(w.get("title")):
             continue
         tags = w.get("tags") or []
+        # a creator with many works lists them under `items`; the sub page shows these
+        items = []
+        for it in (w.get("items") or []):
+            if isinstance(it, dict) and text(it.get("title")):
+                items.append({
+                    "title": text(it.get("title")),
+                    "url": text(it.get("url")),
+                    "added": text(it.get("added")),
+                    "summary": text(it.get("summary")),
+                    "also": [text(u) for u in (it.get("also") or []) if text(u).startswith(("http://", "https://"))],
+                })
         works.append({
+            "items": items,
             "id": text(w.get("id")),
             "title": text(w.get("title")),
             "kinds": kinds_of(w.get("kind")),
