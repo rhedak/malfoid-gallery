@@ -1643,6 +1643,34 @@ works:
     added: 2026-11-09
     summary: "A Yule Ball scene with Dracea Malfoid and Harry, told over several X posts."
     tags: [yule-ball, x, thread]
+  - id: "video-somehow-only-guy-wizarding-school"
+    title: "Somehow I'm The Only Guy At Wizarding School (AI anime music videos)"
+    kind: video
+    creator: "That One Belgian"
+    url: "https://www.youtube.com/@thatonebelgian/videos"
+    language: "Japanese (English subtitles)"
+    added: 2026-11-09
+    summary: "AI-made anime openings and recaps of Somehow I'm The Only Guy At Wizarding School, a Harry x Malfoid story, with English subtitles."
+    tags: [music-video, anime, ai-generated, subtitled]
+  - id: "creator-thatonebelgian"
+    title: "That One Belgian"
+    kind: [creator, video]
+    creator: "@thatonebelgian"
+    url: "https://www.youtube.com/@thatonebelgian"
+    language: "Japanese (English subtitles)"
+    added: 2026-11-09
+    summary: "Makes AI-made anime music videos of Somehow I'm The Only Guy At Wizarding School on YouTube."
+    also: ["https://x.com/belgianredacted"]
+    tags: [video, ai-generated, youtube, x]
+  - id: "creator-philmycrackin"
+    title: "Philmycrakin-5"
+    kind: [creator, video]
+    creator: "@Philmycrackin-5"
+    url: "https://www.youtube.com/@Philmycrackin-5"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid videos on YouTube, including Malfoid finally admits! and the Malfoid and the Drowned Lantern book four parts."
+    tags: [video, series, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
