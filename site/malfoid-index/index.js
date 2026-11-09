@@ -5,7 +5,8 @@
   "use strict";
 
   var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", video: "Video", music: "Music", other: "Other" };
-  var state = { kind: "all", q: "" };
+  var LENGTHS = { "one-shot": "One-shot", short: "Short", novel: "Novel", unknown: "Length unknown" };
+  var state = { kind: "all", length: "all", q: "" };
   var data = { works: [], contact: "" };
 
   function el(tag, cls, text) {
@@ -73,6 +74,7 @@
 
   function matches(w) {
     if (state.kind !== "all" && (w.kinds || []).indexOf(state.kind) === -1) return false;
+    if (state.length !== "all" && (w.length || "unknown") !== state.length) return false;
     if (!state.q) return true;
     return state.q.split(/\s+/).every(function (term) { return haystack(w).indexOf(term) !== -1; });
   }
@@ -95,6 +97,24 @@
     });
   }
 
+  function renderLengths() {
+    var box = document.getElementById("lengths");
+    box.textContent = "";
+    var ids = ["all", "one-shot", "short", "novel", "unknown"];
+    ids.forEach(function (id) {
+      var count = id === "all" ? data.works.length
+        : data.works.filter(function (w) { return (w.length || "unknown") === id; }).length;
+      if (id !== "all" && count === 0) return;
+      var label = id === "all" ? "Any length" : LENGTHS[id];
+      var b = el("button", "chip", label);
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(state.length === id));
+      b.appendChild(el("span", "n", String(count)));
+      b.addEventListener("click", function () { state.length = id; renderLengths(); renderList(); });
+      box.appendChild(b);
+    });
+  }
+
   function card(w) {
     var article = el("article", "work");
     if (w.thumb) {
@@ -110,6 +130,7 @@
     (w.kinds && w.kinds.length ? w.kinds : ["other"]).forEach(function (k) {
       top.appendChild(el("span", "kind", KINDS[k] || k));
     });
+    if ((w.kinds || []).indexOf("fanfic") !== -1) top.appendChild(el("span", "kind", LENGTHS[w.length || "unknown"]));
     if (w.added) top.appendChild(el("span", "work-date", w.added));
     article.appendChild(top);
 
@@ -209,6 +230,7 @@
     data = json;
     setupSubmit();
     renderChips();
+    renderLengths();
     renderList();
     var q = document.getElementById("q");
     q.addEventListener("input", function () { state.q = q.value.trim().toLowerCase(); renderList(); });

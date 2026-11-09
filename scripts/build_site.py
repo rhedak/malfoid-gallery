@@ -234,6 +234,15 @@ def kinds_of(value):
     return out or ["other"]
 
 
+LENGTHS = ("one-shot", "short", "novel", "unknown")
+
+
+def length_of(value):
+    """The optional `length` field for fanfic: one-shot, short, novel or unknown (the default)."""
+    v = "" if value is None else str(value).strip().lower()
+    return v if v in LENGTHS else "unknown"
+
+
 def order_of(value):
     """The optional `order` field: a number, or None when the work has none."""
     try:
@@ -267,6 +276,7 @@ def build_works():
             "thumb": text(w.get("thumb")) if text(w.get("thumb")).startswith("https://") else "",
             "also": [text(u) for u in (w.get("also") or []) if text(u).startswith(("http://", "https://"))],
             "order": order_of(w.get("order")),
+            "length": length_of(w.get("length")),
         })
     works.sort(key=lambda w: (w["order"] is None, w["order"] or 0, w["title"].lower()))
     return {"title": text(data.get("title")) or "Malfoid Index", "contact": text(data.get("contact")), "works": works}

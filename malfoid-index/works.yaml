@@ -11,6 +11,7 @@
 #   summary:   one or two sentences about the work
 #   tags:      list of short tags, e.g. [romance, slice-of-life]
 #   order:     optional number; works with an order come first, lowest first. Others sort A-Z by title
+#   length:    for fanfic: one-shot | short | novel | unknown (default unknown when we cannot tell reliably)
 #
 # Submissions arrive by email; add them here and the Pages workflow publishes them.
 title: "Malfoid Index"
@@ -72,6 +73,7 @@ works:
     thumb: "https://www.royalroadcdn.com/public/covers-large/196770-dancing-with-malfoy.jpg"
     title: "Dancing with Malfoy"
     kind: fanfic
+    length: novel
     creator: "HiddenArchitecture"
     url: "https://www.royalroad.com/fiction/196770"
     language: "English"
@@ -1217,6 +1219,7 @@ works:
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/malfoid-saga-girl-who-noticed-him.webp"
     title: "The Malfoid Saga"
     kind: fanfic
+    length: novel
     creator: "NWBroJaneway"
     url: "https://malfoid.lol/"
     language: "English"
