@@ -1238,6 +1238,7 @@ works:
     kind: [creator, music, video]
     creator: "@Zandranrix"
     url: "https://x.com/Zandranrix"
+    also: ["https://www.youtube.com/@zandran2"]
     language: "English"
     added: 2026-11-09
     summary: "Posts Harry Potter fan music and video on X, including Gryffindor vs Slytherin scenes."
