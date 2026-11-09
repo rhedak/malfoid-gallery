@@ -1866,3 +1866,211 @@ works:
     added: 2026-11-09
     summary: "Makes short anime Malfoid videos, such as the Halloween plan and Treacle Tart clips, on YouTube."
     tags: [video, anime, youtube]
+  - id: fanfic-malfoid-love-saga
+    title: Saga
+    kind: fanfic
+    creator: TheBrokenPokeman
+    url: https://malfoid.love/story/?id=saga
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: TheBrokenPokeman's Harry Potter rewrite featuring Draceana Malfoy, 73 pieces
+      on The Girl Who Loved.
+    tags:
+    - malfoid-love
+    - dracaena
+    - rewrite
+  - id: fanfic-malfoid-love-silver-beneath-the-ashes
+    title: Silver Beneath the Ashes
+    kind: fanfic
+    creator: Zest1al
+    url: https://malfoid.love/story/?id=silver-beneath-the-ashes
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: Zest1al's retelling of Harry's first two years at Hogwarts, told from the
+      Malfoy daughter's side.
+    tags:
+    - malfoid-love
+    - retelling
+    - dracaena
+    - school
+  - id: fanfic-malfoid-love-52
+    title: Dracænanon's Malfoid Continuity
+    kind: fanfic
+    creator: Dracænanon
+    url: https://malfoid.love/story/?id=52
+    language: English
+    length: short
+    added: 2026-11-09
+    summary: Dracæna Lyra Malfoy's seven years at Hogwarts, told in eight pieces.
+    tags:
+    - malfoid-love
+    - school
+    - dracaena
+  - id: fanfic-malfoid-love-26
+    title: Dracæna Malfoy and the Boy Who Lived
+    kind: fanfic
+    creator: Dracænanon
+    url: https://malfoid.love/story/?id=26
+    language: English
+    length: short
+    added: 2026-11-09
+    summary: Dracæna Lyra Malfoy begins Hogwarts and meets the Boy Who Lived, in five
+      pieces.
+    tags:
+    - malfoid-love
+    - school
+    - dracaena
+  - id: fanfic-malfoid-love-42
+    title: King Chud's Goblet of Fire Rewrite
+    kind: fanfic
+    creator: King Chud
+    url: https://malfoid.love/story/?id=42
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: A rewrite of Harry Potter and the Goblet of Fire with Lyra Malfoy replacing
+      Draco.
+    tags:
+    - malfoid-love
+    - rewrite
+    - lyra
+  - id: fanfic-malfoid-love-29
+    title: Dracæna Malfoy and the Tournament of Troubles
+    kind: fanfic
+    creator: Dracænanon
+    url: https://malfoid.love/story/?id=29
+    language: English
+    length: short
+    added: 2026-11-09
+    summary: Dracæna Malfoy returns to Hogwarts after her uncle's escape, as Harry's name
+      comes out of the Goblet of Fire.
+    tags:
+    - malfoid-love
+    - tournament
+    - dracaena
+  - id: fanfic-malfoid-love-45
+    title: A Family, Potter?
+    kind: fanfic
+    creator: REZELOVER
+    url: https://malfoid.love/story/?id=45
+    language: English
+    length: one-shot
+    added: 2026-11-09
+    summary: After a battle, Draceana and Harry are free to love each other and start
+      a family.
+    tags:
+    - malfoid-love
+    - romance
+    - dracaena
+  - id: fanfic-malfoid-love-44
+    title: Harry Potter and the Girl with the Diary
+    kind: fanfic
+    creator: TheBrokenPokeman
+    url: https://malfoid.love/story/?id=44
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: Harry's second year at Hogwarts, with Draceana Malfoy and the Heir of Slytherin.
+    tags:
+    - malfoid-love
+    - rewrite
+    - dracaena
+  - id: fanfic-malfoid-love-43
+    title: The Right Sort
+    kind: fanfic
+    creator: Krana-Kler
+    url: https://malfoid.love/story/?id=43
+    language: English
+    length: one-shot
+    added: 2026-11-09
+    summary: At Shell Cottage, Harry asks Draceana Malfoy to join the Horcrux hunt.
+    tags:
+    - malfoid-love
+    - dracaena
+    - horcrux
+  - id: fanfic-malfoid-love-41
+    title: King Chud's Prisoner of Azkaban Rewrite
+    kind: fanfic
+    creator: King Chud
+    url: https://malfoid.love/story/?id=41
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: A rewrite of Harry Potter and the Prisoner of Azkaban with Lyra Malfoy replacing
+      Draco.
+    tags:
+    - malfoid-love
+    - rewrite
+    - lyra
+  - id: fanfic-malfoid-love-40
+    title: Lady Malfoy
+    kind: fanfic
+    creator: ThatCrazyViking
+    url: https://malfoid.love/story/?id=40
+    language: English
+    length: one-shot
+    added: 2026-11-09
+    summary: Draceana Malfoy, resigned to life as Lady Malfoy, meets the captured Harry
+      at Malfoy Manor.
+    tags:
+    - malfoid-love
+    - dracaena
+    - deathly-hallows
+  - id: fanfic-malfoid-love-39
+    title: I Don't Hate You, Harry
+    kind: fanfic
+    creator: Kosmo
+    url: https://malfoid.love/story/?id=39
+    language: English
+    length: one-shot
+    added: 2026-11-09
+    summary: Draceana dreams that her mockery drives Harry away, then wakes, finds him
+      and begs him to stay.
+    tags:
+    - malfoid-love
+    - dracaena
+    - short-dream
+  - id: fanfic-malfoid-love-37
+    title: King Chud's Chamber of Secrets Rewrite
+    kind: fanfic
+    creator: King Chud
+    url: https://malfoid.love/story/?id=37
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: A rewrite of Harry Potter and the Chamber of Secrets with Lyra Malfoy replacing
+      Draco.
+    tags:
+    - malfoid-love
+    - rewrite
+    - lyra
+  - id: fanfic-malfoid-love-36
+    title: King Chud's Philosopher's Stone Rewrite
+    kind: fanfic
+    creator: King Chud
+    url: https://malfoid.love/story/?id=36
+    language: English
+    length: novel
+    added: 2026-11-09
+    summary: A rewrite of Harry Potter and the Philosopher's Stone with Lyra Malfoy replacing
+      Draco.
+    tags:
+    - malfoid-love
+    - rewrite
+    - lyra
+  - id: fanfic-malfoid-love-24
+    title: Before you kneel
+    kind: fanfic
+    creator: Spookori
+    url: https://malfoid.love/story/?id=24
+    language: English
+    length: one-shot
+    added: 2026-11-09
+    summary: As a Fiendfyre curse engulfs the Room of Requirement, Draceana Malfoy recalls
+      her years with Harry.
+    tags:
+    - malfoid-love
+    - dracaena
+    - memories
