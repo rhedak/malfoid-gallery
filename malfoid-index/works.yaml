@@ -2132,3 +2132,13 @@ works:
         url: "https://x.com/crow_agito/status/2115458609844982209"
       - title: "Harry Potter and a Date in Halloween"
         url: "https://x.com/crow_agito/status/2115805533638996209"
+  - id: "creator-weeknight"
+    title: "Weeknight"
+    kind: [creator, video]
+    creator: "@Weeknight"
+    url: "https://www.youtube.com/@Weeknight"
+    also: ["https://www.youtube.com/playlist?list=PLDwcrQgy1CE8"]
+    language: "English"
+    added: 2026-11-10
+    summary: "YouTube commentary on the Malfoid trend and its side plots, including a playlist of seven videos titled Malfoid and Side Plot Content. Covers how the trend spread and rewrites of the Harry Potter books for Malfoid."
+    tags: [video, commentary, youtube]
