@@ -1344,6 +1344,17 @@ works:
     summary: "Narrates fantasy, science fiction and fanfiction as audiobooks, including The Measure of a Malfoy."
     also: ["https://www.youtube.com/@Stories_forthe_Road/videos"]
     tags: [audiobook, youtube, x]
+  # NOTE: only The Weasley Spellweaver is confirmed SFW (by the submitter). Behind The Broken Glass (severed head),
+  # The Serpent's Leash and A Catch Worth Falling For (kissing, mild accidental groping) are not confirmed.
+  # The author's bio says the fics "might have spiciness". Story links and languages still need checking.
+  - id: "fanfic-chaincap-collection"
+    title: "Fanfiction Collection Index (Chain Cap)"
+    kind: fanfic
+    creator: "Chain Cap (@ChainCap8)"
+    url: "https://x.com/ChainCap8/article/2118239906241658908"
+    added: 2026-11-09
+    summary: "A Malfoid fanfic index: Behind The Broken Glass, The Weasley Spellweaver, The Serpent's Leash and A Catch Worth Falling For. Only The Weasley Spellweaver is confirmed SFW so far; the others are not yet confirmed."
+    tags: [index, collection, unconfirmed-sfw]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
