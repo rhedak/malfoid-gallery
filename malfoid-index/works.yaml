@@ -1563,6 +1563,15 @@ works:
     summary: "An AI anime creator on YouTube, making Malfoid Won't Admit It."
     also: ["https://x.com/ZeyHashimoto", "https://linktr.ee/zeyhashimoto"]
     tags: [video, ai-generated, x, youtube]
+  - id: "creator-jinartworth"
+    title: "Jin"
+    kind: [creator, art]
+    creator: "@JinArtworth"
+    url: "https://x.com/JinArtworth"
+    language: "English"
+    added: 2026-11-09
+    summary: "Posts Malfoid art on X, such as Malfoid and her polaroids. The bio says the art is AI assisted."
+    tags: [fan-art, ai-assisted, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
