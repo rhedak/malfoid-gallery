@@ -1506,6 +1506,15 @@ works:
     summary: "Makes Malfoid music videos on YouTube, such as Malfoid - Chosen & Conflicted."
     also: ["https://www.youtube.com/@juntahmolokai"]
     tags: [music, video, x, youtube]
+  - id: "creator-keyofdestiny5"
+    title: "Pottah"
+    kind: [creator, art]
+    creator: "@Keyofdestiny5"
+    url: "https://x.com/Keyofdestiny5"
+    language: "English"
+    added: 2026-11-09
+    summary: "Posts Malfoid content on X, with the tag #malfoid."
+    tags: [fan-art, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
