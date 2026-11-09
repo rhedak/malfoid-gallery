@@ -3,7 +3,7 @@
 # Each entry is one work. Fields (all optional except title and kind):
 #   id:        short unique slug, e.g. "2026-12-moonlit-owl"
 #   title:     the work's title
-#   kind:      creator | comic | fanfic | art | video | music | other, or a list such as [creator, art]
+#   kind:      creator | comic | game | fanfic | art | video | music | other, or a list such as [creator, art]
 #   creator:   the author or artist's name or handle
 #   url:       link to the work (http or https)
 #   language:  e.g. "English", "German"
@@ -1593,6 +1593,25 @@ works:
     summary: "Archives and curates Malfoid works on The Girl Who Loved, malfoid.love."
     also: ["https://malfoid.love/", "https://yearningmalfoid.love"]
     tags: [archive, website, x]
+  - id: "game-pure-blood-and-prejudice"
+    title: "Malfoid Dating Sim: Pure Blood & Prejudice"
+    kind: game
+    creator: "COCOLEMON (@CocolemonTV)"
+    url: "https://ruizukun-dev.itch.io/malfoid-dating-sim"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Malfoid dating sim on itch.io, labelled SFW by its creator, with a three-year story, voiced English and text in 13 languages."
+    tags: [dating-sim, sfw, itch]
+  - id: "creator-cocolemon"
+    title: "COCOLEMON"
+    kind: [creator, game]
+    creator: "@CocolemonTV"
+    url: "https://x.com/CocolemonTV"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid Dating Sim: Pure Blood & Prejudice, on itch.io."
+    also: ["https://ruizukun-dev.itch.io/malfoid-dating-sim"]
+    tags: [game, x, itch]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
