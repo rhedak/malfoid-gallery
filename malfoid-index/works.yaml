@@ -1525,6 +1525,15 @@ works:
     added: 2026-11-09
     summary: "A 5-video playlist of anime-style music videos of Female Draco Malfoy and Harry Potter, including One Last Goodbye and My Bad Girlfriend."
     tags: [playlist, music-video, anime, ai-generated]
+  - id: "fanfic-harry-potter-and-the-useful-friend"
+    title: "Harry Potter and the Useful Friend"
+    kind: fanfic
+    creator: "ASKinloch"
+    url: "https://www.wattpad.com/story/419121177"
+    language: "English"
+    added: 2026-11-09
+    summary: "Draconia Malfoy is told to befriend Harry Potter because he'll be useful. A first-year canon-adjacent rewrite with female Draco, a slow burn, and plot holes patched."
+    tags: [slowburn, first-year, fix-it, wattpad]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
