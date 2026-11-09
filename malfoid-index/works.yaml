@@ -1091,12 +1091,13 @@ works:
     tags: [potter, romance]
   - id: "creator-malfoid-dracaena"
     title: "Dracaena Malfoid"
-    kind: [creator, art]
+    kind: [creator, art, music]
     creator: "@Malfoid"
     url: "https://x.com/Malfoid"
     added: 2026-11-08
-    summary: "Fan roleplay, memes and AI fan art of Malfoid on X. Unofficial."
-    tags: [fan-art, roleplay, memes, x]
+    summary: "Fan roleplay, memes, AI fan art and Malfoid music on X and YouTube. Unofficial."
+    also: ["https://linktr.ee/dracaenamalfoid", "https://www.youtube.com/@DracaenaMalfoid"]
+    tags: [fan-art, music, roleplay, memes, x, youtube]
   - id: "creator-gremlinfoid"
     title: "gremlinfoid"
     kind: [creator, art]
