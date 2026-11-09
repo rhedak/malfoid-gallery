@@ -1672,6 +1672,16 @@ works:
     added: 2026-11-09
     summary: "Makes Malfoid videos on YouTube, including Malfoid finally admits! and the Malfoid and the Drowned Lantern book four parts."
     tags: [video, series, youtube]
+  - id: "fanfic-critical-scribe-megathread"
+    title: "Malfoid writing megathread (X)"
+    kind: fanfic
+    length: short
+    creator: "J. Y. Song (@Critical_Scribe)"
+    url: "https://x.com/Critical_Scribe/status/2112046280868270296"
+    language: "English"
+    added: 2026-11-09
+    summary: "A megathread on X that compiles the author's Malfoid writing, with commentary on Draceana and Harry, across several posts."
+    tags: [thread, collection, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
