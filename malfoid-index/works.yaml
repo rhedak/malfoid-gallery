@@ -1297,6 +1297,24 @@ works:
     added: 2026-11-09
     summary: "A slowburn Malfoid story told mostly from the view of Dracaena's best friend Pansy Parkinson."
     tags: [slowburn, friendship, wattpad]
+  - id: "creator-adayasmr"
+    title: "ADayASMR"
+    kind: [creator, video, music]
+    creator: "@adayasmr"
+    url: "https://x.com/adayasmr"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes songs and animations, including the Lumos Lumos anime series on YouTube."
+    tags: [anime, music, x]
+  - id: "creator-guardbro"
+    title: "Guardbro"
+    kind: [creator, fanfic]
+    creator: "@GuardTm"
+    url: "https://x.com/GuardTm"
+    language: "English"
+    added: 2026-11-09
+    summary: "Writes Harry Potter and the Sorcerer's Tsundere on Wattpad, and is also an audiobook author and narrator."
+    tags: [fanfic, audiobook, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
