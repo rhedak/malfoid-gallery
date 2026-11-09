@@ -1633,6 +1633,16 @@ works:
     summary: "Makes Malfoid games, such as The Spelling of Night, on game.sachihwa.com."
     also: ["https://game.sachihwa.com/"]
     tags: [game, x]
+  - id: "fanfic-yule-ball-tusky"
+    title: "The Yule Ball (X story)"
+    kind: fanfic
+    length: short
+    creator: "Tusky (@WalrusCavalry)"
+    url: "https://x.com/WalrusCavalry/status/2106988246592856412"
+    language: "English"
+    added: 2026-11-09
+    summary: "A Yule Ball scene with Dracea Malfoid and Harry, told over several X posts."
+    tags: [yule-ball, x, thread]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
