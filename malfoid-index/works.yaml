@@ -1315,6 +1315,15 @@ works:
     added: 2026-11-09
     summary: "Writes Harry Potter and the Sorcerer's Tsundere on Wattpad, and is also an audiobook author and narrator."
     tags: [fanfic, audiobook, x]
+  - id: "video-malfoid-by-fantasoner-playlist"
+    title: "Malfoid by Fantasoner"
+    kind: video
+    creator: "Fantasoner"
+    url: "https://www.youtube.com/playlist?list=PLZdJWDREs9D8"
+    language: "English"
+    added: 2026-11-09
+    summary: "A short YouTube playlist of Malfoid videos by Fantasoner, including Malfoy: Warning, You Will Get Too Immersed and a Female Malfoy teaser."
+    tags: [playlist, drarry, ai-generated]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
