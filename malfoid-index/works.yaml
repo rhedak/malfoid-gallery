@@ -1667,6 +1667,7 @@ works:
     kind: [creator, video]
     creator: "@Philmycrackin-5"
     url: "https://www.youtube.com/@Philmycrackin-5"
+    also: ["https://x.com/Darkllamaboy"]
     language: "English"
     added: 2026-11-09
     summary: "Makes Malfoid videos on YouTube, including Malfoid finally admits! and the Malfoid and the Drowned Lantern book four parts."
