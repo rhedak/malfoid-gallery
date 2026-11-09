@@ -144,6 +144,12 @@ select:focus { border-color: var(--emerald-2); outline: none; }
 .badge.posted { color: var(--gold); border-color: rgba(229, 192, 123, .5); }
 .badge.gallery-only { color: var(--silver); }
 .badge.style { margin-left: auto; }
+/* Guest works: a rose frame on the card and around the picture, and a Guest badge. */
+.badge.guest { color: #ffd6e7; background: rgba(136, 37, 84, .8); border-color: rgba(232, 143, 180, .7); }
+.card.guest, .card.guest:hover, .card.guest:focus-visible { border-color: rgba(232, 143, 180, .75); box-shadow: inset 0 0 0 1px rgba(232, 143, 180, .5); }
+.media-frame.guest img { outline: 3px solid rgba(232, 143, 180, .8); outline-offset: 4px; }
+.guest-credit h4 { color: #ffd6e7; }
+.guest-note { font-size: 14px; color: var(--silver); margin: 8px 0 0; }
 .empty { text-align: center; color: var(--muted); padding: 60px 0; }
 
 /* Detail */
