@@ -2102,3 +2102,12 @@ works:
     added: 2026-11-09
     summary: "Artist behind the Sep 2026 X post of a blonde, Slytherin-robed Draco (genderbent) with the caption \"Since when are you one of the top students in the school, Potter?\". The post reached about 23 million views and is seen as the start of the Malfoid wave. Lists the original image post at https://x.com/redteneri/status/2102398387194626330."
     tags: [art, fanart, x, kickstart]
+  - id: "creator-aurondarklord"
+    title: "Aurondarklord"
+    kind: [creator, fanfic]
+    creator: "@Aurondarklord"
+    url: "https://x.com/Aurondarklord"
+    language: "English"
+    added: 2026-11-10
+    summary: "Writes Malfoid fanfiction, posted as a series of X threads. The pinned post lists the whole series sorted by in-universe chronology, from 1st year to after the series, with the Daphne war arc in 6th year."
+    tags: [fanfic, x, series, hogwarts]
