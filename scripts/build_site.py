@@ -8,6 +8,7 @@ and writes a ready-to-serve folder (default `_site/`, not committed):
   _site/index.json                               one merged record per gallery entry
   _site/thumbs/<id>.webp                         ~480 px wide thumbnails (needs Pillow)
   _site/images/, videos/, references/            the media the pages link to (copied unchanged)
+  guest/entries/*.yaml + guest/images/           guest works (see guest/CONTRIBUTING.md), shown with a guest frame
 
 QA notes, seeds, idea prompts and rejected/ are left out on purpose.
 
@@ -133,6 +134,106 @@ def posted_of(value):
     return {"date": str(value), "links": {}}
 
 
+GUEST_DIR = "guest/entries"
+
+
+def _http(value):
+    return isinstance(value, str) and value.startswith(("http://", "https://"))
+
+
+def guest_problems(g, stem):
+    """Checks a guest entry (guest/entries/<id>.yaml) and returns a list of problems; empty when it is fine."""
+    problems = []
+    if not isinstance(g, dict):
+        return ["not a YAML mapping"]
+    if str(g.get("id") or "") != stem:
+        problems.append("id must match the file name (%s)" % stem)
+    for key in ("title", "artist", "license"):
+        if not str(g.get(key) or "").strip():
+            problems.append("missing %s" % key)
+    if g.get("rights_confirmed") is not True:
+        problems.append("rights_confirmed must be true (the submitter confirms the rights and credit)")
+    if not isinstance(g.get("ai_generated"), bool):
+        problems.append("ai_generated must be true or false")
+    elif g["ai_generated"] and not str(g.get("model") or "").strip():
+        problems.append("model is required when ai_generated is true")
+    if not str(g.get("created") or "").strip():
+        problems.append("missing created (date submitted, YYYY-MM-DD)")
+    image = str(g.get("image") or "")
+    if not image.startswith("guest/images/"):
+        problems.append("image must be under guest/images/")
+    elif not os.path.isfile(os.path.join(ROOT, image)):
+        problems.append("image file not found: %s" % image)
+    for key in ("artist_url", "source"):
+        if g.get(key) and not _http(g.get(key)):
+            problems.append("%s must be an http or https link" % key)
+    return problems
+
+
+def guest_records(start_order):
+    """Guest works as gallery records: shown in the gallery, never posted (no plan, no planned date)."""
+    records = []
+    for path in sorted(glob.glob(os.path.join(ROOT, GUEST_DIR, "*.yaml"))):
+        rel = os.path.relpath(path, ROOT)
+        stem = os.path.splitext(os.path.basename(path))[0]
+        g = miniyaml.load(path)
+        problems = guest_problems(g, stem)
+        if problems:
+            raise SystemExit("%s:\n  - %s" % (rel, "\n  - ".join(problems)))
+        ai = g["ai_generated"]
+        model = str(g.get("model") or "").strip() if ai else ""
+        image = str(g["image"])
+        records.append({
+            "id": stem,
+            "order": start_order + len(records),
+            "title": str(g["title"]).strip(),
+            "created": str(g["created"]),
+            "theme": "",
+            "themeName": "",
+            "tags": list(g.get("tags") or []),
+            "style": "anime",
+            "styleName": STYLE_NAMES["anime"],
+            "styleDesc": None,
+            "variant": None,
+            "status": "gallery-only",
+            "planned": None,
+            "posted": None,
+            "image": image,
+            "thumb": "thumbs/%s.webp" % stem,
+            "width": None,
+            "height": None,
+            "prompt": "",
+            "tool": ("AI-generated: " + model) if ai else "Not AI-generated",
+            "basePost": None,
+            "resultPost": None,
+            "reference": None,
+            "poseRef": None,
+            "poseName": None,
+            "poseView": None,
+            "outfit": None,
+            "outfitName": None,
+            "emotion": None,
+            "emotionName": None,
+            "setting": None,
+            "settingName": None,
+            "location": "",
+            "locationName": LOCATION_NAMES[""],
+            "season": None,
+            "media": "animation" if is_animated(image) else "image",
+            "source": None,
+            "guest": {
+                "artist": str(g["artist"]).strip(),
+                "artistUrl": g.get("artist_url") or None,
+                "source": g.get("source") or None,
+                "license": str(g["license"]).strip(),
+                "aiGenerated": ai,
+                "model": model or None,
+                "note": str(g.get("note") or "").strip() or None,
+            },
+        })
+    return records
+
+
 def build_index():
     gallery = load("gallery.yaml")["entries"]
     outfits = by_id(load("ideas/outfits.yaml").get("outfits"))
@@ -213,6 +314,8 @@ def build_index():
                 "sourcePost": video.get("source_post"), "motion": video.get("motion"),
             }
         entries.append(rec)
+
+    entries += guest_records(len(entries))
 
     return {
         "title": "Malfoid Gallery",

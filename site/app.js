@@ -200,8 +200,10 @@
       $("h3", node).textContent = e.title;
       $(".card-meta", node).textContent = e.daily
         ? e.daily.label.replace("Daily Malfoid ", "Daily ") + " · " + fmtDate(e.daily.date)
-        : "Gallery only · " + e.themeName;
+        : e.guest ? "Guest · " + e.guest.artist : "Gallery only · " + e.themeName;
+      if (e.guest) node.classList.add("guest");
       var b = [];
+      if (e.guest) b.push('<span class="badge guest">Guest</span>');
       if (e.daily) b.push('<span class="badge num">#' + e.daily.n + "</span>");
       if (e.media === "video") b.push('<span class="badge video">▶ Clip</span>');
       if (e.media === "animation") { b.push('<span class="badge video">▶ Anim</span>'); node.dataset.anim = e.image; }
@@ -261,6 +263,7 @@
   function renderMedia(e) {
     var frame = $("#media-frame"), toggle = $("#media-toggle");
     toggle.hidden = !e.video;
+    frame.classList.toggle("guest", !!e.guest);
     $$("button", toggle).forEach(function (b) { b.classList.toggle("on", b.dataset.mode === mediaMode); });
     if (e.video && mediaMode === "video") {
       frame.innerHTML = '<video controls playsinline loop preload="metadata" poster="' + esc(e.image) + '"><source src="' + esc(e.video.src) + '" type="video/mp4"></video>';
@@ -281,12 +284,13 @@
     kick.push('<span class="badge ' + e.status + '">' + esc(label("status", e.status)) + "</span>");
     if (e.media === "video") kick.push('<span class="badge video">▶ Clip</span>');
     if (e.media === "animation") kick.push('<span class="badge video">▶ Animation</span>');
+    if (e.guest) kick.unshift('<span class="badge guest">Guest work</span>');
     if (e.style !== "anime") kick.push('<span class="badge">' + esc(e.styleName) + "</span>");
     h.push('<div class="d-kicker">' + kick.join("") + "</div>");
     h.push('<h2 id="d-title">' + esc(e.title) + "</h2>");
     var sub = [];
     if (e.daily) sub.push((e.status === "posted" ? "Posted " : "Planned for ") + fmtDate(e.posted && e.posted.date || e.daily.date));
-    else sub.push("Gallery only, never posted");
+    else sub.push(e.guest ? "Guest work, never posted" : "Gallery only, never posted");
     sub.push("created " + fmtDate(e.created));
     h.push('<p class="d-sub">' + esc(sub.join(" · ")) + "</p>");
 
@@ -301,6 +305,17 @@
       fact("Tool", esc(e.tool)) +
       fact("Size", e.width ? e.width + " × " + e.height : "") +
       "</dl></div>");
+
+    if (e.guest) {
+      var g = e.guest;
+      var artist = g.artistUrl ? link(g.artistUrl, g.artist) : esc(g.artist);
+      h.push('<div class="d-section guest-credit"><h4>Guest credit</h4><dl class="facts">' +
+        fact("Artist", artist) +
+        fact("Made with", g.aiGenerated ? esc(g.model) : "Not AI-generated") +
+        fact("License", esc(g.license)) +
+        fact("Original", link(g.source, "Original post")) +
+        "</dl>" + (g.note ? '<p class="guest-note">' + esc(g.note) + "</p>" : "") + "</div>");
+    }
 
     if (e.tags.length) {
       h.push('<div class="d-section"><h4>Tags</h4><div class="tags">' + e.tags.map(function (t) {
@@ -322,7 +337,7 @@
     if (e.posted && e.posted.links) Object.keys(e.posted.links).forEach(function (k) {
       links.push(link(e.posted.links[k], "Post on " + (PLATFORMS.find(function (p) { return p[0] === k; }) || [k, cap(k)])[1]));
     });
-    h.push('<div class="d-section"><h4>Links</h4><div class="links">' + links.join("") + "</div></div>");
+    if (links.join("")) h.push('<div class="d-section"><h4>Links</h4><div class="links">' + links.join("") + "</div></div>");
 
     if (e.video) {
       h.push('<div class="d-section"><h4>Clip</h4><p class="motion">' + esc(e.video.motion) + '</p><div class="links"><a href="' + esc(e.video.src) + '" target="_blank" rel="noopener">MP4 file</a></div></div>');

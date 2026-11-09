@@ -1,11 +1,13 @@
-name: Malfoid Index check
+name: Submission check
 
-# Checks pull requests that touch the Malfoid Index or the site build, so a broken works.yaml is caught before merge.
+# Checks pull requests that touch the Malfoid Index, guest gallery entries or the site build, so a broken
+# works.yaml or guest entry (missing credit, license or AI declaration, or a bad image path) is caught before merge.
 
 on:
   pull_request:
     paths:
       - "malfoid-index/**"
+      - "guest/**"
       - "scripts/**"
       - "site/**"
 

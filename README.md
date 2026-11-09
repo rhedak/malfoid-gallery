@@ -40,7 +40,9 @@ scripts/add_entry.py  helper that adds a new entry (image + input file + index l
 scripts/ideas.py      random idea generator: outfit + setting + pose/view + emotion + coverage + art style -> prompt
 scripts/import_shisei.py  rebuilds ideas/poses.yaml and references/poses/ from a Shisei checkout
 scripts/build_site.py builds the gallery website (_site/, not committed) from the YAML: index.json + WebP thumbnails
-malfoid-index/works.yaml  Malfoid Index: fanfics and other fan works by other people (submitted by email, rhedak@proton.me)
+malfoid-index/works.yaml  Malfoid Index: fanfics and other fan works by other people (submitted by email or pull request, see malfoid-index/CONTRIBUTING.md)
+guest/entries/        guest works for the gallery, one YAML file each (artist, AI declaration, license); images in guest/images/
+                      submitted by pull request only, see guest/CONTRIBUTING.md; shown with a rose frame and a Guest badge, never posted
 site/                 static source of the website: index.html, style.css, app.js, vendor/ (MiniSearch, MIT); site/malfoid-index/ is the Malfoid Index sub page
 scripts/miniyaml.py   tiny YAML loader (uses PyYAML if installed), so the scripts need only Python 3
 ```
