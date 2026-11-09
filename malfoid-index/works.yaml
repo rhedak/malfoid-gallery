@@ -1247,6 +1247,7 @@ works:
     kind: [creator, video]
     creator: "@Foyege24"
     url: "https://x.com/Foyege24"
+    also: ["https://www.youtube.com/@Fo_yege1664"]
     language: "English"
     added: 2026-11-09
     summary: "Posts The Malfoy Story, an AI-made video series about a Malfoy girl and Harry, on X."
@@ -1374,6 +1375,33 @@ works:
     summary: "Compiles Malfoid videos into a chronological cut, with the Book 1-7 trailer and the Chronological Order playlist."
     also: ["https://www.youtube.com/@projectmalfoid"]
     tags: [video, compilation, x, youtube]
+  - id: "creator-malfoveil"
+    title: "MALFOVEIL"
+    kind: [creator, music, video]
+    creator: "@MALFOVEIL"
+    url: "https://www.youtube.com/@MALFOVEIL"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Malfoid music videos on YouTube, such as Malfoid's Midnight Trap and Malfoid x Harry Potter."
+    tags: [music, video, youtube]
+  - id: "creator-alxaiproductions"
+    title: "ALX AI Productions"
+    kind: [creator, fanfic, video]
+    creator: "@AlxAIProductions"
+    url: "https://www.youtube.com/@AlxAIProductions"
+    language: "English"
+    added: 2026-11-09
+    summary: "AI-generated fan videos on YouTube, including A Dracaena Malfoy Saga."
+    tags: [video, ai-generated, youtube]
+  - id: "creator-schmede-ai"
+    title: "schmede_AI"
+    kind: [creator, video]
+    creator: "@schmede_AI"
+    url: "https://www.youtube.com/@schmede_AI"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes the Malfoid Main Story playlist on YouTube. The channel also covers other topics."
+    tags: [video, playlist, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
