@@ -15,8 +15,12 @@ Anything that breaks these rules will not be merged. The maintainer may decline 
 
 ## How to submit
 
-1. Put your image in `guest/images/` as a JPG, PNG or WebP file. Use a file name based on the entry id, for example `guest/images/2026-11-my-work.jpg`.
-2. Create `guest/entries/<id>.yaml`, with the same id as the file name:
+You can host the image in one of two ways. Use exactly one of them in the entry:
+
+- **In the repository:** put the image in `guest/images/` as a JPG, PNG or WebP file, named after the entry id (for example `guest/images/2026-11-my-work.jpg`), and set `image:` to its path. The image stays in the repository, and the site can make thumbnails.
+- **On your own host:** set `image_url:` to a direct https link to the image file. The site shows it from your host, with no copy and no thumbnail. The check confirms the link returns an image. The link must stay online; if it breaks or the image changes, the entry will be removed. Keep a copy of the file in case you need to re-host it.
+
+1. Create `guest/entries/<id>.yaml`, with the same id as the file name:
 
 ```yaml
 id: "2026-11-my-work"
@@ -31,14 +35,14 @@ rights_confirmed: true
 source: "https://link-to-the-original-post"             # optional
 note: "Anything the viewer should know, one sentence."  # optional
 tags: [example, tag]                                    # optional
-image: "guest/images/2026-11-my-work.jpg"
+image: "guest/images/2026-11-my-work.jpg"       # or: image_url: "https://your-host.example/work.jpg"
 ```
 
 3. Open a pull request with the template: https://github.com/rhedak/malfoid-gallery/compare?expand=1&template=guest-gallery.md
 
 ## What happens next
 
-- A check runs on the pull request. It fails if a required field is missing, the image is not found, or `ai_generated` is true without a model.
+- A check runs on the pull request. It fails if a required field is missing, the image is not found, the external link does not return an image, or `ai_generated` is true without a model.
 - The maintainer reviews the image, the credit and the license.
 - When the pull request is merged into `main`, the site is rebuilt and published automatically.
 

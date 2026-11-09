@@ -29,3 +29,6 @@ jobs:
 
       - name: Build the site
         run: python scripts/build_site.py --out "$RUNNER_TEMP/site" --no-thumbs
+
+      - name: Check external guest image links
+        run: python scripts/check_guest_images.py

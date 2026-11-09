@@ -160,10 +160,16 @@ def guest_problems(g, stem):
     if not str(g.get("created") or "").strip():
         problems.append("missing created (date submitted, YYYY-MM-DD)")
     image = str(g.get("image") or "")
-    if not image.startswith("guest/images/"):
-        problems.append("image must be under guest/images/")
-    elif not os.path.isfile(os.path.join(ROOT, image)):
-        problems.append("image file not found: %s" % image)
+    image_url = str(g.get("image_url") or "")
+    if bool(image) == bool(image_url):
+        problems.append("set exactly one of image (a file in guest/images/) or image_url (an https link)")
+    elif image:
+        if not image.startswith("guest/images/"):
+            problems.append("image must be under guest/images/")
+        elif not os.path.isfile(os.path.join(ROOT, image)):
+            problems.append("image file not found: %s" % image)
+    elif not _http(image_url):
+        problems.append("image_url must be an http or https link")
     for key in ("artist_url", "source"):
         if g.get(key) and not _http(g.get(key)):
             problems.append("%s must be an http or https link" % key)
@@ -182,7 +188,8 @@ def guest_records(start_order):
             raise SystemExit("%s:\n  - %s" % (rel, "\n  - ".join(problems)))
         ai = g["ai_generated"]
         model = str(g.get("model") or "").strip() if ai else ""
-        image = str(g["image"])
+        external = "image_url" in g and bool(str(g.get("image_url") or "").strip())
+        image = str(g["image_url"]).strip() if external else str(g["image"])
         records.append({
             "id": stem,
             "order": start_order + len(records),
@@ -199,7 +206,8 @@ def guest_records(start_order):
             "planned": None,
             "posted": None,
             "image": image,
-            "thumb": "thumbs/%s.webp" % stem,
+            # External images are shown from the artist's host: no local copy or thumbnail is made.
+            "thumb": image if external else "thumbs/%s.webp" % stem,
             "width": None,
             "height": None,
             "prompt": "",
@@ -219,9 +227,10 @@ def guest_records(start_order):
             "location": "",
             "locationName": LOCATION_NAMES[""],
             "season": None,
-            "media": "animation" if is_animated(image) else "image",
+            "media": "animation" if not external and is_animated(image) else "image",
             "source": None,
             "guest": {
+                "external": external,
                 "artist": str(g["artist"]).strip(),
                 "artistUrl": g.get("artist_url") or None,
                 "source": g.get("source") or None,
@@ -444,11 +453,12 @@ def main():
     index = build_index()
     made = 0
     for e in index["entries"]:
-        copy(e["image"], out)
+        if not _http(e["image"]):
+            copy(e["image"], out)
         for rel in (e.get("reference"), e.get("poseRef"), (e.get("video") or {}).get("src")):
             if rel:
                 copy(rel, out)
-        if not args.no_thumbs:
+        if not args.no_thumbs and not _http(e["image"]):
             made += make_thumb(os.path.join(ROOT, e["image"]), os.path.join(out, e["thumb"]))
     with open(os.path.join(out, "index.json"), "w", encoding="utf-8") as f:
         json.dump(index, f, ensure_ascii=False, separators=(",", ":"))

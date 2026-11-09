@@ -7,7 +7,8 @@
 - [ ] `license` says what I allow, and I follow the terms of any AI tool I used
 - [ ] `rights_confirmed: true` is set in the entry
 - [ ] The image is safe for work and shows Draconia Malfoid (or is clearly made for her)
-- [ ] I only added `guest/entries/<id>.yaml` and `guest/images/<file>`
+- [ ] I only added `guest/entries/<id>.yaml` and, if I host the image in the repo, `guest/images/<file>`
+- [ ] Exactly one of `image` or `image_url` is set. If I used `image_url`, I will keep the file online
 
 **Entry id:**
 
