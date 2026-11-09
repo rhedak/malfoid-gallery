@@ -1,0 +1,29 @@
+name: Malfoid Index check
+
+# Checks pull requests that touch the Malfoid Index or the site build, so a broken works.yaml is caught before merge.
+
+on:
+  pull_request:
+    paths:
+      - "malfoid-index/**"
+      - "scripts/**"
+      - "site/**"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build dependencies
+        run: pip install pillow pyyaml
+
+      - name: Build the site
+        run: python scripts/build_site.py --out "$RUNNER_TEMP/site" --no-thumbs
