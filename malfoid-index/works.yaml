@@ -1682,6 +1682,15 @@ works:
     added: 2026-11-09
     summary: "A megathread on X that compiles the author's Malfoid writing, with commentary on Draceana and Harry, across several posts."
     tags: [thread, collection, x]
+  - id: "creator-wispaigc"
+    title: "WispAIGC"
+    kind: [creator, video]
+    creator: "@WispAIGC"
+    url: "https://www.youtube.com/@WispAIGC"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes AI Draconia Malfoy videos on YouTube, with quotes from the books."
+    tags: [video, ai-generated, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
