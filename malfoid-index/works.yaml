@@ -1468,6 +1468,15 @@ works:
     added: 2026-11-09
     summary: "A tech YouTuber who also makes Malfoid videos, including the Draconia Malfoid x Harry Potter movie."
     tags: [video, youtube]
+  - id: "creator-papallax"
+    title: "Papallax"
+    kind: [creator, video]
+    creator: "@Papallax"
+    url: "https://www.youtube.com/channel/UC_Ys3Lsi6F63BiL1TNEpn0w"
+    language: "English"
+    added: 2026-11-09
+    summary: "Makes Draconia Malfoy Harry Potter POV videos on YouTube, such as Winter with Her and Spring with Her."
+    tags: [video, music, youtube]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
