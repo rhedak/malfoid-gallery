@@ -8,6 +8,7 @@ heading font) when installed, otherwise another serif.
 
     python3 scripts/make_og_banner.py            # -> site/og-banner.jpg
     python3 scripts/make_og_banner.py --debug    # also draws the face boxes, to check the crops
+    python3 scripts/make_og_banner.py --index    # -> site/malfoid-index/og-banner.jpg ("Malfoid Index" banner)
 """
 import argparse
 import os
@@ -95,7 +96,13 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", default=os.path.join(ROOT, "site", "og-banner.jpg"))
     ap.add_argument("--debug", action="store_true", help="draw the face boxes")
+    ap.add_argument("--index", action="store_true", help="the Malfoid Index sub page banner instead of the gallery one")
     args = ap.parse_args()
+    if args.index and args.out == os.path.join(ROOT, "site", "og-banner.jpg"):
+        args.out = os.path.join(ROOT, "site", "malfoid-index", "og-banner.jpg")
+    word2 = "Index" if args.index else "Gallery"
+    subtitle = ("FANMADE FICTION, VIDEOS, COMICS AND MORE" if args.index
+                else "DAILY MALFOID  ·  DRACONIA MALFOID  ·  GROK IMAGINE")
 
     videos = {v["id"] for v in miniyaml.load(os.path.join(ROOT, "videos", "videos.yaml"))}
     gallery = {e["id"]: e for e in miniyaml.load(os.path.join(ROOT, "gallery.yaml"))["entries"]}
@@ -133,7 +140,7 @@ def main():
     # title: silver "Malfoid" + emerald italic "Gallery", centred
     size = 112
     t1, top1 = gradient_text("Malfoid", font(False, size), (246, 249, 248), (138, 151, 147))
-    t2, top2 = gradient_text("Gallery", font(True, size), (160, 245, 210), (16, 185, 129))
+    t2, top2 = gradient_text(word2, font(True, size), (160, 245, 210), (16, 185, 129))
     space = round(size * 0.24)
     tw = t1.width + space + t2.width
     tx = (W - tw) // 2
@@ -153,7 +160,7 @@ def main():
     for xx in range(W // 2 - 70, W // 2 + 70):
         a = 1 - abs(xx - W // 2) / 70
         d.point((xx, line_y), fill=(52, 211, 153, round(255 * a)))
-    sub = "DAILY MALFOID  ·  DRACONIA MALFOID  ·  GROK IMAGINE"
+    sub = subtitle
     sf = font(False, 21, "Medium")
     spacing = 3
     widths = [d.textlength(ch, font=sf) for ch in sub]
