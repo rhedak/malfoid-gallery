@@ -8,6 +8,7 @@
   var LENGTHS = { "one-shot": "One-shot", short: "Short", novel: "Novel", unknown: "Length unknown" };
   var state = { kind: "all", length: "all", q: "" };
   var data = { works: [], contact: "" };
+  var pageTitle = document.title;
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -29,7 +30,8 @@
   var PLATFORMS = [
     { key: "x", name: "X", match: /(^|\.)(x|twitter)\.com$/ },
     { key: "youtube", name: "YouTube", match: /(^|\.)(youtube\.com|youtu\.be)$/ },
-    { key: "wattpad", name: "Wattpad", match: /(^|\.)wattpad\.com$/ }
+    { key: "wattpad", name: "Wattpad", match: /(^|\.)wattpad\.com$/ },
+    { key: "instagram", name: "Instagram", match: /(^|\.)instagram\.com$/ }
   ];
   var SVG_NS = "http://www.w3.org/2000/svg";
   var ICON_PATHS = {
@@ -54,7 +56,12 @@
 
   function platformIcon(p) {
     var svg = svgEl("svg", { viewBox: "0 0 24 24", width: "16", height: "16", "aria-hidden": "true", focusable: "false" });
-    if (ICON_PATHS[p.key]) {
+    if (p.key === "instagram") {
+      // Instagram: a rounded square with a lens and a dot, drawn in the current text colour.
+      svg.appendChild(svgEl("rect", { x: "3", y: "3", width: "18", height: "18", rx: "5", fill: "none", stroke: "currentColor", "stroke-width": "2" }));
+      svg.appendChild(svgEl("circle", { cx: "12", cy: "12", r: "4", fill: "none", stroke: "currentColor", "stroke-width": "2" }));
+      svg.appendChild(svgEl("circle", { cx: "17.2", cy: "6.8", r: "1.2", fill: "currentColor" }));
+    } else if (ICON_PATHS[p.key]) {
       svg.appendChild(svgEl("path", { fill: "currentColor", d: ICON_PATHS[p.key] }));
     } else {
       // Wattpad: a plain "W" badge in its orange, since the official mark is not drawn here.
@@ -66,8 +73,40 @@
     return svg;
   }
 
+  // The "on:" row: one icon per distinct http(s) link, shown only when there is more than one.
+  function platformRow(urls) {
+    var links = [];
+    urls.forEach(function (u) {
+      var href = safeUrl(u);
+      if (href && links.indexOf(href) === -1) links.push(href);
+    });
+    if (links.length < 2) return null;
+    var row = el("p", "work-platforms");
+    row.appendChild(el("span", "work-platforms-label", "on:"));
+    links.forEach(function (href) {
+      var p = platformOf(href);
+      var a = document.createElement("a");
+      a.href = href;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      if (p) {
+        a.className = "platform";
+        a.title = p.name;
+        a.setAttribute("aria-label", p.name);
+        a.appendChild(platformIcon(p));
+      } else {
+        a.className = "platform platform-text";
+        a.title = href;
+        a.textContent = "link";
+      }
+      row.appendChild(a);
+    });
+    return row;
+  }
+
   function haystack(w) {
-    return [w.title, w.creator, w.summary, w.language, (w.tags || []).join(" "),
+    var itemTitles = (w.items || []).map(function (i) { return i.title; });
+    return [w.title, w.creator, w.summary, w.language, (w.tags || []).join(" "), itemTitles.join(" "),
       (w.kinds || []).map(function (k) { return KINDS[k] || k; }).join(" ")]
       .join(" ").toLowerCase();
   }
@@ -115,25 +154,17 @@
     });
   }
 
-  function card(w) {
-    var article = el("article", "work");
-    if (w.thumb) {
-      var img = el("img", "work-thumb");
-      img.src = w.thumb;
-      img.alt = "";
-      img.loading = "lazy";
-      img.referrerPolicy = "no-referrer";
-      img.onerror = function () { img.remove(); };
-      article.appendChild(img);
-    }
-    var top = el("div", "work-top");
-    (w.kinds && w.kinds.length ? w.kinds : ["other"]).forEach(function (k) {
-      top.appendChild(el("span", "kind", KINDS[k] || k));
-    });
-    if ((w.kinds || []).indexOf("fanfic") !== -1) top.appendChild(el("span", "kind", LENGTHS[w.length || "unknown"]));
-    if (w.added) top.appendChild(el("span", "work-date", w.added));
-    article.appendChild(top);
+  function thumbOf(src) {
+    var img = el("img", "work-thumb");
+    img.src = src;
+    img.alt = "";
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    img.onerror = function () { img.remove(); };
+    return img;
+  }
 
+  function titleOf(w, cls) {
     var h = el("h2");
     var url = safeUrl(w.url);
     if (url) {
@@ -145,40 +176,33 @@
     } else {
       h.textContent = w.title || "Untitled";
     }
-    article.appendChild(h);
+    return h;
+  }
+
+  function card(w) {
+    var article = el("article", "work");
+    if (w.thumb) article.appendChild(thumbOf(w.thumb));
+    var top = el("div", "work-top");
+    (w.kinds && w.kinds.length ? w.kinds : ["other"]).forEach(function (k) {
+      top.appendChild(el("span", "kind", KINDS[k] || k));
+    });
+    if ((w.kinds || []).indexOf("fanfic") !== -1) top.appendChild(el("span", "kind", LENGTHS[w.length || "unknown"]));
+    if (w.added) top.appendChild(el("span", "work-date", w.added));
+    article.appendChild(top);
+
+    article.appendChild(titleOf(w));
 
     var meta = [];
     if (w.creator) meta.push("by " + w.creator);
     if (w.language) meta.push(w.language);
     if (meta.length) article.appendChild(el("p", "work-meta", meta.join(" · ")));
     if (w.summary) article.appendChild(el("p", "work-summary", w.summary));
-    var links = [];
-    [w.url].concat(w.also || []).forEach(function (u) {
-      var href = safeUrl(u);
-      if (href && links.indexOf(href) === -1) links.push(href);
-    });
-    if (links.length > 1) {
-      var row = el("p", "work-platforms");
-      row.appendChild(el("span", "work-platforms-label", "on:"));
-      links.forEach(function (href) {
-        var p = platformOf(href);
-        var a = document.createElement("a");
-        a.href = href;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        if (p) {
-          a.className = "platform";
-          a.title = p.name;
-          a.setAttribute("aria-label", p.name);
-          a.appendChild(platformIcon(p));
-        } else {
-          a.className = "platform platform-text";
-          a.title = href;
-          a.textContent = "link";
-        }
-        row.appendChild(a);
-      });
-      article.appendChild(row);
+    var row = platformRow([w.url].concat(w.also || []));
+    if (row) article.appendChild(row);
+    if (w.items && w.items.length) {
+      var more = el("a", "work-more", "See all " + w.items.length + " works →");
+      more.href = "#" + encodeURIComponent(w.id);
+      article.appendChild(more);
     }
     if (w.tags && w.tags.length) {
       var tags = el("div", "work-tags");
@@ -186,6 +210,22 @@
       article.appendChild(tags);
     }
     return article;
+  }
+
+  // One work inside a creator's sub page.
+  function itemCard(item, creator) {
+    var article = el("article", "work");
+    article.appendChild(el("p", "work-meta", "by " + creator));
+    article.appendChild(titleOf(item));
+    if (item.added) article.appendChild(el("p", "work-date", item.added));
+    if (item.summary) article.appendChild(el("p", "work-summary", item.summary));
+    var row = platformRow([item.url].concat(item.also || []));
+    if (row) article.appendChild(row);
+    return article;
+  }
+
+  function setControlsHidden(hidden) {
+    document.querySelectorAll(".index-controls").forEach(function (s) { s.hidden = hidden; });
   }
 
   function renderList() {
@@ -203,6 +243,61 @@
       return;
     }
     shown.forEach(function (w) { list.appendChild(card(w)); });
+  }
+
+  // The sub page for a creator with many works: their own entry at the top, then each work.
+  function renderCreator(w) {
+    setControlsHidden(true);
+    document.title = w.title + " · Malfoid Index";
+    var list = document.getElementById("list");
+    var count = document.getElementById("count");
+    list.textContent = "";
+    var back = el("p", "work-back");
+    var backLink = el("a", null, "← All works");
+    backLink.href = "#";
+    back.appendChild(backLink);
+    list.appendChild(back);
+    count.textContent = w.items.length + (w.items.length === 1 ? " work" : " works") + " by " + (w.creator || w.title);
+
+    var head = el("article", "work creator-head");
+    if (w.thumb) head.appendChild(thumbOf(w.thumb));
+    var top = el("div", "work-top");
+    (w.kinds || []).forEach(function (k) { top.appendChild(el("span", "kind", KINDS[k] || k)); });
+    head.appendChild(top);
+    head.appendChild(titleOf(w));
+    if (w.creator) head.appendChild(el("p", "work-meta", w.creator));
+    if (w.summary) head.appendChild(el("p", "work-summary", w.summary));
+    var row = platformRow([w.url].concat(w.also || []));
+    if (row) head.appendChild(row);
+    list.appendChild(head);
+
+    w.items.forEach(function (item) { list.appendChild(itemCard(item, w.creator || w.title)); });
+  }
+
+  function showList() {
+    setControlsHidden(false);
+    document.title = pageTitle;
+    renderChips();
+    renderLengths();
+    renderList();
+  }
+
+  // The address bar hash picks the view: #<creator id> opens that creator's sub page.
+  function route() {
+    var id = "";
+    try { id = decodeURIComponent((location.hash || "").slice(1)); } catch (e) { id = ""; }
+    var w = null;
+    if (id) {
+      data.works.forEach(function (x) {
+        if (!w && x.id === id && x.items && x.items.length) w = x;
+      });
+    }
+    if (w) {
+      renderCreator(w);
+      window.scrollTo(0, 0);
+    } else {
+      showList();
+    }
   }
 
   function setupSubmit() {
@@ -229,9 +324,8 @@
   function init(json) {
     data = json;
     setupSubmit();
-    renderChips();
-    renderLengths();
-    renderList();
+    route();
+    window.addEventListener("hashchange", route);
     var q = document.getElementById("q");
     q.addEventListener("input", function () { state.q = q.value.trim().toLowerCase(); renderList(); });
   }

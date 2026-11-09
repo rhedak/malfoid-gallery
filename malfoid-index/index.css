@@ -38,6 +38,12 @@
 .work-tags {display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 6px; }
 .work-tags span { font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; }
 
+.index-controls[hidden] { display: none; }
+.work-more { margin-top: 2px; font-size: 14px; color: #8ff0c8; text-decoration: none; }
+.work-more:hover { text-decoration: underline; }
+.work-back { grid-column: 1 / -1; margin: 6px 0 0; font-size: 14px; }
+.work-back a { color: var(--emerald); }
+.creator-head { grid-column: 1 / -1; border-color: rgba(52, 211, 153, .35); }
 .index-empty { grid-column: 1 / -1; color: var(--muted); padding: 30px 20px; text-align: center; border: 1px dashed var(--line-2); border-radius: var(--radius); }
 
 .index-footer { max-width: 1440px; margin: 0 auto; padding: 0 clamp(12px, 3vw, 32px) 40px; color: var(--silver-2); font-size: 13px; }
