@@ -1324,6 +1324,26 @@ works:
     added: 2026-11-09
     summary: "A short YouTube playlist of Malfoid videos by Fantasoner, including Malfoy: Warning, You Will Get Too Immersed and a Female Malfoy teaser."
     tags: [playlist, drarry, ai-generated]
+  - id: "audiobook-measure-of-a-malfoy"
+    title: "The Measure of a Malfoy (audiobook)"
+    kind: other
+    creator: "Stories for the Road"
+    url: "https://www.youtube.com/@Stories_forthe_Road/videos"
+    language: "English"
+    added: 2026-11-09
+    summary: "Narrated audiobook of The Measure of a Malfoy, including Book 2 in parts and the Lost Chapters, on the Stories for the Road channel."
+    also: ["https://x.com/StoriesforRoad"]
+    tags: [audiobook, series, youtube]
+  - id: "creator-stories-for-the-road"
+    title: "Stories for the Road"
+    kind: [creator, other]
+    creator: "@StoriesforRoad"
+    url: "https://x.com/StoriesforRoad"
+    language: "English"
+    added: 2026-11-09
+    summary: "Narrates fantasy, science fiction and fanfiction as audiobooks, including The Measure of a Malfoy."
+    also: ["https://www.youtube.com/@Stories_forthe_Road/videos"]
+    tags: [audiobook, youtube, x]
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
