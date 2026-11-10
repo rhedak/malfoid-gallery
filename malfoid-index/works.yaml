@@ -3021,3 +3021,21 @@ works:
     added: 2026-11-10
     summary: "Parody account making AI art and videos based on NWBro Janeway's Malfoid fiction, with the author's agreement. Posts are tagged #malfoid and #MalfoidMonday."
     tags: [art, ai-art, video, parody, x]
+  - id: "creator-zeropoint216"
+    title: "ZeroPoint216"
+    kind: [creator, music]
+    creator: "ZeroPoint216"
+    url: "https://www.youtube.com/@zeropoint216"
+    language: "English"
+    added: 2026-11-10
+    summary: "AI-made Malfoid songs on YouTube, mostly based on TheBrokenPokeman's Harry Potter fanfiction. The creator describes them as SFW and suitable for all ages. Songs are listed below as items."
+    tags: [music, song, ai-music, youtube]
+    items:
+      - title: "MALFOID - A Princess and a Potter (a song)"
+        url: "https://www.youtube.com/watch?v=U6tzSA0Pn0I"
+      - title: "MALFOID - All The Time, Harry! (a song)"
+        url: "https://www.youtube.com/watch?v=24AoDMhODL8"
+      - title: "MALFOID - See Me Too"
+        url: "https://www.youtube.com/watch?v=biIecEOXeuo"
+      - title: "MALFOID - Beneath the Walls (a ballad)"
+        url: "https://www.youtube.com/watch?v=DzjBpcL90i8"
