@@ -79,7 +79,7 @@ works:
   - id: "fanfic-dancing-with-malfoy"
     thumb: "https://www.royalroadcdn.com/public/covers-large/196770-dancing-with-malfoy.jpg"
     title: "Dancing with Malfoy"
-    first_name: "Draco"
+    first_name: "Draya"
     kind: fanfic
     length: novel
     creator: "HiddenArchitecture"
@@ -315,7 +315,7 @@ works:
   - id: "fanfic-wattpad-418267976"
     thumb: "https://img.wattpad.com/cover/418267976-256-k32104.jpg"
     title: "How to Write Malfoid into Harry Potter"
-    first_name: "Draco"
+    first_name: ""
     length: "novel"
     kind: fanfic
     creator: "FictionTabby"
@@ -718,7 +718,7 @@ works:
   - id: "fanfic-wattpad-417155788"
     thumb: "https://img.wattpad.com/cover/417155788-256-k485685.jpg"
     title: "The Secret Dance in a Room of Requitement"
-    first_name: "Draco"
+    first_name: ""
     length: "short"
     kind: fanfic
     creator: "AloofCannon"
@@ -945,7 +945,7 @@ works:
   - id: "fanfic-wattpad-417780224"
     thumb: "https://img.wattpad.com/cover/417780224-256-k335487.jpg"
     title: "The Serpent Who Chose the Lion | Harry Potter and the Pure-Blood Princess"
-    first_name: "Draco"
+    first_name: ""
     length: "novel"
     kind: fanfic
     creator: "Solo_Wing"
@@ -1241,7 +1241,7 @@ works:
   - id: "fanfic-wattpad-417095137"
     thumb: "https://img.wattpad.com/cover/417095137-256-k389208.jpg"
     title: "Harry Potter Reimagined: Aurea Malfoy"
-    first_name: "Draco"
+    first_name: "Aurea"
     length: "one-shot"
     kind: fanfic
     creator: "TheGrandJeef"
