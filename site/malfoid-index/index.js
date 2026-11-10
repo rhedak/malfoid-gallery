@@ -194,6 +194,13 @@
       top.appendChild(el("span", "kind", KINDS[k] || k));
     });
     if ((w.kinds || []).indexOf("fanfic") !== -1) top.appendChild(el("span", "kind", LENGTHS[w.length || "unknown"]));
+    if (w.first_name) {
+      // The name the work uses for Malfoid, in the same colour as its slice in the chart.
+      var nameTag = el("span", "name-tag", w.first_name);
+      var nameColor = window.nameColor ? window.nameColor(w.first_name) : "";
+      if (nameColor) nameTag.style.setProperty("--tag", nameColor);
+      top.appendChild(nameTag);
+    }
     if (w.added) top.appendChild(el("span", "work-date", w.added));
     article.appendChild(top);
 
@@ -343,6 +350,7 @@
 
   function init(json) {
     data = json;
+    if (window.initNameColors) window.initNameColors(data.works);
     setupSubmit();
     drawNames();
     route();

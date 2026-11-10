@@ -33,9 +33,24 @@
     return n;
   }
 
-  // Other names get colours from a fixed hue spread, so the same name keeps its colour on every build.
+  // Other names get colours from a fixed hue spread. Colours are set once from the whole index
+  // (see initColors), so a name keeps its colour when the filters change and on the cards.
+  var colorOf = {};
   function otherColor(i) {
     return "hsl(" + ((i * 137) % 360) + ", 62%, 66%)";
+  }
+  function initColors(works) {
+    var counts = {};
+    (works || []).forEach(function (w) {
+      var n = (w.first_name || "").trim();
+      if (n) counts[n] = (counts[n] || 0) + 1;
+    });
+    colorOf = {};
+    MAIN.forEach(function (m) { colorOf[m.name] = m.color; });
+    Object.keys(counts)
+      .filter(function (n) { return !colorOf[n]; })
+      .sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); })
+      .forEach(function (n, i) { colorOf[n] = otherColor(i); });
   }
 
   function tally(works) {
@@ -53,7 +68,7 @@
     var others = Object.keys(counts)
       .filter(function (n) { return !MAIN.some(function (m) { return m.name === n; }); })
       .sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); })
-      .map(function (n, i) { return { name: n, color: otherColor(i), count: counts[n] }; });
+      .map(function (n) { return { name: n, color: colorOf[n] || "#94a3b8", count: counts[n] }; });
     return { slices: main.concat(others), unknown: unknown, named: named, total: total };
   }
 
@@ -156,6 +171,10 @@
     }
     box.appendChild(inner);
   }
+
+  // Called once by index.js with every work, and by the cards for each name's colour.
+  window.initNameColors = initColors;
+  window.nameColor = function (n) { return colorOf[n] || ""; };
 
   // Called by index.js with the works that match the other filters, the selected name and a callback
   // that sets the name filter.

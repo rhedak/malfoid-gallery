@@ -63,6 +63,7 @@
 .work-top {display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .kind { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #c9f5e2; border: 1px solid rgba(52, 211, 153, .45); border-radius: 999px; padding: 1px 8px; }
 .work-date { font-size: 12px; color: var(--silver-2); margin-left: auto; }
+.name-tag { font-size: 11px; letter-spacing: .02em; color: var(--tag, #c9f5e2); border: 1px solid var(--tag, rgba(52, 211, 153, .45)); border-radius: 999px; padding: 1px 8px; }
 .work h2 { margin: 2px 0 0; font: 600 19px/1.25 var(--serif); letter-spacing: .01em; color: #f2f5f4; overflow-wrap: anywhere; }
 .work h2 a { color: inherit; }
 .work h2 a:hover { color: #8ff0c8; }
