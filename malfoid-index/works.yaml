@@ -3059,3 +3059,12 @@ works:
     added: 2026-11-10
     summary: "A found-document Malfoid one-shot: an RAF incident transcript and a Ministry of Magic report about young Dracaena Malfoy and a broomstick flight over Wiltshire in 1991. Posted on X."
     tags: [malfoid, found-document, humour, x]
+  - id: "gallery-free-malfoid-art-and-memes"
+    title: "Free collection of Malfoid art and memes"
+    kind: gallery
+    creator: "henrik.kekusu+gallery@gmail.com"
+    url: "https://docs.google.com/document/d/13qJ2fBqUdnM4eDfXMs0kP1-hv8b4CtCYAZfzAZphTQM/edit"
+    language: "English"
+    added: 2026-11-10
+    summary: "Free collection of Malfoid art and memes, open for anyone to contribute. The first batch was shared by JuntahMolokai. Artists who see their work and want credit or removal can contact the email given in the listing."
+    tags: [gallery, art, memes, google-doc]
