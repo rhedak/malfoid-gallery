@@ -34,6 +34,11 @@ import miniyaml  # noqa: E402
 BLOCKED_ACCOUNTS = {
     "katechon_studio",  # X: promotes a malfoid.tv subscription charging a monthly fee for AI fan content
 }
+# Sites that sell paid access to fan content. A work whose url or `also` link is on one of these
+# domains (or a subdomain of it) fails the build too.
+BLOCKED_DOMAINS = {
+    "malfoid.tv",  # paid subscription service for AI-made fan content of Malfoid and Potter
+}
 
 THUMB_WIDTH = 480
 THUMB_QUALITY = 80
@@ -383,11 +388,19 @@ def build_works():
         return seg.lstrip("@").lower()
 
     def blocked_handle(w):
-        """The blocked account a work points at (creator, url or also link), or None."""
+        """The blocked account or domain a work points at (creator, url or also link), or None."""
+        from urllib.parse import urlparse
         for c in [text(w.get("creator"))] + [text(w.get("url"))] + [text(u) for u in (w.get("also") or [])]:
             if not c:
                 continue
-            h = handle_from_url(c) if c.startswith(("http://", "https://")) else c.lstrip("@").lower()
+            if c.startswith(("http://", "https://")):
+                host = (urlparse(c).hostname or "").lower()
+                for d in BLOCKED_DOMAINS:
+                    if host == d or host.endswith("." + d):
+                        return d
+                h = handle_from_url(c)
+            else:
+                h = c.lstrip("@").lower()
             if h and h in BLOCKED_ACCOUNTS:
                 return h
         return None
@@ -399,7 +412,7 @@ def build_works():
         bad = blocked_handle(w)
         if bad:
             # Fail the build rather than hide the work: a listed account must not be added or kept.
-            sys.exit("error: %r links to blocked account %r (see BLOCKED_ACCOUNTS in scripts/build_site.py)"
+            sys.exit("error: %r links to a blocked account or site %r (see BLOCKED_ACCOUNTS and BLOCKED_DOMAINS in scripts/build_site.py)"
                      % (text(w.get("title")), bad))
         tags = w.get("tags") or []
         # a creator with many works lists them under `items`; the sub page shows these
