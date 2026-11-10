@@ -58,6 +58,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417831043-256-k404701.jpg"
     title: "Harry Potter: Heirs to the Throne"
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "KenitohMenara"
     url: "https://www.wattpad.com/story/417831043-harry-potter-heirs-to-the-throne"
@@ -91,6 +92,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418450817-256-k536384.jpg"
     title: "Harry Potter and the Sorcerer's Tsundere"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Guardbro (@GuardTm)"
     url: "https://www.wattpad.com/story/418450817-harry-potter-and-the-sorcerer%27s-tsundere"
@@ -147,6 +149,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416935238-256-k282359"
     title: "Year 4: Malfoid x Harry Potter"
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "DForrester"
     url: "https://www.wattpad.com/story/416935238"
@@ -157,7 +160,8 @@ works:
   - id: "fanfic-wattpad-417475686"
     thumb: "https://img.wattpad.com/cover/417475686-256-k435849"
     title: "A Malfoid Rewrite"
-    first_name: ""
+    first_name: "Draco"
+    length: "novel"
     kind: fanfic
     url: "https://www.wattpad.com/story/417475686"
     language: "English"
@@ -168,6 +172,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418440128-256-k296711"
     title: "The Yule Ball with Malfoid"
     first_name: "Draconia"
+    length: "short"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418440128"
@@ -179,6 +184,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417450092-256-k890402"
     title: "malfoid never loses"
     first_name: "Draconia"
+    length: "short"
     kind: fanfic
     creator: "Kshitij Ballaya"
     url: "https://www.wattpad.com/story/417450092"
@@ -189,7 +195,8 @@ works:
   - id: "fanfic-wattpad-416952198"
     thumb: "https://img.wattpad.com/cover/416952198-256-k81726"
     title: "(Malfoid) Harry Potter"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Sunshinesecond"
     url: "https://www.wattpad.com/story/416952198"
@@ -200,7 +207,8 @@ works:
   - id: "fanfic-wattpad-417043371"
     thumb: "https://img.wattpad.com/cover/417043371-256-k254278"
     title: "Malfoid and the Homage"
-    first_name: "Draconia"
+    first_name: "Draco"
+    length: "one-shot"
     kind: fanfic
     creator: "Frank_lymydear"
     url: "https://www.wattpad.com/story/417043371"
@@ -211,7 +219,8 @@ works:
   - id: "fanfic-wattpad-417746770"
     thumb: "https://img.wattpad.com/cover/417746770-256-k264200"
     title: "Harry Potter and the Malfoid Timeline"
-    first_name: ""
+    first_name: "Draco"
+    length: "short"
     kind: fanfic
     creator: "Xanedragon"
     url: "https://www.wattpad.com/story/417746770"
@@ -222,7 +231,8 @@ works:
   - id: "fanfic-wattpad-417720317"
     thumb: "https://img.wattpad.com/cover/417720317-256-k298418"
     title: "Sometimes Fate Knows Best: A Malfoid Story"
-    first_name: "Draconia"
+    first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "WHo Knows"
     url: "https://www.wattpad.com/story/417720317"
@@ -233,7 +243,8 @@ works:
   - id: "fanfic-wattpad-416947739"
     thumb: "https://img.wattpad.com/cover/416947739-256-k89387"
     title: "Draconia Malfoy and The Boy Who Lived (Malfoid Fanfiction)"
-    first_name: "Draconia"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Lyrisblack"
     url: "https://www.wattpad.com/story/416947739"
@@ -244,7 +255,8 @@ works:
   - id: "fanfic-wattpad-417201660"
     thumb: "https://img.wattpad.com/cover/417201660-256-k557292"
     title: "Draconia Malfoid: and the Hollow King"
-    first_name: "Draconia"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "K H Giblett"
     url: "https://www.wattpad.com/story/417201660"
@@ -255,7 +267,8 @@ works:
   - id: "fanfic-wattpad-418575701"
     thumb: "https://img.wattpad.com/cover/418575701-256-k427616"
     title: "Malfoid Alternate Universe Story Collection"
-    first_name: ""
+    first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "FN170-Rasetsu"
     url: "https://www.wattpad.com/story/418575701"
@@ -267,6 +280,7 @@ works:
     thumb: "https://img.wattpad.com/cover/383462035-256-k867847"
     title: "Draconia Malfoy And The Wolf Knight (Malfoid x OC)"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "WashioZakuro"
     url: "https://www.wattpad.com/story/383462035"
@@ -278,6 +292,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418418675-256-k250633"
     title: "A Dance of Silver and Gold: A Harry Potter Series Rewrite"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Le_idiot"
     url: "https://www.wattpad.com/story/418418675"
@@ -288,7 +303,8 @@ works:
   - id: "fanfic-wattpad-416966859"
     thumb: "https://img.wattpad.com/cover/416966859-256-k595471.jpg"
     title: "Harry Potter: The Song of Alleviation"
-    first_name: "Draco"
+    first_name: ""
+    length: "short"
     kind: fanfic
     creator: "Malfoid Larper"
     url: "https://www.wattpad.com/story/416966859"
@@ -300,6 +316,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418267976-256-k32104.jpg"
     title: "How to Write Malfoid into Harry Potter"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418267976"
@@ -310,7 +327,8 @@ works:
   - id: "fanfic-wattpad-418397074"
     thumb: "https://img.wattpad.com/cover/418397074-256-k243251.jpg"
     title: "Harry Potter: Tsundere Malfoid"
-    first_name: "Draconia"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Caio Rocha"
     url: "https://www.wattpad.com/story/418397074"
@@ -322,6 +340,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417811722-256-k617903.jpg"
     title: "\"You Don't Know Anything, Do You?\" (Malfoid Story)"
     first_name: "Draco"
+    length: "short"
     kind: fanfic
     creator: "moil __"
     url: "https://www.wattpad.com/story/417811722"
@@ -332,6 +351,7 @@ works:
   - id: "fanfic-wattpad-417903719"
     title: "Draceana Malfoid: Year 5"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417903719"
@@ -343,6 +363,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417348401-256-k29734.jpg"
     title: "Draceana Malfoid: Year 1"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417348401"
@@ -353,6 +374,7 @@ works:
   - id: "fanfic-wattpad-417401104"
     title: "Draceana Malfoid: Year 4"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417401104"
@@ -364,6 +386,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416810992-256-k364556.jpg"
     title: "Draco Malfoid in: Surely my haughty bloodpurity bully cant be this cute?"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "NotTheVillain"
     url: "https://www.wattpad.com/story/416810992"
@@ -375,6 +398,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417400486-256-k198153.jpg"
     title: "Draceana Malfoid: Year 2"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417400486"
@@ -385,6 +409,7 @@ works:
   - id: "fanfic-wattpad-417904282"
     title: "Draceana Malfoid: Year 7"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417904282"
@@ -396,6 +421,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418524107-256-k388924.jpg"
     title: "Malfoid"
     first_name: "Draconia"
+    length: "short"
     kind: fanfic
     creator: "The Slytherin"
     url: "https://www.wattpad.com/story/418524107"
@@ -407,6 +433,7 @@ works:
     thumb: "https://img.wattpad.com/cover/419115103-256-k958259.jpg"
     title: "The Boy from Durmstrang (Malfoid) | The Exchange Year | BOOK I"
     first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Nazgûl"
     url: "https://www.wattpad.com/story/419115103"
@@ -417,7 +444,8 @@ works:
   - id: "fanfic-wattpad-417054116"
     thumb: "https://img.wattpad.com/cover/417054116-256-k282545.jpg"
     title: "The tales of Harry and Dracia Malfoid : A fanfic"
-    first_name: "Draco"
+    first_name: ""
+    length: "short"
     kind: fanfic
     creator: "Soulfrya"
     url: "https://www.wattpad.com/story/417054116"
@@ -428,7 +456,8 @@ works:
   - id: "fanfic-wattpad-418675755"
     thumb: "https://img.wattpad.com/cover/418675755-256-k541602.jpg"
     title: "Which Witch is Malfoid?"
-    first_name: "Dracaena"
+    first_name: "Draconia"
+    length: "one-shot"
     kind: fanfic
     creator: "Snowyteller"
     url: "https://www.wattpad.com/story/418675755"
@@ -440,6 +469,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418173001-256-k898982.jpg"
     title: "Flirt"
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: "AJTalon"
     url: "https://www.wattpad.com/story/418173001"
@@ -451,6 +481,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416913803-256-k29939.jpg"
     title: "The Malfory Heir"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "P. B. Madison"
     url: "https://www.wattpad.com/story/416913803"
@@ -462,6 +493,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416805429-256-k916797.jpg"
     title: "Never Own a Malfoy, Potter."
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: "Ash"
     url: "https://www.wattpad.com/story/416805429"
@@ -473,6 +505,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416865418-256-k127382.jpg"
     title: "The Girl Who Loved the Boy Who Lived"
     first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "PyrrhianJourney"
     url: "https://www.wattpad.com/story/416865418"
@@ -483,7 +516,8 @@ works:
   - id: "fanfic-wattpad-417050520"
     thumb: "https://img.wattpad.com/cover/417050520-256-k633036.jpg"
     title: "Astronomy"
-    first_name: "Draco"
+    first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "LanaBelleNightengale"
     url: "https://www.wattpad.com/story/417050520"
@@ -493,7 +527,8 @@ works:
     tags: [characterdevelopment, dracopov, dracoxharry, drarry]
   - id: "fanfic-wattpad-416994979"
     title: "The Path Felix Forged"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "AloofCannon"
     url: "https://www.wattpad.com/story/416994979"
@@ -505,6 +540,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417353659-256-k799506.jpg"
     title: "Draconia Malfoy"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "LazAndLaffi"
     url: "https://www.wattpad.com/story/417353659"
@@ -516,6 +552,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417675112-256-k191888.jpg"
     title: "The Most Unfortunate Arrangement"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "sherbetlemonquill"
     url: "https://www.wattpad.com/story/417675112"
@@ -526,7 +563,8 @@ works:
   - id: "fanfic-wattpad-417040258"
     thumb: "https://img.wattpad.com/cover/417040258-256-k247034.jpg"
     title: "Harry x Draceana: Post Battle Confessions"
-    first_name: "Dracaena"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "GilgameshThePimp"
     url: "https://www.wattpad.com/story/417040258"
@@ -537,7 +575,8 @@ works:
   - id: "fanfic-wattpad-416974877"
     thumb: "https://img.wattpad.com/cover/416974877-256-k189575.jpg"
     title: "I Would Call That Wanting"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "TheYearnestYearner"
     url: "https://www.wattpad.com/story/416974877"
@@ -549,6 +588,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417120338-256-k544782.jpg"
     title: "Draconia Malfoy | Years 1-7"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Fantasy Fanatic"
     url: "https://www.wattpad.com/story/417120338"
@@ -559,7 +599,8 @@ works:
   - id: "fanfic-wattpad-417368222"
     thumb: "https://img.wattpad.com/cover/417368222-256-k762545.jpg"
     title: "Spearmint, Citrus, and Vanilla"
-    first_name: "Draco"
+    first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "vlrs25"
     url: "https://www.wattpad.com/story/417368222"
@@ -571,6 +612,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417155982-256-k700404.jpg"
     title: "Draconia Malfoy |  The School of Aurors |"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "H. O. Camus."
     url: "https://www.wattpad.com/story/417155982"
@@ -581,6 +623,7 @@ works:
   - id: "fanfic-wattpad-418332433"
     title: "Through the Looking Glass: A series of vignettes from Dracaena Malfoy's POV"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "NovaCat3135"
     url: "https://www.wattpad.com/story/418332433"
@@ -592,6 +635,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416871248-256-k845769.jpg"
     title: "Dracaena Malfoy and The Boy Who Lived"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "Sergio Xalambrí"
     url: "https://www.wattpad.com/story/416871248"
@@ -602,7 +646,8 @@ works:
   - id: "fanfic-wattpad-417095350"
     thumb: "https://img.wattpad.com/cover/417095350-256-k379659.jpg"
     title: "Nobility Obliges, or The Boy Who Lived and the Girl Who Loved Him"
-    first_name: ""
+    first_name: "Dracina"
+    length: "novel"
     kind: fanfic
     creator: "SocraticPsmith"
     url: "https://www.wattpad.com/story/417095350"
@@ -613,7 +658,8 @@ works:
   - id: "fanfic-wattpad-417159644"
     thumb: "https://img.wattpad.com/cover/417159644-256-k482735.jpg"
     title: "Harry Potter and the Tundere's Stone"
-    first_name: "Draconia"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Drewlock"
     url: "https://www.wattpad.com/story/417159644"
@@ -625,6 +671,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417648901-256-k136082.jpg"
     title: "Opposites Attract (Fem Malfoy x Potter Reader)"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "cookiekid789"
     url: "https://www.wattpad.com/story/417648901"
@@ -636,6 +683,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418266177-256-k58690.jpg"
     title: "Draconia Malfoy: A Happy Memory"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "InkAndMischiefs"
     url: "https://www.wattpad.com/story/418266177"
@@ -647,6 +695,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417985285-256-k219017.jpg"
     title: "DRACONIA MALFOY | ENGLISH | Harry Potter x Draconia Malfoy"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Escopeta"
     url: "https://www.wattpad.com/story/417985285"
@@ -658,6 +707,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417160383-256-k509616.jpg"
     title: "Fall"
     first_name: "Dracaena"
+    length: "one-shot"
     kind: fanfic
     creator: "Guillermo Carrillo"
     url: "https://www.wattpad.com/story/417160383"
@@ -669,6 +719,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417155788-256-k485685.jpg"
     title: "The Secret Dance in a Room of Requitement"
     first_name: "Draco"
+    length: "short"
     kind: fanfic
     creator: "AloofCannon"
     url: "https://www.wattpad.com/story/417155788"
@@ -679,7 +730,8 @@ works:
   - id: "fanfic-wattpad-417091219"
     thumb: "https://img.wattpad.com/cover/417091219-256-k366334.jpg"
     title: "Harry Potter and the Silver Thread"
-    first_name: "Dracaena"
+    first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "..."
     url: "https://www.wattpad.com/story/417091219"
@@ -691,6 +743,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416964341-256-k18833.jpg"
     title: "Harry, Draco and the Chimeric Connection"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "ProffyJ"
     url: "https://www.wattpad.com/story/416964341"
@@ -702,6 +755,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416912251-256-k998047.jpg"
     title: "Dracaena Malfoy and the One she could not hate"
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "DrTri Force"
     url: "https://www.wattpad.com/story/416912251"
@@ -713,6 +767,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417780162-256-k335409.jpg"
     title: "Harry Potter and the Other Malfoy"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "Jonathan Malon"
     url: "https://www.wattpad.com/story/417780162"
@@ -723,7 +778,8 @@ works:
   - id: "fanfic-wattpad-416982533"
     thumb: "https://img.wattpad.com/cover/416982533-256-k117567.jpg"
     title: "Room for Two"
-    first_name: ""
+    first_name: "Draconia"
+    length: "one-shot"
     kind: fanfic
     creator: "Spooky Hater"
     url: "https://www.wattpad.com/story/416982533"
@@ -735,6 +791,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417858631-256-k447713.jpg"
     title: "The Chronicles of Harry Potter & Draconia Malfoy"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Alfredo Rangel Jr"
     url: "https://www.wattpad.com/story/417858631"
@@ -745,7 +802,8 @@ works:
   - id: "fanfic-wattpad-364927249"
     thumb: "https://img.wattpad.com/cover/364927249-256-k547300.jpg"
     title: "Harry X Draca And The Sorcerers Stone"
-    first_name: "Draconia"
+    first_name: "Draca"
+    length: "novel"
     kind: fanfic
     creator: "Moonlight6749"
     url: "https://www.wattpad.com/story/364927249"
@@ -756,7 +814,8 @@ works:
   - id: "fanfic-wattpad-417577710"
     thumb: "https://img.wattpad.com/cover/417577710-256-k40292.jpg"
     title: "Blossoms at Christmas"
-    first_name: "Dracaena"
+    first_name: "Draco"
+    length: "one-shot"
     kind: fanfic
     creator: "animal_drums"
     url: "https://www.wattpad.com/story/417577710"
@@ -768,6 +827,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418451513-256-k281569.jpg"
     title: "Disaster Management! Professor Malfoy's Primer at Hogwarts"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "Cliff Li"
     url: "https://www.wattpad.com/story/418451513"
@@ -778,7 +838,8 @@ works:
   - id: "fanfic-wattpad-417072326"
     thumb: "https://img.wattpad.com/cover/417072326-256-k318591.jpg"
     title: "Green Things in Hogwarts Dance Class"
-    first_name: "Draco"
+    first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "George Dukes"
     url: "https://www.wattpad.com/story/417072326"
@@ -789,7 +850,8 @@ works:
   - id: "fanfic-wattpad-418327228"
     thumb: "https://img.wattpad.com/cover/418327228-256-k144562.jpg"
     title: "A Reluctant Patronus"
-    first_name: "Dracaena"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418327228"
@@ -801,6 +863,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417408710-256-k814388.jpg"
     title: "Harry Potter and the Chambers of Secrets (The Girl Who Loved The Boy Who Lived.)"
     first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "H. Hyukari"
     url: "https://www.wattpad.com/story/417408710"
@@ -812,6 +875,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418282218-256-k78319.jpg"
     title: "Draconia Malfoy and the Boy Who Lived"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "RadiantDragon"
     url: "https://www.wattpad.com/story/418282218"
@@ -823,6 +887,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418176858-256-k892499.jpg"
     title: "Harry Potter and Draconia Malfoy (Books 1-7)"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Bookbadger"
     url: "https://www.wattpad.com/story/418176858"
@@ -833,7 +898,8 @@ works:
   - id: "fanfic-wattpad-417262659"
     thumb: "https://img.wattpad.com/cover/417262659-256-k638980.jpg"
     title: "Ravens and Snakes"
-    first_name: "Draco"
+    first_name: "Draca"
+    length: "novel"
     kind: fanfic
     creator: "Ash Stories"
     url: "https://www.wattpad.com/story/417262659"
@@ -845,6 +911,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417901866-256-k634763.jpg"
     title: "The Dracaena and Harry Chronicles"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "JLM_Lay-Soiseault1"
     url: "https://www.wattpad.com/story/417901866"
@@ -856,6 +923,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418176966-256-k37182.jpg"
     title: "The Pure-Blood and the Peacock (Book 1 of Dracaena Malfoy)"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "Sulley Wonder"
     url: "https://www.wattpad.com/story/418176966"
@@ -866,6 +934,7 @@ works:
   - id: "fanfic-wattpad-416932064"
     title: "The Christmas Gift"
     first_name: "Draco"
+    length: "one-shot"
     kind: fanfic
     creator: "SimoIllust"
     url: "https://www.wattpad.com/story/416932064"
@@ -877,6 +946,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417780224-256-k335487.jpg"
     title: "The Serpent Who Chose the Lion | Harry Potter and the Pure-Blood Princess"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "Solo_Wing"
     url: "https://www.wattpad.com/story/417780224"
@@ -887,7 +957,8 @@ works:
   - id: "fanfic-wattpad-417128991"
     thumb: "https://img.wattpad.com/cover/417128991-256-k430331.jpg"
     title: "Yule Ball After story"
-    first_name: "Draco"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "flos elmo"
     url: "https://www.wattpad.com/story/417128991"
@@ -898,7 +969,8 @@ works:
   - id: "fanfic-wattpad-416978779"
     thumb: "https://img.wattpad.com/cover/416978779-256-k110943.jpg"
     title: "The Girl Who Loved the Boy Who Lived"
-    first_name: ""
+    first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "OwletFreddo"
     url: "https://www.wattpad.com/story/416978779"
@@ -909,7 +981,7 @@ works:
   - id: "fanfic-wattpad-418462425"
     thumb: "https://img.wattpad.com/cover/418462425-256-k324187.jpg"
     title: "The Story of Pansy Parkinson and Dracaena Malfoy"
-    first_name: "Dracaena"
+    first_name: ""
     kind: fanfic
     creator: "Paul McGuire"
     url: "https://www.wattpad.com/story/418462425"
@@ -920,7 +992,8 @@ works:
   - id: "fanfic-wattpad-418895281"
     thumb: "https://img.wattpad.com/cover/418895281-256-k7810.jpg"
     title: "Greens for the Gold"
-    first_name: ""
+    first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "NomdyPlume"
     url: "https://www.wattpad.com/story/418895281"
@@ -932,6 +1005,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418693986-256-k832264.jpg"
     title: "The Star That Guides the Boy Who Lived"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Kanzaki Nami"
     url: "https://www.wattpad.com/story/418693986"
@@ -943,6 +1017,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417128386-256-k454102.jpg"
     title: "Spooky's Yule Ball"
     first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "flos elmo"
     url: "https://www.wattpad.com/story/417128386"
@@ -954,6 +1029,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416866511-256-k881109.jpg"
     title: "Green things in the Forbidden Forest"
     first_name: ""
+    length: "short"
     kind: fanfic
     creator: "George Dukes"
     url: "https://www.wattpad.com/story/416866511"
@@ -965,6 +1041,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418547816-256-k387916.jpg"
     title: "Still Here"
     first_name: "Draca"
+    length: "novel"
     kind: fanfic
     creator: "Deus ex machina"
     url: "https://www.wattpad.com/story/418547816"
@@ -975,7 +1052,8 @@ works:
   - id: "fanfic-wattpad-417475816"
     thumb: "https://img.wattpad.com/cover/417475816-256-k897506.jpg"
     title: "The Porcelain Princess and the Master of Death"
-    first_name: "Draco"
+    first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "Fiction"
     url: "https://www.wattpad.com/story/417475816"
@@ -987,6 +1065,7 @@ works:
     thumb: "https://img.wattpad.com/cover/419100777-256-k882609.jpg"
     title: "Occlumency Lessons"
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/419100777"
@@ -998,6 +1077,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418793163-256-k711599.jpg"
     title: "The Child And The Serpent"
     first_name: "Dracaena"
+    length: "one-shot"
     kind: fanfic
     creator: "Syn"
     url: "https://www.wattpad.com/story/418793163"
@@ -1009,6 +1089,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418757184-256-k644594.jpg"
     title: "Harry Potter and the Broken Hour"
     first_name: "Draconia"
+    length: "short"
     kind: fanfic
     creator: "TWHorn"
     url: "https://www.wattpad.com/story/418757184"
@@ -1020,6 +1101,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418178164-256-k905612.jpg"
     title: "The Girl Who Loved: A Private Record of Draconia Narcissa Malfoy"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "A Business of Ferrets"
     url: "https://www.wattpad.com/story/418178164"
@@ -1030,7 +1112,8 @@ works:
   - id: "fanfic-wattpad-395096113"
     thumb: "https://img.wattpad.com/cover/395096113-256-k460507.jpg"
     title: "The World We Know"
-    first_name: ""
+    first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: "Lyra Malfoy"
     url: "https://www.wattpad.com/story/395096113"
@@ -1041,7 +1124,8 @@ works:
   - id: "fanfic-wattpad-418687460"
     thumb: "https://img.wattpad.com/cover/418687460-256-k895960.jpg"
     title: "Harry Potter and the Young Witch in Green"
-    first_name: "Dracaena"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Pola"
     url: "https://www.wattpad.com/story/418687460"
@@ -1053,6 +1137,7 @@ works:
     thumb: "https://img.wattpad.com/cover/419003261-256-k843999.jpg"
     title: "Harry Potter: Elseworlds"
     first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Supermate3"
     url: "https://www.wattpad.com/story/419003261"
@@ -1062,7 +1147,8 @@ works:
     tags: [enemiestolove, harryxdraco, love, lovestory]
   - id: "fanfic-wattpad-418544094"
     title: "Harry Potter and the Silver-Haired Girl"
-    first_name: "Draconia"
+    first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "Nacho Grillo"
     url: "https://www.wattpad.com/story/418544094"
@@ -1074,6 +1160,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418822303-256-k701780.jpg"
     title: "After the Hour"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "ibrahim akoon"
     url: "https://www.wattpad.com/story/418822303"
@@ -1084,7 +1171,8 @@ works:
   - id: "fanfic-wattpad-419153639"
     thumb: "https://img.wattpad.com/cover/419153639-256-k956660.jpg"
     title: "Harry Potter and the Divided Crest"
-    first_name: "Draconia"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "Jonathan Fitzgerald"
     url: "https://www.wattpad.com/story/419153639"
@@ -1096,6 +1184,7 @@ works:
     thumb: "https://img.wattpad.com/cover/418258081-256-k43584.jpg"
     title: "TWO SHADOWS AND THE ORDER OF PHOENIX"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Jasmin Novaes Marques"
     url: "https://www.wattpad.com/story/418258081"
@@ -1107,6 +1196,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417139318-256-k594506.jpg"
     title: "The Stag and the Serpent"
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "Cheryie-Hex"
     url: "https://www.wattpad.com/story/417139318"
@@ -1118,6 +1208,7 @@ works:
     thumb: "https://img.wattpad.com/cover/419152536-256-k953432.jpg"
     title: "The Things We Inherit | Harry & Draca Malfoy"
     first_name: "Draca"
+    length: "novel"
     kind: fanfic
     creator: "Quillshade Press"
     url: "https://www.wattpad.com/story/419152536"
@@ -1128,6 +1219,7 @@ works:
   - id: "fanfic-wattpad-418606047"
     title: "Dracaena Malfoy and the Magitech Revolution"
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: "Adrian Adamsson"
     url: "https://www.wattpad.com/story/418606047"
@@ -1137,7 +1229,8 @@ works:
     tags: [enemiestolovers, harrypotterfanfiction, magic, magitech]
   - id: "fanfic-wattpad-417684440"
     title: "The Name That Made Her Happy."
-    first_name: "Draco"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "Clint Carpentier"
     url: "https://www.wattpad.com/story/417684440"
@@ -1149,6 +1242,7 @@ works:
     thumb: "https://img.wattpad.com/cover/417095137-256-k389208.jpg"
     title: "Harry Potter Reimagined: Aurea Malfoy"
     first_name: "Draco"
+    length: "one-shot"
     kind: fanfic
     creator: "TheGrandJeef"
     url: "https://www.wattpad.com/story/417095137"
@@ -1159,7 +1253,8 @@ works:
   - id: "fanfic-wattpad-417872302"
     thumb: "https://img.wattpad.com/cover/417872302-256-k460530.jpg"
     title: "The Game We Play"
-    first_name: "Draconia"
+    first_name: "Lyra"
+    length: "short"
     kind: fanfic
     creator: "Lyra Malfoy"
     url: "https://www.wattpad.com/story/417872302"
@@ -1171,6 +1266,7 @@ works:
     thumb: "https://img.wattpad.com/cover/419276952-256-k105802.jpg"
     title: "Draconia Malfoy and the Heir of Slytherin"
     first_name: "Draconia"
+    length: "short"
     kind: fanfic
     creator: "RadiantDragon"
     url: "https://www.wattpad.com/story/419276952"
@@ -1181,7 +1277,8 @@ works:
   - id: "fanfic-wattpad-418257379"
     thumb: "https://img.wattpad.com/cover/418257379-256-k203259.jpg"
     title: "TWO SHADOWS AND THE HALF-BLOOD PRINCE"
-    first_name: ""
+    first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "Jasmin Novaes Marques"
     url: "https://www.wattpad.com/story/418257379"
@@ -1263,6 +1360,7 @@ works:
   - id: "fanfic-my-father-must-never-hear"
     title: "My Father Must NEVER Hear About This!"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "NomdyPlume (@Koookiiing)"
     url: "https://www.wattpad.com/story/418462564-my-father-must-never-hear-about-this"
@@ -1319,6 +1417,7 @@ works:
     thumb: "https://img.wattpad.com/cover/416789252-256-k768596.jpg"
     title: "Draconia Malfoy and the Boy Who Said No"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "PeterC (nomoontwo)"
     url: "https://www.wattpad.com/story/416789252-draconia-malfoy-and-the-boy-who-said-no"
@@ -1375,6 +1474,7 @@ works:
   - id: "fanfic-the-blood-that-binds-us"
     title: "The Blood That Binds Us"
     first_name: "Draconia"
+    length: "novel"
     kind: fanfic
     creator: "rafchy (Raf33d)"
     url: "https://www.wattpad.com/story/418391759"
@@ -1675,7 +1775,8 @@ works:
     tags: [playlist, music-video, anime, ai-generated]
   - id: "fanfic-harry-potter-and-the-useful-friend"
     title: "Harry Potter and the Useful Friend"
-    first_name: "Draconia"
+    first_name: ""
+    length: "short"
     kind: fanfic
     creator: "ASKinloch"
     url: "https://www.wattpad.com/story/419121177"
@@ -1790,9 +1891,9 @@ works:
     tags: [game, x]
   - id: "fanfic-yule-ball-tusky"
     title: "The Yule Ball (X story)"
-    first_name: "Dracea"
-    kind: fanfic
+    first_name: ""
     length: short
+    kind: fanfic
     creator: "Tusky (@WalrusCavalry)"
     url: "https://x.com/WalrusCavalry/status/2106988246592856412"
     language: "English"
@@ -1834,8 +1935,8 @@ works:
   - id: "fanfic-critical-scribe-megathread"
     title: "Malfoid writing megathread (X)"
     first_name: "Dracaena"
-    kind: fanfic
     length: short
+    kind: fanfic
     creator: "J. Y. Song (@Critical_Scribe)"
     url: "https://x.com/Critical_Scribe/status/2112046280868270296"
     language: "English"
@@ -1876,8 +1977,8 @@ works:
   - id: "fanfic-my-father-will-hear-about-this"
     title: "My Father Will Hear About This"
     first_name: "Dracaena"
-    kind: fanfic
     length: short
+    kind: fanfic
     creator: "Professor McCoige (@ProfMcCoige)"
     url: "https://x.com/ProfMcCoige/status/2117398745805729877"
     language: "English"
@@ -2054,11 +2155,11 @@ works:
   - id: fanfic-malfoid-love-saga
     title: Saga
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: TheBrokenPokeman
     url: https://malfoid.love/story/?id=saga
     language: English
-    length: novel
     added: 2026-11-09
     summary: TheBrokenPokeman's Harry Potter rewrite featuring Draceana Malfoy, 73 pieces
       on The Girl Who Loved.
@@ -2069,11 +2170,11 @@ works:
   - id: fanfic-malfoid-love-silver-beneath-the-ashes
     title: Silver Beneath the Ashes
     first_name: ""
+    length: novel
     kind: fanfic
     creator: Zest1al
     url: https://malfoid.love/story/?id=silver-beneath-the-ashes
     language: English
-    length: novel
     added: 2026-11-09
     summary: Zest1al's retelling of Harry's first two years at Hogwarts, told from the
       Malfoy daughter's side.
@@ -2085,11 +2186,11 @@ works:
   - id: fanfic-malfoid-love-52
     title: Dracænanon's Malfoid Continuity
     first_name: "Dracaena"
+    length: "novel"
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=52
     language: English
-    length: short
     added: 2026-11-09
     summary: Dracæna Lyra Malfoy's seven years at Hogwarts, told in eight pieces.
     tags:
@@ -2099,11 +2200,11 @@ works:
   - id: fanfic-malfoid-love-26
     title: Dracæna Malfoy and the Boy Who Lived
     first_name: "Dracaena"
+    length: short
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=26
     language: English
-    length: short
     added: 2026-11-09
     summary: Dracæna Lyra Malfoy begins Hogwarts and meets the Boy Who Lived, in five
       pieces.
@@ -2114,11 +2215,11 @@ works:
   - id: fanfic-malfoid-love-42
     title: King Chud's Goblet of Fire Rewrite
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=42
     language: English
-    length: novel
     added: 2026-11-09
     summary: A rewrite of Harry Potter and the Goblet of Fire with Lyra Malfoy replacing
       Draco.
@@ -2129,11 +2230,11 @@ works:
   - id: fanfic-malfoid-love-29
     title: Dracæna Malfoy and the Tournament of Troubles
     first_name: "Dracaena"
+    length: short
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=29
     language: English
-    length: short
     added: 2026-11-09
     summary: Dracæna Malfoy returns to Hogwarts after her uncle's escape, as Harry's name
       comes out of the Goblet of Fire.
@@ -2144,11 +2245,11 @@ works:
   - id: fanfic-malfoid-love-45
     title: A Family, Potter?
     first_name: "Dracaena"
+    length: "short"
     kind: fanfic
     creator: REZELOVER
     url: https://malfoid.love/story/?id=45
     language: English
-    length: one-shot
     added: 2026-11-09
     summary: After a battle, Draceana and Harry are free to love each other and start
       a family.
@@ -2158,12 +2259,12 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-44
     title: Harry Potter and the Girl with the Diary
-    first_name: "Dracaena"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: TheBrokenPokeman
     url: https://malfoid.love/story/?id=44
     language: English
-    length: novel
     added: 2026-11-09
     summary: Harry's second year at Hogwarts, with Draceana Malfoy and the Heir of Slytherin.
     tags:
@@ -2173,11 +2274,11 @@ works:
   - id: fanfic-malfoid-love-43
     title: The Right Sort
     first_name: "Dracaena"
+    length: one-shot
     kind: fanfic
     creator: Krana-Kler
     url: https://malfoid.love/story/?id=43
     language: English
-    length: one-shot
     added: 2026-11-09
     summary: At Shell Cottage, Harry asks Draceana Malfoy to join the Horcrux hunt.
     tags:
@@ -2187,11 +2288,11 @@ works:
   - id: fanfic-malfoid-love-41
     title: King Chud's Prisoner of Azkaban Rewrite
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=41
     language: English
-    length: novel
     added: 2026-11-09
     summary: A rewrite of Harry Potter and the Prisoner of Azkaban with Lyra Malfoy replacing
       Draco.
@@ -2202,11 +2303,11 @@ works:
   - id: fanfic-malfoid-love-40
     title: Lady Malfoy
     first_name: "Dracaena"
+    length: one-shot
     kind: fanfic
     creator: ThatCrazyViking
     url: https://malfoid.love/story/?id=40
     language: English
-    length: one-shot
     added: 2026-11-09
     summary: Draceana Malfoy, resigned to life as Lady Malfoy, meets the captured Harry
       at Malfoy Manor.
@@ -2217,11 +2318,11 @@ works:
   - id: fanfic-malfoid-love-39
     title: I Don't Hate You, Harry
     first_name: "Dracaena"
+    length: one-shot
     kind: fanfic
     creator: Kosmo
     url: https://malfoid.love/story/?id=39
     language: English
-    length: one-shot
     added: 2026-11-09
     summary: Draceana dreams that her mockery drives Harry away, then wakes, finds him
       and begs him to stay.
@@ -2232,11 +2333,11 @@ works:
   - id: fanfic-malfoid-love-37
     title: King Chud's Chamber of Secrets Rewrite
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=37
     language: English
-    length: novel
     added: 2026-11-09
     summary: A rewrite of Harry Potter and the Chamber of Secrets with Lyra Malfoy replacing
       Draco.
@@ -2247,11 +2348,11 @@ works:
   - id: fanfic-malfoid-love-36
     title: King Chud's Philosopher's Stone Rewrite
     first_name: "Lyra"
+    length: "novel"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=36
     language: English
-    length: novel
     added: 2026-11-09
     summary: A rewrite of Harry Potter and the Philosopher's Stone with Lyra Malfoy replacing
       Draco.
@@ -2262,12 +2363,12 @@ works:
   - id: fanfic-malfoid-love-24
     title: Before you kneel
     first_name: "Dracaena"
+    length: one-shot
     kind: fanfic
     creator: Spookori
     url: https://malfoid.love/story/?id=24
     also: ["https://x.com/kori_sees"]
     language: English
-    length: one-shot
     added: 2026-11-09
     summary: As a Fiendfyre curse engulfs the Room of Requirement, Draceana Malfoy recalls
       her years with Harry.
@@ -2287,12 +2388,12 @@ works:
     tags: [comic, 4koma, comedy, x]
   - id: "fanfic-navis-nobelite-friends"
     title: "The Friend who Fought, Learned and Remembered (Ron, Hermione, Neville)"
-    first_name: "Draco"
+    first_name: ""
+    length: unknown
     kind: fanfic
     creator: "Navis Nobelite"
     url: "https://x.com/NavisNobelite/status/2109375776646676633"
     language: "English"
-    length: unknown
     added: 2026-11-09
     summary: "A multi-part X series in the Malfoid universe, told in parts about Ron, Hermione and Neville during the war at Hogwarts. Draco appears as a female Malfoy in part 2 of the Hermione arc, per the author."
     tags: [x, multi-part, war, hogwarts]
@@ -2511,7 +2612,8 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "fanfic-mf-a-change-in-fate"
     title: "A Change in Fate"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "1Valor1"
     url: "https://www.fanfiction.net/s/14216338/1/A-Change-in-Fate"
@@ -2522,6 +2624,7 @@ works:
   - id: "fanfic-mf-a-life-twice-lived"
     title: "A Life Twice Lived"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "Nemesis13"
     url: "https://www.fanfiction.net/s/12660172/1/A-Life-Twice-Lived"
@@ -2542,6 +2645,7 @@ works:
   - id: "fanfic-mf-almost-too-late"
     title: "Almost Too Late"
     first_name: "Dracaena"
+    length: "one-shot"
     kind: fanfic
     creator: "Super Saiai"
     url: "https://www.fanfiction.net/s/14592060/1/Almost-Too-Late"
@@ -2551,7 +2655,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-celestial-bodies"
     title: "Celestial Bodies"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "dashriprock"
     url: "https://www.fanfiction.net/s/14591967/1/Celestial-Bodies"
@@ -2572,6 +2677,7 @@ works:
   - id: "fanfic-mf-crimson-flowers"
     title: "Crimson Flowers"
     first_name: "Draconia"
+    length: "one-shot"
     kind: fanfic
     creator: "Zer0chroma"
     url: "https://www.fanfiction.net/s/14592223/1/Crimson-Flowers"
@@ -2632,6 +2738,7 @@ works:
   - id: "fanfic-mf-draco-malfoid-in-my-haughty-blood-purity-bully-can-t-be-this-cute"
     title: "Draco Malfoid in: My Haughty Blood Purity Bully Can't Be This Cute?"
     first_name: "Draco"
+    length: "novel"
     kind: fanfic
     creator: "Our hero"
     url: "https://www.fanfiction.net/s/14591971/1/Draco-Malfoid-in-My-haughty-blood-purity-bully-can-t-be-this-cute"
@@ -2641,7 +2748,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-drakonia"
     title: "Drako//nia"
-    first_name: "Draco"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "vinsentru"
     url: "https://www.fanfiction.net/s/14596134/1/Drakonia"
@@ -2671,7 +2779,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-harry-hill-and-the-halls-of-hogwarts"
     title: "Harry Hill and the Halls of Hogwarts"
-    first_name: "Draco"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "AdVictoriamCustodes"
     url: "https://www.fanfiction.net/s/14593498/1/Harry-Hill-and-the-Halls-of-Hogwarts"
@@ -2702,6 +2811,7 @@ works:
   - id: "fanfic-mf-i-don-t-like-her-dammit"
     title: "I don't like her dammit"
     first_name: "Dracia"
+    length: "novel"
     kind: fanfic
     creator: "Princesse Sophie"
     url: "https://www.fanfiction.net/s/12540693/1/I-don-t-like-her-dammit"
@@ -2721,7 +2831,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-lock-in-mr-potter"
     title: "Lock in, Mr Potter"
-    first_name: "Dracaena"
+    first_name: ""
+    length: "one-shot"
     kind: fanfic
     creator: "TotallyNotMik"
     url: "https://www.fanfiction.net/s/14593550/1/Lock-in-Mr-Potter"
@@ -2751,6 +2862,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-narcissa-s-wake-up-call-malfoid"
     title: "Narcissa's Wake-Up Call(Malfoid)"
+    length: "novel"
     first_name: "Lyra"
     kind: fanfic
     creator: "NonsensicalRants"
@@ -2762,6 +2874,7 @@ works:
   - id: "fanfic-mf-pure-blood-bad-attitude"
     title: "Pure Blood, Bad Attitude"
     first_name: "Draco"
+    length: "short"
     kind: fanfic
     creator: "Mallobaude"
     url: "https://www.fanfiction.net/s/14593548/1/Pure-Blood-Bad-Attitude"
@@ -2771,7 +2884,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-scared-potter"
     title: "Scared, Potter?"
-    first_name: "Draco"
+    first_name: "Dracaena"
+    length: "one-shot"
     kind: fanfic
     creator: "TotallyNotMik"
     url: "https://www.fanfiction.net/s/14592614/1/Scared-Potter"
@@ -2792,6 +2906,7 @@ works:
   - id: "fanfic-mf-secrets-of-hogwarts"
     title: "Secrets Of Hogwarts - Malfoid x OC Fanfic"
     first_name: ""
+    length: "short"
     kind: fanfic
     creator: "Celerius"
     url: "https://www.fanfiction.net/s/14593865/1/Secrets-Of-Hogwarts-Malfoid-x-OC-Fanfic"
@@ -2802,6 +2917,7 @@ works:
   - id: "fanfic-mf-sectumsempra-draconia-malfoid"
     title: "Sectumsempra - Draconia Malfoid x Harry Potter AU"
     first_name: "Draconia"
+    length: "one-shot"
     kind: fanfic
     creator: "skoomaaddict8"
     url: "https://www.fanfiction.net/s/14592916/1/Sectumsempra-Draconia-Malfoid-x-Harry-Potter-AU"
@@ -2821,7 +2937,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-shut-up-malfoid"
     title: "Shut up, Malfoid"
-    first_name: "Draco"
+    first_name: ""
     kind: fanfic
     creator: "Mitsu-52"
     url: "https://www.fanfiction.net/s/14593158/1/Shut-up-Malfoid"
@@ -2831,7 +2947,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-smoke-and-mirrors"
     title: "Smoke and Mirrors"
-    first_name: "Dracaena"
+    first_name: ""
+    length: "short"
     kind: fanfic
     creator: "NotaDeer"
     url: "https://www.fanfiction.net/s/14596082/1/Smoke-and-Mirrors"
@@ -2881,7 +2998,8 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-girl-who-loved-the-boy-who-lived"
     title: "The Girl Who Loved the Boy Who Lived"
-    first_name: "Draco"
+    first_name: ""
+    length: "novel"
     kind: fanfic
     creator: "DowagerDaphne"
     url: "https://www.fanfiction.net/s/14593554/1/The-Girl-Who-Loved-the-Boy-Who-Lived"
@@ -2892,6 +3010,7 @@ works:
   - id: "fanfic-mf-the-things-we-inherit"
     title: "The Things We Inherit"
     first_name: "Draca"
+    length: "novel"
     kind: fanfic
     creator: "Quillshade Press"
     url: "https://www.fanfiction.net/s/14593075/1/The-Things-We-Inherit"
@@ -3341,22 +3460,22 @@ works:
   - id: "fanfic-wattpad-419354594"
     title: "Dracaena Malfoy and the Family Legacy"
     first_name: "Dracaena"
+    length: "one-shot"
     kind: fanfic
     creator: "KeepCookingSF"
     url: "https://www.wattpad.com/story/419354594-dracaena-malfoy-and-the-family-legacy"
     language: "English"
-    length: one-shot
     added: 2026-11-10
     summary: "A Malfoid one-shot set during the Deathly Hallows, asking what if the Malfoys' pure blood was good for something. Tagged forgiveness, leadership, redemption and nobility."
     tags: [malfoid, redemption, nobility, wattpad]
   - id: "fanfic-hot-rails-incident-report"
     title: "Incident Report"
-    first_name: "Dracaena"
+    first_name: ""
+    length: one-shot
     kind: fanfic
     creator: "@hot_rails"
     url: "https://x.com/hot_rails/status/2117198113983345068"
     language: "English"
-    length: one-shot
     added: 2026-11-10
     summary: "A found-document Malfoid one-shot: an RAF incident transcript and a Ministry of Magic report about young Dracaena Malfoy and a broomstick flight over Wiltshire in 1991. Posted on X."
     tags: [malfoid, found-document, humour, x]
