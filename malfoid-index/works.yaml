@@ -2161,3 +2161,12 @@ works:
     added: 2026-11-10
     summary: "Free, fully voiced Harry Potter visual novel and dating sim, with a female Draco Malfoy who keeps asking Harry out, across seven years at Hogwarts. Based loosely on the Wattpad story Draconia Malfoy and the Boy Who Said No. Available in 12 languages, English included. The creator's content notes say nothing explicit."
     tags: [visual-novel, dating-sim, voiced, free, game]
+  - id: "creator-psyernprodigi"
+    title: "Psyern"
+    kind: [creator, video]
+    creator: "@PsyernProdigi"
+    url: "https://www.youtube.com/@PsyernProdigi"
+    language: "English"
+    added: 2026-11-10
+    summary: "Makes Draconia and Harry fan videos, including the episode series Draconia & Harry: Where our worlds meet (EP1 and a second video). The creator is also on TikTok."
+    tags: [video, fan-series, youtube]
