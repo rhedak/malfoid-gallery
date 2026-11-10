@@ -1525,7 +1525,7 @@ works:
     tags: [slowburn, friendship, wattpad]
   - id: "creator-adayasmr"
     title: "ADayASMR"
-    first_name: ""
+    first_name: "Draconia"
     kind: [creator, video, music]
     creator: "@adayasmr"
     url: "https://x.com/adayasmr"
@@ -1661,7 +1661,7 @@ works:
     tags: [video, ai-generated, youtube]
   - id: "creator-aimalfoyfemale"
     title: "AI Malfoy Female"
-    first_name: ""
+    first_name: "Draco"
     kind: [creator, art, video]
     creator: "@AIMalfoyFemale"
     url: "https://www.youtube.com/@AIMalfoyFemale"
@@ -2019,7 +2019,7 @@ works:
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
-    first_name: ""
+    first_name: "Draconia"
     kind: video
     creator: "J.A. Vázquez"
     url: "https://www.youtube.com/watch?v=euyK-S8dOto"
