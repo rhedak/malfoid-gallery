@@ -1545,7 +1545,7 @@ works:
     tags: [fanfic, audiobook, x]
   - id: "video-malfoid-by-fantasoner-playlist"
     title: "Malfoid by Fantasoner"
-    first_name: ""
+    first_name: "Carina"
     kind: video
     creator: "Fantasoner"
     url: "https://www.youtube.com/playlist?list=PLZdJWDREs9D8"
@@ -1681,7 +1681,7 @@ works:
     tags: [video, series, youtube]
   - id: "creator-fantasoner"
     title: "Fantasoner"
-    first_name: ""
+    first_name: "Carina"
     kind: [creator, video]
     creator: "@Fantasoner"
     url: "https://www.youtube.com/@Fantasoner"
@@ -2572,7 +2572,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-say-you-hate-me-fantasoner"
     title: "TS말포이 몰입을 10000% 더 해주는 영상"
-    first_name: ""
+    first_name: "Carina"
     kind: video
     creator: "Fantasoner(판타소너)"
     url: "https://www.youtube.com/watch?v=kxlbn5ydE28"
