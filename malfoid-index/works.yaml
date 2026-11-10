@@ -3068,3 +3068,12 @@ works:
     added: 2026-11-10
     summary: "Free collection of Malfoid art and memes, open for anyone to contribute. The first batch was shared by JuntahMolokai. Artists who see their work and want credit or removal can contact the email given in the listing."
     tags: [gallery, art, memes, google-doc]
+  - id: "creator-lilithspike"
+    title: "Lilith Spike"
+    kind: [creator, music, video]
+    creator: "@LilithSpike"
+    url: "https://www.youtube.com/@LilithSpike"
+    language: "English"
+    added: 2026-11-10
+    summary: "Pop-punk music and film project from Austin, Texas, making AI-made Malfoid music videos on YouTube, including Malfoid x Harry Potter by Balenciaga and Not Ginny. Some videos are labelled AI on YouTube."
+    tags: [music, music-video, ai-video, youtube]
