@@ -401,6 +401,7 @@ def build_works():
             "also": [text(u) for u in (w.get("also") or []) if text(u).startswith(("http://", "https://"))],
             "order": order_of(w.get("order")),
             "length": length_of(w.get("length")),
+            "first_name": text(w.get("first_name")),
         })
     works.sort(key=lambda w: (w["order"] is None, w["order"] or 0, w["title"].lower()))
     return {"title": text(data.get("title")) or "Malfoid Index", "contact": text(data.get("contact")), "works": works}

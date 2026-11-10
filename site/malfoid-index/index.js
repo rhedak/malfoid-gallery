@@ -6,7 +6,7 @@
 
   var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", gallery: "Gallery", video: "Video", music: "Music", other: "Other" };
   var LENGTHS = { "one-shot": "One-shot", short: "Short", novel: "Novel", unknown: "Length unknown" };
-  var state = { kind: "all", length: "all", q: "" };
+  var state = { kind: "all", length: "all", q: "", name: "" };
   var data = { works: [], contact: "" };
   var pageTitle = document.title;
 
@@ -114,6 +114,7 @@
   function matches(w) {
     if (state.kind !== "all" && (w.kinds || []).indexOf(state.kind) === -1) return false;
     if (state.length !== "all" && (w.length || "unknown") !== state.length) return false;
+    if (state.name && (w.first_name || "") !== state.name) return false;
     if (!state.q) return true;
     return state.q.split(/\s+/).every(function (term) { return haystack(w).indexOf(term) !== -1; });
   }
@@ -233,9 +234,10 @@
     var count = document.getElementById("count");
     list.textContent = "";
     var shown = data.works.filter(matches);
-    count.textContent = shown.length === data.works.length
+    count.textContent = (shown.length === data.works.length
       ? data.works.length + (data.works.length === 1 ? " work" : " works")
-      : shown.length + " of " + data.works.length + " works";
+      : shown.length + " of " + data.works.length + " works")
+      + (state.name ? " named " + state.name : "");
     if (!shown.length) {
       list.appendChild(el("div", "index-empty", data.works.length
         ? "Nothing matches that search yet."
@@ -321,9 +323,21 @@
     contact.textContent = to;
   }
 
+  // Picking a name in the chart filters the list; picking it again clears the filter.
+  function setName(name) {
+    state.name = name || "";
+    drawNames();
+    renderList();
+  }
+
+  function drawNames() {
+    if (window.renderNamesChart) window.renderNamesChart(data.works, state.name, setName);
+  }
+
   function init(json) {
     data = json;
     setupSubmit();
+    drawNames();
     route();
     window.addEventListener("hashchange", route);
     var q = document.getElementById("q");

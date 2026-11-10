@@ -11,6 +11,7 @@
 #   summary:   one or two sentences about the work
 #   tags:      list of short tags, e.g. [romance, slice-of-life]
 #   order:     optional number; works with an order come first, lowest first. Others sort A-Z by title
+#   first_name: the first name the work uses for Malfoid, e.g. Draconia, Dracaena, Draco or another name; blank if unknown or never named
 #   length:    for fanfic: one-shot | short | novel | unknown (default unknown when we cannot tell reliably)
 #
 # Submissions arrive by email; add them here and the Pages workflow publishes them.
@@ -21,6 +22,7 @@ works:
     order: 1
     thumb: "https://rhedak.github.io/malfoid-the-girl-who-yearned/cover.jpg"
     title: "Malfoid: The Girl who Yearned"
+    first_name: "Draconia"
     kind: [comic, fanfic]
     creator: "rhedak"
     url: "https://rhedak.github.io/malfoid-the-girl-who-yearned/"
@@ -32,6 +34,7 @@ works:
     order: 2
     thumb: "https://rhedak.github.io/malfoid-gallery/og-banner.jpg"
     title: "Malfoid Gallery"
+    first_name: "Draconia"
     kind: other
     creator: "rhedak"
     url: "https://rhedak.github.io/malfoid-gallery/"
@@ -43,6 +46,7 @@ works:
     order: 3
     thumb: "https://rhedak.github.io/malfoid-gallery/thumbs/2026-11-04-pack-uniform-neutral.webp"
     title: "Chat with Draconia (anime AI companion)"
+    first_name: "Draconia"
     kind: other
     creator: "rhedak"
     url: "https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform"
@@ -53,6 +57,7 @@ works:
   - id: "fanfic-heirs-to-the-throne"
     thumb: "https://img.wattpad.com/cover/417831043-256-k404701.jpg"
     title: "Harry Potter: Heirs to the Throne"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "KenitohMenara"
     url: "https://www.wattpad.com/story/417831043-harry-potter-heirs-to-the-throne"
@@ -63,6 +68,7 @@ works:
   - id: "anime-galakushi-malfoid-and-harry"
     thumb: "https://yt3.googleusercontent.com/UGERqDUmSpox3atYXN-PNQzDyrUi70Pw6FUHvDa10IpWs_dcy-3SM52RxjGlbYHsdB0725NvFw=s900-c-k-c0x00ffffff-no-rj"
     title: "Malfoid and Harry (anime series)"
+    first_name: ""
     kind: video
     creator: "Galakushi"
     url: "https://www.youtube.com/@galakushi"
@@ -72,6 +78,7 @@ works:
   - id: "fanfic-dancing-with-malfoy"
     thumb: "https://www.royalroadcdn.com/public/covers-large/196770-dancing-with-malfoy.jpg"
     title: "Dancing with Malfoy"
+    first_name: "Draco"
     kind: fanfic
     length: novel
     creator: "HiddenArchitecture"
@@ -83,6 +90,7 @@ works:
   - id: "fanfic-sorcerers-tsundere"
     thumb: "https://img.wattpad.com/cover/418450817-256-k536384.jpg"
     title: "Harry Potter and the Sorcerer's Tsundere"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Guardbro (@GuardTm)"
     url: "https://www.wattpad.com/story/418450817-harry-potter-and-the-sorcerer%27s-tsundere"
@@ -97,6 +105,7 @@ works:
   - id: "video-lumos-lumos-playlist"
     thumb: "https://i.ytimg.com/vi/mZQymbseKGQ/hqdefault.jpg"
     title: "Lumos Lumos (anime series playlist)"
+    first_name: ""
     kind: video
     creator: "ADayASMR"
     url: "https://www.youtube.com/playlist?list=PLdMUvzNnRUZY"
@@ -106,6 +115,7 @@ works:
   - id: "video-man-in-the-mirror-playlist"
     thumb: "https://i.ytimg.com/vi/eqXRHxAhrFs/hqdefault.jpg"
     title: "Harry Potter and the Man in the Mirror"
+    first_name: "Draco"
     kind: video
     creator: "The Lore Lounge"
     url: "https://www.youtube.com/playlist?list=PLaNkCCq_O3Bk"
@@ -116,6 +126,7 @@ works:
   - id: "video-malfoid-and-harry-romcom-playlist"
     thumb: "https://i.ytimg.com/vi/Mhl9va9S4oM/hqdefault.jpg"
     title: "Malfoid & Harry: A Hogwarts Romantic Comedy"
+    first_name: ""
     kind: video
     creator: "Shishir"
     url: "https://www.youtube.com/playlist?list=PLQuy1wZ74YxE"
@@ -125,6 +136,7 @@ works:
   - id: "video-malfoid-wont-admit-it-playlist"
     thumb: "https://i.ytimg.com/vi/ubWqm1jYTqw/hqdefault.jpg"
     title: "Malfoid Won't Admit It (Falkor)"
+    first_name: ""
     kind: video
     creator: "Falkor"
     url: "https://www.youtube.com/playlist?list=PLU0WDJSAzP_w"
@@ -134,6 +146,7 @@ works:
   - id: "fanfic-wattpad-416935238"
     thumb: "https://img.wattpad.com/cover/416935238-256-k282359"
     title: "Year 4: Malfoid x Harry Potter"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "DForrester"
     url: "https://www.wattpad.com/story/416935238"
@@ -144,6 +157,7 @@ works:
   - id: "fanfic-wattpad-417475686"
     thumb: "https://img.wattpad.com/cover/417475686-256-k435849"
     title: "A Malfoid Rewrite"
+    first_name: ""
     kind: fanfic
     url: "https://www.wattpad.com/story/417475686"
     language: "English"
@@ -153,6 +167,7 @@ works:
   - id: "fanfic-wattpad-418440128"
     thumb: "https://img.wattpad.com/cover/418440128-256-k296711"
     title: "The Yule Ball with Malfoid"
+    first_name: "Draconia"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418440128"
@@ -163,6 +178,7 @@ works:
   - id: "fanfic-wattpad-417450092"
     thumb: "https://img.wattpad.com/cover/417450092-256-k890402"
     title: "malfoid never loses"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Kshitij Ballaya"
     url: "https://www.wattpad.com/story/417450092"
@@ -173,6 +189,7 @@ works:
   - id: "fanfic-wattpad-416952198"
     thumb: "https://img.wattpad.com/cover/416952198-256-k81726"
     title: "(Malfoid) Harry Potter"
+    first_name: "Draco"
     kind: fanfic
     creator: "Sunshinesecond"
     url: "https://www.wattpad.com/story/416952198"
@@ -183,6 +200,7 @@ works:
   - id: "fanfic-wattpad-417043371"
     thumb: "https://img.wattpad.com/cover/417043371-256-k254278"
     title: "Malfoid and the Homage"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Frank_lymydear"
     url: "https://www.wattpad.com/story/417043371"
@@ -193,6 +211,7 @@ works:
   - id: "fanfic-wattpad-417746770"
     thumb: "https://img.wattpad.com/cover/417746770-256-k264200"
     title: "Harry Potter and the Malfoid Timeline"
+    first_name: ""
     kind: fanfic
     creator: "Xanedragon"
     url: "https://www.wattpad.com/story/417746770"
@@ -203,6 +222,7 @@ works:
   - id: "fanfic-wattpad-417720317"
     thumb: "https://img.wattpad.com/cover/417720317-256-k298418"
     title: "Sometimes Fate Knows Best: A Malfoid Story"
+    first_name: "Draconia"
     kind: fanfic
     creator: "WHo Knows"
     url: "https://www.wattpad.com/story/417720317"
@@ -213,6 +233,7 @@ works:
   - id: "fanfic-wattpad-416947739"
     thumb: "https://img.wattpad.com/cover/416947739-256-k89387"
     title: "Draconia Malfoy and The Boy Who Lived (Malfoid Fanfiction)"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Lyrisblack"
     url: "https://www.wattpad.com/story/416947739"
@@ -223,6 +244,7 @@ works:
   - id: "fanfic-wattpad-417201660"
     thumb: "https://img.wattpad.com/cover/417201660-256-k557292"
     title: "Draconia Malfoid: and the Hollow King"
+    first_name: "Draconia"
     kind: fanfic
     creator: "K H Giblett"
     url: "https://www.wattpad.com/story/417201660"
@@ -233,6 +255,7 @@ works:
   - id: "fanfic-wattpad-418575701"
     thumb: "https://img.wattpad.com/cover/418575701-256-k427616"
     title: "Malfoid Alternate Universe Story Collection"
+    first_name: ""
     kind: fanfic
     creator: "FN170-Rasetsu"
     url: "https://www.wattpad.com/story/418575701"
@@ -243,6 +266,7 @@ works:
   - id: "fanfic-wattpad-383462035"
     thumb: "https://img.wattpad.com/cover/383462035-256-k867847"
     title: "Draconia Malfoy And The Wolf Knight (Malfoid x OC)"
+    first_name: "Draconia"
     kind: fanfic
     creator: "WashioZakuro"
     url: "https://www.wattpad.com/story/383462035"
@@ -253,6 +277,7 @@ works:
   - id: "fanfic-wattpad-418418675"
     thumb: "https://img.wattpad.com/cover/418418675-256-k250633"
     title: "A Dance of Silver and Gold: A Harry Potter Series Rewrite"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Le_idiot"
     url: "https://www.wattpad.com/story/418418675"
@@ -263,6 +288,7 @@ works:
   - id: "fanfic-wattpad-416966859"
     thumb: "https://img.wattpad.com/cover/416966859-256-k595471.jpg"
     title: "Harry Potter: The Song of Alleviation"
+    first_name: "Draco"
     kind: fanfic
     creator: "Malfoid Larper"
     url: "https://www.wattpad.com/story/416966859"
@@ -273,6 +299,7 @@ works:
   - id: "fanfic-wattpad-418267976"
     thumb: "https://img.wattpad.com/cover/418267976-256-k32104.jpg"
     title: "How to Write Malfoid into Harry Potter"
+    first_name: "Draco"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418267976"
@@ -283,6 +310,7 @@ works:
   - id: "fanfic-wattpad-418397074"
     thumb: "https://img.wattpad.com/cover/418397074-256-k243251.jpg"
     title: "Harry Potter: Tsundere Malfoid"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Caio Rocha"
     url: "https://www.wattpad.com/story/418397074"
@@ -293,6 +321,7 @@ works:
   - id: "fanfic-wattpad-417811722"
     thumb: "https://img.wattpad.com/cover/417811722-256-k617903.jpg"
     title: "\"You Don't Know Anything, Do You?\" (Malfoid Story)"
+    first_name: "Draco"
     kind: fanfic
     creator: "moil __"
     url: "https://www.wattpad.com/story/417811722"
@@ -302,6 +331,7 @@ works:
     tags: [femmalfoy, hogwarts, wizardingworld]
   - id: "fanfic-wattpad-417903719"
     title: "Draceana Malfoid: Year 5"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417903719"
@@ -312,6 +342,7 @@ works:
   - id: "fanfic-wattpad-417348401"
     thumb: "https://img.wattpad.com/cover/417348401-256-k29734.jpg"
     title: "Draceana Malfoid: Year 1"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417348401"
@@ -321,6 +352,7 @@ works:
     tags: [draceanamalfoid, draceanamalfoy, dracomalfoid, draconiamalfoid]
   - id: "fanfic-wattpad-417401104"
     title: "Draceana Malfoid: Year 4"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417401104"
@@ -331,6 +363,7 @@ works:
   - id: "fanfic-wattpad-416810992"
     thumb: "https://img.wattpad.com/cover/416810992-256-k364556.jpg"
     title: "Draco Malfoid in: Surely my haughty bloodpurity bully cant be this cute?"
+    first_name: "Draco"
     kind: fanfic
     creator: "NotTheVillain"
     url: "https://www.wattpad.com/story/416810992"
@@ -341,6 +374,7 @@ works:
   - id: "fanfic-wattpad-417400486"
     thumb: "https://img.wattpad.com/cover/417400486-256-k198153.jpg"
     title: "Draceana Malfoid: Year 2"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417400486"
@@ -350,6 +384,7 @@ works:
     tags: [bloodline, chamberofsecrets, draceanamalfoid, draceanamalfoy]
   - id: "fanfic-wattpad-417904282"
     title: "Draceana Malfoid: Year 7"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "loiteringshade"
     url: "https://www.wattpad.com/story/417904282"
@@ -360,6 +395,7 @@ works:
   - id: "fanfic-wattpad-418524107"
     thumb: "https://img.wattpad.com/cover/418524107-256-k388924.jpg"
     title: "Malfoid"
+    first_name: "Draconia"
     kind: fanfic
     creator: "The Slytherin"
     url: "https://www.wattpad.com/story/418524107"
@@ -370,6 +406,7 @@ works:
   - id: "fanfic-wattpad-419115103"
     thumb: "https://img.wattpad.com/cover/419115103-256-k958259.jpg"
     title: "The Boy from Durmstrang (Malfoid) | The Exchange Year | BOOK I"
+    first_name: ""
     kind: fanfic
     creator: "Nazgûl"
     url: "https://www.wattpad.com/story/419115103"
@@ -380,6 +417,7 @@ works:
   - id: "fanfic-wattpad-417054116"
     thumb: "https://img.wattpad.com/cover/417054116-256-k282545.jpg"
     title: "The tales of Harry and Dracia Malfoid : A fanfic"
+    first_name: "Draco"
     kind: fanfic
     creator: "Soulfrya"
     url: "https://www.wattpad.com/story/417054116"
@@ -390,6 +428,7 @@ works:
   - id: "fanfic-wattpad-418675755"
     thumb: "https://img.wattpad.com/cover/418675755-256-k541602.jpg"
     title: "Which Witch is Malfoid?"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Snowyteller"
     url: "https://www.wattpad.com/story/418675755"
@@ -400,6 +439,7 @@ works:
   - id: "fanfic-wattpad-418173001"
     thumb: "https://img.wattpad.com/cover/418173001-256-k898982.jpg"
     title: "Flirt"
+    first_name: "Lyra"
     kind: fanfic
     creator: "AJTalon"
     url: "https://www.wattpad.com/story/418173001"
@@ -410,6 +450,7 @@ works:
   - id: "fanfic-wattpad-416913803"
     thumb: "https://img.wattpad.com/cover/416913803-256-k29939.jpg"
     title: "The Malfory Heir"
+    first_name: "Draconia"
     kind: fanfic
     creator: "P. B. Madison"
     url: "https://www.wattpad.com/story/416913803"
@@ -420,6 +461,7 @@ works:
   - id: "fanfic-wattpad-416805429"
     thumb: "https://img.wattpad.com/cover/416805429-256-k916797.jpg"
     title: "Never Own a Malfoy, Potter."
+    first_name: "Lyra"
     kind: fanfic
     creator: "Ash"
     url: "https://www.wattpad.com/story/416805429"
@@ -430,6 +472,7 @@ works:
   - id: "fanfic-wattpad-416865418"
     thumb: "https://img.wattpad.com/cover/416865418-256-k127382.jpg"
     title: "The Girl Who Loved the Boy Who Lived"
+    first_name: ""
     kind: fanfic
     creator: "PyrrhianJourney"
     url: "https://www.wattpad.com/story/416865418"
@@ -440,6 +483,7 @@ works:
   - id: "fanfic-wattpad-417050520"
     thumb: "https://img.wattpad.com/cover/417050520-256-k633036.jpg"
     title: "Astronomy"
+    first_name: "Draco"
     kind: fanfic
     creator: "LanaBelleNightengale"
     url: "https://www.wattpad.com/story/417050520"
@@ -449,6 +493,7 @@ works:
     tags: [characterdevelopment, dracopov, dracoxharry, drarry]
   - id: "fanfic-wattpad-416994979"
     title: "The Path Felix Forged"
+    first_name: "Draco"
     kind: fanfic
     creator: "AloofCannon"
     url: "https://www.wattpad.com/story/416994979"
@@ -459,6 +504,7 @@ works:
   - id: "fanfic-wattpad-417353659"
     thumb: "https://img.wattpad.com/cover/417353659-256-k799506.jpg"
     title: "Draconia Malfoy"
+    first_name: "Draconia"
     kind: fanfic
     creator: "LazAndLaffi"
     url: "https://www.wattpad.com/story/417353659"
@@ -469,6 +515,7 @@ works:
   - id: "fanfic-wattpad-417675112"
     thumb: "https://img.wattpad.com/cover/417675112-256-k191888.jpg"
     title: "The Most Unfortunate Arrangement"
+    first_name: "Draco"
     kind: fanfic
     creator: "sherbetlemonquill"
     url: "https://www.wattpad.com/story/417675112"
@@ -479,6 +526,7 @@ works:
   - id: "fanfic-wattpad-417040258"
     thumb: "https://img.wattpad.com/cover/417040258-256-k247034.jpg"
     title: "Harry x Draceana: Post Battle Confessions"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "GilgameshThePimp"
     url: "https://www.wattpad.com/story/417040258"
@@ -489,6 +537,7 @@ works:
   - id: "fanfic-wattpad-416974877"
     thumb: "https://img.wattpad.com/cover/416974877-256-k189575.jpg"
     title: "I Would Call That Wanting"
+    first_name: "Draco"
     kind: fanfic
     creator: "TheYearnestYearner"
     url: "https://www.wattpad.com/story/416974877"
@@ -499,6 +548,7 @@ works:
   - id: "fanfic-wattpad-417120338"
     thumb: "https://img.wattpad.com/cover/417120338-256-k544782.jpg"
     title: "Draconia Malfoy | Years 1-7"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Fantasy Fanatic"
     url: "https://www.wattpad.com/story/417120338"
@@ -509,6 +559,7 @@ works:
   - id: "fanfic-wattpad-417368222"
     thumb: "https://img.wattpad.com/cover/417368222-256-k762545.jpg"
     title: "Spearmint, Citrus, and Vanilla"
+    first_name: "Draco"
     kind: fanfic
     creator: "vlrs25"
     url: "https://www.wattpad.com/story/417368222"
@@ -519,6 +570,7 @@ works:
   - id: "fanfic-wattpad-417155982"
     thumb: "https://img.wattpad.com/cover/417155982-256-k700404.jpg"
     title: "Draconia Malfoy |  The School of Aurors |"
+    first_name: "Draconia"
     kind: fanfic
     creator: "H. O. Camus."
     url: "https://www.wattpad.com/story/417155982"
@@ -528,6 +580,7 @@ works:
     tags: [aurorharry, aurors, draconiamalfoid, drama]
   - id: "fanfic-wattpad-418332433"
     title: "Through the Looking Glass: A series of vignettes from Dracaena Malfoy's POV"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "NovaCat3135"
     url: "https://www.wattpad.com/story/418332433"
@@ -538,6 +591,7 @@ works:
   - id: "fanfic-wattpad-416871248"
     thumb: "https://img.wattpad.com/cover/416871248-256-k845769.jpg"
     title: "Dracaena Malfoy and The Boy Who Lived"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Sergio Xalambrí"
     url: "https://www.wattpad.com/story/416871248"
@@ -548,6 +602,7 @@ works:
   - id: "fanfic-wattpad-417095350"
     thumb: "https://img.wattpad.com/cover/417095350-256-k379659.jpg"
     title: "Nobility Obliges, or The Boy Who Lived and the Girl Who Loved Him"
+    first_name: ""
     kind: fanfic
     creator: "SocraticPsmith"
     url: "https://www.wattpad.com/story/417095350"
@@ -558,6 +613,7 @@ works:
   - id: "fanfic-wattpad-417159644"
     thumb: "https://img.wattpad.com/cover/417159644-256-k482735.jpg"
     title: "Harry Potter and the Tundere's Stone"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Drewlock"
     url: "https://www.wattpad.com/story/417159644"
@@ -568,6 +624,7 @@ works:
   - id: "fanfic-wattpad-417648901"
     thumb: "https://img.wattpad.com/cover/417648901-256-k136082.jpg"
     title: "Opposites Attract (Fem Malfoy x Potter Reader)"
+    first_name: "Draco"
     kind: fanfic
     creator: "cookiekid789"
     url: "https://www.wattpad.com/story/417648901"
@@ -578,6 +635,7 @@ works:
   - id: "fanfic-wattpad-418266177"
     thumb: "https://img.wattpad.com/cover/418266177-256-k58690.jpg"
     title: "Draconia Malfoy: A Happy Memory"
+    first_name: "Draconia"
     kind: fanfic
     creator: "InkAndMischiefs"
     url: "https://www.wattpad.com/story/418266177"
@@ -588,6 +646,7 @@ works:
   - id: "fanfic-wattpad-417985285"
     thumb: "https://img.wattpad.com/cover/417985285-256-k219017.jpg"
     title: "DRACONIA MALFOY | ENGLISH | Harry Potter x Draconia Malfoy"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Escopeta"
     url: "https://www.wattpad.com/story/417985285"
@@ -598,6 +657,7 @@ works:
   - id: "fanfic-wattpad-417160383"
     thumb: "https://img.wattpad.com/cover/417160383-256-k509616.jpg"
     title: "Fall"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Guillermo Carrillo"
     url: "https://www.wattpad.com/story/417160383"
@@ -608,6 +668,7 @@ works:
   - id: "fanfic-wattpad-417155788"
     thumb: "https://img.wattpad.com/cover/417155788-256-k485685.jpg"
     title: "The Secret Dance in a Room of Requitement"
+    first_name: "Draco"
     kind: fanfic
     creator: "AloofCannon"
     url: "https://www.wattpad.com/story/417155788"
@@ -618,6 +679,7 @@ works:
   - id: "fanfic-wattpad-417091219"
     thumb: "https://img.wattpad.com/cover/417091219-256-k366334.jpg"
     title: "Harry Potter and the Silver Thread"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "..."
     url: "https://www.wattpad.com/story/417091219"
@@ -628,6 +690,7 @@ works:
   - id: "fanfic-wattpad-416964341"
     thumb: "https://img.wattpad.com/cover/416964341-256-k18833.jpg"
     title: "Harry, Draco and the Chimeric Connection"
+    first_name: "Draco"
     kind: fanfic
     creator: "ProffyJ"
     url: "https://www.wattpad.com/story/416964341"
@@ -638,6 +701,7 @@ works:
   - id: "fanfic-wattpad-416912251"
     thumb: "https://img.wattpad.com/cover/416912251-256-k998047.jpg"
     title: "Dracaena Malfoy and the One she could not hate"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "DrTri Force"
     url: "https://www.wattpad.com/story/416912251"
@@ -648,6 +712,7 @@ works:
   - id: "fanfic-wattpad-417780162"
     thumb: "https://img.wattpad.com/cover/417780162-256-k335409.jpg"
     title: "Harry Potter and the Other Malfoy"
+    first_name: "Draco"
     kind: fanfic
     creator: "Jonathan Malon"
     url: "https://www.wattpad.com/story/417780162"
@@ -658,6 +723,7 @@ works:
   - id: "fanfic-wattpad-416982533"
     thumb: "https://img.wattpad.com/cover/416982533-256-k117567.jpg"
     title: "Room for Two"
+    first_name: ""
     kind: fanfic
     creator: "Spooky Hater"
     url: "https://www.wattpad.com/story/416982533"
@@ -668,6 +734,7 @@ works:
   - id: "fanfic-wattpad-417858631"
     thumb: "https://img.wattpad.com/cover/417858631-256-k447713.jpg"
     title: "The Chronicles of Harry Potter & Draconia Malfoy"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Alfredo Rangel Jr"
     url: "https://www.wattpad.com/story/417858631"
@@ -678,6 +745,7 @@ works:
   - id: "fanfic-wattpad-364927249"
     thumb: "https://img.wattpad.com/cover/364927249-256-k547300.jpg"
     title: "Harry X Draca And The Sorcerers Stone"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Moonlight6749"
     url: "https://www.wattpad.com/story/364927249"
@@ -688,6 +756,7 @@ works:
   - id: "fanfic-wattpad-417577710"
     thumb: "https://img.wattpad.com/cover/417577710-256-k40292.jpg"
     title: "Blossoms at Christmas"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "animal_drums"
     url: "https://www.wattpad.com/story/417577710"
@@ -698,6 +767,7 @@ works:
   - id: "fanfic-wattpad-418451513"
     thumb: "https://img.wattpad.com/cover/418451513-256-k281569.jpg"
     title: "Disaster Management! Professor Malfoy's Primer at Hogwarts"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Cliff Li"
     url: "https://www.wattpad.com/story/418451513"
@@ -708,6 +778,7 @@ works:
   - id: "fanfic-wattpad-417072326"
     thumb: "https://img.wattpad.com/cover/417072326-256-k318591.jpg"
     title: "Green Things in Hogwarts Dance Class"
+    first_name: "Draco"
     kind: fanfic
     creator: "George Dukes"
     url: "https://www.wattpad.com/story/417072326"
@@ -718,6 +789,7 @@ works:
   - id: "fanfic-wattpad-418327228"
     thumb: "https://img.wattpad.com/cover/418327228-256-k144562.jpg"
     title: "A Reluctant Patronus"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/418327228"
@@ -728,6 +800,7 @@ works:
   - id: "fanfic-wattpad-417408710"
     thumb: "https://img.wattpad.com/cover/417408710-256-k814388.jpg"
     title: "Harry Potter and the Chambers of Secrets (The Girl Who Loved The Boy Who Lived.)"
+    first_name: ""
     kind: fanfic
     creator: "H. Hyukari"
     url: "https://www.wattpad.com/story/417408710"
@@ -738,6 +811,7 @@ works:
   - id: "fanfic-wattpad-418282218"
     thumb: "https://img.wattpad.com/cover/418282218-256-k78319.jpg"
     title: "Draconia Malfoy and the Boy Who Lived"
+    first_name: "Draconia"
     kind: fanfic
     creator: "RadiantDragon"
     url: "https://www.wattpad.com/story/418282218"
@@ -748,6 +822,7 @@ works:
   - id: "fanfic-wattpad-418176858"
     thumb: "https://img.wattpad.com/cover/418176858-256-k892499.jpg"
     title: "Harry Potter and Draconia Malfoy (Books 1-7)"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Bookbadger"
     url: "https://www.wattpad.com/story/418176858"
@@ -758,6 +833,7 @@ works:
   - id: "fanfic-wattpad-417262659"
     thumb: "https://img.wattpad.com/cover/417262659-256-k638980.jpg"
     title: "Ravens and Snakes"
+    first_name: "Draco"
     kind: fanfic
     creator: "Ash Stories"
     url: "https://www.wattpad.com/story/417262659"
@@ -768,6 +844,7 @@ works:
   - id: "fanfic-wattpad-417901866"
     thumb: "https://img.wattpad.com/cover/417901866-256-k634763.jpg"
     title: "The Dracaena and Harry Chronicles"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "JLM_Lay-Soiseault1"
     url: "https://www.wattpad.com/story/417901866"
@@ -778,6 +855,7 @@ works:
   - id: "fanfic-wattpad-418176966"
     thumb: "https://img.wattpad.com/cover/418176966-256-k37182.jpg"
     title: "The Pure-Blood and the Peacock (Book 1 of Dracaena Malfoy)"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Sulley Wonder"
     url: "https://www.wattpad.com/story/418176966"
@@ -787,6 +865,7 @@ works:
     tags: [adventure, canondivergence, comingofage, enemiestolovers]
   - id: "fanfic-wattpad-416932064"
     title: "The Christmas Gift"
+    first_name: "Draco"
     kind: fanfic
     creator: "SimoIllust"
     url: "https://www.wattpad.com/story/416932064"
@@ -797,6 +876,7 @@ works:
   - id: "fanfic-wattpad-417780224"
     thumb: "https://img.wattpad.com/cover/417780224-256-k335487.jpg"
     title: "The Serpent Who Chose the Lion | Harry Potter and the Pure-Blood Princess"
+    first_name: "Draco"
     kind: fanfic
     creator: "Solo_Wing"
     url: "https://www.wattpad.com/story/417780224"
@@ -807,6 +887,7 @@ works:
   - id: "fanfic-wattpad-417128991"
     thumb: "https://img.wattpad.com/cover/417128991-256-k430331.jpg"
     title: "Yule Ball After story"
+    first_name: "Draco"
     kind: fanfic
     creator: "flos elmo"
     url: "https://www.wattpad.com/story/417128991"
@@ -817,6 +898,7 @@ works:
   - id: "fanfic-wattpad-416978779"
     thumb: "https://img.wattpad.com/cover/416978779-256-k110943.jpg"
     title: "The Girl Who Loved the Boy Who Lived"
+    first_name: ""
     kind: fanfic
     creator: "OwletFreddo"
     url: "https://www.wattpad.com/story/416978779"
@@ -827,6 +909,7 @@ works:
   - id: "fanfic-wattpad-418462425"
     thumb: "https://img.wattpad.com/cover/418462425-256-k324187.jpg"
     title: "The Story of Pansy Parkinson and Dracaena Malfoy"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Paul McGuire"
     url: "https://www.wattpad.com/story/418462425"
@@ -837,6 +920,7 @@ works:
   - id: "fanfic-wattpad-418895281"
     thumb: "https://img.wattpad.com/cover/418895281-256-k7810.jpg"
     title: "Greens for the Gold"
+    first_name: ""
     kind: fanfic
     creator: "NomdyPlume"
     url: "https://www.wattpad.com/story/418895281"
@@ -847,6 +931,7 @@ works:
   - id: "fanfic-wattpad-418693986"
     thumb: "https://img.wattpad.com/cover/418693986-256-k832264.jpg"
     title: "The Star That Guides the Boy Who Lived"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Kanzaki Nami"
     url: "https://www.wattpad.com/story/418693986"
@@ -857,6 +942,7 @@ works:
   - id: "fanfic-wattpad-417128386"
     thumb: "https://img.wattpad.com/cover/417128386-256-k454102.jpg"
     title: "Spooky's Yule Ball"
+    first_name: ""
     kind: fanfic
     creator: "flos elmo"
     url: "https://www.wattpad.com/story/417128386"
@@ -867,6 +953,7 @@ works:
   - id: "fanfic-wattpad-416866511"
     thumb: "https://img.wattpad.com/cover/416866511-256-k881109.jpg"
     title: "Green things in the Forbidden Forest"
+    first_name: ""
     kind: fanfic
     creator: "George Dukes"
     url: "https://www.wattpad.com/story/416866511"
@@ -877,6 +964,7 @@ works:
   - id: "fanfic-wattpad-418547816"
     thumb: "https://img.wattpad.com/cover/418547816-256-k387916.jpg"
     title: "Still Here"
+    first_name: "Draca"
     kind: fanfic
     creator: "Deus ex machina"
     url: "https://www.wattpad.com/story/418547816"
@@ -887,6 +975,7 @@ works:
   - id: "fanfic-wattpad-417475816"
     thumb: "https://img.wattpad.com/cover/417475816-256-k897506.jpg"
     title: "The Porcelain Princess and the Master of Death"
+    first_name: "Draco"
     kind: fanfic
     creator: "Fiction"
     url: "https://www.wattpad.com/story/417475816"
@@ -897,6 +986,7 @@ works:
   - id: "fanfic-wattpad-419100777"
     thumb: "https://img.wattpad.com/cover/419100777-256-k882609.jpg"
     title: "Occlumency Lessons"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "FictionTabby"
     url: "https://www.wattpad.com/story/419100777"
@@ -907,6 +997,7 @@ works:
   - id: "fanfic-wattpad-418793163"
     thumb: "https://img.wattpad.com/cover/418793163-256-k711599.jpg"
     title: "The Child And The Serpent"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Syn"
     url: "https://www.wattpad.com/story/418793163"
@@ -917,6 +1008,7 @@ works:
   - id: "fanfic-wattpad-418757184"
     thumb: "https://img.wattpad.com/cover/418757184-256-k644594.jpg"
     title: "Harry Potter and the Broken Hour"
+    first_name: "Draconia"
     kind: fanfic
     creator: "TWHorn"
     url: "https://www.wattpad.com/story/418757184"
@@ -927,6 +1019,7 @@ works:
   - id: "fanfic-wattpad-418178164"
     thumb: "https://img.wattpad.com/cover/418178164-256-k905612.jpg"
     title: "The Girl Who Loved: A Private Record of Draconia Narcissa Malfoy"
+    first_name: "Draconia"
     kind: fanfic
     creator: "A Business of Ferrets"
     url: "https://www.wattpad.com/story/418178164"
@@ -937,6 +1030,7 @@ works:
   - id: "fanfic-wattpad-395096113"
     thumb: "https://img.wattpad.com/cover/395096113-256-k460507.jpg"
     title: "The World We Know"
+    first_name: ""
     kind: fanfic
     creator: "Lyra Malfoy"
     url: "https://www.wattpad.com/story/395096113"
@@ -947,6 +1041,7 @@ works:
   - id: "fanfic-wattpad-418687460"
     thumb: "https://img.wattpad.com/cover/418687460-256-k895960.jpg"
     title: "Harry Potter and the Young Witch in Green"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Pola"
     url: "https://www.wattpad.com/story/418687460"
@@ -957,6 +1052,7 @@ works:
   - id: "fanfic-wattpad-419003261"
     thumb: "https://img.wattpad.com/cover/419003261-256-k843999.jpg"
     title: "Harry Potter: Elseworlds"
+    first_name: ""
     kind: fanfic
     creator: "Supermate3"
     url: "https://www.wattpad.com/story/419003261"
@@ -966,6 +1062,7 @@ works:
     tags: [enemiestolove, harryxdraco, love, lovestory]
   - id: "fanfic-wattpad-418544094"
     title: "Harry Potter and the Silver-Haired Girl"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Nacho Grillo"
     url: "https://www.wattpad.com/story/418544094"
@@ -976,6 +1073,7 @@ works:
   - id: "fanfic-wattpad-418822303"
     thumb: "https://img.wattpad.com/cover/418822303-256-k701780.jpg"
     title: "After the Hour"
+    first_name: "Draconia"
     kind: fanfic
     creator: "ibrahim akoon"
     url: "https://www.wattpad.com/story/418822303"
@@ -986,6 +1084,7 @@ works:
   - id: "fanfic-wattpad-419153639"
     thumb: "https://img.wattpad.com/cover/419153639-256-k956660.jpg"
     title: "Harry Potter and the Divided Crest"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Jonathan Fitzgerald"
     url: "https://www.wattpad.com/story/419153639"
@@ -996,6 +1095,7 @@ works:
   - id: "fanfic-wattpad-418258081"
     thumb: "https://img.wattpad.com/cover/418258081-256-k43584.jpg"
     title: "TWO SHADOWS AND THE ORDER OF PHOENIX"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Jasmin Novaes Marques"
     url: "https://www.wattpad.com/story/418258081"
@@ -1006,6 +1106,7 @@ works:
   - id: "fanfic-wattpad-417139318"
     thumb: "https://img.wattpad.com/cover/417139318-256-k594506.jpg"
     title: "The Stag and the Serpent"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Cheryie-Hex"
     url: "https://www.wattpad.com/story/417139318"
@@ -1016,6 +1117,7 @@ works:
   - id: "fanfic-wattpad-419152536"
     thumb: "https://img.wattpad.com/cover/419152536-256-k953432.jpg"
     title: "The Things We Inherit | Harry & Draca Malfoy"
+    first_name: "Draca"
     kind: fanfic
     creator: "Quillshade Press"
     url: "https://www.wattpad.com/story/419152536"
@@ -1025,6 +1127,7 @@ works:
     tags: [canondivergence, comingofage, dracamalfoy, familylegacy]
   - id: "fanfic-wattpad-418606047"
     title: "Dracaena Malfoy and the Magitech Revolution"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Adrian Adamsson"
     url: "https://www.wattpad.com/story/418606047"
@@ -1034,6 +1137,7 @@ works:
     tags: [enemiestolovers, harrypotterfanfiction, magic, magitech]
   - id: "fanfic-wattpad-417684440"
     title: "The Name That Made Her Happy."
+    first_name: "Draco"
     kind: fanfic
     creator: "Clint Carpentier"
     url: "https://www.wattpad.com/story/417684440"
@@ -1044,6 +1148,7 @@ works:
   - id: "fanfic-wattpad-417095137"
     thumb: "https://img.wattpad.com/cover/417095137-256-k389208.jpg"
     title: "Harry Potter Reimagined: Aurea Malfoy"
+    first_name: "Draco"
     kind: fanfic
     creator: "TheGrandJeef"
     url: "https://www.wattpad.com/story/417095137"
@@ -1054,6 +1159,7 @@ works:
   - id: "fanfic-wattpad-417872302"
     thumb: "https://img.wattpad.com/cover/417872302-256-k460530.jpg"
     title: "The Game We Play"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Lyra Malfoy"
     url: "https://www.wattpad.com/story/417872302"
@@ -1064,6 +1170,7 @@ works:
   - id: "fanfic-wattpad-419276952"
     thumb: "https://img.wattpad.com/cover/419276952-256-k105802.jpg"
     title: "Draconia Malfoy and the Heir of Slytherin"
+    first_name: "Draconia"
     kind: fanfic
     creator: "RadiantDragon"
     url: "https://www.wattpad.com/story/419276952"
@@ -1074,6 +1181,7 @@ works:
   - id: "fanfic-wattpad-418257379"
     thumb: "https://img.wattpad.com/cover/418257379-256-k203259.jpg"
     title: "TWO SHADOWS AND THE HALF-BLOOD PRINCE"
+    first_name: ""
     kind: fanfic
     creator: "Jasmin Novaes Marques"
     url: "https://www.wattpad.com/story/418257379"
@@ -1083,6 +1191,7 @@ works:
     tags: [potter, romance]
   - id: "creator-malfoid-dracaena"
     title: "Dracaena Malfoid"
+    first_name: "Dracaena"
     kind: [creator, art, music]
     creator: "@Malfoid"
     url: "https://x.com/Malfoid"
@@ -1092,6 +1201,7 @@ works:
     tags: [fan-art, music, roleplay, memes, x, youtube]
   - id: "creator-gremlinfoid"
     title: "gremlinfoid"
+    first_name: ""
     kind: [creator, art]
     creator: "@gremlinfoid"
     url: "https://x.com/gremlinfoid"
@@ -1100,6 +1210,7 @@ works:
     tags: [original-art, commissions, memes, x]
   - id: "creator-malfoid-software"
     title: "Malfoid Software"
+    first_name: ""
     kind: [creator, video]
     creator: "@MalfoidSoftware"
     url: "https://x.com/MalfoidSoftware"
@@ -1111,6 +1222,7 @@ works:
   - id: "creator-rhedak"
     order: 4
     title: "rhedak"
+    first_name: ""
     kind: creator
     creator: "rhedak"
     url: "https://x.com/rhedak1"
@@ -1119,6 +1231,7 @@ works:
     tags: [gallery-maintainer, x]
   - id: "creator-blazzsatan"
     title: "Blazz"
+    first_name: ""
     kind: [creator, art]
     creator: "@blazzsatan"
     url: "https://x.com/blazzsatan"
@@ -1128,6 +1241,7 @@ works:
     tags: [fan-art, ai-art, x]
   - id: "creator-kamikazeeai-art"
     title: "Kamikazee"
+    first_name: ""
     kind: [creator, art]
     creator: "@kamikazeeai_art"
     url: "https://x.com/kamikazeeai_art"
@@ -1137,6 +1251,7 @@ works:
     tags: [fan-art, x]
   - id: "creator-fiction8619"
     title: "Fiction"
+    first_name: "Draco"
     kind: [creator, video]
     creator: "@Fiction8619"
     url: "https://x.com/Fiction8619"
@@ -1147,6 +1262,7 @@ works:
     tags: [creator, female-draco, series, x, youtube]
   - id: "fanfic-my-father-must-never-hear"
     title: "My Father Must NEVER Hear About This!"
+    first_name: "Draconia"
     kind: fanfic
     creator: "NomdyPlume (@Koookiiing)"
     url: "https://www.wattpad.com/story/418462564-my-father-must-never-hear-about-this"
@@ -1157,6 +1273,7 @@ works:
     tags: [hogwarts, school, wattpad]
   - id: "creator-drifler7"
     title: "Drifblim"
+    first_name: ""
     kind: [creator, art, comic]
     creator: "@Drifler7"
     url: "https://x.com/Drifler7"
@@ -1166,6 +1283,7 @@ works:
     tags: [fan-comic, x]
   - id: "comic-hallowleaf-malfoid-1"
     title: "Malfoid Comic 1"
+    first_name: ""
     kind: comic
     creator: "hallowleaf (@hallow_leaf)"
     url: "https://www.patreon.com/hallowleaf/posts/malfoid-comic-1-172307447"
@@ -1176,6 +1294,7 @@ works:
     tags: [comic, patreon]
   - id: "creator-hallowleaf"
     title: "hallowleaf"
+    first_name: ""
     kind: [creator, art, comic]
     creator: "@hallow_leaf"
     url: "https://x.com/hallow_leaf"
@@ -1185,6 +1304,7 @@ works:
     tags: [comic, patreon, x]
   - id: "creator-boringbattlecry"
     title: "Boring Battlecry"
+    first_name: "Dracaena"
     kind: [creator, fanfic, art]
     creator: "@BoringBattlecry"
     url: "https://x.com/BoringBattlecry"
@@ -1198,6 +1318,7 @@ works:
   - id: "fanfic-draconia-malfoy-boy-who-said-no"
     thumb: "https://img.wattpad.com/cover/416789252-256-k768596.jpg"
     title: "Draconia Malfoy and the Boy Who Said No"
+    first_name: "Draconia"
     kind: fanfic
     creator: "PeterC (nomoontwo)"
     url: "https://www.wattpad.com/story/416789252-draconia-malfoy-and-the-boy-who-said-no"
@@ -1208,6 +1329,7 @@ works:
   - id: "fanfic-the-malfoid-saga"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/malfoid-saga-girl-who-noticed-him.webp"
     title: "The Malfoid Saga"
+    first_name: "Dracina"
     kind: fanfic
     length: novel
     creator: "NWBroJaneway"
@@ -1219,6 +1341,7 @@ works:
     tags: [series, hogwarts, reader]
   - id: "creator-nwbrojaneway"
     title: "NWBro Janeway"
+    first_name: ""
     kind: creator
     creator: "@NWBroJaneway"
     url: "https://x.com/NWBroJaneway"
@@ -1229,6 +1352,7 @@ works:
     tags: [fanfic, series, x, wattpad]
   - id: "creator-zandranrix"
     title: "Zandran"
+    first_name: ""
     kind: [creator, music, video]
     creator: "@Zandranrix"
     url: "https://x.com/Zandranrix"
@@ -1239,6 +1363,7 @@ works:
     tags: [music, video, x]
   - id: "creator-foyege24"
     title: "Foyege"
+    first_name: ""
     kind: [creator, video]
     creator: "@Foyege24"
     url: "https://x.com/Foyege24"
@@ -1249,6 +1374,7 @@ works:
     tags: [video, series, x]
   - id: "fanfic-the-blood-that-binds-us"
     title: "The Blood That Binds Us"
+    first_name: "Draconia"
     kind: fanfic
     creator: "rafchy (Raf33d)"
     url: "https://www.wattpad.com/story/418391759"
@@ -1258,6 +1384,7 @@ works:
     tags: [enemiestolovers, slowburn, postwar, wattpad]
   - id: "video-malfoid-boarbump-playlist"
     title: "MALFOID (BOARBUMP series)"
+    first_name: ""
     kind: video
     creator: "Epic Fantasy (R)"
     url: "https://www.youtube.com/playlist?list=PLaNEGOkZx1Fs"
@@ -1267,6 +1394,7 @@ works:
     tags: [playlist, series, music]
   - id: "video-malfoid-main-story-playlist"
     title: "Malfoid Main Story"
+    first_name: ""
     kind: video
     creator: "schmede_AI"
     url: "https://www.youtube.com/playlist?list=PLH3pYi9dZmQk"
@@ -1276,6 +1404,7 @@ works:
     tags: [playlist, series, story]
   - id: "creator-hiddenarchitecture"
     title: "HiddenArchitecture"
+    first_name: "Draco"
     kind: [creator, fanfic]
     creator: "HiddenArchitecture (@DogHydra25)"
     url: "https://x.com/DogHydra25"
@@ -1286,6 +1415,7 @@ works:
     tags: [fanfic, royal-road, x]
   - id: "fanfic-pansy-parkinson-and-dracaena"
     title: "The Story of Pansy Parkinson and Dracaena Malfoy"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Nietzchian"
     url: "https://www.wattpad.com/story/418462425-the-story-of-pansy-parkinson-and-dracaena-malfoy"
@@ -1295,6 +1425,7 @@ works:
     tags: [slowburn, friendship, wattpad]
   - id: "creator-adayasmr"
     title: "ADayASMR"
+    first_name: ""
     kind: [creator, video, music]
     creator: "@adayasmr"
     url: "https://x.com/adayasmr"
@@ -1304,6 +1435,7 @@ works:
     tags: [anime, music, x]
   - id: "creator-guardbro"
     title: "Guardbro"
+    first_name: ""
     kind: [creator, fanfic]
     creator: "@GuardTm"
     url: "https://x.com/GuardTm"
@@ -1313,6 +1445,7 @@ works:
     tags: [fanfic, audiobook, x]
   - id: "video-malfoid-by-fantasoner-playlist"
     title: "Malfoid by Fantasoner"
+    first_name: ""
     kind: video
     creator: "Fantasoner"
     url: "https://www.youtube.com/playlist?list=PLZdJWDREs9D8"
@@ -1322,6 +1455,7 @@ works:
     tags: [playlist, drarry, ai-generated]
   - id: "audiobook-measure-of-a-malfoy"
     title: "The Measure of a Malfoy (audiobook)"
+    first_name: ""
     kind: other
     creator: "Stories for the Road"
     url: "https://www.youtube.com/@Stories_forthe_Road/videos"
@@ -1332,6 +1466,7 @@ works:
     tags: [audiobook, series, youtube]
   - id: "creator-stories-for-the-road"
     title: "Stories for the Road"
+    first_name: ""
     kind: [creator, other]
     creator: "@StoriesforRoad"
     url: "https://x.com/StoriesforRoad"
@@ -1345,6 +1480,7 @@ works:
   # The author's bio says the fics "might have spiciness". Story links and languages still need checking.
   - id: "fanfic-chaincap-collection"
     title: "Fanfiction Collection Index (Chain Cap)"
+    first_name: ""
     kind: fanfic
     creator: "Chain Cap (@ChainCap8)"
     url: "https://x.com/ChainCap8/article/2118239906241658908"
@@ -1353,6 +1489,7 @@ works:
     tags: [index, collection, unconfirmed-sfw]
   - id: "video-project-malfoid-chronological-order"
     title: "Chronological Order (Project Malfoid)"
+    first_name: ""
     kind: video
     creator: "Project Malfoid"
     url: "https://www.youtube.com/playlist?list=PLJP7r1x2axX0"
@@ -1362,6 +1499,7 @@ works:
     tags: [playlist, series, trailer]
   - id: "creator-projectmalfoid"
     title: "Project Malfoid"
+    first_name: ""
     kind: [creator, video]
     creator: "@projectmalfoid"
     url: "https://x.com/projectmalfoid"
@@ -1372,6 +1510,7 @@ works:
     tags: [video, compilation, x, youtube]
   - id: "creator-malfoveil"
     title: "MALFOVEIL"
+    first_name: ""
     kind: [creator, music, video]
     creator: "@MALFOVEIL"
     url: "https://www.youtube.com/@MALFOVEIL"
@@ -1381,6 +1520,7 @@ works:
     tags: [music, video, youtube]
   - id: "creator-alxaiproductions"
     title: "ALX AI Productions"
+    first_name: "Dracaena"
     kind: [creator, fanfic, video]
     creator: "@AlxAIProductions"
     url: "https://www.youtube.com/@AlxAIProductions"
@@ -1390,6 +1530,7 @@ works:
     tags: [video, ai-generated, youtube]
   - id: "creator-schmede-ai"
     title: "schmede_AI"
+    first_name: ""
     kind: [creator, video]
     creator: "@schmede_AI"
     url: "https://www.youtube.com/@schmede_AI"
@@ -1399,6 +1540,7 @@ works:
     tags: [video, playlist, youtube]
   - id: "creator-unstablegen"
     title: "UnstableGen"
+    first_name: ""
     kind: [creator, video]
     creator: "@UnstableGen1"
     url: "https://x.com/UnstableGen1"
@@ -1409,6 +1551,7 @@ works:
     tags: [video, ai-generated, x, youtube]
   - id: "creator-crimsonaigc"
     title: "Crimsonaigc"
+    first_name: ""
     kind: [creator, video]
     creator: "@Crimsonaigc"
     url: "https://www.youtube.com/@Crimsonaigc"
@@ -1418,6 +1561,7 @@ works:
     tags: [video, ai-generated, youtube]
   - id: "creator-aimalfoyfemale"
     title: "AI Malfoy Female"
+    first_name: ""
     kind: [creator, art, video]
     creator: "@AIMalfoyFemale"
     url: "https://www.youtube.com/@AIMalfoyFemale"
@@ -1427,6 +1571,7 @@ works:
     tags: [fan-art, video, ai-generated, youtube]
   - id: "creator-mastodonstudios"
     title: "Mastodon Studios"
+    first_name: ""
     kind: [creator, video]
     creator: "@MastodonStudios"
     url: "https://www.youtube.com/@MastodonStudios"
@@ -1436,6 +1581,7 @@ works:
     tags: [video, series, youtube]
   - id: "creator-fantasoner"
     title: "Fantasoner"
+    first_name: ""
     kind: [creator, video]
     creator: "@Fantasoner"
     url: "https://www.youtube.com/@Fantasoner"
@@ -1446,6 +1592,7 @@ works:
   - id: "video-draconia-malfoid-the-movie-luna-lovelace"
     thumb: "https://i.ytimg.com/vi/I07eGvBE3oQ/hqdefault.jpg"
     title: "Draconia Malfoid x Harry Potter | The Movie"
+    first_name: "Draconia"
     kind: video
     creator: "Luna Lovelace"
     url: "https://www.youtube.com/watch?v=I07eGvBE3oQ"
@@ -1455,6 +1602,7 @@ works:
     tags: [video, movie, collaboration]
   - id: "creator-lunalovelacetech"
     title: "Luna Lovelace"
+    first_name: "Draconia"
     kind: [creator, video]
     creator: "@LunaLovelaceTech"
     url: "https://www.youtube.com/@LunaLovelaceTech"
@@ -1464,6 +1612,7 @@ works:
     tags: [video, youtube]
   - id: "creator-papallax"
     title: "Papallax"
+    first_name: "Draconia"
     kind: [creator, video]
     creator: "@Papallax"
     url: "https://www.youtube.com/channel/UC_Ys3Lsi6F63BiL1TNEpn0w"
@@ -1473,6 +1622,7 @@ works:
     tags: [video, music, youtube]
   - id: "creator-javazquez"
     title: "J.A. Vázquez"
+    first_name: ""
     kind: [creator, video, fanfic]
     creator: "@j.a.vazquez5946"
     url: "https://www.youtube.com/@j.a.vazquez5946"
@@ -1482,6 +1632,7 @@ works:
     tags: [video, au, movie, youtube]
   - id: "creator-lorelounge"
     title: "The Lore Lounge"
+    first_name: "Draco"
     kind: [creator, video, fanfic]
     creator: "@LoreLoungeUK"
     url: "https://x.com/LoreLoungeUK"
@@ -1492,6 +1643,7 @@ works:
     tags: [video, fanfic, rewrite, x, youtube]
   - id: "creator-juntahmolokai"
     title: "Juntah Molokai"
+    first_name: ""
     kind: [creator, music, video]
     creator: "@JuntahMolokai"
     url: "https://x.com/JuntahMolokai"
@@ -1502,6 +1654,7 @@ works:
     tags: [music, video, x, youtube]
   - id: "creator-keyofdestiny5"
     title: "Pottah"
+    first_name: ""
     kind: [creator, art]
     creator: "@Keyofdestiny5"
     url: "https://x.com/Keyofdestiny5"
@@ -1512,6 +1665,7 @@ works:
   - id: "video-re-frame-anime-mv-playlist"
     thumb: "https://i.ytimg.com/vi/LDtVaXQm9DM/hqdefault.jpg"
     title: "Female Draco Malfoy × Harry Potter (Anime MV playlist)"
+    first_name: "Draco"
     kind: video
     creator: "AI STUDIO RE:FRAME"
     url: "https://www.youtube.com/playlist?list=PLOtff_v2myaY"
@@ -1521,6 +1675,7 @@ works:
     tags: [playlist, music-video, anime, ai-generated]
   - id: "fanfic-harry-potter-and-the-useful-friend"
     title: "Harry Potter and the Useful Friend"
+    first_name: "Draconia"
     kind: fanfic
     creator: "ASKinloch"
     url: "https://www.wattpad.com/story/419121177"
@@ -1530,6 +1685,7 @@ works:
     tags: [slowburn, first-year, fix-it, wattpad]
   - id: "creator-theexileddraco"
     title: "The Exiled Draco"
+    first_name: "Draco"
     kind: [creator, comic, art]
     creator: "@theexileddraco"
     url: "https://x.com/theexileddraco"
@@ -1540,6 +1696,7 @@ works:
     tags: [comic, art, deviantart, x, youtube]
   - id: "video-malfoid-wont-admit-it-zey"
     title: "Malfoid Won't Admit It (Zey)"
+    first_name: ""
     kind: video
     creator: "Zey"
     url: "https://www.youtube.com/@zeyhashimoto/videos"
@@ -1549,6 +1706,7 @@ works:
     tags: [series, episodes, ai-generated]
   - id: "creator-zey"
     title: "Zey"
+    first_name: ""
     kind: [creator, video]
     creator: "@zeyhashimoto"
     url: "https://www.youtube.com/@zeyhashimoto"
@@ -1559,6 +1717,7 @@ works:
     tags: [video, ai-generated, x, youtube]
   - id: "creator-jinartworth"
     title: "Jin"
+    first_name: ""
     kind: [creator, art]
     creator: "@JinArtworth"
     url: "https://x.com/JinArtworth"
@@ -1568,6 +1727,7 @@ works:
     tags: [fan-art, ai-assisted, x]
   - id: "site-the-girl-who-loved"
     title: "The Girl Who Loved"
+    first_name: "Dracaena"
     kind: [other, fanfic]
     creator: "Father Limerence (@fatherlimerence)"
     url: "https://malfoid.love/"
@@ -1578,6 +1738,7 @@ works:
     tags: [website, game, fiction-library, fan-art]
   - id: "creator-fatherlimerence"
     title: "Father Limerence"
+    first_name: ""
     kind: [creator, other]
     creator: "@fatherlimerence"
     url: "https://x.com/fatherlimerence"
@@ -1588,6 +1749,7 @@ works:
     tags: [archive, website, x]
   - id: "game-pure-blood-and-prejudice"
     title: "Malfoid Dating Sim: Pure Blood & Prejudice"
+    first_name: ""
     kind: game
     creator: "COCOLEMON (@CocolemonTV)"
     url: "https://ruizukun-dev.itch.io/malfoid-dating-sim"
@@ -1597,6 +1759,7 @@ works:
     tags: [dating-sim, sfw, itch]
   - id: "creator-cocolemon"
     title: "COCOLEMON"
+    first_name: ""
     kind: [creator, game]
     creator: "@CocolemonTV"
     url: "https://x.com/CocolemonTV"
@@ -1607,6 +1770,7 @@ works:
     tags: [game, x, itch]
   - id: "game-the-spelling-of-night"
     title: "The Spelling of Night"
+    first_name: ""
     kind: game
     creator: "Sachi (@Sachi_Hwa)"
     url: "https://game.sachihwa.com/"
@@ -1616,6 +1780,7 @@ works:
     tags: [game, sfw, browser]
   - id: "creator-sachi-hwa"
     title: "Sachi"
+    first_name: ""
     kind: [creator, game]
     creator: "@Sachi_Hwa"
     url: "https://x.com/Sachi_Hwa"
@@ -1625,6 +1790,7 @@ works:
     tags: [game, x]
   - id: "fanfic-yule-ball-tusky"
     title: "The Yule Ball (X story)"
+    first_name: "Dracea"
     kind: fanfic
     length: short
     creator: "Tusky (@WalrusCavalry)"
@@ -1635,6 +1801,7 @@ works:
     tags: [yule-ball, x, thread]
   - id: "video-somehow-only-guy-wizarding-school"
     title: "Somehow I'm The Only Guy At Wizarding School (AI anime music videos)"
+    first_name: ""
     kind: video
     creator: "That One Belgian"
     url: "https://www.youtube.com/@thatonebelgian/videos"
@@ -1644,6 +1811,7 @@ works:
     tags: [music-video, anime, ai-generated, subtitled]
   - id: "creator-thatonebelgian"
     title: "That One Belgian"
+    first_name: ""
     kind: [creator, video]
     creator: "@thatonebelgian"
     url: "https://www.youtube.com/@thatonebelgian"
@@ -1654,6 +1822,7 @@ works:
     tags: [video, ai-generated, youtube, x]
   - id: "creator-philmycrackin"
     title: "Philmycrakin-5"
+    first_name: ""
     kind: [creator, video]
     creator: "@Philmycrackin-5"
     url: "https://www.youtube.com/@Philmycrackin-5"
@@ -1664,6 +1833,7 @@ works:
     tags: [video, series, youtube]
   - id: "fanfic-critical-scribe-megathread"
     title: "Malfoid writing megathread (X)"
+    first_name: "Dracaena"
     kind: fanfic
     length: short
     creator: "J. Y. Song (@Critical_Scribe)"
@@ -1674,6 +1844,7 @@ works:
     tags: [thread, collection, x]
   - id: "creator-wispaigc"
     title: "WispAIGC"
+    first_name: "Draconia"
     kind: [creator, video]
     creator: "@WispAIGC"
     url: "https://www.youtube.com/@WispAIGC"
@@ -1683,6 +1854,7 @@ works:
     tags: [video, ai-generated, youtube]
   - id: "game-malfoid-stardew-mod"
     title: "Malfoid (Stardew Valley mod)"
+    first_name: ""
     kind: [game, art]
     creator: "AurumRunar"
     url: "https://www.nexusmods.com/stardewvalley/mods/54240"
@@ -1692,6 +1864,7 @@ works:
     tags: [mod, sprites, portraits]
   - id: "creator-aurumrunar"
     title: "Aurum Runar"
+    first_name: ""
     kind: [creator, art, game]
     creator: "@aurumrunar"
     url: "https://x.com/aurumrunar"
@@ -1702,6 +1875,7 @@ works:
     tags: [pixel-art, mod, x]
   - id: "fanfic-my-father-will-hear-about-this"
     title: "My Father Will Hear About This"
+    first_name: "Dracaena"
     kind: fanfic
     length: short
     creator: "Professor McCoige (@ProfMcCoige)"
@@ -1712,6 +1886,7 @@ works:
     tags: [thread, letters, x]
   - id: "creator-lezisell"
     title: "lezisell"
+    first_name: ""
     kind: [creator, art, comic]
     creator: "@lezisell"
     url: "https://x.com/lezisell"
@@ -1722,6 +1897,7 @@ works:
   - id: "webcomic-malfoid-reader"
     thumb: "https://rhedak.github.io/malfoid-gallery/malfoid-index/thumbs/draconia-malfoid-reader-cover.webp"
     title: "Malfoid Reader (English comic collection)"
+    first_name: "Draconia"
     kind: [comic, fanfic]
     creator: "Crepuscule3307 (@wanruochenhun)"
     url: "https://narusaku.github.io/malfoid-reader/"
@@ -1731,6 +1907,7 @@ works:
     tags: [webcomic, comic-adaptation, english]
   - id: "creator-wanruochenhun"
     title: "Crepuscule3307"
+    first_name: ""
     kind: [creator, art, comic]
     creator: "@wanruochenhun"
     url: "https://x.com/wanruochenhun"
@@ -1741,6 +1918,7 @@ works:
   - id: "video-harry-potter-au-part-1"
     thumb: "https://i.ytimg.com/vi/euyK-S8dOto/hqdefault.jpg"
     title: "Harry Potter AU Part 1"
+    first_name: ""
     kind: video
     creator: "J.A. Vázquez"
     url: "https://www.youtube.com/watch?v=euyK-S8dOto"
@@ -1750,6 +1928,7 @@ works:
   - id: "audiobook-girl-who-chose-book-1"
     thumb: "https://i.ytimg.com/vi/Bpxxj9Ee1W4/hqdefault.jpg"
     title: "Malfoid: Harry Potter and the Girl Who Chose, Book 1 (audiobook)"
+    first_name: ""
     kind: other
     creator: "MiloTheOrangeKitty"
     url: "https://www.youtube.com/watch?v=Bpxxj9Ee1W4"
@@ -1759,6 +1938,7 @@ works:
   - id: "video-space-between-us-playlist"
     thumb: "https://i.ytimg.com/vi/1Q1WRCkyquQ/hqdefault.jpg"
     title: "SPACE BETWEEN US (Malfoid Cinematic Anime)"
+    first_name: ""
     kind: video
     creator: "LouieVerse"
     url: "https://www.youtube.com/playlist?list=PLHec0aeyoJa4"
@@ -1768,6 +1948,7 @@ works:
     tags: [anime, cinematic, romance, harry-potter, playlist]
   - id: "creator-ladywasabee"
     title: "LadyWasabi // LouieVerse"
+    first_name: ""
     kind: creator
     creator: "@LadyWasabee"
     url: "https://x.com/LadyWasabee"
@@ -1778,6 +1959,7 @@ works:
   - id: "creator-thekinda"
     thumb: "https://i.ytimg.com/vi/4wEddqHDDs4/hqdefault.jpg"
     title: "TheKinda"
+    first_name: "Draco"
     kind: [creator, video]
     creator: "@TheKinda"
     url: "https://x.com/TheKinda"
@@ -1840,6 +2022,7 @@ works:
         also: ["https://x.com/TheKinda/status/2119425958801281089", "https://www.youtube.com/watch?v=h4cKoxlDr-8"]
   - id: "comic-malfoid-a-harry-potter-fanfic"
     title: "Malfoid: A Harry Potter Fanfic"
+    first_name: "Draconia"
     kind: comic
     creator: "Guardbro (writer, @GuardTm), Egg Blade (artist, @EggBlade)"
     url: "https://www.webtoons.com/en/canvas/malfoid-a-harry-potter-fanfic/list?title_no=1183525"
@@ -1849,6 +2032,7 @@ works:
     tags: [comic, webtoon, harry-potter, romance]
   - id: "creator-eggblade"
     title: "Egg Blade"
+    first_name: ""
     kind: [creator, comic, art]
     creator: "@EggBlade"
     url: "https://x.com/EggBlade"
@@ -1859,6 +2043,7 @@ works:
   - id: "creator-hdm5121"
     thumb: "https://i.ytimg.com/vi/JpDcQPUMQxc/hqdefault.jpg"
     title: "HDM5121"
+    first_name: ""
     kind: [creator, video]
     creator: "@HDM5121-4I"
     url: "https://www.youtube.com/@HDM5121-4I"
@@ -1868,6 +2053,7 @@ works:
     tags: [video, anime, youtube]
   - id: fanfic-malfoid-love-saga
     title: Saga
+    first_name: "Dracaena"
     kind: fanfic
     creator: TheBrokenPokeman
     url: https://malfoid.love/story/?id=saga
@@ -1882,6 +2068,7 @@ works:
     - rewrite
   - id: fanfic-malfoid-love-silver-beneath-the-ashes
     title: Silver Beneath the Ashes
+    first_name: ""
     kind: fanfic
     creator: Zest1al
     url: https://malfoid.love/story/?id=silver-beneath-the-ashes
@@ -1897,6 +2084,7 @@ works:
     - school
   - id: fanfic-malfoid-love-52
     title: Dracænanon's Malfoid Continuity
+    first_name: "Dracaena"
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=52
@@ -1910,6 +2098,7 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-26
     title: Dracæna Malfoy and the Boy Who Lived
+    first_name: "Dracaena"
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=26
@@ -1924,6 +2113,7 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-42
     title: King Chud's Goblet of Fire Rewrite
+    first_name: "Lyra"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=42
@@ -1938,6 +2128,7 @@ works:
     - lyra
   - id: fanfic-malfoid-love-29
     title: Dracæna Malfoy and the Tournament of Troubles
+    first_name: "Dracaena"
     kind: fanfic
     creator: Dracænanon
     url: https://malfoid.love/story/?id=29
@@ -1952,6 +2143,7 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-45
     title: A Family, Potter?
+    first_name: "Dracaena"
     kind: fanfic
     creator: REZELOVER
     url: https://malfoid.love/story/?id=45
@@ -1966,6 +2158,7 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-44
     title: Harry Potter and the Girl with the Diary
+    first_name: "Dracaena"
     kind: fanfic
     creator: TheBrokenPokeman
     url: https://malfoid.love/story/?id=44
@@ -1979,6 +2172,7 @@ works:
     - dracaena
   - id: fanfic-malfoid-love-43
     title: The Right Sort
+    first_name: "Dracaena"
     kind: fanfic
     creator: Krana-Kler
     url: https://malfoid.love/story/?id=43
@@ -1992,6 +2186,7 @@ works:
     - horcrux
   - id: fanfic-malfoid-love-41
     title: King Chud's Prisoner of Azkaban Rewrite
+    first_name: "Lyra"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=41
@@ -2006,6 +2201,7 @@ works:
     - lyra
   - id: fanfic-malfoid-love-40
     title: Lady Malfoy
+    first_name: "Dracaena"
     kind: fanfic
     creator: ThatCrazyViking
     url: https://malfoid.love/story/?id=40
@@ -2020,6 +2216,7 @@ works:
     - deathly-hallows
   - id: fanfic-malfoid-love-39
     title: I Don't Hate You, Harry
+    first_name: "Dracaena"
     kind: fanfic
     creator: Kosmo
     url: https://malfoid.love/story/?id=39
@@ -2034,6 +2231,7 @@ works:
     - short-dream
   - id: fanfic-malfoid-love-37
     title: King Chud's Chamber of Secrets Rewrite
+    first_name: "Lyra"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=37
@@ -2048,6 +2246,7 @@ works:
     - lyra
   - id: fanfic-malfoid-love-36
     title: King Chud's Philosopher's Stone Rewrite
+    first_name: "Lyra"
     kind: fanfic
     creator: King Chud
     url: https://malfoid.love/story/?id=36
@@ -2062,6 +2261,7 @@ works:
     - lyra
   - id: fanfic-malfoid-love-24
     title: Before you kneel
+    first_name: "Dracaena"
     kind: fanfic
     creator: Spookori
     url: https://malfoid.love/story/?id=24
@@ -2077,6 +2277,7 @@ works:
     - memories
   - id: "creator-yvancster"
     title: "MALFOID SUBPLOTS"
+    first_name: ""
     kind: [comic, art]
     creator: "@yvancster"
     url: "https://x.com/yvancster"
@@ -2086,6 +2287,7 @@ works:
     tags: [comic, 4koma, comedy, x]
   - id: "fanfic-navis-nobelite-friends"
     title: "The Friend who Fought, Learned and Remembered (Ron, Hermione, Neville)"
+    first_name: "Draco"
     kind: fanfic
     creator: "Navis Nobelite"
     url: "https://x.com/NavisNobelite/status/2109375776646676633"
@@ -2096,6 +2298,7 @@ works:
     tags: [x, multi-part, war, hogwarts]
   - id: "creator-redteneri"
     title: "REDTEN⚡"
+    first_name: "Draco"
     kind: [creator, art]
     creator: "@redteneri"
     url: "https://x.com/redteneri"
@@ -2105,6 +2308,7 @@ works:
     tags: [art, fanart, x, kickstart]
   - id: "creator-aurondarklord"
     title: "Aurondarklord"
+    first_name: ""
     kind: [creator, fanfic]
     creator: "@Aurondarklord"
     url: "https://x.com/Aurondarklord"
@@ -2114,6 +2318,7 @@ works:
     tags: [fanfic, x, series, hogwarts]
   - id: "creator-crow-agito"
     title: "Agito (Yearning Arc)"
+    first_name: ""
     kind: [creator, fanfic, art]
     creator: "@crow_agito"
     url: "https://x.com/crow_agito"
@@ -2134,6 +2339,7 @@ works:
         url: "https://x.com/crow_agito/status/2115805533638996209"
   - id: "creator-weeknight"
     title: "Weeknight"
+    first_name: ""
     kind: [creator, video]
     creator: "@Weeknight"
     url: "https://www.youtube.com/@Weeknight"
@@ -2144,6 +2350,7 @@ works:
     tags: [video, commentary, youtube]
   - id: "game-lady-malfoy-wants-to-hold-hands"
     title: "Lady Malfoy Wants to Hold Hands"
+    first_name: ""
     kind: game
     creator: "malove.me"
     url: "https://malove.me/en/"
@@ -2153,6 +2360,7 @@ works:
     tags: [visual-novel, romance, browser, free]
   - id: "game-draconia-malfoid-dating-sim"
     title: "Draconia: Malfoid Dating Sim"
+    first_name: "Draconia"
     kind: game
     creator: "@Avrana_"
     url: "https://avrana.itch.io/malfoid"
@@ -2163,6 +2371,7 @@ works:
     tags: [visual-novel, dating-sim, voiced, free, game]
   - id: "creator-psyernprodigi"
     title: "Psyern"
+    first_name: "Draconia"
     kind: [creator, video]
     creator: "@PsyernProdigi"
     url: "https://www.youtube.com/@PsyernProdigi"
@@ -2172,6 +2381,7 @@ works:
     tags: [video, fan-series, youtube]
   - id: "gallery-ninja64-draconia"
     title: "Draconia gallery (ninja64)"
+    first_name: "Draconia"
     kind: gallery
     creator: "ninja64"
     url: "https://malfoid.ninja64.net/"
@@ -2181,6 +2391,7 @@ works:
     tags: [gallery, images, video, ratings]
   - id: "site-malfoid-com"
     title: "Malfoid (malfoid.com)"
+    first_name: ""
     kind: [other, comic, fanfic, art, game, video]
     creator: "malfoid.com"
     url: "https://malfoid.com/"
@@ -2190,6 +2401,7 @@ works:
     tags: [hub, directory, malfoid.com]
   - id: "video-mf-cant-avoid-malfoid"
     title: "Can't Avoid Malfoid - Skyebrows"
+    first_name: ""
     kind: video
     creator: "Skyebrows"
     url: "https://www.youtube.com/watch?v=4haW72dgVM8"
@@ -2199,6 +2411,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-crown-of-mud"
     title: "Malfoid AI Anime Opening | \"Crown of Mud\" (泥の冠)"
+    first_name: ""
     kind: video
     creator: "TheGoodlike13"
     url: "https://www.youtube.com/watch?v=n5AowQPYkAo"
@@ -2208,6 +2421,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-fate-defying-expelliarmus"
     title: "Fate Defying Expelliarmus"
+    first_name: "Draconia"
     kind: video
     creator: "Allamasllamas"
     url: "https://www.youtube.com/watch?v=52idaSesp8A"
@@ -2217,6 +2431,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-get-fcked-pottah"
     title: "Get F*cked, Pottah! - featuring Malfoid"
+    first_name: ""
     kind: video
     creator: "Angels of Albion"
     url: "https://www.youtube.com/watch?v=jB5h6tD_Nmg"
@@ -2226,6 +2441,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-i-am-girl-of-pure-blood"
     title: "Draca Malfoid SONG - \"I Am Girl of Pure Blood\" | Harry Potter"
+    first_name: "Draca"
     kind: video
     creator: "Stellar Distortion"
     url: "https://www.youtube.com/watch?v=5Der8LKEafg"
@@ -2235,6 +2451,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-lumos-lumos"
     title: "Lumos Lumos"
+    first_name: ""
     kind: video
     creator: "ADayASMR"
     url: "https://www.youtube.com/watch?v=mZQymbseKGQ"
@@ -2244,6 +2461,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-malfoid-and-harrys-wish-episode-1"
     title: "Malfoid and Harry’s wish — Episode 1"
+    first_name: ""
     kind: video
     creator: "Galakushi"
     url: "https://www.youtube.com/watch?v=oEZOQl_sask"
@@ -2253,6 +2471,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-say-you-hate-me-fantasoner"
     title: "TS말포이 몰입을 10000% 더 해주는 영상"
+    first_name: ""
     kind: video
     creator: "Fantasoner(판타소너)"
     url: "https://www.youtube.com/watch?v=kxlbn5ydE28"
@@ -2262,6 +2481,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-space-between-us"
     title: "Part 1: Malfoid X Harry Potter | Cinematic Anime — SPACE BETWEEN US"
+    first_name: ""
     kind: video
     creator: "LouieVerse"
     url: "https://www.youtube.com/watch?v=1Q1WRCkyquQ"
@@ -2271,6 +2491,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-stolen-kiss-616-studio"
     title: "STOLEN KISS"
+    first_name: "Draconia"
     kind: video
     creator: "616 STUDIO"
     url: "https://www.youtube.com/watch?v=xTEwRfFPS8Q"
@@ -2280,6 +2501,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "video-mf-wait-til-my-father-hears-about-this"
     title: "MALFOID (말포이드) ‘울 아빠 (Wait 'Til My Father Hears About This)’ Official AI MV"
+    first_name: ""
     kind: video
     creator: "AI replacing me (@AIreplacingme)"
     url: "https://www.youtube.com/watch?v=MLw3IanniSg"
@@ -2289,6 +2511,7 @@ works:
     tags: [animation, video, malfoid.com]
   - id: "fanfic-mf-a-change-in-fate"
     title: "A Change in Fate"
+    first_name: "Draco"
     kind: fanfic
     creator: "1Valor1"
     url: "https://www.fanfiction.net/s/14216338/1/A-Change-in-Fate"
@@ -2298,6 +2521,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-a-life-twice-lived"
     title: "A Life Twice Lived"
+    first_name: "Draco"
     kind: fanfic
     creator: "Nemesis13"
     url: "https://www.fanfiction.net/s/12660172/1/A-Life-Twice-Lived"
@@ -2307,6 +2531,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-a-thin-line-between-us"
     title: "A Thin Line Between Us"
+    first_name: "Lyra"
     kind: fanfic
     creator: "Tharindu20052"
     url: "https://secure.ao3.org/works/94247801"
@@ -2316,6 +2541,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-almost-too-late"
     title: "Almost Too Late"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Super Saiai"
     url: "https://www.fanfiction.net/s/14592060/1/Almost-Too-Late"
@@ -2325,6 +2551,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-celestial-bodies"
     title: "Celestial Bodies"
+    first_name: "Draco"
     kind: fanfic
     creator: "dashriprock"
     url: "https://www.fanfiction.net/s/14591967/1/Celestial-Bodies"
@@ -2334,6 +2561,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-champion-of-his-first-duel"
     title: "Champion of his First Duel"
+    first_name: ""
     kind: fanfic
     creator: "Aquarium03"
     url: "https://archiveofourown.org/works/93936536"
@@ -2343,6 +2571,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-crimson-flowers"
     title: "Crimson Flowers"
+    first_name: "Draconia"
     kind: fanfic
     creator: "Zer0chroma"
     url: "https://www.fanfiction.net/s/14592223/1/Crimson-Flowers"
@@ -2352,6 +2581,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-diary-of-draco-malfoy-year-1"
     title: "The Diary of Draco Malfoy, A Malfoid story, Year 1."
+    first_name: "Draco"
     kind: fanfic
     creator: "GeneralDunwich"
     url: "https://secure.ao3.org/works/93789121"
@@ -2361,6 +2591,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-diary-of-draco-malfoy-yule-ball"
     title: "The Diary of Draco Malfoy, a Malfoid Story Excerpt: The Yule Ball"
+    first_name: "Draco"
     kind: fanfic
     creator: "GeneralDunwich"
     url: "https://secure.ao3.org/works/94099386"
@@ -2370,6 +2601,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-different-sorts-of-friends"
     title: "Different Sorts of Friends"
+    first_name: "Draco"
     kind: fanfic
     creator: "Anonymous"
     url: "https://secure.ao3.org/works/94486641"
@@ -2379,6 +2611,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-dracaena-malfoy-and-the-boy-who-lived"
     title: "Dracaena Malfoy and the Boy Who Lived"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Generic-Jake"
     url: "https://archiveofourown.org/works/94696871/chapters/252816181"
@@ -2388,6 +2621,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-dracena-malfoy-sensurround"
     title: "Dracena Malfoy"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Sensurround"
     url: "https://x.com/ShamashAran/status/2107845735848784125"
@@ -2397,6 +2631,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-draco-malfoid-in-my-haughty-blood-purity-bully-can-t-be-this-cute"
     title: "Draco Malfoid in: My Haughty Blood Purity Bully Can't Be This Cute?"
+    first_name: "Draco"
     kind: fanfic
     creator: "Our hero"
     url: "https://www.fanfiction.net/s/14591971/1/Draco-Malfoid-in-My-haughty-blood-purity-bully-can-t-be-this-cute"
@@ -2406,6 +2641,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-drakonia"
     title: "Drako//nia"
+    first_name: "Draco"
     kind: fanfic
     creator: "vinsentru"
     url: "https://www.fanfiction.net/s/14596134/1/Drakonia"
@@ -2415,6 +2651,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-flirt"
     title: "Flirt"
+    first_name: "Lyra"
     kind: fanfic
     creator: "DodgerTalon"
     url: "https://archiveofourown.org/works/94638931"
@@ -2424,6 +2661,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-fullblood-affection"
     title: "Fullblood Affection"
+    first_name: "Draco"
     kind: fanfic
     creator: "Anonymous"
     url: "https://secure.ao3.org/works/93833821"
@@ -2433,6 +2671,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-harry-hill-and-the-halls-of-hogwarts"
     title: "Harry Hill and the Halls of Hogwarts"
+    first_name: "Draco"
     kind: fanfic
     creator: "AdVictoriamCustodes"
     url: "https://www.fanfiction.net/s/14593498/1/Harry-Hill-and-the-Halls-of-Hogwarts"
@@ -2442,6 +2681,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-harry-potter-and-draconia-malfoid-vs-voldemort"
     title: "Harry Potter and Draconia Malfoid vs Voldemort."
+    first_name: "Draconia"
     kind: fanfic
     creator: "Orricmedia"
     url: "https://archiveofourown.org/works/95096356"
@@ -2451,6 +2691,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-harry-potter-is-dead-kosmo"
     title: "Harry Potter is dead"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Kosmo"
     url: "https://x.com/kasmosd1/status/2111630291622396186"
@@ -2460,6 +2701,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-i-don-t-like-her-dammit"
     title: "I don't like her dammit"
+    first_name: "Dracia"
     kind: fanfic
     creator: "Princesse Sophie"
     url: "https://www.fanfiction.net/s/12540693/1/I-don-t-like-her-dammit"
@@ -2469,6 +2711,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-in-good-faith"
     title: "In Good Faith"
+    first_name: ""
     kind: fanfic
     creator: "OAC_QI"
     url: "https://secure.ao3.org/works/93594851"
@@ -2478,6 +2721,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-lock-in-mr-potter"
     title: "Lock in, Mr Potter"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "TotallyNotMik"
     url: "https://www.fanfiction.net/s/14593550/1/Lock-in-Mr-Potter"
@@ -2487,6 +2731,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-love-hurts-so-good"
     title: "Love Hurts So Good"
+    first_name: ""
     kind: fanfic
     creator: "IamMenace"
     url: "https://archiveofourown.org/works/94772786"
@@ -2496,6 +2741,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-love-pure-as-hate"
     title: "Love Pure As Hate"
+    first_name: "Draco"
     kind: fanfic
     creator: "IamMenace"
     url: "https://archiveofourown.org/works/94205461"
@@ -2505,6 +2751,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-narcissa-s-wake-up-call-malfoid"
     title: "Narcissa's Wake-Up Call(Malfoid)"
+    first_name: "Lyra"
     kind: fanfic
     creator: "NonsensicalRants"
     url: "https://www.fanfiction.net/s/14592883/1/Narcissa-s-Wake-Up-Call-Malfoid"
@@ -2514,6 +2761,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-pure-blood-bad-attitude"
     title: "Pure Blood, Bad Attitude"
+    first_name: "Draco"
     kind: fanfic
     creator: "Mallobaude"
     url: "https://www.fanfiction.net/s/14593548/1/Pure-Blood-Bad-Attitude"
@@ -2523,6 +2771,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-scared-potter"
     title: "Scared, Potter?"
+    first_name: "Draco"
     kind: fanfic
     creator: "TotallyNotMik"
     url: "https://www.fanfiction.net/s/14592614/1/Scared-Potter"
@@ -2532,6 +2781,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-scars-in-the-snow"
     title: "Scars In the Snow"
+    first_name: ""
     kind: fanfic
     creator: "IamMenace"
     url: "https://archiveofourown.org/works/94499801"
@@ -2541,6 +2791,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-secrets-of-hogwarts"
     title: "Secrets Of Hogwarts - Malfoid x OC Fanfic"
+    first_name: ""
     kind: fanfic
     creator: "Celerius"
     url: "https://www.fanfiction.net/s/14593865/1/Secrets-Of-Hogwarts-Malfoid-x-OC-Fanfic"
@@ -2550,6 +2801,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-sectumsempra-draconia-malfoid"
     title: "Sectumsempra - Draconia Malfoid x Harry Potter AU"
+    first_name: "Draconia"
     kind: fanfic
     creator: "skoomaaddict8"
     url: "https://www.fanfiction.net/s/14592916/1/Sectumsempra-Draconia-Malfoid-x-Harry-Potter-AU"
@@ -2559,6 +2811,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-selfish"
     title: "Selfish — A Malfoid Story"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "EnclaveEmily"
     url: "https://x.com/EnclaveEmily/status/2112559209606758793"
@@ -2568,6 +2821,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-shut-up-malfoid"
     title: "Shut up, Malfoid"
+    first_name: "Draco"
     kind: fanfic
     creator: "Mitsu-52"
     url: "https://www.fanfiction.net/s/14593158/1/Shut-up-Malfoid"
@@ -2577,6 +2831,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-smoke-and-mirrors"
     title: "Smoke and Mirrors"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "NotaDeer"
     url: "https://www.fanfiction.net/s/14596082/1/Smoke-and-Mirrors"
@@ -2586,6 +2841,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-snake-out-of-water"
     title: "Snake Out of Water"
+    first_name: ""
     kind: fanfic
     creator: "IamMenace"
     url: "https://archiveofourown.org/works/94341266"
@@ -2595,6 +2851,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-soaring-on-clipped-wings"
     title: "Soaring on Clipped Wings"
+    first_name: ""
     kind: fanfic
     creator: "IamMenace"
     url: "https://archiveofourown.org/works/94643666"
@@ -2604,6 +2861,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-female-gaze"
     title: "The Female Gaze"
+    first_name: "Draco"
     kind: fanfic
     creator: "spectral416"
     url: "https://secure.ao3.org/works/92513271?view_full_work=true"
@@ -2613,6 +2871,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-future-harry-never-got-to-live"
     title: "The Future Harry Never Got to Live"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "Kosmo"
     url: "https://x.com/kasmosd1/status/2115427631135134163"
@@ -2622,6 +2881,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-girl-who-loved-the-boy-who-lived"
     title: "The Girl Who Loved the Boy Who Lived"
+    first_name: "Draco"
     kind: fanfic
     creator: "DowagerDaphne"
     url: "https://www.fanfiction.net/s/14593554/1/The-Girl-Who-Loved-the-Boy-Who-Lived"
@@ -2631,6 +2891,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-things-we-inherit"
     title: "The Things We Inherit"
+    first_name: "Draca"
     kind: fanfic
     creator: "Quillshade Press"
     url: "https://www.fanfiction.net/s/14593075/1/The-Things-We-Inherit"
@@ -2640,6 +2901,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-the-ties-that-bind"
     title: "The Ties that Bind"
+    first_name: "Draco"
     kind: fanfic
     creator: "J4n1X69"
     url: "https://secure.ao3.org/works/93509176"
@@ -2649,6 +2911,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-what-we-choose"
     title: "What We Choose"
+    first_name: "Dracina"
     kind: fanfic
     creator: "Fawn7552"
     url: "https://archiveofourown.org/works/94027101"
@@ -2658,6 +2921,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "creator-mf-tns2804"
     title: "KAITA"
+    first_name: ""
     kind: [creator, art]
     creator: "@tns2804"
     url: "https://x.com/tns2804"
@@ -2667,6 +2931,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-matsuryun"
     title: "松竜"
+    first_name: ""
     kind: [creator, art]
     creator: "@matsuryun"
     url: "https://x.com/matsuryun"
@@ -2676,6 +2941,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-uang1_17"
     title: "물범"
+    first_name: ""
     kind: [creator, art]
     creator: "@uang1_17"
     url: "https://x.com/uang1_17"
@@ -2685,6 +2951,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-sogumm_05"
     title: "sogumm"
+    first_name: ""
     kind: [creator, art]
     creator: "@sogumm_05"
     url: "https://x.com/sogumm_05"
@@ -2694,6 +2961,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-furryjedath"
     title: "Jedath Drawing"
+    first_name: ""
     kind: [creator, art]
     creator: "@FurryJedath"
     url: "https://x.com/FurryJedath"
@@ -2703,6 +2971,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-naohrw7"
     title: "nao"
+    first_name: ""
     kind: [creator, art]
     creator: "@naohrw7"
     url: "https://x.com/naohrw7"
@@ -2712,6 +2981,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-whdgua_0820"
     title: "종혐"
+    first_name: ""
     kind: [creator, art]
     creator: "@whdgua_0820"
     url: "https://x.com/whdgua_0820"
@@ -2721,6 +2991,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-kimy1230918"
     title: "kimy"
+    first_name: ""
     kind: [creator, art]
     creator: "@kimy1230918"
     url: "https://x.com/kimy1230918"
@@ -2730,6 +3001,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-re0nnn"
     title: "Re0n"
+    first_name: ""
     kind: [creator, art]
     creator: "@re0nnn"
     url: "https://x.com/re0nnn"
@@ -2739,6 +3011,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-szeiart"
     title: "szei_illus"
+    first_name: ""
     kind: [creator, art]
     creator: "@szeiart"
     url: "https://x.com/szeiart"
@@ -2748,6 +3021,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-zerozakiyamo"
     title: "零崎業萌"
+    first_name: ""
     kind: [creator, art]
     creator: "@zerozakiyamo"
     url: "https://x.com/zerozakiyamo"
@@ -2757,6 +3031,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-sigmman"
     title: "시금"
+    first_name: ""
     kind: [creator, art]
     creator: "@sigmman"
     url: "https://x.com/sigmman"
@@ -2766,6 +3041,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-saw2721"
     title: "SAW272"
+    first_name: ""
     kind: [creator, art]
     creator: "@SAW2721"
     url: "https://x.com/SAW2721"
@@ -2775,6 +3051,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-buttoniris"
     title: "ツ"
+    first_name: ""
     kind: [creator, art]
     creator: "@buttoniris"
     url: "https://x.com/buttoniris"
@@ -2784,6 +3061,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-spaz141"
     title: "spaz141"
+    first_name: ""
     kind: [creator, art]
     creator: "@spaz141"
     url: "https://x.com/spaz141"
@@ -2793,6 +3071,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-hipaxiaartwork"
     title: "Hipaxia"
+    first_name: ""
     kind: [creator, art]
     creator: "@Hipaxiaartwork"
     url: "https://x.com/Hipaxiaartwork"
@@ -2802,6 +3081,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-janggondan"
     title: "장곤단"
+    first_name: ""
     kind: [creator, art]
     creator: "@Janggondan"
     url: "https://x.com/Janggondan"
@@ -2811,6 +3091,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-larkmeto"
     title: "LarkMeto"
+    first_name: ""
     kind: [creator, art]
     creator: "@LarkMeto"
     url: "https://x.com/LarkMeto"
@@ -2820,6 +3101,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-alyoshanaka"
     title: "Alyosha"
+    first_name: ""
     kind: [creator, art]
     creator: "@alyoshanaka"
     url: "https://x.com/alyoshanaka"
@@ -2829,6 +3111,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-masoq095"
     title: "masoq"
+    first_name: ""
     kind: [creator, art]
     creator: "@masoq095"
     url: "https://x.com/masoq095"
@@ -2838,6 +3121,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-mayojam202"
     title: "Mayozz"
+    first_name: ""
     kind: [creator, art]
     creator: "@MayoJam202"
     url: "https://x.com/MayoJam202"
@@ -2847,6 +3131,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-xin_cere_art"
     title: "xin"
+    first_name: ""
     kind: [creator, art]
     creator: "@xin_cere_art"
     url: "https://x.com/xin_cere_art"
@@ -2856,6 +3141,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-danchukkey"
     title: "RAUM"
+    first_name: ""
     kind: [creator, art]
     creator: "@DANCHUKKEY"
     url: "https://x.com/DANCHUKKEY"
@@ -2865,6 +3151,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-tobis_tobs"
     title: "Tobs"
+    first_name: ""
     kind: [creator, art]
     creator: "@Tobis_Tobs"
     url: "https://x.com/Tobis_Tobs"
@@ -2874,6 +3161,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-s117renner"
     title: "Sierra"
+    first_name: ""
     kind: [creator, art]
     creator: "@s117renner"
     url: "https://x.com/s117renner"
@@ -2883,6 +3171,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-asuzureincarnat"
     title: "Asuzu / Naa"
+    first_name: ""
     kind: [creator, art]
     creator: "@AsuzuReincarnat"
     url: "https://x.com/AsuzuReincarnat"
@@ -2892,6 +3181,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-nachos2d_"
     title: "nachos2d"
+    first_name: ""
     kind: [creator, art]
     creator: "@NACHOS2D_"
     url: "https://x.com/NACHOS2D_"
@@ -2901,6 +3191,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-kenpai_arts"
     title: "Ken-pai"
+    first_name: ""
     kind: [creator, art]
     creator: "@kenpai_arts"
     url: "https://x.com/kenpai_arts"
@@ -2910,6 +3201,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-yunayuispink"
     title: "Yunayu"
+    first_name: "Draco"
     kind: [creator, art]
     creator: "@yunayuispink"
     url: "https://x.com/yunayuispink"
@@ -2919,6 +3211,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "creator-mf-bramovan"
     title: "Bramovan"
+    first_name: ""
     kind: [creator, art]
     creator: "@Bramovan"
     url: "https://x.com/Bramovan"
@@ -2928,6 +3221,7 @@ works:
     tags: [art, x, malfoid.com]
   - id: "comic-mf-harry-potter-and-dracaena-malfoid"
     title: "Harry Potter and Dracaena Malfoid"
+    first_name: "Dracaena"
     kind: comic
     creator: "Jack Brown"
     url: "https://www.webtoons.com/en/canvas/harry-potter-and-dracaena-malfoid/list?title_no=1178648"
@@ -2937,6 +3231,7 @@ works:
     tags: [comic, webtoon]
   - id: "game-mf-malfoid-duel"
     title: "Malfoid Duel"
+    first_name: ""
     kind: game
     creator: "LIZRO"
     url: "https://malfoid-duel.charminglime.chatgpt.site/"
@@ -2946,6 +3241,7 @@ works:
     tags: [game, browser]
   - id: "video-mf-slytoonz-i-love-you-harry"
     title: "I Love You Harry…"
+    first_name: ""
     kind: video
     creator: "Slytoonz"
     url: "https://www.youtube.com/watch?v=QYSNxNL7sxw"
@@ -2955,6 +3251,7 @@ works:
     tags: [video, youtube]
   - id: "creator-immortalselchie"
     title: "Lady Selch"
+    first_name: ""
     kind: [creator, art, video]
     creator: "@ImmortalSelchie"
     url: "https://x.com/ImmortalSelchie"
@@ -3014,6 +3311,7 @@ works:
         url: "https://x.com/ImmortalSelchie/status/2116474057994776906"
   - id: "creator-0xwreck"
     title: "Train (0xWreck)"
+    first_name: ""
     kind: [creator, art, video]
     creator: "@0xWreck"
     url: "https://x.com/0xWreck"
@@ -3023,6 +3321,7 @@ works:
     tags: [art, ai-art, video, parody, x]
   - id: "creator-zeropoint216"
     title: "ZeroPoint216"
+    first_name: ""
     kind: [creator, music]
     creator: "ZeroPoint216"
     url: "https://www.youtube.com/@zeropoint216"
@@ -3041,6 +3340,7 @@ works:
         url: "https://www.youtube.com/watch?v=DzjBpcL90i8"
   - id: "fanfic-wattpad-419354594"
     title: "Dracaena Malfoy and the Family Legacy"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "KeepCookingSF"
     url: "https://www.wattpad.com/story/419354594-dracaena-malfoy-and-the-family-legacy"
@@ -3051,6 +3351,7 @@ works:
     tags: [malfoid, redemption, nobility, wattpad]
   - id: "fanfic-hot-rails-incident-report"
     title: "Incident Report"
+    first_name: "Dracaena"
     kind: fanfic
     creator: "@hot_rails"
     url: "https://x.com/hot_rails/status/2117198113983345068"
@@ -3061,6 +3362,7 @@ works:
     tags: [malfoid, found-document, humour, x]
   - id: "gallery-free-malfoid-art-and-memes"
     title: "Free collection of Malfoid art and memes"
+    first_name: ""
     kind: gallery
     creator: "henrik.kekusu+gallery@gmail.com"
     url: "https://docs.google.com/document/d/13qJ2fBqUdnM4eDfXMs0kP1-hv8b4CtCYAZfzAZphTQM/edit"
@@ -3070,6 +3372,7 @@ works:
     tags: [gallery, art, memes, google-doc]
   - id: "creator-lilithspike"
     title: "Lilith Spike"
+    first_name: ""
     kind: [creator, music, video]
     creator: "@LilithSpike"
     url: "https://www.youtube.com/@LilithSpike"
