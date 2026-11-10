@@ -86,31 +86,72 @@
     return { slices: main.concat(others), unknown: unknown, named: named, total: total };
   }
 
-  // Build the donut: one ring circle per slice, each drawn as a dash of the circumference.
-  function donut(slices, named, selected, onPick) {
-    var svg = svgEl("svg", { viewBox: "0 0 200 200", role: "img", "aria-label": "Donut chart of first names used for Malfoid" });
-    svg.setAttribute("class", "names-donut");
-    svg.appendChild(svgEl("circle", { cx: "100", cy: "100", r: String(R), fill: "none", stroke: "var(--panel-2, #16201c)", "stroke-width": String(STROKE) }));
-    var offset = 0;
-    slices.forEach(function (s) {
-      if (!s.count) return;
-      var len = (s.count / named) * C;
-      var seg = svgEl("circle", {
-        cx: "100", cy: "100", r: String(R), fill: "none", stroke: s.color,
-        "stroke-width": String(STROKE),
-        "stroke-dasharray": (len - 1.5) + " " + C,
-        "stroke-dashoffset": String(-offset),
-        transform: "rotate(-90 100 100)",
-        "class": "names-seg" + (selected === s.name ? " is-on" : (selected ? " is-off" : ""))
-      });
+  // Build the labelled pie: one wedge per name, a leader line and a label for each, placed outside the pie.
+  // Labels on each side are spread apart vertically so they do not overlap.
+  function pie(slices, named, selected, onPick) {
+    var W = 440, H = 380, cx = 220, cy = 190, r = 112, GAP = 32;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": "Pie chart of first names used for Malfoid", "class": "names-pie" });
+    var items = slices.filter(function (s) { return s.count; });
+    var angle = -Math.PI / 2;
+    var marks = [];
+
+    items.forEach(function (s) {
+      var frac = s.count / named;
+      var a2 = angle + frac * 2 * Math.PI;
+      var mid = (angle + a2) / 2;
+      var cls = "names-seg" + (selected === s.name ? " is-on" : (selected ? " is-off" : ""));
+      var seg;
+      if (frac >= 0.9999) {
+        seg = svgEl("circle", { cx: String(cx), cy: String(cy), r: String(r), fill: s.color, "class": cls });
+      } else {
+        var x1 = cx + r * Math.cos(angle), y1 = cy + r * Math.sin(angle);
+        var x2 = cx + r * Math.cos(a2), y2 = cy + r * Math.sin(a2);
+        var d = "M" + cx + "," + cy + " L" + x1 + "," + y1 + " A" + r + "," + r + " 0 " + (frac > 0.5 ? 1 : 0) + " 1 " + x2 + "," + y2 + " Z";
+        seg = svgEl("path", { d: d, fill: s.color, "class": cls });
+      }
+      seg.style.stroke = "var(--panel, #121a17)";
+      seg.style.strokeWidth = "1.5";
       var title = svgEl("title", {});
-      title.textContent = s.name + ": " + s.count + " (" + Math.round((s.count / named) * 100) + "%)";
+      title.textContent = s.name + ": " + s.count + " (" + Math.round(frac * 100) + "%)";
       seg.appendChild(title);
       seg.addEventListener("click", function () { onPick(s.name); });
       svg.appendChild(seg);
-      offset += len;
+      marks.push({ s: s, frac: frac, mid: mid });
+      angle = a2;
+    });
+
+    // Lay out labels: right side and left side separately, each spread so they do not collide.
+    [true, false].forEach(function (rightSide) {
+      var side = marks.filter(function (m) { return (Math.cos(m.mid) >= 0) === rightSide; });
+      side.sort(function (a, b) { return Math.sin(a.mid) - Math.sin(b.mid); });
+      var ys = side.map(function (m) { return cy + (r + 14) * Math.sin(m.mid); });
+      for (var i = 1; i < ys.length; i++) ys[i] = Math.max(ys[i], ys[i - 1] + GAP);
+      for (var j = ys.length - 2; j >= 0; j--) ys[j] = Math.min(ys[j], ys[j + 1] - GAP);
+      if (ys.length && ys[0] < 16) { var shift = 16 - ys[0]; ys = ys.map(function (y) { return y + shift; }); }
+      side.forEach(function (m, k) {
+        var dir = rightSide ? 1 : -1;
+        var ly = Math.min(Math.max(ys[k], 16), H - 16);
+        var p0x = cx + r * Math.cos(m.mid), p0y = cy + r * Math.sin(m.mid);
+        var p1x = cx + (r + 14) * Math.cos(m.mid), p1y = cy + (r + 14) * Math.sin(m.mid);
+        var lx = cx + dir * (r + 40);
+        svg.appendChild(svgEl("polyline", {
+          points: p0x + "," + p0y + " " + p1x + "," + p1y + " " + (lx - dir * 4) + "," + ly,
+          fill: "none", stroke: "rgba(180, 200, 190, 0.55)", "stroke-width": "1"
+        }));
+        var t = svgEl("text", { x: String(lx), y: String(ly - 2), "text-anchor": rightSide ? "start" : "end", "font-size": "14" });
+        t.setAttribute("class", "names-label");
+        t.appendChild(svgNode("tspan", { x: String(lx), dy: "0", "font-weight": "600" }, m.s.name));
+        t.appendChild(svgNode("tspan", { x: String(lx), dy: "15", "font-size": "12", "class": "names-label-pct" }, (m.frac * 100).toFixed(1) + "%"));
+        svg.appendChild(t);
+      });
     });
     return svg;
+  }
+
+  function svgNode(name, attrs, text) {
+    var n = svgEl(name, attrs);
+    n.textContent = text;
+    return n;
   }
 
   function body(works, selected, onPick) {
@@ -120,13 +161,7 @@
     var out = [];
     var wrap = el("div", "names-wrap");
     var ring = el("div", "names-ring");
-    ring.appendChild(donut(t.slices, t.named, selected, onPick));
-    var centre = el("div", "names-centre");
-    centre.appendChild(el("strong", null, selected || "Malfoid"));
-    centre.appendChild(el("span", null, selected
-      ? (t.slices.filter(function (s) { return s.name === selected; })[0] || { count: 0 }).count + " works"
-      : "first names in the index"));
-    ring.appendChild(centre);
+    ring.appendChild(pie(t.slices, t.named, selected, onPick));
     wrap.appendChild(ring);
 
     var list = el("ul", "names-legend");
