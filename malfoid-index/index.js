@@ -6,7 +6,7 @@
 
   var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", gallery: "Gallery", video: "Video", music: "Music", other: "Other" };
   var LENGTHS = { "one-shot": "One-shot", short: "Short", novel: "Novel", unknown: "Length unknown" };
-  var state = { kind: "all", length: "all", q: "" };
+  var state = { kind: "all", length: "all", q: "", name: "" };
   var data = { works: [], contact: "" };
   var pageTitle = document.title;
 
@@ -111,11 +111,18 @@
       .join(" ").toLowerCase();
   }
 
-  function matches(w) {
+  // The kind, length and search filters, which the first-name chart follows too.
+  function matchesFilters(w) {
     if (state.kind !== "all" && (w.kinds || []).indexOf(state.kind) === -1) return false;
     if (state.length !== "all" && (w.length || "unknown") !== state.length) return false;
     if (!state.q) return true;
     return state.q.split(/\s+/).every(function (term) { return haystack(w).indexOf(term) !== -1; });
+  }
+
+  // The list: the filters above, plus a first name chosen in the chart.
+  function matches(w) {
+    if (!matchesFilters(w)) return false;
+    return !state.name || (w.first_name || "") === state.name;
   }
 
   function renderChips() {
@@ -187,6 +194,13 @@
       top.appendChild(el("span", "kind", KINDS[k] || k));
     });
     if ((w.kinds || []).indexOf("fanfic") !== -1) top.appendChild(el("span", "kind", LENGTHS[w.length || "unknown"]));
+    if (w.first_name) {
+      // The name the work uses for Malfoid, in the same colour as its slice in the chart.
+      var nameTag = el("span", "name-tag", w.first_name);
+      var nameColor = window.nameColor ? window.nameColor(w.first_name) : "";
+      if (nameColor) nameTag.style.setProperty("--tag", nameColor);
+      top.appendChild(nameTag);
+    }
     if (w.added) top.appendChild(el("span", "work-date", w.added));
     article.appendChild(top);
 
@@ -229,13 +243,15 @@
   }
 
   function renderList() {
+    drawNames();
     var list = document.getElementById("list");
     var count = document.getElementById("count");
     list.textContent = "";
     var shown = data.works.filter(matches);
-    count.textContent = shown.length === data.works.length
+    count.textContent = (shown.length === data.works.length
       ? data.works.length + (data.works.length === 1 ? " work" : " works")
-      : shown.length + " of " + data.works.length + " works";
+      : shown.length + " of " + data.works.length + " works")
+      + (state.name ? " named " + state.name : "");
     if (!shown.length) {
       list.appendChild(el("div", "index-empty", data.works.length
         ? "Nothing matches that search yet."
@@ -321,9 +337,22 @@
     contact.textContent = to;
   }
 
+  // Picking a name in the chart filters the list; picking it again clears the filter.
+  function setName(name) {
+    state.name = name || "";
+    renderList();
+  }
+
+  // The chart counts only the works that pass the other filters.
+  function drawNames() {
+    if (window.renderNamesChart) window.renderNamesChart(data.works.filter(matchesFilters), state.name, setName);
+  }
+
   function init(json) {
     data = json;
+    if (window.initNameColors) window.initNameColors(data.works);
     setupSubmit();
+    drawNames();
     route();
     window.addEventListener("hashchange", route);
     var q = document.getElementById("q");

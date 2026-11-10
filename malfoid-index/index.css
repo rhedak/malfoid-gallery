@@ -24,6 +24,46 @@
 .what-is-dates { font-size: 14px; color: var(--muted) !important; }
 .index-rules { margin-top: 12px !important; font-size: 14px; color: #c9f5e2 !important; }
 
+.intro-row { margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 380px); gap: 16px; align-items: start; }
+.intro-row .index-intro { margin: 0; }
+/* When the About box is folded away, the name chart widens across the row into the space it leaves,
+   and the folded About bar sits under it. Desktop only; on small screens the chart stays below About. */
+@media (min-width: 901px) {
+  .intro-row:has(#intro-toggle:not([open])) .names-chart { grid-column: 1 / -1; grid-row: 1; }
+  .intro-row:has(#intro-toggle:not([open])) .index-intro { grid-row: 2; }
+}
+.names-chart { border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); padding: 14px 18px 16px; }
+.names-chart { container-type: inline-size; }
+.names-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; text-align: left; color: inherit; font: inherit; }
+.names-head:focus-visible { outline: 2px solid var(--emerald); outline-offset: 4px; border-radius: 4px; }
+.names-title { font: 600 17px/1.3 var(--serif); color: #f2f5f4; }
+.names-chev { color: var(--emerald); font-size: 14px; }
+.names-body { margin-top: 10px; }
+.names-body[hidden] { display: none; }
+/* Wide chart (the About box is folded): a bigger ring beside the legend, with up to three names per row. */
+@container (min-width: 700px) {
+  .names-wrap { grid-template-columns: minmax(260px, 340px) minmax(0, 1fr); align-items: center; gap: 28px; }
+  .names-ring { width: 100%; }
+  .names-legend { grid-template-columns: repeat(3, minmax(0, 1fr)); max-height: none; column-gap: 14px; }
+}
+.names-empty, .names-foot { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.names-wrap { display: grid; gap: 14px; }
+.names-ring { position: relative; width: min(100%, 220px); aspect-ratio: 1; margin: 0 auto; }
+.names-donut { width: 100%; height: 100%; display: block; }
+.names-seg { cursor: pointer; transition: opacity .2s; }
+.names-seg:hover { opacity: .85; }
+.names-seg.is-off { opacity: .35; }
+.names-seg.is-on { stroke-width: 40; }
+.names-centre { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; pointer-events: none; padding: 0 44px; }
+.names-centre strong { font: 600 19px/1.1 var(--serif); color: #f2f5f4; overflow-wrap: anywhere; }
+.names-centre span { font-size: 12px; color: var(--silver-2); margin-top: 4px; }
+.names-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; max-height: 260px; overflow: auto; }
+.names-row { width: 100%; display: flex; align-items: center; gap: 10px; background: none; border: 1px solid transparent; border-radius: 8px; padding: 5px 8px; color: var(--silver); font: inherit; font-size: 14px; cursor: pointer; text-align: left; }
+.names-row:hover, .names-row.is-on { border-color: rgba(52, 211, 153, .4); }
+.names-swatch { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.names-name { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.names-num { color: var(--silver-2); font-size: 13px; white-space: nowrap; }
+
 .index-controls { margin-top: 14px; }
 .index-controls .chips { margin-top: 10px; }
 
@@ -36,6 +76,7 @@
 .work-top {display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .kind { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: #c9f5e2; border: 1px solid rgba(52, 211, 153, .45); border-radius: 999px; padding: 1px 8px; }
 .work-date { font-size: 12px; color: var(--silver-2); margin-left: auto; }
+.name-tag { font-size: 11px; letter-spacing: .02em; color: var(--tag, #c9f5e2); border: 1px solid var(--tag, rgba(52, 211, 153, .45)); border-radius: 999px; padding: 1px 8px; }
 .work h2 { margin: 2px 0 0; font: 600 19px/1.25 var(--serif); letter-spacing: .01em; color: #f2f5f4; overflow-wrap: anywhere; }
 .work h2 a { color: inherit; }
 .work h2 a:hover { color: #8ff0c8; }
@@ -59,6 +100,10 @@
 .index-empty { grid-column: 1 / -1; color: var(--muted); padding: 30px 20px; text-align: center; border: 1px dashed var(--line-2); border-radius: var(--radius); }
 
 .index-footer { max-width: 1440px; margin: 0 auto; padding: 0 clamp(12px, 3vw, 32px) 40px; color: var(--silver-2); font-size: 13px; }
+
+@media (max-width: 900px) {
+  .intro-row { grid-template-columns: 1fr; }
+}
 
 @media (max-width: 640px) {
   .intro-toggle > summary { padding: 12px 16px; }
