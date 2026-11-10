@@ -3510,3 +3510,12 @@ works:
     tags: [parody, gender-bender, romance, magic, translation]
     first_name: "Carina"
     length: "novel"
+  - id: "Malfoid Fanfic Videos"
+    title: "Video Adaptations of Malfoid Fanfics"
+    kind: [creator, video, comic, fanfic]
+    creator: "@Drifler7"
+    url: "https://x.com/Drifler7"
+    language: "English"
+    added: 2026-11-10
+    summary: "Video and comic adaptations of Malfoid fanfiction."
+    tags: [ai-video, romance, humour, malfoid]    
