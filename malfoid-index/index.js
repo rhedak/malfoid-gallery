@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", video: "Video", music: "Music", other: "Other" };
+  var KINDS = { creator: "Creator", comic: "Comic", game: "Game", fanfic: "Fanfic", art: "Fan art", gallery: "Gallery", video: "Video", music: "Music", other: "Other" };
   var LENGTHS = { "one-shot": "One-shot", short: "Short", novel: "Novel", unknown: "Length unknown" };
   var state = { kind: "all", length: "all", q: "" };
   var data = { works: [], contact: "" };
@@ -305,7 +305,7 @@
     var subject = "Malfoid Index submission";
     var body = [
       "Title:",
-      "Kind (fanfic / fan art / video / music / other):",
+      "Kind (fanfic / fan art / gallery / video / music / other):",
       "Your name or handle:",
       "Link to the work (must stay online):",
       "Language (English, or English subs):",

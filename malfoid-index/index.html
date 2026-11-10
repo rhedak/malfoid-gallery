@@ -33,6 +33,15 @@
 
 <main>
   <section class="index-intro" aria-label="About the index">
+    <details class="intro-toggle" id="intro-toggle" open>
+    <summary>About the index</summary>
+    <div class="intro-body">
+    <details class="what-is">
+      <summary>What is Malfoid?</summary>
+      <p>Malfoid is a fan nickname for drawings that reimagine Draco Malfoy as a woman. Female Draco art existed before the name, but a wave of posts in September 2026 made the version widely recognizable. The character is fan-created and not part of official Harry Potter canon. The art led to memes, fanfiction and a fan-made game.</p>
+      <p class="what-is-dates"><strong>Key dates:</strong> March 2024, the earliest female Draco art on X. 22 September 2026, a viral drawing of Malfoid teasing Harry. Late September 2026, remixes and new expressions spread the format.
+        <a href="https://malfoid.com/timeline/">Full timeline on malfoid.com →</a></p>
+    </details>
     <p>Did you create Malfoid (genderbent Draco Malfoy) content? Send it to
       <a id="contact" href="mailto:rhedak@proton.me">rhedak@proton.me</a> and it may be added here.</p>
     <p class="index-how">Include a title, your name or handle, a link to the work, the language, and two or three sentences about it.
@@ -43,6 +52,8 @@
     <a id="submit" class="cta index-submit" href="mailto:rhedak@proton.me?subject=Malfoid%20Index%20submission">
       <span aria-hidden="true">✉</span> Submit a work by email
     </a>
+    </div>
+    </details>
   </section>
 
   <section class="controls index-controls" aria-label="Search and filter">
@@ -64,6 +75,22 @@
   <p>Made by fans. Each work belongs to its creator; follow the link to read or view it there.</p>
 </footer>
 
+<script>
+// Remember whether the About box was hidden, in this browser only (localStorage, no cookies, nothing sent to a server).
+(function () {
+  var key = "malfoid-index-intro-open";
+  var box = document.getElementById("intro-toggle");
+  if (!box) return;
+  try {
+    var saved = localStorage.getItem(key);
+    if (saved === "0") box.open = false;
+    if (saved === "1") box.open = true;
+  } catch (e) {}
+  box.addEventListener("toggle", function () {
+    try { localStorage.setItem(key, box.open ? "1" : "0"); } catch (e) {}
+  });
+})();
+</script>
 <script src="index.js"></script>
 </body>
 </html>
