@@ -3510,3 +3510,14 @@ works:
     tags: [parody, gender-bender, romance, magic, translation]
     first_name: "Carina"
     length: "novel"
+  - id: "creator-catg5835"
+    title: "CatG5835"
+    first_name: ""
+    kind: [creator, video]
+    creator: "@CatG5835"
+    url: "https://www.youtube.com/@%EC%BA%A3%EC%A5%90-n4l"
+    language: "English"
+    added: 2026-11-11
+    summary: "Makes Malfoid animations on YouTube, including the Malfoid Anime Main Story series, Entering Hogwarts and the Female Malfoy anime episode."
+    also: ["https://x.com/CatG5835"]
+    tags: [animation, video, youtube, x]
