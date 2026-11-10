@@ -67,13 +67,42 @@
       .forEach(function (n, i) { colorOf[n] = FIXED[n] || otherColor(i); });
   }
 
+  // Works by the same creator count as one: a creator's own entry and their videos, stories or posts
+  // give one vote. The key ignores case, a leading @ and anything in brackets, so "@Fantasoner" and
+  // "Fantasoner(판타소너)" are one creator. Works with no creator, or by "Anonymous", count separately.
+  function creatorKey(w, i) {
+    var c = (w.creator || "").replace(/\(.*$/, "").replace(/^\s*@/, "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (!c || c === "anonymous") return "#" + i;
+    return c;
+  }
+
+  // Each creator's name is the one their works use most; a tie goes to the name that sorts first.
+  function groupName(list) {
+    var c = {};
+    list.forEach(function (w) {
+      var n = (w.first_name || "").trim();
+      if (n) c[n] = (c[n] || 0) + 1;
+    });
+    var best = "";
+    Object.keys(c).forEach(function (n) {
+      if (!best || c[n] > c[best] || (c[n] === c[best] && n.localeCompare(best) < 0)) best = n;
+    });
+    return best;
+  }
+
   function tally(works) {
+    var groups = {};
+    var keys = [];
+    works.forEach(function (w, i) {
+      var k = creatorKey(w, i);
+      if (!groups[k]) { groups[k] = []; keys.push(k); }
+      groups[k].push(w);
+    });
     var counts = {};
     var unknown = 0;
-    var total = 0;
-    works.forEach(function (w) {
-      total++;
-      var n = (w.first_name || "").trim();
+    var total = keys.length;
+    keys.forEach(function (k) {
+      var n = groupName(groups[k]);
       if (!n) { unknown++; return; }
       counts[n] = (counts[n] || 0) + 1;
     });
@@ -184,7 +213,8 @@
     out.push(wrap);
 
     var foot = el("p", "names-foot");
-    foot.textContent = t.named + " of " + t.total + " works name her. " +
+    foot.textContent = t.named + " of " + t.total + " creators or works name her. " +
+      "A creator with several works counts once. " +
       (t.unknown ? t.unknown + " don't yet; they are left out of the chart. " : "") +
       (selected ? "Click the selected name again to show all works." : "Click a name to filter the list.");
     out.push(foot);
