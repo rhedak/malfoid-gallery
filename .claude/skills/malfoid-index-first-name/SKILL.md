@@ -30,6 +30,8 @@ Do not count these as a name for her: Lucius, Narcissa, Abraxas, Druella, Ursa, 
 
 Summaries alone are not enough. Several entries were first set from summaries and turned out to name the wrong character.
 
+A blurb or description often says "Draco is a girl now" or "female Draco" without giving the new name, and the prose then uses a different name. Do not take `Draco` from a blurb. Set `Draco` only when the prose calls her Draco. Blossoms at Christmas is an example: the blurb reads as Draco, but the chapter uses Dracaena.
+
 ## Reading chapter 1 in the browser
 
 Use claude-in-chrome. Load the tools once with `ToolSearch`, then batch the calls: navigate, wait about 3 seconds, run JavaScript, and read the counts.
