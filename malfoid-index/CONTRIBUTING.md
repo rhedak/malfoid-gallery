@@ -39,7 +39,7 @@ A new entry looks like this:
 Fields:
 
 - `id`: a short unique slug, for example `2026-11-my-fanfic`.
-- `title`, `kind`, `url`: required. `kind` is one of `creator`, `comic`, `game`, `fanfic`, `art`, `video`, `music` or `other`, or a list such as `[comic, fanfic]`.
+- `title`, `kind`, `url`: required. `kind` is one of `creator`, `comic`, `game`, `fanfic`, `art`, `gallery`, `video`, `music` or `other`, or a list such as `[comic, fanfic]`.
 - `creator`, `language`, `added` (the date you submit, `YYYY-MM-DD`), `summary`, `tags`: recommended.
 - `length`: for fanfic only: `one-shot`, `short`, `novel` or `unknown`.
 - `thumb`, `also`, `items`, `order`: optional. See the comments at the top of `works.yaml`.

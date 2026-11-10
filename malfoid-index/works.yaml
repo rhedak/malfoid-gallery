@@ -3,7 +3,7 @@
 # Each entry is one work. Fields (all optional except title and kind):
 #   id:        short unique slug, e.g. "2026-12-moonlit-owl"
 #   title:     the work's title
-#   kind:      creator | comic | game | fanfic | art | video | music | other, or a list such as [creator, art]
+#   kind:      creator | comic | game | fanfic | art | gallery | video | music | other, or a list such as [creator, art]
 #   creator:   the author or artist's name or handle
 #   url:       link to the work (http or https)
 #   language:  e.g. "English", "German"
@@ -2170,3 +2170,12 @@ works:
     added: 2026-11-10
     summary: "Makes Draconia and Harry fan videos, including the episode series Draconia & Harry: Where our worlds meet (EP1 and a second video). The creator is also on TikTok."
     tags: [video, fan-series, youtube]
+  - id: "gallery-ninja64-draconia"
+    title: "Draconia gallery (ninja64)"
+    kind: gallery
+    creator: "ninja64"
+    url: "https://malfoid.ninja64.net/"
+    language: "English"
+    added: 2026-11-10
+    summary: "Community gallery of Draconia images and short clips, with ratings on each item, sorted as a feed. Contents come from several uploaders and were not checked one by one."
+    tags: [gallery, images, video, ratings]
