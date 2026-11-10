@@ -41,7 +41,7 @@ entries:
     input: "input/2026-11-03-castle-tsundere-1.yaml"
     image: "images/2026-11-03-castle-tsundere-1.jpg"
     planned: 2026-11-10
-    posted:
+    posted: {date: 2026-11-10, x: "https://x.com/rhedak1/status/2119970202926678384"}
   - id: "2026-11-03-castle-tsundere-2"
     title: "A scarf, not that she cares"
     created: 2026-11-03
