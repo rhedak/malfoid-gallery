@@ -42,13 +42,17 @@
 .names-body[hidden] { display: none; }
 /* Wide chart (the About box is folded): a bigger ring beside the legend, with up to three names per row. */
 @container (min-width: 700px) {
-  .names-wrap { grid-template-columns: minmax(260px, 340px) minmax(0, 1fr); align-items: center; gap: 28px; }
-  .names-ring { width: 100%; }
-  .names-legend { grid-template-columns: repeat(3, minmax(0, 1fr)); max-height: none; column-gap: 14px; }
+  .names-wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 24px; }
+  .names-chart .names-ring { width: 100%; max-width: none; }
+  .names-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; column-gap: 14px; font-size: 13px; }
+  .names-legend .names-num { font-size: 12px; }
 }
 .names-empty, .names-foot { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
 .names-wrap { display: grid; gap: 14px; }
-.names-ring { position: relative; width: min(100%, 220px); aspect-ratio: 1; margin: 0 auto; }
+.names-ring { position: relative; width: 100%; max-width: 380px; margin: 0 auto; }
+.names-pie { width: 100%; height: auto; display: block; overflow: visible; }
+.names-label { fill: var(--silver); }
+.names-label-pct { fill: var(--silver-2); }
 .names-donut { width: 100%; height: 100%; display: block; }
 .names-seg { cursor: pointer; transition: opacity .2s; }
 .names-seg:hover { opacity: .85; }
