@@ -28,6 +28,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import miniyaml  # noqa: E402
 
+# Accounts that must not be added to the Malfoid Index: they sell subscriptions to AI-made fan content
+# of Malfoid, which raises rights-holder concerns. Lower-case handles without the @. The build fails if
+# any work's creator, url or `also` link points at one of them. Kept in code only, not published.
+BLOCKED_ACCOUNTS = {
+    "katechon_studio",  # X: promotes a malfoid.tv subscription charging a monthly fee for AI fan content
+}
+
 THUMB_WIDTH = 480
 THUMB_QUALITY = 80
 
@@ -370,10 +377,30 @@ def build_works():
     def text(v):
         return "" if v is None else str(v).strip()
 
+    def handle_from_url(u):
+        from urllib.parse import urlparse
+        seg = urlparse(u).path.strip("/").split("/")[0]
+        return seg.lstrip("@").lower()
+
+    def blocked_handle(w):
+        """The blocked account a work points at (creator, url or also link), or None."""
+        for c in [text(w.get("creator"))] + [text(w.get("url"))] + [text(u) for u in (w.get("also") or [])]:
+            if not c:
+                continue
+            h = handle_from_url(c) if c.startswith(("http://", "https://")) else c.lstrip("@").lower()
+            if h and h in BLOCKED_ACCOUNTS:
+                return h
+        return None
+
     works = []
     for w in data.get("works") or []:
         if not isinstance(w, dict) or not text(w.get("title")):
             continue
+        bad = blocked_handle(w)
+        if bad:
+            # Fail the build rather than hide the work: a listed account must not be added or kept.
+            sys.exit("error: %r links to blocked account %r (see BLOCKED_ACCOUNTS in scripts/build_site.py)"
+                     % (text(w.get("title")), bad))
         tags = w.get("tags") or []
         # a creator with many works lists them under `items`; the sub page shows these
         items = []
