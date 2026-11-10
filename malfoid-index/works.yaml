@@ -339,7 +339,7 @@ works:
   - id: "fanfic-wattpad-417811722"
     thumb: "https://img.wattpad.com/cover/417811722-256-k617903.jpg"
     title: "\"You Don't Know Anything, Do You?\" (Malfoid Story)"
-    first_name: "Draco"
+    first_name: "Lyra"
     length: "short"
     kind: fanfic
     creator: "moil __"
@@ -2623,7 +2623,7 @@ works:
     tags: [fanfic, malfoid.com]
   - id: "fanfic-mf-a-life-twice-lived"
     title: "A Life Twice Lived"
-    first_name: "Draco"
+    first_name: "Dancia"
     length: "novel"
     kind: fanfic
     creator: "Nemesis13"
