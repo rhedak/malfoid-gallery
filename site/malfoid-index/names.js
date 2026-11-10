@@ -15,8 +15,13 @@
   var STROKE = 34;       // ring width
   var C = 2 * Math.PI * R;
 
-  // Whether the chart body is folded away. Collapsing also clears a name filter (see toggle below).
+  // Whether the chart body is folded away. Remembered in this browser only (localStorage, no cookies).
+  // Collapsing also clears a name filter (see the header click below).
+  var STORE_KEY = "malfoid-index-names-open";
   var collapsed = false;
+  try {
+    if (localStorage.getItem(STORE_KEY) === "0") collapsed = true;
+  } catch (e) {}
   // Latest inputs from index.js.
   var current = { works: [], selected: "", onPick: null };
 
@@ -156,6 +161,7 @@
     head.appendChild(chev);
     head.addEventListener("click", function () {
       collapsed = !collapsed;
+      try { localStorage.setItem(STORE_KEY, collapsed ? "0" : "1"); } catch (e) {}
       // Folding the chart away also clears a name filter, so the list is back to all names.
       if (collapsed && current.selected) current.onPick("");
       else draw();

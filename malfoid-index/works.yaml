@@ -138,7 +138,7 @@ works:
   - id: "video-malfoid-wont-admit-it-playlist"
     thumb: "https://i.ytimg.com/vi/ubWqm1jYTqw/hqdefault.jpg"
     title: "Malfoid Won't Admit It (Falkor)"
-    first_name: ""
+    first_name: "Draconia"
     kind: video
     creator: "Falkor"
     url: "https://www.youtube.com/playlist?list=PLU0WDJSAzP_w"

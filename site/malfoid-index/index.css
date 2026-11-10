@@ -26,6 +26,12 @@
 
 .intro-row { margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 380px); gap: 16px; align-items: start; }
 .intro-row .index-intro { margin: 0; }
+/* When the About box is folded away, the name chart widens across the row into the space it leaves,
+   and the folded About bar sits under it. Desktop only; on small screens the chart stays below About. */
+@media (min-width: 901px) {
+  .intro-row:has(#intro-toggle:not([open])) .names-chart { grid-column: 1 / -1; grid-row: 1; }
+  .intro-row:has(#intro-toggle:not([open])) .index-intro { grid-row: 2; }
+}
 .names-chart { border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); padding: 14px 18px 16px; }
 .names-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; text-align: left; color: inherit; font: inherit; }
 .names-head:focus-visible { outline: 2px solid var(--emerald); outline-offset: 4px; border-radius: 4px; }
