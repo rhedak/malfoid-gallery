@@ -43,7 +43,10 @@
   var colorOf = {};
   // Hand-picked hues that sit well away from the three main colours (emerald, violet, amber),
   // so no other name looks like Draconia, Dracaena or Draco. Past the list, lightness steps keep them apart.
-  var OTHER_PALETTE = ["#38bdf8", "#f472b6", "#f87171", "#a3e635", "#e879f9", "#22d3ee", "#94a3b8", "#818cf8"];
+  var OTHER_PALETTE = ["#38bdf8", "#f472b6", "#f87171", "#a3e635", "#e879f9", "#94a3b8", "#fb923c", "#2dd4bf"];
+  // Fixed colours for the names already in the index, so each keeps its colour as the list grows.
+  var FIXED = { "Lyra": "#38bdf8", "Draca": "#f472b6", "Dracina": "#f87171", "Aurea": "#a3e635",
+    "Dancia": "#e879f9", "Dracia": "#94a3b8", "Dracarya": "#fb923c", "Draya": "#2dd4bf" };
   function otherColor(i) {
     var base = OTHER_PALETTE[i % OTHER_PALETTE.length];
     var round = Math.floor(i / OTHER_PALETTE.length);
@@ -61,7 +64,7 @@
     Object.keys(counts)
       .filter(function (n) { return !colorOf[n]; })
       .sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); })
-      .forEach(function (n, i) { colorOf[n] = otherColor(i); });
+      .forEach(function (n, i) { colorOf[n] = FIXED[n] || otherColor(i); });
   }
 
   function tally(works) {
