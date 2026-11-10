@@ -41,8 +41,14 @@
   // Other names get colours from a fixed hue spread. Colours are set once from the whole index
   // (see initColors), so a name keeps its colour when the filters change and on the cards.
   var colorOf = {};
+  // Hand-picked hues that sit well away from the three main colours (emerald, violet, amber),
+  // so no other name looks like Draconia, Dracaena or Draco. Past the list, lightness steps keep them apart.
+  var OTHER_PALETTE = ["#38bdf8", "#f472b6", "#f87171", "#a3e635", "#e879f9", "#22d3ee", "#94a3b8", "#818cf8"];
   function otherColor(i) {
-    return "hsl(" + ((i * 137) % 360) + ", 62%, 66%)";
+    var base = OTHER_PALETTE[i % OTHER_PALETTE.length];
+    var round = Math.floor(i / OTHER_PALETTE.length);
+    if (!round) return base;
+    return "hsl(" + ((i * 97) % 360) + ", 70%, " + (58 + (round % 3) * 8) + "%)";
   }
   function initColors(works) {
     var counts = {};
