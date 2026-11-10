@@ -2151,3 +2151,13 @@ works:
     added: 2026-11-10
     summary: "Free browser visual novel, an unofficial fan-parody romance in which the Malfoy heiress trades teasing remarks with Harry, with branching choices and multiple endings. Available in English with British English voice."
     tags: [visual-novel, romance, browser, free]
+  - id: "game-draconia-malfoid-dating-sim"
+    title: "Draconia: Malfoid Dating Sim"
+    kind: game
+    creator: "@Avrana_"
+    url: "https://avrana.itch.io/malfoid"
+    also: ["https://www.wattpad.com/story/416789252-draconia-malfoy-and-the-boy-who-said-no"]
+    language: "English"
+    added: 2026-11-10
+    summary: "Free, fully voiced Harry Potter visual novel and dating sim, with a female Draco Malfoy who keeps asking Harry out, across seven years at Hogwarts. Based loosely on the Wattpad story Draconia Malfoy and the Boy Who Said No. Available in 12 languages, English included. The creator's content notes say nothing explicit."
+    tags: [visual-novel, dating-sim, voiced, free, game]
