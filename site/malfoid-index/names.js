@@ -1,5 +1,6 @@
 // Malfoid Index: the first-name chart. It is drawn in code from the works in works.json
 // (the first_name field of each entry), so it updates whenever the index is rebuilt.
+// index.js passes in the works that match the page's other filters, so the chart follows them.
 // Every label is written with textContent.
 (function () {
   "use strict";
@@ -13,6 +14,11 @@
   var R = 80;            // ring radius
   var STROKE = 34;       // ring width
   var C = 2 * Math.PI * R;
+
+  // Whether the chart body is folded away. Collapsing also clears a name filter (see toggle below).
+  var collapsed = false;
+  // Latest inputs from index.js.
+  var current = { works: [], selected: "", onPick: null };
 
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -78,18 +84,11 @@
     return svg;
   }
 
-  function render(works, selected, onPick) {
-    var box = document.getElementById("names-chart");
-    if (!box) return;
-    box.textContent = "";
+  function body(works, selected, onPick) {
     var t = tally(works);
+    if (!t.named) return [el("p", "names-empty", "No works name her yet.")];
 
-    box.appendChild(el("h2", "names-title", "Which first name is used for Malfoid?"));
-    if (!t.named) {
-      box.appendChild(el("p", "names-empty", "No works name her yet."));
-      return;
-    }
-
+    var out = [];
     var wrap = el("div", "names-wrap");
     var ring = el("div", "names-ring");
     ring.appendChild(donut(t.slices, t.named, selected, onPick));
@@ -118,21 +117,50 @@
       list.appendChild(li);
     });
     wrap.appendChild(list);
-    box.appendChild(wrap);
+    out.push(wrap);
 
     var foot = el("p", "names-foot");
     foot.textContent = t.named + " of " + t.total + " works name her. " +
       (t.unknown ? t.unknown + " don't yet; they are left out of the chart. " : "") +
       (selected ? "Click the selected name again to show all works." : "Click a name to filter the list.");
-    box.appendChild(foot);
+    out.push(foot);
+    return out;
   }
 
-  // Called by index.js with the works and a callback that sets the list filter.
-  var current = { works: [], selected: "", onPick: null };
+  function draw() {
+    var box = document.getElementById("names-chart");
+    if (!box) return;
+    box.textContent = "";
+
+    var head = el("button", "names-head");
+    head.type = "button";
+    head.setAttribute("aria-expanded", String(!collapsed));
+    head.appendChild(el("span", "names-title", "Which first name is used for Malfoid?"));
+    var chev = el("span", "names-chev", collapsed ? "▸" : "▾");
+    chev.setAttribute("aria-hidden", "true");
+    head.appendChild(chev);
+    head.addEventListener("click", function () {
+      collapsed = !collapsed;
+      // Folding the chart away also clears a name filter, so the list is back to all names.
+      if (collapsed && current.selected) current.onPick("");
+      else draw();
+    });
+    box.appendChild(head);
+
+    var inner = el("div", "names-body");
+    inner.hidden = collapsed;
+    if (!collapsed) {
+      body(current.works, current.selected, function (name) {
+        current.onPick(name === current.selected ? "" : name);
+      }).forEach(function (n) { inner.appendChild(n); });
+    }
+    box.appendChild(inner);
+  }
+
+  // Called by index.js with the works that match the other filters, the selected name and a callback
+  // that sets the name filter.
   window.renderNamesChart = function (works, selected, onPick) {
     current = { works: works || [], selected: selected || "", onPick: onPick };
-    render(current.works, current.selected, function (name) {
-      current.onPick(name === current.selected ? "" : name);
-    });
+    draw();
   };
 })();

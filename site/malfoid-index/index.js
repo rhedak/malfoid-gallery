@@ -111,12 +111,18 @@
       .join(" ").toLowerCase();
   }
 
-  function matches(w) {
+  // The kind, length and search filters, which the first-name chart follows too.
+  function matchesFilters(w) {
     if (state.kind !== "all" && (w.kinds || []).indexOf(state.kind) === -1) return false;
     if (state.length !== "all" && (w.length || "unknown") !== state.length) return false;
-    if (state.name && (w.first_name || "") !== state.name) return false;
     if (!state.q) return true;
     return state.q.split(/\s+/).every(function (term) { return haystack(w).indexOf(term) !== -1; });
+  }
+
+  // The list: the filters above, plus a first name chosen in the chart.
+  function matches(w) {
+    if (!matchesFilters(w)) return false;
+    return !state.name || (w.first_name || "") === state.name;
   }
 
   function renderChips() {
@@ -230,6 +236,7 @@
   }
 
   function renderList() {
+    drawNames();
     var list = document.getElementById("list");
     var count = document.getElementById("count");
     list.textContent = "";
@@ -326,12 +333,12 @@
   // Picking a name in the chart filters the list; picking it again clears the filter.
   function setName(name) {
     state.name = name || "";
-    drawNames();
     renderList();
   }
 
+  // The chart counts only the works that pass the other filters.
   function drawNames() {
-    if (window.renderNamesChart) window.renderNamesChart(data.works, state.name, setName);
+    if (window.renderNamesChart) window.renderNamesChart(data.works.filter(matchesFilters), state.name, setName);
   }
 
   function init(json) {
