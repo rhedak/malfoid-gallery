@@ -5,7 +5,12 @@
 .crumb { margin: 0 0 2px; font-size: 13px; }
 .crumb a { color: var(--silver-2); }
 
-.index-intro { margin: 18px 0 8px; padding: 18px 20px; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); max-width: 760px; }
+.index-intro { margin: 18px 0 8px; padding: 0; border-radius: var(--radius); background: var(--panel); border: 1px solid var(--line); }
+.intro-toggle > summary { cursor: pointer; list-style: none; padding: 12px 20px; font-weight: 600; color: var(--silver); display: flex; align-items: center; gap: 10px; }
+.intro-toggle > summary::-webkit-details-marker { display: none; }
+.intro-toggle > summary::before { content: "▸"; color: var(--emerald); transition: transform .2s; }
+.intro-toggle[open] > summary::before { transform: rotate(90deg); }
+.intro-body { padding: 4px 20px 18px; }
 .index-intro p { margin: 0 0 10px; color: var(--silver); }
 .index-intro a { color: var(--emerald); }
 .index-how { color: var(--muted) !important; font-size: 14px; }
@@ -56,6 +61,7 @@
 .index-footer { max-width: 1440px; margin: 0 auto; padding: 0 clamp(12px, 3vw, 32px) 40px; color: var(--silver-2); font-size: 13px; }
 
 @media (max-width: 640px) {
-  .index-intro { padding: 14px 16px; }
+  .intro-toggle > summary { padding: 12px 16px; }
+  .intro-body { padding: 4px 16px 16px; }
   .index-list { grid-template-columns: 1fr; }
 }
