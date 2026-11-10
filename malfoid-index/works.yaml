@@ -2142,3 +2142,12 @@ works:
     added: 2026-11-10
     summary: "YouTube commentary on the Malfoid trend and its side plots, including a playlist of seven videos titled Malfoid and Side Plot Content. Covers how the trend spread and rewrites of the Harry Potter books for Malfoid."
     tags: [video, commentary, youtube]
+  - id: "game-lady-malfoy-wants-to-hold-hands"
+    title: "Lady Malfoy Wants to Hold Hands"
+    kind: game
+    creator: "malove.me"
+    url: "https://malove.me/en/"
+    language: "English"
+    added: 2026-11-10
+    summary: "Free browser visual novel, an unofficial fan-parody romance in which the Malfoy heiress trades teasing remarks with Harry, with branching choices and multiple endings. Available in English with British English voice."
+    tags: [visual-novel, romance, browser, free]
