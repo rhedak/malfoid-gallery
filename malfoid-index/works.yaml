@@ -2179,3 +2179,777 @@ works:
     added: 2026-11-10
     summary: "Community gallery of Draconia images and short clips, with ratings on each item, sorted as a feed. Contents come from several uploaders and were not checked one by one."
     tags: [gallery, images, video, ratings]
+  - id: "site-malfoid-com"
+    title: "Malfoid (malfoid.com)"
+    kind: [other, comic, fanfic, art, game, video]
+    creator: "malfoid.com"
+    url: "https://malfoid.com/"
+    language: "English"
+    added: 2026-11-10
+    summary: "Hub site for the Malfoid trend, with comics, fan art, a fanfiction directory, a browser dating sim, fan animations, a creator directory and a timeline. Some pages carry ads."
+    tags: [hub, directory, malfoid.com]
+  - id: "video-mf-cant-avoid-malfoid"
+    title: "Can't Avoid Malfoid - Skyebrows"
+    kind: video
+    creator: "Skyebrows"
+    url: "https://www.youtube.com/watch?v=4haW72dgVM8"
+    language: "English"
+    added: 2026-11-10
+    summary: "Skyebrows brings Malfoid into a fan music video, with help credited to EustaceTheEuseful and Korgamiai. The creator warns that the video contains flashing lights."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-crown-of-mud"
+    title: "Malfoid AI Anime Opening | \"Crown of Mud\" (泥の冠)"
+    kind: video
+    creator: "TheGoodlike13"
+    url: "https://www.youtube.com/watch?v=n5AowQPYkAo"
+    language: "English"
+    added: 2026-11-10
+    summary: "TheGoodlike13 imagines a Malfoid anime opening in this short music video. The original title retains the Japanese subtitle 泥の冠, and the creator explains the AI-assisted music, lyrics and animation wor."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-fate-defying-expelliarmus"
+    title: "Fate Defying Expelliarmus"
+    kind: video
+    creator: "Allamasllamas"
+    url: "https://www.youtube.com/watch?v=52idaSesp8A"
+    language: "English"
+    added: 2026-11-10
+    summary: "A 34-second voiced fan animation adapts MaroonR19’s artwork into a final-battle encounter involving Harry and Draconia."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-get-fcked-pottah"
+    title: "Get F*cked, Pottah! - featuring Malfoid"
+    kind: video
+    creator: "Angels of Albion"
+    url: "https://www.youtube.com/watch?v=jB5h6tD_Nmg"
+    language: "English"
+    added: 2026-11-10
+    summary: "Angels of Albion puts Malfoid into an AI music video built around human-written lyrics, vocals and instrumental performances, with an AI reperformance described by the creator."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-i-am-girl-of-pure-blood"
+    title: "Draca Malfoid SONG - \"I Am Girl of Pure Blood\" | Harry Potter"
+    kind: video
+    creator: "Stellar Distortion"
+    url: "https://www.youtube.com/watch?v=5Der8LKEafg"
+    language: "English"
+    added: 2026-11-10
+    summary: "Stellar Distortion presents a character song about Malfoid choosing her own direction under the weight of her family name. Listen through the original upload with its songwriter, production and vocal ."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-lumos-lumos"
+    title: "Lumos Lumos"
+    kind: video
+    creator: "ADayASMR"
+    url: "https://www.youtube.com/watch?v=mZQymbseKGQ"
+    language: "English"
+    added: 2026-11-10
+    summary: "Fan animation listed on malfoid.com."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-malfoid-and-harrys-wish-episode-1"
+    title: "Malfoid and Harry’s wish — Episode 1"
+    kind: video
+    creator: "Galakushi"
+    url: "https://www.youtube.com/watch?v=oEZOQl_sask"
+    language: "English"
+    added: 2026-11-10
+    summary: "Galakushi introduces a Malfoid fan series with a 4:59 video titled Malfoid and Harry’s wish — Episode 1."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-say-you-hate-me-fantasoner"
+    title: "TS말포이 몰입을 10000% 더 해주는 영상"
+    kind: video
+    creator: "Fantasoner(판타소너)"
+    url: "https://www.youtube.com/watch?v=kxlbn5ydE28"
+    language: "English"
+    added: 2026-11-10
+    summary: "Fantasoner presents a Malfoy fan music video featuring Say You Hate Me."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-space-between-us"
+    title: "Part 1: Malfoid X Harry Potter | Cinematic Anime — SPACE BETWEEN US"
+    kind: video
+    creator: "LouieVerse"
+    url: "https://www.youtube.com/watch?v=1Q1WRCkyquQ"
+    language: "English"
+    added: 2026-11-10
+    summary: "LouieVerse’s SPACE BETWEEN US is a romantic Harry and Malfoid fan music video, presented as Part 1 of the creator’s cinematic-anime interpretation."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-stolen-kiss-616-studio"
+    title: "STOLEN KISS"
+    kind: video
+    creator: "616 STUDIO"
+    url: "https://www.youtube.com/watch?v=xTEwRfFPS8Q"
+    language: "English"
+    added: 2026-11-10
+    summary: "616 STUDIO imagines Harry and Draconia as rivals whose confrontation in the Hogwarts library turns into a kiss. An AI-generated alternate-timeline fan video with its own original-source player."
+    tags: [animation, video, malfoid.com]
+  - id: "video-mf-wait-til-my-father-hears-about-this"
+    title: "MALFOID (말포이드) ‘울 아빠 (Wait 'Til My Father Hears About This)’ Official AI MV"
+    kind: video
+    creator: "AI replacing me (@AIreplacingme)"
+    url: "https://www.youtube.com/watch?v=MLw3IanniSg"
+    language: "English"
+    added: 2026-11-10
+    summary: "Female Malfoy becomes a K-Pop idol in a creator-submitted AI music video. The song turns the familiar threat to tell her father into a musical hook, with Hogwarts-inspired settings and choreography."
+    tags: [animation, video, malfoid.com]
+  - id: "fanfic-mf-a-change-in-fate"
+    title: "A Change in Fate"
+    kind: fanfic
+    creator: "1Valor1"
+    url: "https://www.fanfiction.net/s/14216338/1/A-Change-in-Fate"
+    language: "English"
+    added: 2026-11-10
+    summary: "Harry's rescue of Lacerta Malfoy in the Chamber of Secrets sends their lives down a different path. A longer Female Draco alternate universe that predates the trend."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-a-life-twice-lived"
+    title: "A Life Twice Lived"
+    kind: fanfic
+    creator: "Nemesis13"
+    url: "https://www.fanfiction.net/s/12660172/1/A-Life-Twice-Lived"
+    language: "English"
+    added: 2026-11-10
+    summary: "An older Draco gets a chance to relive his life. The author's listing identifies the story as Fem!Draco."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-a-thin-line-between-us"
+    title: "A Thin Line Between Us"
+    kind: fanfic
+    creator: "Tharindu20052"
+    url: "https://secure.ao3.org/works/94247801"
+    language: "English"
+    added: 2026-11-10
+    summary: "A fourth-year alternate universe replaces Draco with Lyra Malfoy. Harry’s Triwizard pressure and difficulty finding a Yule Ball date provide the setting for a gradual enemies-to-lovers relationship."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-almost-too-late"
+    title: "Almost Too Late"
+    kind: fanfic
+    creator: "Super Saiai"
+    url: "https://www.fanfiction.net/s/14592060/1/Almost-Too-Late"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Harry self-insert story turns the Malfoid meme into an alternate-universe premise: Draco is Dracanea, Harry's former girlfriend, and canon quickly veers off course."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-celestial-bodies"
+    title: "Celestial Bodies"
+    kind: fanfic
+    creator: "dashriprock"
+    url: "https://www.fanfiction.net/s/14591967/1/Celestial-Bodies"
+    language: "English"
+    added: 2026-11-10
+    summary: "A first meeting at Madam Malkin’s robe shop reshapes Harry and a female Draco's rivalry. Their story moves toward friendship and romance."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-champion-of-his-first-duel"
+    title: "Champion of his First Duel"
+    kind: fanfic
+    creator: "Aquarium03"
+    url: "https://archiveofourown.org/works/93936536"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Malfoid-inspired crossover moves the rivalry and romance into Warhammer 40,000’s noble Imperial Knight houses. Aurel Kincarrow and Elaine Draconis navigate social rank, awkward affection and mecha c."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-crimson-flowers"
+    title: "Crimson Flowers"
+    kind: fanfic
+    creator: "Zer0chroma"
+    url: "https://www.fanfiction.net/s/14592223/1/Crimson-Flowers"
+    language: "English"
+    added: 2026-11-10
+    summary: "An alternate Half-Blood Prince confrontation follows Harry and Dracona through the aftermath of a spell gone wrong. Contains fantasy violence and injury."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-diary-of-draco-malfoy-year-1"
+    title: "The Diary of Draco Malfoy, A Malfoid story, Year 1."
+    kind: fanfic
+    creator: "GeneralDunwich"
+    url: "https://secure.ao3.org/works/93789121"
+    language: "English"
+    added: 2026-11-10
+    summary: "Before Hogwarts, Lucius instructs his daughter to build alliances and win Harry Potter’s trust. The opening frames her first year around family expectations and school politics."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-diary-of-draco-malfoy-yule-ball"
+    title: "The Diary of Draco Malfoy, a Malfoid Story Excerpt: The Yule Ball"
+    kind: fanfic
+    creator: "GeneralDunwich"
+    url: "https://secure.ao3.org/works/94099386"
+    language: "English"
+    added: 2026-11-10
+    summary: "A dance at the Yule Ball gives Harry and Female Draco a chance to set aside their rivalry. A completed short excerpt from GeneralDunwich’s Malfoid-inspired series."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-different-sorts-of-friends"
+    title: "Different Sorts of Friends"
+    kind: fanfic
+    creator: "Anonymous"
+    url: "https://secure.ao3.org/works/94486641"
+    language: "English"
+    added: 2026-11-10
+    summary: "A first-year Hogwarts retelling begins in Madam Malkin’s robe shop and changes both Draco and Ron to female characters. The story follows Harry’s friendships while diverging from familiar canon."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-dracaena-malfoy-and-the-boy-who-lived"
+    title: "Dracaena Malfoy and the Boy Who Lived"
+    kind: fanfic
+    creator: "Generic-Jake"
+    url: "https://archiveofourown.org/works/94696871/chapters/252816181"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Harry Potter rewrite told mostly through Dracaena Malfoy’s perspective. The author introduces the project as a different viewpoint on the school story, rather than a completed retelling."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-dracena-malfoy-sensurround"
+    title: "Dracena Malfoy"
+    kind: fanfic
+    creator: "Sensurround"
+    url: "https://x.com/ShamashAran/status/2107845735848784125"
+    language: "English"
+    added: 2026-11-10
+    summary: "In Part IV of Sensurround’s Dracena Malfoy series, Lucius refuses Voldemort’s demand to use his daughter against Harry. Family loyalty becomes the boundary of their political bargain."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-draco-malfoid-in-my-haughty-blood-purity-bully-can-t-be-this-cute"
+    title: "Draco Malfoid in: My Haughty Blood Purity Bully Can't Be This Cute?"
+    kind: fanfic
+    creator: "Our hero"
+    url: "https://www.fanfiction.net/s/14591971/1/Draco-Malfoid-in-My-haughty-blood-purity-bully-can-t-be-this-cute"
+    language: "English"
+    added: 2026-11-10
+    summary: "A short Harry/Draco romance built around the Malfoid trend, with Draco reimagined as a girl whose taunting hides a crush."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-drakonia"
+    title: "Drako//nia"
+    kind: fanfic
+    creator: "vinsentru"
+    url: "https://www.fanfiction.net/s/14596134/1/Drakonia"
+    language: "English"
+    added: 2026-11-10
+    summary: "Draco wakes with memories of a dance, a kiss and lipstick that should not be there. His magical other half has been spending time with Potter. A short comic romance about two identities sharing one bo."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-flirt"
+    title: "Flirt"
+    kind: fanfic
+    creator: "DodgerTalon"
+    url: "https://archiveofourown.org/works/94638931"
+    language: "English"
+    added: 2026-11-10
+    summary: "In his fourth year, Harry tries to stop Lyra Malfoy’s bullying with a prank. The plan backfires in a romantic comedy of teasing, rivalry and unexpected feelings."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-fullblood-affection"
+    title: "Fullblood Affection"
+    kind: fanfic
+    creator: "Anonymous"
+    url: "https://secure.ao3.org/works/93833821"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Female Draco and Harry story built around a prolonged school rivalry, teasing and slow-burning affection. Choose this for a broader Female Draco reading option alongside the explicitly Malfoid-tagge."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-harry-hill-and-the-halls-of-hogwarts"
+    title: "Harry Hill and the Halls of Hogwarts"
+    kind: fanfic
+    creator: "AdVictoriamCustodes"
+    url: "https://www.fanfiction.net/s/14593498/1/Harry-Hill-and-the-Halls-of-Hogwarts"
+    language: "English"
+    added: 2026-11-10
+    summary: "Raised in Muggle foster care under the name Harry Hill, Harry enters Hogwarts unaware of his fame. The author develops an adventure and romance with a female Draco."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-harry-potter-and-draconia-malfoid-vs-voldemort"
+    title: "Harry Potter and Draconia Malfoid vs Voldemort."
+    kind: fanfic
+    creator: "Orricmedia"
+    url: "https://archiveofourown.org/works/95096356"
+    language: "English"
+    added: 2026-11-10
+    summary: "A three-act alternate ending brings Harry and Draconia Malfoid together against Voldemort. Their relationship shapes the final confrontation and the choices Draconia makes about her family. A complete."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-harry-potter-is-dead-kosmo"
+    title: "Harry Potter is dead"
+    kind: fanfic
+    creator: "Kosmo"
+    url: "https://x.com/kasmosd1/status/2111630291622396186"
+    language: "English"
+    added: 2026-11-10
+    summary: "When Hagrid carries Harry out of the Forbidden Forest, Dracaena’s allegiance collapses into grief. Kosmo imagines the promises and unfinished life behind her reaction."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-i-don-t-like-her-dammit"
+    title: "I don't like her dammit"
+    kind: fanfic
+    creator: "Princesse Sophie"
+    url: "https://www.fanfiction.net/s/12540693/1/I-don-t-like-her-dammit"
+    language: "English"
+    added: 2026-11-10
+    summary: "Dracia Malfoy questions her pure-blood upbringing as her feelings for Hermione become harder to ignore. An older Female Draco romance with a different pairing."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-in-good-faith"
+    title: "In Good Faith"
+    kind: fanfic
+    creator: "OAC_QI"
+    url: "https://secure.ao3.org/works/93594851"
+    language: "English"
+    added: 2026-11-10
+    summary: "After Voldemort’s defeat, Harry seeks reconciliation with Diana Malfoy and hopes to propose. A compact post-war romance for readers who want a finished story rather than a full school-year rewrite."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-lock-in-mr-potter"
+    title: "Lock in, Mr Potter"
+    kind: fanfic
+    creator: "TotallyNotMik"
+    url: "https://www.fanfiction.net/s/14593550/1/Lock-in-Mr-Potter"
+    language: "English"
+    added: 2026-11-10
+    summary: "A short final-battle parody loosely uses the Malfoid setting, with Harry, McGonagall, Lucius and Voldemort in an exaggerated confrontation. Contains violence."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-love-hurts-so-good"
+    title: "Love Hurts So Good"
+    kind: fanfic
+    creator: "IamMenace"
+    url: "https://archiveofourown.org/works/94772786"
+    language: "English"
+    added: 2026-11-10
+    summary: "Two weeks before the Yule Ball, Drusilla witnesses Cho rejecting Harry. Teasing turns hurtful, and their later dance forces them to confront their rivalry."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-love-pure-as-hate"
+    title: "Love Pure As Hate"
+    kind: fanfic
+    creator: "IamMenace"
+    url: "https://archiveofourown.org/works/94205461"
+    language: "English"
+    added: 2026-11-10
+    summary: "Drusilla’s crisis in the bathroom becomes a confrontation with Harry and a dangerous duel. The author presents this Harry/Female Draco short story as part of the Malfoid wave. Contains injury and viol."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-narcissa-s-wake-up-call-malfoid"
+    title: "Narcissa's Wake-Up Call(Malfoid)"
+    kind: fanfic
+    creator: "NonsensicalRants"
+    url: "https://www.fanfiction.net/s/14592883/1/Narcissa-s-Wake-Up-Call-Malfoid"
+    language: "English"
+    added: 2026-11-10
+    summary: "Narcissa orders her daughter Lyra to apologize to Harry and end their rivalry. The attempted peace offering turns into a school-life romantic comedy. Contains parental violence."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-pure-blood-bad-attitude"
+    title: "Pure Blood, Bad Attitude"
+    kind: fanfic
+    creator: "Mallobaude"
+    url: "https://www.fanfiction.net/s/14593548/1/Pure-Blood-Bad-Attitude"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid joins Team CRDL in RWBY. After Jaune saves her from a Grimm, embarrassment and reluctant admiration turn a library encounter into a romantic comedy."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-scared-potter"
+    title: "Scared, Potter?"
+    kind: fanfic
+    creator: "TotallyNotMik"
+    url: "https://www.fanfiction.net/s/14592614/1/Scared-Potter"
+    language: "English"
+    added: 2026-11-10
+    summary: "A brief Female Draco reimagining of Harry's school years, told as a romance with hurt/comfort elements. Contains fantasy violence and injury."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-scars-in-the-snow"
+    title: "Scars In the Snow"
+    kind: fanfic
+    creator: "IamMenace"
+    url: "https://archiveofourown.org/works/94499801"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Christmas retreat with Harry, Drusilla, Ron and Hermione is interrupted by dark wizards, bringing back painful memories of an earlier injury. Contains violence and trauma."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-secrets-of-hogwarts"
+    title: "Secrets Of Hogwarts - Malfoid x OC Fanfic"
+    kind: fanfic
+    creator: "Celerius"
+    url: "https://www.fanfiction.net/s/14593865/1/Secrets-Of-Hogwarts-Malfoid-x-OC-Fanfic"
+    language: "English"
+    added: 2026-11-10
+    summary: "Michael, a wizard and vampire hunter, enters a parallel version of Hogwarts. The author sets up a slow-burn Malfoid / original-character romance while retaining Harry in the wider story."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-sectumsempra-draconia-malfoid"
+    title: "Sectumsempra - Draconia Malfoid x Harry Potter AU"
+    kind: fanfic
+    creator: "skoomaaddict8"
+    url: "https://www.fanfiction.net/s/14592916/1/Sectumsempra-Draconia-Malfoid-x-Harry-Potter-AU"
+    language: "English"
+    added: 2026-11-10
+    summary: "Harry confronts Draconia in the bathroom after a near-fatal incident. This Malfoid-inspired reinterpretation turns the confrontation into romance and tragedy. Contains violence and injury."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-selfish"
+    title: "Selfish — A Malfoid Story"
+    kind: fanfic
+    creator: "EnclaveEmily"
+    url: "https://x.com/EnclaveEmily/status/2112559209606758793"
+    language: "English"
+    added: 2026-11-10
+    summary: "Dracaena imagines a Yule Ball dance with Harry, then faces the distance between that wish and her real life. A brief, melancholy romance built around the Mirror of Erised, longing and her allegiance t."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-shut-up-malfoid"
+    title: "Shut up, Malfoid"
+    kind: fanfic
+    creator: "Mitsu-52"
+    url: "https://www.fanfiction.net/s/14593158/1/Shut-up-Malfoid"
+    language: "English"
+    added: 2026-11-10
+    summary: "A difficult robe-shop meeting begins a slow-developing friendship between Harry and a female Draco. Their first conversations mix wounded pride, misunderstandings and tentative connection."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-smoke-and-mirrors"
+    title: "Smoke and Mirrors"
+    kind: fanfic
+    creator: "NotaDeer"
+    url: "https://www.fanfiction.net/s/14596082/1/Smoke-and-Mirrors"
+    language: "English"
+    added: 2026-11-10
+    summary: "Harry wants to dislike Draceana Malfoy, but glimpses beneath her cruelty remind him of his own life with the Dursleys. An angst-and-romance story about recognition behind a hostile facade. Content war."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-snake-out-of-water"
+    title: "Snake Out of Water"
+    kind: fanfic
+    creator: "IamMenace"
+    url: "https://archiveofourown.org/works/94341266"
+    language: "English"
+    added: 2026-11-10
+    summary: "Six months after the Battle of Hogwarts, Drusilla and Harry join Ron and Hermione for a double date in the Muggle world. The girls’ strained relationship drives the comedy."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-soaring-on-clipped-wings"
+    title: "Soaring on Clipped Wings"
+    kind: fanfic
+    creator: "IamMenace"
+    url: "https://archiveofourown.org/works/94643666"
+    language: "English"
+    added: 2026-11-10
+    summary: "A visit to a Holyhead Harpies match brings Drusilla and Harry into contact with a Death Eater. The author’s introduction pairs romantic banter with the continuing effects of the past."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-the-female-gaze"
+    title: "The Female Gaze"
+    kind: fanfic
+    creator: "spectral416"
+    url: "https://secure.ao3.org/works/92513271?view_full_work=true"
+    language: "English"
+    added: 2026-11-10
+    summary: "After a second chance at life, Draco wakes in 1991 as a girl. The AO3 listing tags Draco/Harry, slow burn and a canon rewrite. Contains suicide in the opening."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-the-future-harry-never-got-to-live"
+    title: "The Future Harry Never Got to Live"
+    kind: fanfic
+    creator: "Kosmo"
+    url: "https://x.com/kasmosd1/status/2115427631135134163"
+    language: "English"
+    added: 2026-11-10
+    summary: "Facing Voldemort in the Forbidden Forest, Harry imagines a home and children with Dracaena. Her grief turns that glimpse of happiness into a story about the future they lose."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-the-girl-who-loved-the-boy-who-lived"
+    title: "The Girl Who Loved the Boy Who Lived"
+    kind: fanfic
+    creator: "DowagerDaphne"
+    url: "https://www.fanfiction.net/s/14593554/1/The-Girl-Who-Loved-the-Boy-Who-Lived"
+    language: "English"
+    added: 2026-11-10
+    summary: "A Harry-centered canon rewrite gives Female Draco the name Lyra and develops a Harry / Female Draco romance. The author plans to follow all seven books while exploring how the changed relationship aff."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-the-things-we-inherit"
+    title: "The Things We Inherit"
+    kind: fanfic
+    creator: "Quillshade Press"
+    url: "https://www.fanfiction.net/s/14593075/1/The-Things-We-Inherit"
+    language: "English"
+    added: 2026-11-10
+    summary: "Harry meets Draca while she argues with an enchanted mirror, before either learns the other’s surname. This alternate story follows family expectations, prejudice and personal choices across twenty-fi."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-the-ties-that-bind"
+    title: "The Ties that Bind"
+    kind: fanfic
+    creator: "J4n1X69"
+    url: "https://secure.ao3.org/works/93509176"
+    language: "English"
+    added: 2026-11-10
+    summary: "An unexplained transformation in Hogwarts’ eighth year sends Draco, Harry and Aaron Fosswell into a mystery. Romance, comedy and a love triangle accompany the search for whoever left a suspicious cup ."
+    tags: [fanfic, malfoid.com]
+  - id: "fanfic-mf-what-we-choose"
+    title: "What We Choose"
+    kind: fanfic
+    creator: "Fawn7552"
+    url: "https://archiveofourown.org/works/94027101"
+    language: "English"
+    added: 2026-11-10
+    summary: "Five years after the war, an isolated Harry is drawn back into wizarding conflict when Dracina Malfoy asks for protection from a vigilante targeting former Death Eaters. A post-war mystery combines po."
+    tags: [fanfic, malfoid.com]
+  - id: "creator-mf-tns2804"
+    title: "KAITA"
+    kind: [creator, art]
+    creator: "@tns2804"
+    url: "https://x.com/tns2804"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A different expression; Two expressions, two film references."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-matsuryun"
+    title: "松竜"
+    kind: [creator, art]
+    creator: "@matsuryun"
+    url: "https://x.com/matsuryun"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A glance over the shoulder."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-uang1_17"
+    title: "물범"
+    kind: [creator, art]
+    creator: "@uang1_17"
+    url: "https://x.com/uang1_17"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A glance over the shoulder."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-sogumm_05"
+    title: "sogumm"
+    kind: [creator, art]
+    creator: "@sogumm_05"
+    url: "https://x.com/sogumm_05"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A little laugh in green robes."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-furryjedath"
+    title: "Jedath Drawing"
+    kind: [creator, art]
+    creator: "@FurryJedath"
+    url: "https://x.com/FurryJedath"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A pencil-drawn Potter taunt."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-naohrw7"
+    title: "nao"
+    kind: [creator, art]
+    creator: "@naohrw7"
+    url: "https://x.com/naohrw7"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A quiet portrait in green and black."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-whdgua_0820"
+    title: "종혐"
+    kind: [creator, art]
+    creator: "@whdgua_0820"
+    url: "https://x.com/whdgua_0820"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A small wand, a big expression; Hey, stupid Potter! (chibi)."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-kimy1230918"
+    title: "kimy"
+    kind: [creator, art]
+    creator: "@kimy1230918"
+    url: "https://x.com/kimy1230918"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A smile behind crossed arms; Holly and Dracia (with alyoshanaka)."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-re0nnn"
+    title: "Re0n"
+    kind: [creator, art]
+    creator: "@re0nnn"
+    url: "https://x.com/re0nnn"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A wand and a pointed remark."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-szeiart"
+    title: "szei_illus"
+    kind: [creator, art]
+    creator: "@szeiart"
+    url: "https://x.com/szeiart"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: An upward glance, redrawn."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-zerozakiyamo"
+    title: "零崎業萌"
+    kind: [creator, art]
+    creator: "@zerozakiyamo"
+    url: "https://x.com/zerozakiyamo"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Bootlace on the lake embankment."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-sigmman"
+    title: "시금"
+    kind: [creator, art]
+    creator: "@sigmman"
+    url: "https://x.com/sigmman"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Malfoy's Patronus (Parts 1-3), Chibi Malfoy, Get well Potter, Borrowed glasses, Malfoy's butterbeer."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-saw2721"
+    title: "SAW272"
+    kind: [creator, art]
+    creator: "@SAW2721"
+    url: "https://x.com/SAW2721"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Folded arms, flustered expression."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-buttoniris"
+    title: "ツ"
+    kind: [creator, art]
+    creator: "@buttoniris"
+    url: "https://x.com/buttoniris"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Four panels of denying the obvious."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-spaz141"
+    title: "spaz141"
+    kind: [creator, art]
+    creator: "@spaz141"
+    url: "https://x.com/spaz141"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Harry caught between rivals."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-hipaxiaartwork"
+    title: "Hipaxia"
+    kind: [creator, art]
+    creator: "@Hipaxiaartwork"
+    url: "https://x.com/Hipaxiaartwork"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Two sides of Malfoid."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-janggondan"
+    title: "장곤단"
+    kind: [creator, art]
+    creator: "@Janggondan"
+    url: "https://x.com/Janggondan"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: A game and a jealous reaction."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-larkmeto"
+    title: "LarkMeto"
+    kind: [creator, art]
+    creator: "@LarkMeto"
+    url: "https://x.com/LarkMeto"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Wand and green-lined robes."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-alyoshanaka"
+    title: "Alyosha"
+    kind: [creator, art]
+    creator: "@alyoshanaka"
+    url: "https://x.com/alyoshanaka"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Holly and Dracia."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-masoq095"
+    title: "masoq"
+    kind: [creator, art]
+    creator: "@masoq095"
+    url: "https://x.com/masoq095"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Malfoid and the golden trio; Three takes on Malfoid."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-mayojam202"
+    title: "Mayozz"
+    kind: [creator, art]
+    creator: "@MayoJam202"
+    url: "https://x.com/MayoJam202"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Next time, Potter."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-xin_cere_art"
+    title: "xin"
+    kind: [creator, art]
+    creator: "@xin_cere_art"
+    url: "https://x.com/xin_cere_art"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: POTTTAH."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-danchukkey"
+    title: "RAUM"
+    kind: [creator, art]
+    creator: "@DANCHUKKEY"
+    url: "https://x.com/DANCHUKKEY"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Potter? Two contrasting moods."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-tobis_tobs"
+    title: "Tobs"
+    kind: [creator, art]
+    creator: "@Tobis_Tobs"
+    url: "https://x.com/Tobis_Tobs"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Scared Pottah?."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-s117renner"
+    title: "Sierra"
+    kind: [creator, art]
+    creator: "@s117renner"
+    url: "https://x.com/s117renner"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Scared, Potter?."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-asuzureincarnat"
+    title: "Asuzu / Naa"
+    kind: [creator, art]
+    creator: "@AsuzuReincarnat"
+    url: "https://x.com/AsuzuReincarnat"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: The Sectumsempra incident."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-nachos2d_"
+    title: "nachos2d"
+    kind: [creator, art]
+    creator: "@NACHOS2D_"
+    url: "https://x.com/NACHOS2D_"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Too many gifts for Harry."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-kenpai_arts"
+    title: "Ken-pai"
+    kind: [creator, art]
+    creator: "@kenpai_arts"
+    url: "https://x.com/kenpai_arts"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: An argument turns into an embrace."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-yunayuispink"
+    title: "Yunayu"
+    kind: [creator, art]
+    creator: "@yunayuispink"
+    url: "https://x.com/yunayuispink"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: a female Draco portrait."
+    tags: [art, x, malfoid.com]
+  - id: "creator-mf-bramovan"
+    title: "Bramovan"
+    kind: [creator, art]
+    creator: "@Bramovan"
+    url: "https://x.com/Bramovan"
+    language: "English"
+    added: 2026-11-10
+    summary: "Malfoid fan art on X, featured on malfoid.com: Malfoid by Bramovan."
+    tags: [art, x, malfoid.com]
+  - id: "comic-mf-harry-potter-and-dracaena-malfoid"
+    title: "Harry Potter and Dracaena Malfoid"
+    kind: comic
+    creator: "Jack Brown"
+    url: "https://www.webtoons.com/en/canvas/harry-potter-and-dracaena-malfoid/list?title_no=1178648"
+    language: "English"
+    added: 2026-11-10
+    summary: "Webtoon comic, Harry Potter and Dracaena Malfoid, on WEBTOON, with episodes from the start and a later arc."
+    tags: [comic, webtoon]
+  - id: "game-mf-malfoid-duel"
+    title: "Malfoid Duel"
+    kind: game
+    creator: "LIZRO"
+    url: "https://malfoid-duel.charminglime.chatgpt.site/"
+    language: "English"
+    added: 2026-11-10
+    summary: "Browser duel game about Malfoid, featured on malfoid.com."
+    tags: [game, browser]
+  - id: "video-mf-slytoonz-i-love-you-harry"
+    title: "I Love You Harry…"
+    kind: video
+    creator: "Slytoonz"
+    url: "https://www.youtube.com/watch?v=QYSNxNL7sxw"
+    language: "English"
+    added: 2026-11-10
+    summary: "Video by Slytoonz, listed on malfoid.com comics page."
+    tags: [video, youtube]
