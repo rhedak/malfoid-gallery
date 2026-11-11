@@ -405,6 +405,15 @@ def build_works():
                 return h
         return None
 
+    def thumb_of(w):
+        """An https image, or a banner file in site/malfoid-index/banners/ (copied with the site)."""
+        t = text(w.get("thumb"))
+        if t.startswith("https://"):
+            return t
+        if t.startswith("banners/") and ".." not in t and os.path.isfile(os.path.join(ROOT, "site", "malfoid-index", t)):
+            return t
+        return ""
+
     works = []
     for w in data.get("works") or []:
         if not isinstance(w, dict) or not text(w.get("title")):
@@ -437,7 +446,7 @@ def build_works():
             "added": text(w.get("added")),
             "summary": text(w.get("summary")),
             "tags": [text(t) for t in (tags if isinstance(tags, list) else [tags]) if text(t)],
-            "thumb": text(w.get("thumb")) if text(w.get("thumb")).startswith("https://") else "",
+            "thumb": thumb_of(w),
             "also": [text(u) for u in (w.get("also") or []) if text(u).startswith(("http://", "https://"))],
             "order": order_of(w.get("order")),
             "length": length_of(w.get("length")),

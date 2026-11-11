@@ -2488,7 +2488,8 @@ works:
     url: "https://malfoid.ninja64.net/"
     language: "English"
     added: 2026-11-10
-    summary: "Community gallery of Draconia images and short clips, with ratings on each item, sorted as a feed. Contents come from several uploaders and were not checked one by one."
+    thumb: "banners/ninja64-draconia.jpg"
+    summary: "A personally curated collection of all Malfoid media, selected for canny likeness to cannon or quality likeness. Thousands of posts curated down to a list of the good stuff, so you don't have to filter out the ai slop. Tv mode, ratings, likes, downloads, chat with her (no logging, no cost, no login, no ads), photo/video/gif filters and many other easter eggs on this site!"
     tags: [gallery, images, video, ratings]
   - id: "site-malfoid-com"
     title: "Malfoid (malfoid.com)"
