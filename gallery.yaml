@@ -118,7 +118,7 @@ entries:
     input: "input/2026-11-03-potions-classroom-1.yaml"
     image: "images/2026-11-03-potions-classroom-1.jpg"
     planned: 2026-11-11
-    posted:
+    posted: {date: 2026-11-11, x: "https://x.com/rhedak1/status/2120308869708820747"}
   - id: "2026-11-03-snowy-village-1"
     title: "Magic village, thoughtful"
     created: 2026-11-03
