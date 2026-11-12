@@ -3532,3 +3532,13 @@ works:
     summary: "Makes Malfoid animations on YouTube, including the Malfoid Anime Main Story series, Entering Hogwarts and the Female Malfoy anime episode."
     also: ["https://x.com/CatG5835"]
     tags: [animation, video, youtube, x]
+  - id: "game-night-of-the-zomfoids"
+    title: "Night of the Zomfoids"
+    first_name: ""
+    kind: game
+    creator: "zomfoids.com (developer not named)"
+    url: "https://zomfoids.com/"
+    language: "English"
+    added: 2026-11-12
+    summary: "A free 2D survivor game in the browser and on phone: Harry fights off zombie Malfoids for 10 nights, with Pearl's love potion gone wrong, and cures each one. Sign-in is optional for a ranking."
+    tags: [game, browser, survival, zombies, free]
