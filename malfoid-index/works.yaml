@@ -3543,3 +3543,13 @@ works:
     added: 2026-11-12
     summary: "A free 2D survivor game in the browser and on phone: Harry fights off zombie Malfoids for 10 nights, with Pearl's love potion gone wrong, and cures each one. Sign-in is optional for a ranking."
     tags: [game, browser, survival, zombies, free]
+  - id: "creator-17bacon"
+    title: "17Bacon"
+    first_name: ""
+    kind: [creator, art]
+    creator: "@The17Bacon"
+    url: "https://x.com/The17Bacon"
+    language: "English"
+    added: 2026-11-12
+    summary: "Makes Malfoid art on X with PixAI, with a fan AU in which the pure-blood Malfoy heiress has no idea what Pocky Day is."
+    tags: [art, ai-art, x]
