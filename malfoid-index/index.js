@@ -323,6 +323,7 @@
       "Title:",
       "Kind (fanfic / fan art / gallery / video / music / other):",
       "Your name or handle:",
+      "First name the work uses for Malfoid (optional: Draconia, Dracaena, Draco, or another name it uses; leave blank if unsure):",
       "Link to the work (must stay online):",
       "Language (English, or English subs):",
       "Short summary (1-2 sentences):",
