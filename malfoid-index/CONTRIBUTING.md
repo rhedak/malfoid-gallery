@@ -2,7 +2,7 @@
 
 The Malfoid Index lists fanfics, fan art, comics, videos and other fan works about Malfoid (genderbent Draco Malfoy). You can submit a work in two ways. The rules are the same for both.
 
-1. **By email** to rhedak@proton.me, with a title, your name or handle, a link, the language and two or three sentences about the work.
+1. **By email** to rhedak@proton.me, with a title, your name or handle, a first name for Malfoid if the work uses one (optional), a link, the language and two or three sentences about the work.
 2. **By pull request** on GitHub, described below.
 
 ## The rules
@@ -29,6 +29,7 @@ A new entry looks like this:
     title: "My Fanfic Title"
     kind: fanfic
     creator: "Your name or handle"
+    first_name: ""
     url: "https://archiveofourown.org/works/123456"
     language: "English"
     added: 2026-11-09

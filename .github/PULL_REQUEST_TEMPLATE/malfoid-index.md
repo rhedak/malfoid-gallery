@@ -13,4 +13,6 @@
 
 **Entry id:**
 
+**First name the work uses for Malfoid (optional; leave blank if the work does not name her):**
+
 **Notes for the maintainer (optional):**
