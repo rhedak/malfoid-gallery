@@ -132,7 +132,7 @@ entries:
     input: "input/2026-11-03-great-hall-1.yaml"
     image: "images/2026-11-03-great-hall-1.jpg"
     planned: 2026-11-12
-    posted:
+    posted: {date: 2026-11-12, x: "https://x.com/rhedak1/status/2120641106501366001"}
   - id: "2026-11-03-christmas-market-1"
     title: "Christmas market, sleepy and grumpy"
     created: 2026-11-03
