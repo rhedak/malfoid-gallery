@@ -1776,14 +1776,14 @@ works:
   - id: "fanfic-harry-potter-and-the-useful-friend"
     title: "Harry Potter and the Useful Friend"
     first_name: ""
-    length: "short"
+    length: "novel"
     kind: fanfic
     creator: "ASKinloch"
     url: "https://www.wattpad.com/story/419121177"
     language: "English"
     added: 2026-11-09
     summary: "Draconia Malfoy is told to befriend Harry Potter because he'll be useful. A first-year canon-adjacent rewrite with female Draco, a slow burn, and plot holes patched."
-    tags: [slowburn, first-year, fix-it, wattpad]
+    tags: [slowburn, first-year, fix-it, wattpad, draconiamalfoid]
   - id: "creator-theexileddraco"
     title: "The Exiled Draco"
     first_name: "Draco"
