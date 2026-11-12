@@ -3536,8 +3536,9 @@ works:
     title: "Night of the Zomfoids"
     first_name: ""
     kind: game
-    creator: "zomfoids.com (developer not named)"
+    creator: "Kamikazee (@kamikazeeai_art)"
     url: "https://zomfoids.com/"
+    also: ["https://x.com/kamikazeeai_art"]
     language: "English"
     added: 2026-11-12
     summary: "A free 2D survivor game in the browser and on phone: Harry fights off zombie Malfoids for 10 nights, with Pearl's love potion gone wrong, and cures each one. Sign-in is optional for a ranking."
