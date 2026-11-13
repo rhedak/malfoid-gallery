@@ -69,7 +69,7 @@ entries:
     input: "input/2026-11-03-castle-tsundere-5.yaml"
     image: "images/2026-11-03-castle-tsundere-5.jpg"
     planned: 2026-11-13
-    posted:
+    posted: {date: 2026-11-13, x: "https://x.com/rhedak1/status/2121004075710042323"}
   - id: "2026-11-03-tower-stargazing-1"
     title: "Caught stargazing on the tower"
     created: 2026-11-03
