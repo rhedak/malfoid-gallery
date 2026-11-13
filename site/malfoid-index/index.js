@@ -17,6 +17,16 @@
     return e;
   }
 
+  // Links to our own sites (the webcomic, the gallery) keep the referrer, so their visit counts show this index
+  // as the source. Links to other sites do not send it.
+  function relFor(href) {
+    try {
+      return new URL(href).origin === location.origin ? "noopener" : "noopener noreferrer";
+    } catch (e) {
+      return "noopener noreferrer";
+    }
+  }
+
   // GoatCounter counts a click on an outside link as an event (out/<host>), so click-throughs show up
   // with a name instead of as unknown sources. Failures are ignored; the link still opens.
   function trackOut(href) {
@@ -99,7 +109,7 @@
       var a = document.createElement("a");
       a.href = href;
       a.target = "_blank";
-      a.rel = "noopener noreferrer";
+      a.rel = relFor(href);
       a.addEventListener("click", function () { trackOut(href); });
       if (p) {
         a.className = "platform";
@@ -190,7 +200,7 @@
       var a = el("a", null, w.title || "Untitled");
       a.href = url;
       a.target = "_blank";
-      a.rel = "noopener noreferrer";
+      a.rel = relFor(url);
       a.addEventListener("click", function () { trackOut(url); });
       h.appendChild(a);
     } else {
