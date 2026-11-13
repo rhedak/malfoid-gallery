@@ -17,6 +17,17 @@
     return e;
   }
 
+  // GoatCounter counts a click on an outside link as an event (out/<host>), so click-throughs show up
+  // with a name instead of as unknown sources. Failures are ignored; the link still opens.
+  function trackOut(href) {
+    try {
+      var gc = window.goatcounter;
+      if (!gc || typeof gc.count !== "function") return;
+      var host = new URL(href).hostname;
+      gc.count({ path: "out/" + host, title: "Out: " + host, event: true });
+    } catch (e) {}
+  }
+
   function safeUrl(u) {
     try {
       var x = new URL(u);
@@ -89,6 +100,7 @@
       a.href = href;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
+      a.addEventListener("click", function () { trackOut(href); });
       if (p) {
         a.className = "platform";
         a.title = p.name;
@@ -179,6 +191,7 @@
       a.href = url;
       a.target = "_blank";
       a.rel = "noopener noreferrer";
+      a.addEventListener("click", function () { trackOut(url); });
       h.appendChild(a);
     } else {
       h.textContent = w.title || "Untitled";
