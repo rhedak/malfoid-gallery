@@ -1921,6 +1921,17 @@ works:
     summary: "Makes AI-made anime music videos of Somehow I'm The Only Guy At Wizarding School on YouTube."
     also: ["https://x.com/belgianredacted"]
     tags: [video, ai-generated, youtube, x]
+  - id: "audiobook-malfoid-and-the-thief-of-candlelight"
+    title: "Malfoid and the Thief of Candlelight (audiobook)"
+    first_name: ""
+    kind: other
+    creator: "Philmycrakin-5"
+    url: "https://www.youtube.com/playlist?list=PLerWz39X0HRc"
+    language: "English"
+    added: 2026-11-13
+    summary: "An AI-narrated audiobook series on YouTube, in 19 parts of about 10 to 14 minutes each, of a story where Malfoid is the main love interest for Harry. Chapter 2 is titled The Thief of Candlelight."
+    also: ["https://x.com/Darkllamaboy"]
+    tags: [audiobook, series, ai-generated, youtube]
   - id: "creator-philmycrackin"
     title: "Philmycrakin-5"
     first_name: ""
