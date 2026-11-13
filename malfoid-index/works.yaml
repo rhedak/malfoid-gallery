@@ -35,7 +35,7 @@ works:
     thumb: "https://rhedak.github.io/malfoid-gallery/og-banner.jpg"
     title: "Malfoid Gallery"
     first_name: "Draconia"
-    kind: other
+    kind: gallery
     creator: "rhedak"
     url: "https://rhedak.github.io/malfoid-gallery/"
     language: "English"
