@@ -7294,7 +7294,7 @@ works:
     url: "https://m.youtube.com/@%EB%A7%88%EB%96%BC%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4"
     language: "English"
     added: 2026-11-21
-    summary: "Malfoid AI rom-com videos with English dialog, on YouTube."
+    summary: "Malfoid AI rom-com videos with English dialog, on YouTube. One short has Korean subtitles."
     videos:
       - {url: "https://www.youtube.com/watch?v=mgxjE_Jh8OQ", label: "TS 말포이가 사랑의 묘약을 먹어버렸다"}
       - {url: "https://www.youtube.com/watch?v=yGdZQbdtYKA", label: "TS 말포이가 해리랑 단둘이 벌을 받아버렸다"}
