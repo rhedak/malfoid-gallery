@@ -95,6 +95,15 @@
     </div>
   </section>
 
+  <section id="guest" class="guest" aria-label="Guest artwork from the Malfoid Artwork Archive" hidden>
+    <div class="wheel-head">
+      <span class="wheel-title"><span aria-hidden="true">✦</span> Guest art <a class="wheel-sub guest-sub" href="https://topovn.github.io/malfoid-artwork-archive/" target="_blank" rel="noopener noreferrer">60 random images from the Malfoid Artwork Archive</a></span>
+    </div>
+    <div class="guest-viewport"><div id="guest-track" class="guest-track"></div></div>
+    <p class="guest-credit">Artwork by the artists, collected by <a href="https://x.com/Topovn" target="_blank" rel="noopener noreferrer">@Topovn</a>.
+      <a href="https://topovn.github.io/malfoid-artwork-archive/" target="_blank" rel="noopener noreferrer">See the full archive →</a></p>
+  </section>
+
   <section id="grid" class="grid" aria-label="Gallery"></section>
   <p id="empty" class="empty" hidden>Nothing matches. <button class="linkish" data-action="clear">Clear search and filters</button></p>
 </main>
@@ -134,6 +143,7 @@
 
 <script src="vendor/minisearch.js" defer></script>
 <script src="app.js" defer></script>
+<script src="guest.js" defer></script>
 <script>
 (function () {
   // GoatCounter: count the base page and each image detail route (#/<id>) as its own path.

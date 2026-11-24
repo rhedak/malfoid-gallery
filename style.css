@@ -295,6 +295,23 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
 .wheel-item img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; pointer-events: none; -webkit-user-drag: none; }
 .wheel.reduced .wheel-viewport { overflow-x: auto; cursor: auto; scrollbar-width: thin; }
 .wheel.reduced .wheel-item { --s: 1; --b: 1; }
+
+/* Guest reel: a looping strip of artwork from the Malfoid Artwork Archive, under the featured reel. */
+.guest { margin: 0 0 16px; }
+.guest[hidden] { display: none; }
+.guest-viewport { overflow: hidden; border-radius: 14px; }
+.guest-track { display: flex; gap: 14px; width: max-content; animation: guest-scroll 140s linear infinite; }
+.guest-viewport:hover .guest-track, .guest:focus-within .guest-track { animation-play-state: paused; }
+@keyframes guest-scroll { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+.guest-item { flex: none; position: relative; display: block; height: 240px; aspect-ratio: 3 / 4; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #0b110f; text-decoration: none; }
+.guest-item img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; }
+.guest-item:hover, .guest-item:focus-visible { border-color: var(--emerald-2); }
+.guest-by { position: absolute; left: 8px; bottom: 8px; font: 500 11px/1 var(--sans); color: #fff; background: rgba(0, 0, 0, .6); padding: 4px 7px; border-radius: 999px; }
+.guest-credit { font: 400 12px/1.5 var(--sans); color: var(--silver-2); margin: 8px 2px 0; }
+.guest-credit a { color: var(--emerald); }
+.guest-sub { color: var(--silver-2); text-decoration: none; border-bottom: 1px dotted var(--silver-2); }
+.guest-sub:hover { color: var(--emerald); border-color: var(--emerald); }
+@media (prefers-reduced-motion: reduce) { .guest-viewport { overflow-x: auto; } }
 @media (max-width: 640px) {
   .wheel { margin-bottom: 10px; }
   .wheel-head { margin-bottom: 2px; }
