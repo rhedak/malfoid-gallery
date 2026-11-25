@@ -20,15 +20,12 @@
     return list;
   }
 
-  fetch(BASE + "data/manifest.json", { credentials: "omit" })
-    .then(function (r) { if (!r.ok) throw new Error("picks " + r.status); return r.json(); })
-    .then(function (data) {
-      var items = (data.items || []).map(function (it) {
-        var m = NAME.exec(it.f || "");
-        return m ? { file: it.f, handle: m[1], tweet: m[2] } : null;
-      }).filter(Boolean);
-      if (items.length < 3) return;
-      items = shuffle(items).slice(0, COUNT);
+  var reroll = document.getElementById("guest-reroll");
+  var pool = [];
+
+  // Shows a new random set of COUNT works from the pool. Runs on load and on each click of the ↺ button.
+  function render() {
+      var items = shuffle(pool.slice()).slice(0, COUNT);
       var frag = document.createDocumentFragment();
       // The list is written twice so the CSS scroll can loop seamlessly; the second copy is hidden from keyboard and screen readers.
       [0, 1].forEach(function (copy) {
@@ -57,7 +54,21 @@
       track.replaceChildren(frag);
       // Keep the scroll speed the same whatever the number of images: about 2.4 seconds per picture.
       track.style.animationDuration = (items.length * 2.4).toFixed(1) + "s";
+  }
+
+  if (reroll) reroll.addEventListener("click", render);
+
+  fetch(BASE + "data/manifest.json", { credentials: "omit" })
+    .then(function (r) { if (!r.ok) throw new Error("picks " + r.status); return r.json(); })
+    .then(function (data) {
+      pool = (data.items || []).map(function (it) {
+        var m = NAME.exec(it.f || "");
+        return m ? { file: it.f, handle: m[1], tweet: m[2] } : null;
+      }).filter(Boolean);
+      if (pool.length < 3) return;
+      render();
       sec.hidden = false;
+      if (reroll) reroll.disabled = false;
     })
     .catch(function () { sec.hidden = true; });
 })();

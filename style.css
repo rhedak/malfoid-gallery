@@ -298,6 +298,9 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
 
 /* Guest reel: a looping strip of artwork from the Malfoid Artwork Archive, under the featured reel. */
 .guest { margin: 0 0 16px; }
+.guest-reroll { margin-left: 8px; width: 26px; height: 26px; padding: 0; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--emerald); font: 600 15px/1 var(--sans); cursor: pointer; vertical-align: middle; }
+.guest-reroll:hover:not(:disabled), .guest-reroll:focus-visible { border-color: var(--emerald-2); }
+.guest-reroll:disabled { opacity: .4; cursor: default; }
 .guest[hidden] { display: none; }
 .guest-viewport { overflow: hidden; border-radius: 14px; }
 .guest-track { display: flex; gap: 14px; width: max-content; animation: guest-scroll 140s linear infinite; }
