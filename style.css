@@ -347,7 +347,7 @@ mark { background: rgba(52, 211, 153, .28); color: inherit; border-radius: 3px; 
 .index-link { flex: none; font-size: 13px; color: var(--silver-2); white-space: nowrap; }
 .index-link:hover { color: #8ff0c8; }
 
-/* Ko-fi button, fixed to the top right of the gallery and the index */
-.kofi-top { position: fixed; top: 12px; right: 12px; z-index: 60; display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: #ff5e5b; color: #fff; font-weight: 600; font-size: 14px; letter-spacing: .01em; text-decoration: none; box-shadow: 0 4px 14px rgba(0, 0, 0, .35); transition: filter .15s, transform .15s; }
+/* Ko-fi button, floating in the bottom right of the gallery and the index, clear of the header navigation */
+.kofi-top { position: fixed; bottom: 14px; right: 14px; z-index: 60; display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: #ff5e5b; color: #fff; font-weight: 600; font-size: 14px; letter-spacing: .01em; text-decoration: none; box-shadow: 0 4px 14px rgba(0, 0, 0, .35); transition: filter .15s, transform .15s; }
 .kofi-top:hover { text-decoration: none; filter: brightness(1.08); transform: translateY(-1px); }
-@media (max-width: 600px) { .kofi-top { top: 8px; right: 8px; padding: 5px 11px; font-size: 12.5px; } .hero { padding-top: 46px; } }
+@media (max-width: 600px) { .kofi-top { bottom: 10px; right: 10px; padding: 5px 11px; font-size: 12.5px; } }
