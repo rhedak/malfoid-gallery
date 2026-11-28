@@ -2243,6 +2243,7 @@ works:
     summary: "An AI anime creator on YouTube, making the series Malfoid Won't Admit It, with Episodes 0 to 5 so far. All episodes are embedded below."
     also: ["https://x.com/ZeyHashimoto", "https://linktr.ee/zeyhashimoto", "https://malfoid.duckdns.org/video/Zey%20(ZeyHashimoto)/"]
     videos:
+      - {url: "https://x.com/ZeyHashimoto/status/2126460481506619421", label: "Malfoid video, 2026-11-28"}
       - {url: "https://www.youtube.com/watch?v=MhNOO2ersyQ", label: "Malfoid Won't Admit It — Episode 0", also: ["https://malfoid.duckdns.org/video/Zey%20%28ZeyHashimoto%29/2026-10-26%20Malfoid%20Won%27t%20Admit%20It%20%E2%80%94%20Episode%200.mp4"]}
       - {url: "https://www.youtube.com/watch?v=Z5GlHofhKog", label: "Malfoid Won't Admit It — Episode 1", also: ["https://malfoid.duckdns.org/video/Zey%20%28ZeyHashimoto%29/2026-10-18%20Malfoid%20Won%27t%20Admit%20It%20%E2%80%94%20Episode%201.mp4"]}
       - {url: "https://www.youtube.com/watch?v=7-HgfuSXjUI", label: "Malfoid Won't Admit It — Episode 2", also: ["https://malfoid.duckdns.org/video/Zey%20%28ZeyHashimoto%29/2026-10-21%20Malfoid%20Won%27t%20Admit%20It%20%E2%80%94%20Episode%202.mp4"]}
@@ -4231,6 +4232,7 @@ works:
     summary: "Makes Malfoid animations on YouTube, including the Malfoid Anime Main Story series, Entering Hogwarts and the Female Malfoy anime episode. Five YouTube Shorts are embedded below."
     also: ["https://x.com/CatG5835"]
     videos:
+      - {url: "https://x.com/CatG5835/status/2126322299825795365", label: "Malfoid Side Story | Selling Potter Merch, EP. 2"}
       - {url: "https://www.youtube.com/watch?v=ipMX5p79Gnk", label: "Malfoid Side Story: Future Arc(The Bathroom Duel) teaser.", also: ["https://malfoid.duckdns.org/video/CatG%20%28%EC%BA%A3%EC%A5%90%29/2026-11-10%20Malfoid%20Side%20Story%EF%BC%9A%20Future%20Arc%28The%20Bathroom%20Duel%29%20teaser.mp4"]}
       - {url: "https://www.youtube.com/watch?v=D5s8yK-6VAA", label: "Entering Hogwarts! [TS Malfoid Animation - E.P 2]", also: ["https://malfoid.duckdns.org/video/CatG%20%28%EC%BA%A3%EC%A5%90%29/2026-11-10%20Entering%20Hogwarts%21%20%5BTS%20Malfoid%20Animation%20-%20E.P%202%5D.mp4"]}
       - {url: "https://rumble.com/embed/v7gc5ii/?pub=13iafn", label: "[Malfoid] Detective Hermione", also: ["https://www.youtube.com/watch?v=-j4ez-XG1Fc"]}
@@ -5042,6 +5044,7 @@ works:
     also: ["https://x.com/nextrealmstudio", "https://malfoid.duckdns.org/video/Next%20Realm%20Studios/"]
     added: 2026-11-16
     videos:
+      - {url: "https://x.com/nextrealmstudio/status/2126537268634788047", label: "Never trust a #malfoid (Song: 3OH3), 2026-11-28"}
       - {url: "https://www.youtube.com/watch?v=TmPNf2CDLFg", label: "Draconia Malfoid & Harry: The Last Lion Trailer", also: ["https://malfoid.duckdns.org/video/Next%20Realm%20Studios/2026-11-16%20Draconia%20Malfoid%20%26%20Harry%EF%BC%9A%20The%20Last%20Lion%20Trailer.mp4"]}
       - {url: "https://www.youtube.com/watch?v=xSTUE0Wt1F4", label: "Draconia Malfoid - Brand New Day", also: ["https://malfoid.duckdns.org/video/Next%20Realm%20Studios/2026-11-13%20Draconia%20Malfoid%20-%20Brand%20New%20Day.mp4"]}
       - {url: "https://www.youtube.com/watch?v=lM4V-K-apvs", label: "Draconia Malfoy: A Dark Fantasy Tale | Malfoid AI Short Film", also: ["https://malfoid.duckdns.org/video/Next%20Realm%20Studios/2026-11-11%20Draconia%20Malfoy%EF%BC%9A%20A%20Dark%20Fantasy%20Tale%20%EF%BD%9C%20Malfoid%20AI%20Short%20Film.mp4"]}
@@ -6601,6 +6604,9 @@ works:
     also: ["https://malfoid.duckdns.org/video/Mayz1169/"]
     added: 2026-11-20
     summary: "Malfoid videos by Kiki, archived on the M.A. (Malfoid Archive)."
+    videos:
+      - {url: "https://x.com/Mayz1169/status/2126340721435353527", label: "Miss Malfoid read her Christmas wish list, 2026-11-27"}
+      - {url: "https://x.com/Mayz1169/status/2126333948695601460", label: "Miss Malfoid turned Potter into a kitten, 2026-11-27"}
     tags: [video, archive]
   - id: "creator-ma-mercybva"
     title: "Merciful ASMR"
@@ -35094,6 +35100,8 @@ works:
     added: 2026-11-26
     summary: "Malfoid commentary video on X about love and transformation in the Potters and the Malfoys."
     videos:
+      - {url: "https://x.com/edu_andy24/status/2126349611644129772", label: "Malfoid video, 2026-11-27"}
+      - {url: "https://x.com/edu_andy24/status/2126335887977930967", label: "Malfoid video, 2026-11-27 (2)"}
       - {url: "https://x.com/edu_andy24/status/2125708678372495800", label: "Love truly transforms people (James, Lily and Malfoid)", also: ["https://malfoid.duckdns.org/music/ANDY%20%28edu_andy24%29/2026-11-25%20Love%20truly%20transforms%20people%20%28James%2C%20Lily%20and%20Malfoid%29.mp4"]}
       - {url: "https://x.com/edu_andy24/status/2125400453986828423", label: "Malfoid video, 2026-11-25", also: ["https://malfoid.duckdns.org/music/ANDY%20%28edu_andy24%29/2026-11-25%20Malfoid%20video%2C%202026-11-25.mp4"]}
       - {url: "https://x.com/edu_andy24/status/2110952885219446896", label: "Malfoid video, 2026-10-16", also: ["https://malfoid.duckdns.org/music/ANDY%20%28edu_andy24%29/2026-10-16%20Malfoid%20video%2C%202026-10-16.mp4"]}
@@ -35131,6 +35139,8 @@ works:
     added: 2026-11-26
     summary: "AI-made Malfoid videos. This clip is from a video in progress."
     videos:
+      - {url: "https://x.com/MalfoidSoftware/status/2126507994712265103", label: "Malfoid video, 2026-11-28"}
+      - {url: "https://x.com/MalfoidSoftware/status/2126303233853333838", label: "Malfoid video, 2026-11-27 (clip from Walking a mile)"}
       - {url: "https://x.com/MalfoidSoftware/status/2125737319189901730", label: "Walking a mile in one another's shoes (clip from the next Malfoid video)"}
       - {url: "https://x.com/MalfoidSoftware/status/2120534808606458072", label: "Malfoid video, 2026-11-11", also: ["https://malfoid.duckdns.org/video/MalfoidSoftware/2026-11-11%20Malfoid%20video%2C%202026-11-11%20%282%29.mp4"]}
       - {url: "https://x.com/MalfoidSoftware/status/2114037591041269967", label: "Malfoid video, 2026-10-24", also: ["https://malfoid.duckdns.org/video/MalfoidSoftware/2026-10-24%20Malfoid%20video%2C%202026-10-24.mp4"]}
@@ -35304,3 +35314,65 @@ works:
       - {url: "https://www.youtube.com/watch?v=PJp69XtkeVw", label: "Obsessive Malfoid 3", also: ["https://malfoid.duckdns.org/video/Mongz%20%28%EB%AA%BD%EC%A6%88%29/2026-11-04%20Obsessive%20Malfoid%203.mp4"]}
       - {url: "https://www.youtube.com/watch?v=jUNgJtkQgvg", label: "Obsessive Malfoid: The Slytherin Trio", also: ["https://malfoid.duckdns.org/video/Mongz%20%28%EB%AA%BD%EC%A6%88%29/2026-11-17%20Obsessive%20Malfoid%EF%BC%9A%20The%20Slytherin%20Trio.mp4"]}
     tags: [video, youtube, ai, animation]
+  - id: "creator-hogwashxaccount"
+    title: "hogwashexpress"
+    first_name: ""
+    kind: [creator, video]
+    creator: "hogwashexpress (@hogwashXaccount)"
+    url: "https://x.com/hogwashXaccount"
+    language: "English"
+    added: 2026-11-28
+    summary: "Fan-made Draconia Malfoy films on X, including the Multiverse of Malevolent Malfunctions."
+    videos:
+      - {url: "https://x.com/hogwashXaccount/status/2126607216396624104", label: "Draconia Malfoy and the Multiverse of Malevolent Malfunctions (fan film)"}
+    tags: [video, x, fan-film]
+  - id: "creator-shinya-manyu"
+    title: "深夜漫遊放送"
+    first_name: ""
+    kind: [creator, video]
+    creator: "shinya_manyu"
+    url: "https://x.com/shinya_manyu"
+    language: "English"
+    added: 2026-11-28
+    summary: "Malfoid video on X by shinya_manyu."
+    videos:
+      - {url: "https://x.com/shinya_manyu/status/2126612711245299914", label: "Our first winter together at Hogwarts"}
+    tags: [video, x]
+  - id: "creator-highstakestory"
+    title: "HighStakeStories"
+    first_name: ""
+    kind: [creator, video]
+    creator: "HighStakeStories (@HighStakeStory)"
+    url: "https://x.com/HighStakeStory"
+    language: "English"
+    added: 2026-11-28
+    summary: "Malfoid clips on X by HighStakeStories, including a dance clip."
+    videos:
+      - {url: "https://x.com/HighStakeStory/status/2126321742402789548", label: "Dance clip, 2026-11-27"}
+    tags: [video, x]
+  - id: "creator-anigirl-draconia"
+    title: "Anigirl Draconia"
+    first_name: ""
+    kind: [creator, video]
+    creator: "Anigirl Draconia (@AnigirlDraconia)"
+    url: "https://x.com/AnigirlDraconia"
+    language: "English"
+    added: 2026-11-28
+    summary: "Short Draconia and Harry clips on X by Anigirl Draconia."
+    videos:
+      - {url: "https://x.com/AnigirlDraconia/status/2126441042459422960", label: "Draconia and Harry are trying to hide their love, 2026-11-27"}
+      - {url: "https://x.com/AnigirlDraconia/status/2126390002611519975", label: "Harry Potter and Draconia Malfoy becoming even closer, 2026-11-27"}
+    tags: [video, x]
+  - id: "creator-lohvo"
+    title: "Shiv"
+    first_name: ""
+    kind: [creator, video]
+    creator: "Shiv (@Lohvo_)"
+    url: "https://x.com/Lohvo_"
+    language: "English"
+    added: 2026-11-28
+    summary: "Short Malfoid clips on X by Shiv (@Lohvo_)."
+    videos:
+      - {url: "https://x.com/Lohvo_/status/2126496297448337776", label: "Malfoid video, 2026-11-28"}
+      - {url: "https://x.com/Lohvo_/status/2126405703468515381", label: "Malfoid video, 2026-11-27"}
+    tags: [video, x]

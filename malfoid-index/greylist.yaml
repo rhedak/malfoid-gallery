@@ -1304,6 +1304,8 @@ works:
     also: ["https://malfoid.duckdns.org/video/DeadWhisperof/"]
     added: 2026-11-20
     summary: "Malfoid videos by Voice of the Yearn, archived on the M.A. (Malfoid Archive)."
+    videos:
+      - {url: "https://x.com/DeadWhisperof/status/2126455871525806497", label: "Winter x Malfoid, 2026-11-28"}
     tags: [video, archive]
   # other (text)
   - id: "creator-ma-dearsummermusic"
